@@ -157,3 +157,21 @@ delete- 데이터 삭제할때 쓰는 방식
 * placeholder - textarea만 사용하는 것이 아니라 input태그에서도 사용가능함
 * required - 해당영역이 반드시 채워져야할때 쓰는거
 * readonly - 내용을 읽을수만 있게 하는 것(disabled와는 살짝 다름/얘는 아예 못쓰게 하는것)
+
+*인라인 요소는 사이즈 조절 불가하지만 블럭요소는 사이즈조절 가능하다
+
+*fieldset의 기능은 보통 div기능과 비슷하기에 div쪽을 주로 쓰는 경행이 있다고함
+
+*pattern방식 사용할때 한글은 [가-힣]
+
+*input이 text일때 maxlength값을 설정하여 글자 최대수 지정가능함
+
+* bdo - 글씨를 우측부터 작성하게 하는 태그
+* colgroup - 
+* col - 
+→ 위 3개 태그는 비주류 태그라서 잘 안쓴다고함
+
+*집에서 예제 다시작성해볼때 3번째거 필드아래로 p태그 없이 해보기
+
+border-color
+border-style
