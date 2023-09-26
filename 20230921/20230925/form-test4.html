@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    fieldset{width: 500px;
+    height: auto;
+    color: orange;
+    border: dotted;
+}
+    legend{
+        background-color: skyblue;
+        border: solid;
+        color: black;
+    }
+    textarea{width: 300px;
+    height: auto;}
+    ul{
+        color: black;
+    }
+    ol{
+        color: black;
+    }
+</style>    
+<body>
+    <div style="border: 1px solid white; float: left; width: 20%;">
+    </div>
+    <div style="border: 1px solid #ffffff; float: left; width: 47%;">
+    <form>
+    <fieldset>
+        <legend>납품자정보</legend>
+        <ol>
+        <p><li>납품자명 : <input type="text" name="name" placeholder="홍길동"></li></p>
+        <p><li>Email : <input type="email" name="email" placeholder="example@example.com"></li></p>
+        <p><li>홈페이지 : <input type="url" name="url" placeholder="https://www.example.com"></li></p>
+    </oi>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>납품정보</legend>
+        <ul>
+        <p><li>상품명 : <input type="text" name="name"></li></p>
+        <p><li>납품수량 : <input type="number" name="product" placeholder="최소 100"></li></p>
+        <p><li>납품등급 : <input type="range" name="range" min="1" max="100"></li></p>
+        <p><li>기타사항 :<br> 
+        <p><textarea rows="6" cols="50" maxlength="20" placeholder="내용을 입력하세요."></textarea></li></p></p>
+        </ul>
+    </fieldset>
+    <p><input type="submit" value="send message"></p>
+    <input type="button" value="다음으로" onclick="history.go(1)"/>
+    </form>
+    </div>
+    <div style="border: 2px solid white; float:left; width: 33%;">
+    </div>
+</body>
+</html>

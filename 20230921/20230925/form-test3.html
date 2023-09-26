@@ -1,52 +1,87 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<style>
-    fieldset{width: 300px;
-    height: auto;
-    border: 2px dotted red;
-}
-    legend{
-        background-color: beige;
-        align: center;
-        border: 2px solid red;
+  </head>
+  <style>
+    fieldset {
+      width: 300px;
+      height: auto;
+      border: 2px dotted red;
     }
-</style>
-<body>
+    legend {
+      background-color: beige;
+      align: center;
+      border: 2px solid red;
+    }
+  </style>
+  <body>
     <form>
-        <p>고객명 : <input type="text" name="고객명" placeholder="OOO"></p>
-        <p>전화번호 : <input type="tel" name="전화번호" placeholder="010-1234-1234"
-            pattern="[0-9]{3}-[0-9]{3,4}-[0-9]{4}"></p>
-        <p>E-mail : <input type="email" name="email" placeholder="example@example.com"></p>
-        <fieldset style="width: 350px; height: 200px">
-            <legend>피자 사이즈</legend><br>
-            <p><input type="radio" name="size" id="small">
-            <label for="small">Small</label></p>
-            <p><input type="radio" name="size" id="medium">
-            <label for="medium">Medium</label></p>
-            <p><input type="radio" name="size" id="large">
-            <label for="large">Large</label></p>
-        </fieldset>
-        <fieldset style="width: 350px; height: 200px">
-            <legend>토핑 선택</legend>
-            <p><input type="checkbox" name="topping" id="bacon">
-            <label for="bacon">베이컨</label></p>
-            <p><input type="checkbox" name="topping" id="cheese">
-            <label for="cheese">치즈</label></p>
-            <p><input type="checkbox" name="topping" id="onion">
-                <label for="onion">양파</label></p>
-            <p><input type="checkbox" name="topping" id="mushroom">
-            <label for="mushroom">버섯</label></p>
-        </fieldset>
-            <p>희망배송시간 : <input type="time" name="시간" value=""></p>
-            <p>배송시 요청사항 :<br> <textarea rows="2" cols="30" style="width: 200px; height: 30px;" placeholder="내용을 입력해주세요."></textarea></p>
-            <p><input type="submit" value="주문하기">
-            <input type="reset" value="다시 선택하기"></p>            
-        
+      <p>고객명 : <input type="text" name="고객명" placeholder="OOO" /></p>
+      <p>
+        전화번호 :
+        <input
+          type="tel"
+          name="전화번호"
+          placeholder="010-1234-1234"
+          pattern="[0-9]{3}-[0-9]{3,4}-[0-9]{4}"
+        />
+      </p>
+      <p>
+        E-mail :
+        <input type="email" name="email" placeholder="example@example.com" />
+      </p>
+      <fieldset style="width: 350px; height: 200px">
+        <legend>피자 사이즈</legend>
+        <br />
+        <p>
+          <input type="radio" name="size" id="small" />
+          <label for="small">Small</label>
+        </p>
+        <p>
+          <input type="radio" name="size" id="medium" />
+          <label for="medium">Medium</label>
+        </p>
+        <p>
+          <input type="radio" name="size" id="large" />
+          <label for="large">Large</label>
+        </p>
+      </fieldset>
+      <fieldset style="width: 350px; height: 200px">
+        <legend>토핑 선택</legend>
+        <p>
+          <input type="checkbox" name="topping" id="bacon" />
+          <label for="bacon">베이컨</label>
+        </p>
+        <p>
+          <input type="checkbox" name="topping" id="cheese" />
+          <label for="cheese">치즈</label>
+        </p>
+        <p>
+          <input type="checkbox" name="topping" id="onion" />
+          <label for="onion">양파</label>
+        </p>
+        <p>
+          <input type="checkbox" name="topping" id="mushroom" />
+          <label for="mushroom">버섯</label>
+        </p>
+      </fieldset>
+      <p>희망배송시간 : <input type="time" name="시간" value="" /></p>
+      <p>
+        배송시 요청사항 :<br />
+        <textarea
+          rows="2"
+          cols="30"
+          style="width: 200px; height: 30px"
+          placeholder="내용을 입력해주세요."
+        ></textarea>
+      </p>
+      <p>
+        <input type="submit" value="주문하기" />
+        <input type="reset" value="다시 선택하기" />
+      </p>
     </form>
-</body>
+  </body>
 </html>
