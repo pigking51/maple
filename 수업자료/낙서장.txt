@@ -202,6 +202,16 @@ border-style
 https://n.news.naver.com/article/079/0003817161
 
 pre태그
+---------------------------------------------------------------------------------
+1004
+
+* https://www.behance.net/
+→ 디자인 트렌드 확인 사이트
+
+* https://tt.hancomtaja.com/
+→ 설치없는 타자연습 사이트
+
+* table 태그 안에 border=1 값을 넣는것은 css로 table, tr, td값에 border값을 준 것과 같은 효과나옴
 
 
 
