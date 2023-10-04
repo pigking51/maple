@@ -213,6 +213,6 @@ pre태그
 
 * table 태그 안에 border=1 값을 넣는것은 css로 table, tr, td값에 border값을 준 것과 같은 효과나옴
 
-
+*absolute 속성은 반드시 상위속성이 존재해야됨(static제외)
 
 
