@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>z-index 연습2</title>
+  </head>
+  <style>
+    img {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      z-index: -1;
+      background-color: yellowgreen;
+      opacity: 0.4;
+    }
+    div {
+      width: 300px;
+      height: 300px;
+    }
+    #opacity {
+      width: 500px;
+      height: 300px;
+      background-color: rgb(0, 20, 235, 0.2);
+      /* opacity: 0.3; */
+    }
+  </style>
+  <body>
+    <div>
+      <img src="../resources/image/greenmush.gif" width="300" height="300" />
+      <h1>img 요소의 z-index가 -1이므로 다른 요소의 뒤에 위치한다.</h1>
+    </div>
+    <div id="opacity"></div>
+  </body>
+</html>
