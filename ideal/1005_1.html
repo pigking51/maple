@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        .wrap{
+            border: 2px solid black;
+            width: 900px;
+        }
+        .red{
+            background-color: red;
+            width: 300px;
+            float:left;
+        }
+        .green{
+            background-color: green;
+            width: 300px;
+            float:left;
+        }
+        .blue{
+            background-color: blue;
+            width: 300px;
+            float:left;
+        }
+        .wrap::after{
+            content:"";
+            display: block;
+            clear: both;
+        }
+    </style>
+<body>
+    <div class="wrap">
+    <div class="red">빨강</div>
+    <div class="green">초록</div>
+    <div class="blue">파랑</div>
+    </div>
+</body>
+</html>
