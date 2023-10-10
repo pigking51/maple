@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin:0;
+        }
+        html, body, #wrapping{
+            border: 2px solid blue;
+            margin:0;
+            width: 100%;
+            height: 100%;
+        }
+        #heading{
+            background-color: #ffff00;
+            width:98%;
+            height:20%;
+            border-radius: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin:1%;
+        }
+        #nav{
+            background-color: #e69999;
+            float:left;
+            margin-left:1%;
+            margin-bottom:1%;
+            width:30%;
+            height:67%;
+            border-radius: 25px;
+        }
+        #content{
+            background-color: #99e6e6;
+            float: right;
+            margin-right:1%;
+            margin-bottom:1%;
+            width:66%;
+            height:67%;
+            border-radius: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #footer{
+            background-color: #9999e6;
+            margin-left:1%;
+            width:98%;
+            height:5%;
+            border-radius: 25px;
+            clear: both;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #co_dot{
+            margin-left: 5%;
+            width: 100%;
+            height: 100%;
+            
+        }
+        #dot{
+            border: 3px dotted #0b850c;
+            width: 90%;
+            height: 40%;
+            border-radius: 25px;
+            padding: 20px;
+            margin: 30px;
+            background-color:#9ed7c2;
+            
+        }
+        #img{
+            display: flex;
+            align-items:center;
+            justify-content: center;
+        }
+        h1{
+           margin:0;
+           text-indent:8%; 
+        }
+        h2{
+           margin:0;
+           padding-top: 5px;
+           text-indent: 2%;
+        }
+        h3{
+           margin:0; 
+        }
+        /* p{
+            text-indent: 2%;
+        } */
+        h4{
+            text-align: center;
+        }
+        a:link.y{
+            color:yellow;
+            text-decoration: none;
+        }
+    </style>
+<body>
+    <div id="wrapping">
+        <div id="heading">
+            <div>
+            <h1>My Blog Page</h1><br>
+            <p>시멘틱 태그로 만들어진 페이지 입니다.</p>
+            </div>
+        </div>
+        <div id="nav">
+            <h2>Links</h2>
+            <ul>
+                <li><a href="https://www.w3school.com">w3schools</a></li>
+                <li><a href="https://www.w3school.com" class="y">Naver</a></li>
+                <li><a href="https://www.daum.net" class="y">Daum</a></li>
+            </ul>
+            <div id="img">
+                <img src="../resources/image/저장용.png" alt="스폰지" width="50%" height="50%"> 
+            </div>
+            <br>
+            <h4>스폰지밥</h4>
+        </div>
+        <div id="content">
+            <div id="co_dot">
+            <div id="dot">
+                <h3>Semantic Tags</h3>
+                <p>시멘틱 요소(Semantic Tags)들은 브라우저에게 요소의 의미나 목적을 
+                    명확하게 알려주는 요소이다. 레이아웃을 만들때 쓰는 것. 의미가 있는 요소라면
+                    div보다는 시멘틱 태그를 사용해준다.
+                </p>
+            </div>
+            <br>
+            <div id="dot">
+                <h3>div와 span</h3>
+                <p>div은 "divide"의 약자로서 페이지를 논리적인 섹션으로 분리하는데 사용되는 태그이다.
+                    span요소는 인라인 요소로서 텍스트를 위한 컨테이너로 사용할 수 있다.
+                </p>
+            </div>
+        </div>
+        </div>
+        <div id="footer">Copyright(c)2023 Hong</div>
+    </div>
+</body>
+</html>
