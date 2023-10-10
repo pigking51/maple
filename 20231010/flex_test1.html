@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RowDirection</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0px;
+    }
+    ul {
+      display: flex;
+      list-style-type: none;
+      padding: 0;
+      /* flex-direction: row; */
+      /* flex-direction: row-reverse; */
+      /* flex-direction: column; */
+      flex-direction: column-reverse;
+    }
+    #container {
+      display: flex;
+      /* flex-wrap: nowrap; */
+      /* flex-wrap: wrap; */
+      background-color: greenyellow;
+    }
+    #container > div {
+      width: 50px;
+      height: 50px;
+      background-color: orange;
+      margin: 5px;
+      padding: 5px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  </style>
+  <body>
+    <ul>
+      <li>거북이</li>
+      <li>돌고래</li>
+      <li>고라니</li>
+      <li>원숭이</li>
+      <li>호랑이</li>
+    </ul>
+
+    <div id="container">
+      플렉스 컨테이너 안에 있는 플렉스 아이템입니다.
+      <!-- <div>FLEX</div>
+      <div>FLEX</div>
+      <div>FLEX</div>
+      <div>FLEX</div>
+      <div>FLEX</div>
+      <div>FLEX</div>
+      <div>FLEX</div>
+      <div>FLEX</div>
+      <div>FLEX</div>
+      <div>FLEX</div> -->
+    </div>
+  </body>
+</html>
