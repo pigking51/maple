@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>또 연습</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+    }
+    html,
+    body,
+    #wrapping {
+      border: 2px solid blue;
+      width: 100%;
+      height: 100%;
+    }
+    #heading {
+      background-color: yellow;
+      width: 97%;
+      height: 15%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 25px;
+      margin: 1.5% 1.5% 0% 1.5%;
+      padding-top: 1.5%;
+      /* margin-bottom: 0; */
+    }
+    #nav {
+      background-color: salmon;
+      width: 27%;
+      height: 68%;
+      border-radius: 25px;
+      float: left;
+      padding: 2%;
+      margin-left: 1.5%;
+      margin-top: 1.5%;
+      margin-bottom: 1.5%;
+    }
+    #content {
+      background-color: yellowgreen;
+      width: 67%;
+      height: 68%;
+      border-radius: 25px;
+      float: right;
+      margin-right: 1.5%;
+      margin-top: 1.5%;
+      margin-bottom: 1.5%;
+    }
+    #footer {
+      background-color: purple;
+      width: 97%;
+      height: 6%;
+      border-radius: 25px;
+      clear: both;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bolder;
+      margin: 0% 1.5% 1.5% 1.5%;
+    }
+    #nav_inner {
+      width: 100%;
+      height: 80%;
+    }
+    #con_inner {
+      width: 100%;
+      height: 50%;
+      padding: 5%;
+    }
+
+    #dot {
+      border: 3px dotted green;
+      border-radius: 25px;
+      width: 100%;
+      height: 100%;
+      padding: 5%;
+    }
+    #hong {
+      text-indent: 35%;
+    }
+    h1 {
+      margin: 0;
+    }
+    h2 {
+      margin: 0;
+    }
+    h3 {
+      margin: 0;
+    }
+
+    a:link.oh {
+      text-decoration: none;
+      color: white;
+    }
+    a:link#di {
+      text-decoration: none;
+      color: yellow;
+    }
+    a:link.ki {
+      text-decoration: none;
+      color: yellow;
+    }
+  </style>
+  <body>
+    <div id="wrapping">
+      <div id="heading">
+        <div>
+          <h1>My Blog Site</h1>
+          <br />
+          <p>나만의 블로그 사이트 만들기</p>
+        </div>
+      </div>
+      <div id="nav">
+        <h2>Lists</h2>
+        <ul>
+          <li><a href="https://www.w3cschool.com" class="oh">w3cschool</a></li>
+          <li><a href="https://www.naver.com" id="di">Naver</a></li>
+          <li><a href="https://daum.net" class="ki">Daum</a></li>
+        </ul>
+        <br />
+        <div id="nav_inner">
+          <img
+            src="../resources/image/4dollars2.jpg"
+            alt="홍길동"
+            width="100%"
+            height="40%"
+          /><br />
+          <p id="hong">홍길동</p>
+        </div>
+      </div>
+      <div id="content">
+        <div id="con_inner">
+          <div id="dot">
+            <h3>무슨요소</h3>
+            <br />
+            <p>무슨요소가 있는데 그거쓰면 좋다고함.</p>
+          </div>
+          <br /><br /><br />
+          <div id="dot">
+            <h3>span하고 무슨요소도 좋음</h3>
+            <br />
+            <p>
+              span하고 무슨요소도 좋다는데 기억이 나질 않아서 그냥 아무거나
+              적음.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="footer">
+        <div id="fo_inner">Copyright (c) 2023 Hong</div>
+      </div>
+    </div>
+  </body>
+</html>

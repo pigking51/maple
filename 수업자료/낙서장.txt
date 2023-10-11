@@ -243,5 +243,14 @@ justify-content: center;
 
 * inline-flex는 잘 안쓰는 코드임
 → 줄였을때 계속 줄어듬(반응형 웹사이트 만들때 불필요)
+------------------------------------------------------------------------------------------
+1011
 
+* https://www.designmap.or.kr/
+→ 특허청 디자인 도면사이트(디자인맵)
+* https://pixabay.com/ko/
+* https://www.gdweb.co.kr/main/
+→ 저작권없는 무료사진 사이트
 
+* code 확장프로그램 colonzie 설치하기
+→ 중간에 수정할거 있을때 shift enter 누르면 도움되는 확장자
