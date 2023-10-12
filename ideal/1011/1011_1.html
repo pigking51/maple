@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    ul{
+        display: flex;
+        list-style-type: none;
+        /* flex-direction: row; */
+        /* flex-direction: row-reverse; */
+        flex-direction: column-reverse;
+        /* flex-direction: column; */
+        }
+    #container{
+        /* flex-wrap: nowrap; */
+        /* flex-wrap: wrap; */
+        /* flex-wrap: wrap-reverse; */
+        display: flex;
+    }
+    #container > div{
+        width: 50px;
+      height: 50px;
+      background-color: orange;
+      margin: 5px;
+      padding: 5px;
+      display: flex;
+    }
+</style>
+<body>
+    <ul>
+        <li>제이크</li>
+        <li>토마스</li>
+        <li>요나스</li>
+        <li>제임스</li>
+        <li>마이크</li>
+    </ul>
+    <div id="container">
+        <!-- <p>플렉스 컨테이너 안에 있는 플렉스 아이템입니다.</p> -->
+      <div>FLE</div>
+      <div>FLE</div>
+      <div>FLE</div>
+      <div>FLE</div>
+      <div>FLE</div>
+      <div>FLE</div>
+      <div>FLE</div>
+      <div>FLE</div>
+      <div>FLE</div>
+      <div>FLE</div>
+    </div>
+</body>
+</html>
