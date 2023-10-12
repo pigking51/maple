@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>그리드 연습1</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0px;
+    }
+    ul {
+      padding: 0px;
+      list-style-type: none;
+      border: 3px dotted red;
+      width: 100%;
+      height: 100%;
+    }
+    li {
+      /* background-color: bisque;
+      border: 2px solid black; */
+      border-radius: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 1%;
+    }
+    .container {
+      display: grid;
+      height: 500px;
+      /* grid-template-columns: 10% 20% 10%; */
+      /* grid-template-columns: 100px 100px 250px; */
+      /* grid-template-columns: 100px 2fr 1fr; */
+      /* grid-template-columns: repeat(6, 1fr); */
+      /* grid-template-columns: repeat(3, 1fr 3fr 2fr); */
+      /* grid-template-columns: repeat(2, minmax(100px, auto)); */
+      grid-template-rows: 30% 50% 20%;
+    }
+    #item1 {
+      background-color: yellow;
+    }
+    #item2 {
+      background-color: salmon;
+    }
+    #item3 {
+      background-color: yellowgreen;
+    }
+    #item4 {
+      background-color: purple;
+    }
+
+    #man {
+      display: grid;
+
+      grid-template-columns: 30% 70%;
+    }
+  </style>
+  <body>
+    <ul class="container">
+      <li id="item1"><div>1</div></li>
+      <div id="man">
+        <li id="item2">2</li>
+        <li id="item3">4</li>
+      </div>
+      <li id="item4">5</li>
+    </ul>
+  </body>
+</html>
