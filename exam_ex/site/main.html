@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>홈페이지 레이아웃</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0%;
+      padding: 0%;
+    }
+    div {
+      border-radius: 20px;
+      margin: 1px;
+    }
+    html,
+    body,
+    #main {
+      width: 100%;
+      height: 100%;
+      margin: 0%;
+    }
+    #header {
+      width: 98%;
+      height: 18%;
+      background-color: yellow;
+    }
+    #nav {
+      width: 98%;
+      height: 5%;
+      background-color: green;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #left {
+      width: 48%;
+      height: 100%;
+      background-color: salmon;
+      float: left;
+      font-size: 3em;
+    }
+    #section {
+      width: 48%;
+      height: 100%;
+      background-color: yellowgreen;
+      float: right;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #right {
+      width: 30%;
+      height: 54%;
+      background-color: salmon;
+      float: right;
+      margin-right: 2.3%;
+    }
+    #article {
+      width: 80%;
+      height: 45%;
+      background-color: lightblue;
+    }
+    #footer {
+      width: 98%;
+      height: 18%;
+      background-color: pink;
+      clear: both;
+    }
+    #left_wrap {
+      float: left;
+      width: 63%;
+      height: 54%;
+      margin: 0.5%;
+    }
+    .list {
+      list-style-type: none;
+    }
+    .list > li {
+      display: inline;
+      font-size: 2em;
+      letter-spacing: 10px;
+      padding-right: 30px;
+    }
+    .cat {
+      padding: 0%;
+    }
+    .cat > li {
+      list-style-type: none;
+      border: 1px solid black;
+      background-color: #3f3f3f;
+      color: white;
+    }
+  </style>
+  <body>
+    <div id="main">
+      <div id="header">
+        <img
+          src="../../resources/image/coffee.jpg"
+          alt="커피"
+          width="100"
+          height="100"
+        />
+        <h1><a href="https://www.naver.com">Web Shop</a></h1>
+      </div>
+      <div id="nav">
+        <ul class="list">
+          <li>HOME</li>
+          <li>ABOUT US</li>
+          <li>NEWS</li>
+          <li>MY ACCOUNT</li>
+          <li>CONTACTS</li>
+        </ul>
+      </div>
+      <div id="left_wrap">
+        <div id="left">
+          <h2>카테고리</h2>
+          <ul class="cat">
+            <li>컴퓨터</li>
+            <li>의류</li>
+            <li>음악</li>
+            <li>영화</li>
+            <li>스포츠/레저</li>
+            <li>가구/인테리어</li>
+            <li>식품</li>
+          </ul>
+        </div>
+        <div id="section">
+          <div id="article">
+            <section class="main">
+              <article id="article1">
+                <iframe src="computer.html" nam="ifr"> </iframe>
+              </article>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div id="right"></div>
+      <div id="footer">Copyright (c)2013 Web Shop</div>
+    </div>
+  </body>
+</html>

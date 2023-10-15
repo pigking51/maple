@@ -9,27 +9,26 @@
     * {
       box-sizing: border-box;
     }
-    ul {
-      list-style-type: none;
-    }
-    li {
-      border: 1px solid black;
-    }
-
     html,
     body,
-    .container {
+    #wrapping {
+      margin: 0%;
       width: 100%;
       height: 100%;
+    }
+    #container {
+      list-style-type: none;
       display: grid;
-      grid-template-areas:
-        "h h h h h h"
-        "n n n n n n"
-        "l l c c r r"
-        "f f f f f f";
+      width: 100%;
+      height: 100%;
+      margin: 0%;
+      grid-template-areas: "h h h h h h
+         n n n n n n
+         l l s s r r
+         f f f f f f";
     }
     li:nth-child(1) {
-      grid-area: n;
+      grid-area: h;
     }
     li:nth-child(2) {
       grid-area: n;
@@ -38,7 +37,7 @@
       grid-area: l;
     }
     li:nth-child(4) {
-      grid-area: c;
+      grid-area: s;
     }
     li:nth-child(5) {
       grid-area: r;
@@ -48,13 +47,15 @@
     }
   </style>
   <body>
-    <ul class="container">
-      <li class="items">1</li>
-      <li class="items">2</li>
-      <li class="items">3</li>
-      <li class="items">4</li>
-      <li class="items">5</li>
-      <li class="items">6</li>
-    </ul>
+    <div id="wrapping">
+      <ul id="container">
+        <li id="items">header</li>
+        <li id="items">nav</li>
+        <li id="items">left</li>
+        <li id="items">section</li>
+        <li id="items">right</li>
+        <li id="items">footer</li>
+      </ul>
+    </div>
   </body>
 </html>

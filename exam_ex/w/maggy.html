@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>그리드 연습</title>
+</head>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0%;
+        }
+        ul{
+            border: 2px dashed red;
+            list-style-type: none;
+            padding: 0%;
+        }
+        li{
+            background-color:beige;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border : 2px solid black;
+            border-radius: 8px;
+            margin: 1.5%;
+        }
+        .container{
+            display: grid;
+            height: 500px;
+            margin:0%;
+
+            /* grid-template-columns: repeat(2, 3fr 1fr 2fr) */
+            /* grid-template-columns: repeat(2, 20% 5% 15%);
+            grid-template-rows: repeat(2, 10% 50%); */
+
+            /* grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 1.5%;
+            row-gap: 3%; */
+
+          column-gap: 1.5%;  
+          row-gap: 3%;
+
+            grid-template-areas:
+             "거 거 거"
+             "다 청 청"
+             "고 고 고";  
+/* 
+             align-items: stretch; */
+            /* align-items: center; */
+            /* align-items: start; */
+            /* align-items: end; */
+
+            /* justify-items: stretch; */
+            /* justify-items: center; */
+            /* justify-items: start; */
+            /* justify-items: end; */
+
+            /* align-content: start; */
+            /* align-content: end; */
+            /* align-content: center; */
+            align-content: space-between;
+            /* justify-content: start; */
+            /* justify-content: end; */
+            /* justify-content: center; */
+            justify-content: space-between;
+        }
+        li:nth-child(1){
+            grid-area: 거;
+            /* align-self: stretch; */
+            /* align-self: center; */
+            /* align-self: start; */
+            align-self: end;
+        }
+        li:nth-child(2){
+            grid-area: 다;
+            /* justify-self: stretch; */
+            /* justify-self: center; */
+            /* justify-self: start; */
+            justify-self: end;
+        }
+        li:nth-child(3){
+            grid-area: 청;
+        }
+        li:nth-child(4){
+            grid-area: 고;
+       
+        }
+    </style>
+<body>
+    <ul class="container">
+        <li class="item">1</li>
+        <li class="item">2</li>
+        <li class="item">3</li>
+        <li class="item">4</li>
+        <!-- <li class="item">5</li> -->
+        <!-- <li class="item">6</li>
+        <li class="item">7</li>
+        <li class="item">8</li>
+        <li class="item">9</li>
+    </ul> -->
+</body>
+</html>

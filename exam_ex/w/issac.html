@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>그리드 연습</title>
+</head>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0%;
+        }
+        ul{
+            border: 2px dashed red;
+            list-style-type: none;
+            padding: 0%;
+        }
+        li{
+            background-color:beige;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border : 2px solid black;
+            border-radius: 8px;
+        }
+        .container{
+            display: grid;
+            height: 500px;
+            margin:0%;
+
+            /* grid-template-columns: repeat(2, 3fr 1fr 2fr) */
+            /* grid-template-columns: repeat(2, 20% 5% 15%);
+            grid-template-rows: repeat(2, 10% 50%); */
+
+            /* grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 1.5%;
+            row-gap: 3%; */
+
+            grid-template-areas:
+             "거 거 호"
+             "다 다 청"
+             "고 고 고";  
+        }
+        li:nth-child(1){
+            grid-area: 거;
+        }
+        li:nth-child(2){
+            grid-area: 호;
+        }
+        li:nth-child(3){
+            grid-area: 다;
+        }
+        li:nth-child(4){
+            grid-area: 청;
+        }
+        li:nth-child(5){
+            grid-area: 고;
+        }
+    </style>
+<body>
+    <ul class="container">
+        <li class="item">1</li>
+        <li class="item">2</li>
+        <li class="item">3</li>
+        <li class="item">4</li>
+        <li class="item">5</li>
+        <!-- <li class="item">6</li>
+        <li class="item">7</li>
+        <li class="item">8</li>
+        <li class="item">9</li>
+    </ul> -->
+</body>
+</html>
