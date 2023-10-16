@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>쇼핑카트</title>
+  </head>
+  <body>
+    <caption>
+      <u>Shopping Cart</u>
+    </caption>
+    <table>
+      <tr>
+        <th>품목</th>
+        <th>가격</th>
+        <th>수량</th>
+        <th>합계</th>
+      </tr>
+      <tr>
+        <td>컴퓨터 세트</td>
+        <td>2,000,000원</td>
+        <td>
+          <input type="hidden" name="sell_price" value="2000000" />
+          <!-- <input type="number" name="number"> -->
+          <input
+            type="number"
+            name="amount"
+            value="1"
+            size="3"
+            onchange="change();"
+          />
+        </td>
+        <td><input type="text" name="sum" size="11" readonly />원</td>
+      </tr>
+      <tr>
+        <td>티셔츠</td>
+        <td>50,000원</td>
+        <td>1,000원</td>
+        <td>5,000원</td>
+      </tr>
+      <tr>
+        <td>음악파일</td>
+        <td>50,000원</td>
+        <td>1,000원</td>
+        <td>5,000원</td>
+      </tr>
+      <tr>
+        <td>영화파일</td>
+        <td>50,000원</td>
+        <td>1,000원</td>
+        <td>5,000원</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>
+          <input type="hidden" name="sell_price" value="50000" />
+          <input type="number" name="number" />
+        </td>
+        <td>
+          <input type="hidden" name="sell_price" value="1000" />
+          <input type="number" name="number" />
+        </td>
+        <td>
+          <input type="hidden" name="sell_price" value="5000" />
+          <input type="number" name="number" />
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

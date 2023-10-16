@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>회원가입</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    fieldset {
+      width: 600px;
+      height: 600px;
+    }
+    .main {
+      list-style-type: none;
+    }
+    li {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    #ra {
+      text-indent: 50%;
+    }
+    #birth {
+      width: 170px;
+    }
+    /* #button {
+      width: 40px;
+    } */
+    #pad {
+      text-indent: 5px;
+    }
+  </style>
+  <body>
+    <form action="" method="text">
+      <fieldset>
+        <legend>회원정보입력</legend>
+        <ul class="main">
+          <li class="inner">
+            <div>아이디</div>
+            <div><input type="text" name="id" /></div>
+            <div id="pad"><button id="button">중복검사</button></div>
+          </li>
+          <li class="inner">
+            <div>패스워드</div>
+            <div><input type="password" name="pw" /></div>
+          </li>
+          <li class="inner">
+            <div>패스워드 확인</div>
+            <div><input type="password" name="pw" /></div>
+          </li>
+          <li class="inner">
+            <div>이름</div>
+            <div><input type="text" name="name" /></div>
+          </li>
+          <li class="inner">
+            <div>휴대폰 번호</div>
+            <div><input type="tel" name="tel" /></div>
+          </li>
+          <li class="inner">
+            <div>이메일</div>
+            <div><input type="email" name="email" /></div>
+          </li>
+          <li class="inner">
+            <div>생일</div>
+            <div><input type="date" name="birth" id="birth" /></div>
+          </li>
+          <li class="inner">
+            <div>홈페이지</div>
+            <div><input type="url" name="url" /></div>
+          </li>
+          <li class="inner" id="ra">
+            <div><input type="radio" name="gender" id="male" /></div>
+            <div><label for="male">남성</label></div>
+          </li>
+          <li class="inner" id="ra">
+            <div><input type="radio" name="gender" id="female" /></div>
+            <div><label for="female">여성</label></div>
+          </li>
+        </ul>
+      </fieldset>
+      <p>
+        <input type="submit" name="submit" value="제출" /><input
+          type="reset"
+          name="reset"
+          value="초기화"
+        />
+      </p>
+    </form>
+  </body>
+</html>

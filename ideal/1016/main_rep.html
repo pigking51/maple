@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    *{
+        box-sizing;
+    }
+    html, body, #wrapper{
+        width:100%;
+        height:100%;
+        margin:0%;
+    }
+    #wrapper{
+        display: grid;
+        grid-template-rows: 2fr 5fr 1fr;
+    }
+    #header{
+        display: grid;
+        grid-template-rows: 2fr 1fr;
+    }
+    #header_1{
+        background-color: beige;
+        display:flex;
+        align-items: center;
+    }
+    #header_2{
+        background-color: yellowgreen;
+        display:grid;
+    }
+    #content{
+        display: grid;
+        grid-template-columns: 1.5fr 5fr 1.5fr;
+    }
+    #con_1{
+        background-color: #6d7996;
+    }
+    #con_2{
+        background-color: whitesmoke;
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #con_3{
+        background-color: #e1dfd6;
+    }
+    #footer{
+        background-color: black;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 50px;
+    }
+
+    #ul_1{
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        font-size: 40px;
+    }
+    #ul_2{
+        list-style-type: none;
+        padding:0%;
+        font-size: 1.5em;
+    }
+    #li_2{
+        border: 1px solid black;
+        color:white;
+        background-color: #525d76;
+        padding:0%;
+    }
+    #side{
+        font-size: 1.5em;
+    }
+  </style>
+  <body>
+    <div id="wrapper">
+      <div id="header">
+        <div id="header_1">
+          <img src="../../resources/image/cat.jpg" />
+          <h1>Web Shopping</h1>
+        </div>
+        <div id="header_2">
+          <ul id="ul_1">
+            <li id="li_1">HOME</li>
+            <li id="li_1">SHOPPING ABOUT</li>
+            <li id="li_1">NEWS</li>
+            <li id="li_1">MY ACCOUNT</li>
+            <li id="li_1">CONTACTS</li>
+          </ul>
+        </div>
+      </div>
+      <div id="content">
+        <div id="con_1">
+          <ul id="ul_2">
+            <li id="li_2">컴퓨터</li>
+            <li id="li_2">의류</li>
+            <li id="li_2">음악</li>
+            <li id="li_2">영화</li>
+            <li id="li_2">스포츠/레저</li>
+            <li id="li_2">가구/인테리어</li>
+            <li id="li_2">식품</li>
+          </ul>
+        </div>
+        <div id="con_2">
+            <iframe src="https://www.daum.net" width="100%" height="100%"></iframe>
+            <iframe src="https://www.daum.net" width="100%" height="100%"></iframe>
+            <iframe src="https://www.daum.net" width="100%" height="100%"></iframe>
+        </div>
+        <div id="con_3">
+          <div id="side">
+            <h2>
+              Shopping<br />
+              Cart</h2>
+              <p>
+                현재 쇼핑카트에 물품이 없습니다.<br />
+                <a href="https://www.naver.com" target="_blank"
+                  >쇼핑카트 보기</a
+                >
+              </p>
+            </h2>
+          </div>
+          <div id="side">
+            <form action="" method="post">
+              <h2>Log In</h2>
+              <p>
+                아이디<br />
+                <input type="text" name="id" /><br />
+                패스워드<br /><input type="password" name="pw" />
+              </p>
+              <p>
+                <input type="submit" name="login" value="로그인" /><input
+                  type="reset"
+                  name="reset"
+                  value="초기화"
+                />
+              </p>
+              <p>
+                <a href="https://www.daum.net" target="_blank">회원가입</a>
+                <a href="https://www.nate.com">비밀번호 분실</a>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div id="footer">
+        <a>Copyright(c) 2023 Choi</a>
+      </div>
+    </div>
+  </body>
+</html>
