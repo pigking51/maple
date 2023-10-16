@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    html,
+    body,
+    .wrapper {
+      height: 100%;
+      margin: 0%;
+    }
+    .wrapper {
+      border: 2px solid red;
+      padding-left: 0px;
+    }
+    ul {
+      list-style-type: none;
+      display: grid;
+      grid-template-areas:
+        "h h h h h"
+        "n n c c c"
+        "f f f f f";
+    }
+    .a {
+      background-color: yellow;
+    }
+    .b {
+      background-color: salmon;
+    }
+    .c {
+      background-color: yellowgreen;
+    }
+    .d {
+      background-color: pink;
+    }
+
+    li:nth-child(1) {
+      grid-area: h;
+    }
+    li:nth-child(2) {
+      grid-area: n;
+    }
+    li:nth-child(3) {
+      grid-area: c;
+    }
+    li:nth-child(4) {
+      grid-area: f;
+    }
+    div {
+      height: 25%;
+      display: grid;
+      background-color: lightblue;
+      border: 2px dashed green;
+      border-radius: 10px;
+      grid-template-rows: 10% 10%;
+      margin: 2.5%;
+    }
+  </style>
+  <body>
+    <ul class="wrapper">
+      <li class="a">header</li>
+      <li class="b">nav</li>
+      <li class="c">
+        content
+        <div class="d"></div>
+        <div class="d"></div>
+      </li>
+      <li class="d">footer</li>
+    </ul>
+  </body>
+</html>

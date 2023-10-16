@@ -15,7 +15,7 @@
     }
     div {
       border-radius: 20px;
-      margin: 1px;
+      margin: 1%;
     }
     html,
     body,
@@ -42,7 +42,7 @@
       height: 100%;
       background-color: salmon;
       float: left;
-      font-size: 3em;
+      font-size: 1.5em;
     }
     #section {
       width: 48%;
@@ -58,7 +58,7 @@
       height: 54%;
       background-color: salmon;
       float: right;
-      margin-right: 2.3%;
+      margin-right: 1.5%;
     }
     #article {
       width: 80%;
@@ -82,9 +82,9 @@
     }
     .list > li {
       display: inline;
-      font-size: 2em;
+      font-size: 1.2em;
       letter-spacing: 10px;
-      padding-right: 30px;
+      padding-right: 10px;
     }
     .cat {
       padding: 0%;
@@ -102,8 +102,8 @@
         <img
           src="../../resources/image/coffee.jpg"
           alt="커피"
-          width="100"
-          height="100"
+          width="20%"
+          height="50%"
         />
         <h1><a href="https://www.naver.com">Web Shop</a></h1>
       </div>
@@ -133,13 +133,38 @@
           <div id="article">
             <section class="main">
               <article id="article1">
-                <iframe src="computer.html" nam="ifr"> </iframe>
+                <iframe src="computer.html" name="ifr"> </iframe>
               </article>
             </section>
           </div>
         </div>
       </div>
-      <div id="right"></div>
+      <div id="right">
+        <aside id="rrr">
+          <div id="shopcart">
+            <h4>Shopping Cart</h4>
+            <p>
+              현재 쇼핑카트에 물품이 없습니다.<br />
+              <a href="">쇼핑카트 보기</a>
+            </p>
+          </div>
+          <div id="login">
+            <h4>Log In</h4>
+            <form action="#">
+              <p>아이디<input type="text" name="id" /></p>
+              <p>패스워드<input type="password" name="pw" /></p>
+              <p>
+                <input type="submit" value="로그인" />
+                <input type="reset" value="초기화" />
+              </p>
+              <p>
+                <a href="">회원가입</a>
+                <a href="">비밀번호 분실</a>
+              </p>
+            </form>
+          </div>
+        </aside>
+      </div>
       <div id="footer">Copyright (c)2013 Web Shop</div>
     </div>
   </body>

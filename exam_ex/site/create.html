@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    ul {
+      list-style-type: none;
+    }
+    .name1 {
+      float: left;
+    }
+    .name2 {
+      float: left;
+    }
+    #reset {
+      clear: both;
+    }
+    div > p {
+      padding-left: 160px;
+    }
+  </style>
+  <body>
+    <form action="" method="">
+      <fieldset>
+        <legend>회원정보입력</legend>
+        <div>
+          <ul class="name1">
+            <li>아이디</li>
+            <li>패스워드</li>
+            <li>패스워드 확인</li>
+            <li>이름</li>
+            <li>휴대폰 번호</li>
+            <li>이메일</li>
+            <li>생일</li>
+            <li>홈페이지</li>
+          </ul>
+          <ul class="name2">
+            <li><input type="text" name="id" /></li>
+            <li><input type="password" name="pw" /></li>
+            <li><input type="password" name="pw_2" /></li>
+            <li><input type="text" name="name" /></li>
+            <li><input type="tel" name="tel" /></li>
+            <li><input type="email" name="email" /></li>
+            <li><input type="date" name="birth" /></li>
+            <li><input type="url" name="page" /></li>
+          </ul>
+          <p id="reset">
+            <input type="radio" name="gender" value="male" id="male" />
+            <label for="male">남성</label>
+          </p>
+          <p>
+            <input type="radio" name="gender" value="female" id="female" />
+            <label for="female">여성</label>
+          </p>
+        </div>
+      </fieldset>
+      <p>
+        <input type="submit" value="제출" /><input
+          type="reset"
+          value="초기화"
+        />
+      </p>
+      <input type="number" name="수량" />
+    </form>
+  </body>
+</html>

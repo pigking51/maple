@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>레이아웃 연습 그리드</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0px;
+    }
+    html,
+    body,
+    #wrapper {
+      width: 100%;
+      height: 100%;
+    }
+    #wrapper {
+      display: grid;
+      grid-template-rows: 1.5fr 5fr 1fr;
+      gap: 10px;
+    }
+    #header {
+      background-color: #ffff00;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+    #content {
+      /* background-color: #e69999; */
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      gap: 10px;
+    }
+    #footer {
+      background-color: #9999e6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 30px;
+    }
+    #nav {
+      background-color: #e69999;
+      padding-left: 10%;
+      padding-right: 10%;
+      font-size: 30px;
+    }
+    #main {
+      background-color: #99e6e6;
+      display: grid;
+      /* grid-template-rows: 25% 25%; */
+      grid-template-rows: 1fr 1fr;
+      gap: 20px;
+      /* padding: 10px; */
+    }
+    .section {
+      margin: 20px;
+      background-color: #9ed7c2;
+      border: 2px dashed green;
+      padding-left: 3%;
+      padding-right: 3%;
+      font-size: 20px;
+    }
+    /* #section1 {
+      background-color: #9ed7c2;
+      border: 2px dashed green;
+    }
+    #section2 {
+      background-color: #ffbd4c;
+      border: 2px dashed green;
+    } */
+    div {
+      border-radius: 60px;
+    }
+    a {
+      color: yellow;
+      text-decoration: none;
+    }
+    a:visited {
+      color: white;
+    }
+    a:hover {
+      color: black;
+    }
+  </style>
+  <body>
+    <div id="wrapper">
+      <div id="header">
+        <div>
+          <h1>My Blog Page</h1>
+          <p>DIV와 grid로 만들어진 페이지입니다.</p>
+        </div>
+      </div>
+      <div id="content">
+        <div id="nav">
+          <h3>Links</h3>
+          <ul>
+            <li>
+              <a href="https://www.w3schools.com" target="_blank">w3schools</a>
+            </li>
+            <li><a href="https://www.naver.com" target="_blank">Naver</a></li>
+            <li><a href="https://www.google.com" target="_blank">Daum</a></li>
+          </ul>
+          <img
+            src="../resources/image/4dollars.gif"
+            alt="스폰지밥"
+            width="100%"
+            height="30%"
+          />
+        </div>
+        <div id="main">
+          <div id="section1" class="section">
+            <h3>Semantic Tags</h3>
+            <p>
+              시멘틱 요소(Semantic elements)들은 브라우저에게 요소의 의미나
+              목적을 명확하게 알려주는 요소이다.
+            </p>
+          </div>
+
+          <div id="section2" class="section">
+            <h3>div와 span</h3>
+            <p>
+              div은 "divide"의 약자로서 페이지를 논리적인 섹션으로 분리하는데
+              사용되는 태그이다. span 요소는 인라인 요소로서 텍스트를 위한
+              컨테이너로 사용할 수 있다.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="footer"><p>Copyright (c)2023 Choi</p></div>
+    </div>
+  </body>
+</html>

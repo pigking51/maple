@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    #main {
+      display: grid;
+      grid-template-rows: repeat(2, 1fr 1fr 1fr 1fr 1fr);
+    }
+    #field_1 {
+      display: grid;
+      width: 50%;
+      grid-template-columns: 1fr 1fr 1fr;
+      padding: 0%;
+    }
+  </style>
+  <body>
+    <form action="" method="post">
+      <fieldset>
+        <legend>회원정보입력</legend>
+        <div id="main">
+          <div id="field_1">
+            <div>아이디</div>
+            <div><input type="text" name="id" /></div>
+            <div><button>중복검사</button></div>
+          </div>
+          <div id="field_1">패스워드 <input type="password" name="pw" /></div>
+          <div id="field_1">
+            패스워드 확인 <input type="password" name="pw_check" />
+          </div>
+          <div id="field_1">이름 <input type="text" name="name" /></div>
+          <div id="field_1">휴대폰 번호 <input type="tel" name="tel" /></div>
+
+          <div id="field_1">이메일 <input type="email" name="email" /></div>
+          <div id="field_1">
+            생일 <input type="date" name="date" width="177px" />
+          </div>
+          <div id="field_1">홈페이지 <input type="url" name="url" /></div>
+          <div id="field_1">
+            <input type="radio" name="gender" id="male" />
+            <label for="male">남성</label>
+          </div>
+          <div id="field_1">
+            <input type="radio" name="gender" id="female" />
+            <label for="female">여성</label>
+          </div>
+        </div>
+      </fieldset>
+      <p>
+        <input type="submit" name="submit" value="제출" />
+        <input type="reset" name="reset" value="초기화" />
+      </p>
+    </form>
+  </body>
+</html>
