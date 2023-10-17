@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0%;
+    }
+    html,
+    body,
+    #wrapper {
+      width: 100%;
+      height: 100%;
+      padding: 0%;
+    }
+    #wrapper {
+      display: grid;
+      grid-template-rows: 2fr 5fr 1fr;
+      gap: 1%;
+    }
+    #heading {
+      display: grid;
+      grid-template-rows: 2fr 1fr;
+    }
+    #head_1 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #ffd65c;
+    }
+    #head_2 {
+      display: flex;
+      background-color: #d1b3e0;
+
+      justify-content: space-evenly;
+      border-radius: 60px;
+    }
+    #li_1 {
+      display: flex;
+      align-items: center;
+    }
+    li {
+      color: white;
+      font-weight: 500;
+      list-style-type: none;
+      letter-spacing: 0.3em;
+    }
+    ul {
+      padding: 0%;
+    }
+    #li_2 {
+      background-color: #e6b3b3;
+      border-bottom: 1px solid #ddacac;
+      padding: 8% 8%;
+    }
+    #li_2:nth-child(1) {
+      border-top: 1px solid #ddacac;
+    }
+    #content {
+      display: grid;
+      grid-template-columns: 1.4fr 5fr 1.4fr;
+      gap: 3%;
+    }
+    #con_2 {
+      background-color: #fafafa;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    div:not(div#content div) {
+      border-radius: 60px;
+    }
+    #content > div {
+      border-radius: 60px 60px 0 0;
+    }
+    .aside {
+      background-color: #faebeb;
+      padding: 15% 8%;
+    }
+    .item {
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr;
+    }
+    #footer {
+      background-color: #ccccf2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #li_1 > a {
+      text-decoration: none;
+      color: inherit;
+    }
+    #img {
+      display: flex;
+      align-items: center;
+    }
+    div#head_1 > div > img {
+      width: inherit;
+    }
+    div#head_1 > div > span {
+      font-size: 2em;
+      font-weight: 900;
+      color: #53188b;
+    }
+    .item {
+      display: grid;
+      grid-template-rows: 5fr 2fr 1fr;
+      gap: 1%;
+    }
+    .ma {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+  <body>
+    <div id="wrapper">
+      <div id="heading">
+        <div id="head_1">
+          <div id="img">
+            <img src="../../resources/image/cat.jpg" width="50%" height="50%" />
+            <span>Web Shopping</span>
+          </div>
+        </div>
+        <ul id="head_2">
+          <li id="li_1"><a href="#">HOME</a></li>
+          <li id="li_1"><a href="#">SHOPPING ABOUT</a></li>
+          <li id="li_1"><a href="#">NEWS</a></li>
+          <li id="li_1"><a href="#">MY ACCOUNT</a></li>
+          <li id="li_1"><a href="#">CONTACTS</a></li>
+        </ul>
+      </div>
+      <div id="content">
+        <div id="con_1" class="aside">
+          <h3>카테고리</h3>
+          <ul id="ul_2">
+            <li id="li_2">컴퓨터</li>
+            <li id="li_2">의류</li>
+            <li id="li_2">음악</li>
+            <li id="li_2">스포츠/레저</li>
+            <li id="li_2">가구/인테리어</li>
+            <li id="li_2">식품</li>
+          </ul>
+        </div>
+        <div id="con_2">
+          <div id="m1" class="item">
+            <div class="ma">
+              <img
+                src="../../resources/image/w_sword.png"
+                width="50%"
+                height="50%"
+              />
+            </div>
+            <span>환목검</span>
+            <button>쇼핑카트에 담기</button>
+          </div>
+          <div id="m2" class="item">
+            <div class="ma">
+              <img
+                src="../../resources/image/w_sword.png"
+                width="50%"
+                height="50%"
+              />
+            </div>
+            <br />
+            <span>환목검</span>
+            <button>쇼핑카트에 담기</button>
+          </div>
+          <div id="m3" class="item">
+            <div class="ma">
+              <img
+                src="../../resources/image/w_sword.png"
+                width="50%"
+                height="50%"
+              />
+            </div>
+            <span>환목검</span>
+            <button>쇼핑카트에 담기</button>
+          </div>
+        </div>
+        <div id="con_3" class="aside">
+          <div>
+            <h3>Shopping Cart</h3>
+            <p>현재 쇼핑카트에 물품이 없습니다.</p>
+            <a href="#">쇼핑카트 보기</a>
+            <br />
+            <br />
+            <h3>Log In</h3>
+            <input action="#" name="login" />
+            <p>
+              아이디<br />
+              <input type="text" name="id" width="100%" />
+            </p>
+            <br />
+            <p>
+              패스워드<br />
+              <input type="password" name="pw" width="100%" />
+            </p>
+            <br />
+            <p><button>로그인</button>&nbsp;<button>초기화</button></p>
+            <br />
+            <p><a href="#">회원가입</a>&nbsp;<a href="#">비밀번호 분실</a></p>
+          </div>
+        </div>
+      </div>
+      <div id="footer"><span>2019.08.23 DW아카데미 042-123-4567</span></div>
+    </div>
+  </body>
+</html>

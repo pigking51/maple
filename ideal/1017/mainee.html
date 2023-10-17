@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    html,
+    body,
+    #wrapper {
+      width: 100%;
+      height: 100%;
+      margin: 0%;
+    }
+    #wrapper {
+      display: grid;
+      grid-template-rows: 1.5fr 5fr 1fr;
+      gap: 1%;
+    }
+    #heading {
+      display: grid;
+      grid-template-rows: 2fr 1fr;
+      padding: 0%;
+      gap: 1%;
+    }
+    #head_1 {
+      background-color: #ffd65c;
+      display: flex;
+      align-items: center;
+    }
+    #head_2 {
+      background-color: #d1b3e0;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      margin: 0%;
+      border-radius: 60px;
+    }
+    #content {
+      /* background-color: green; */
+      display: grid;
+      grid-template-columns: 1.4fr 5fr 1.4fr;
+      gap: 1%;
+    }
+    #footer {
+      background-color: #ccccf2;
+    }
+    .aside {
+      background-color: #faebeb;
+      padding: 15% 8%;
+    }
+    li {
+      list-style-type: none;
+      color: white;
+      /* font-size: 2em; */
+      font-weight: 300;
+      letter-spacing: 0.3em;
+    }
+    #footer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2em;
+    }
+    #ul_2 {
+      background-color: #e6b3b3;
+    }
+    #li_2 {
+      padding: 8% 8%;
+    }
+    #head_1 > div {
+      margin: 0%;
+    }
+    div:not(div#content div) {
+      border-radius: 60px;
+    }
+    #content > div {
+      border-radius: 60px 60px 0 0;
+    }
+    #con_2 {
+      background-color: gray;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    li > a {
+      text-decoration: none;
+      color: inherit;
+    }
+    .item {
+      border: 1px solid red;
+      margin: 8%;
+      display: grid;
+      grid-template-rows: 5fr 2fr 1fr;
+    }
+    .buy {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .name {
+      display: flex;
+      justify-content: center;
+    }
+  </style>
+  <body>
+    <div id="wrapper">
+      <div id="heading">
+        <div id="head_1">
+          <div id="img">
+            <img src="../../resources/image/cat.jpg" width="50%" height="50%" />
+          </div>
+        </div>
+        <ul id="head_2">
+          <li id="li_1"><a href="#">HOME</a></li>
+          <li id="li_1"><a href="#">SHOPPING ABOUT</a></li>
+          <li id="li_1"><a href="#">NEWS</a></li>
+          <li id="li_1"><a href="#">MY ACCOUNT</a></li>
+          <li id="li_1"><a href="#">CONTACTS</a></li>
+        </ul>
+      </div>
+      <div id="content">
+        <div class="aside">
+          <h3>카테고리</h3>
+          <ul id="ul_2">
+            <li id="li_2"><a href="#">컴퓨터</a></li>
+            <li id="li_2"><a href="#">의류</a></li>
+            <li id="li_2"><a href="#">음악</a></li>
+            <li id="li_2"><a href="#">영화</a></li>
+            <li id="li_2"><a href="#">스포츠/레저</a></li>
+            <li id="li_2"><a href="#">가구/인테리어</a></li>
+            <li id="li_2"><a href="#">식품</a></li>
+          </ul>
+        </div>
+        <div id="con_2">
+          <div class="item">
+            <div class="buy">
+              <img
+                src="../../resources/image/w_sword.png"
+                width="50%"
+                height="50%"
+              />
+            </div>
+            <div class="name"><span>환목검</span></div>
+            <button>쇼핑카트에 담기</button>
+          </div>
+          <div class="item">
+            <div class="buy">
+              <img
+                src="../../resources/image/w_sword.png"
+                width="50%"
+                height="50%"
+              />
+            </div>
+            <div class="name"><span>냉동참치</span></div>
+            <button>쇼핑카트에 담기</button>
+          </div>
+          <div class="item">
+            <div class="buy">
+              <img
+                src="../../resources/image/w_sword.png"
+                width="50%"
+                height="50%"
+              />
+            </div>
+            <div class="name"><span>후라이팬</span></div>
+            <button>쇼핑카트에 담기</button>
+          </div>
+        </div>
+        <div class="aside"></div>
+      </div>
+      <div id="footer"><span>2023.08.23 DW아카데미 042-123-4567</span></div>
+    </div>
+  </body>
+</html>
