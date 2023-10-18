@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>html 평가</title>
+  </head>
+  <style>
+    fieldset {
+      width: 250px;
+    }
+    legend {
+      color: white;
+      background-color: black;
+    }
+  </style>
+  <body>
+    <form action="#">
+      <p>
+        고객명 :
+        <input type="text" name="name" placeholder="홍길동" />
+      </p>
+      <p>
+        전화번호 :
+        <input
+          type="tel"
+          name="tel"
+          placeholder="010-1234-1234"
+          pattern="[0-9]{3}-[0-9]{3,4}-[0-9]{4}"
+        />
+      </p>
+      <p>
+        Email :
+        <input type="email" name="email" placeholder="OOOOO@OOO.com" />
+      </p>
+      <fieldset>
+        <legend>피자 사이즈</legend>
+        <input type="radio" name="size" id="small" />
+        <label for="small">Small</label><br />
+        <input type="radio" name="size" id="medium" />
+        <label for="medium">Medium</label><br />
+        <input type="radio" name="size" id="large" />
+        <label for="large">Large</label>
+      </fieldset>
+      <fieldset>
+        <legend>토핑 선택</legend>
+        <input type="checkbox" name="topping" id="bacon" />
+        <label for="bacon">베이컨</label><br />
+        <input type="checkbox" name="topping" id="cheese" />
+        <label for="cheese">치즈</label><br />
+        <input type="checkbox" name="topping" id="onion" />
+        <label for="onion">양파</label><br />
+        <input type="checkbox" name="topping" id="mush" />
+        <label for="mush">버섯</label>
+      </fieldset>
+      <p>희망배송시간 : <input type="time" name="clock" /></p>
+      <p>
+        배송시 요청사항 : <br />
+        <textarea
+          cols="50"
+          rows="30"
+          maxlength="40"
+          style="width: 250px; height: 50px"
+        >
+        </textarea>
+      </p>
+      <p>
+        <input type="submit" value="주문하기" />&nbsp;<input type="reset"
+        value="다시 선택하기"
+      </p>
+    </form>
+  </body>
+</html>

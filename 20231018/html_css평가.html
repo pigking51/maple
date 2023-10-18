@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>html_CSS 평가</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    html,
+    body,
+    #wrapper {
+      width: 100%;
+      height: 100%;
+      margin: 0%;
+    }
+    #wrapper {
+      display: grid;
+      grid-template-rows: 1fr 8fr 0.5fr;
+      gap: 2%;
+    }
+    #header {
+      background-color: #fed65c;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #nav {
+      display: grid;
+      grid-template-columns: 2fr 8fr;
+      gap: 2%;
+    }
+    #nav_1 {
+      background-color: lightgray;
+    }
+    #nav_2 {
+      background-color: lightcyan;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 2%;
+    }
+    .item {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      gap: 2%;
+    }
+    #img {
+      border: 1px solid red;
+      padding: 3%;
+    }
+    #footer {
+      background-color: #c3c3e9;
+    }
+    ul {
+      list-style-type: none;
+      padding: 8% 5% 0% 5%;
+    }
+    li {
+      color: white;
+      font-weight: bold;
+      background-color: #e6b3b2;
+      border-bottom: 1px solid #d5a2a1;
+      padding: 8%;
+    }
+    li:nth-child(1) {
+      border-top: 1px solid #d5a2a1;
+    }
+    div:not(div#nav div) {
+      border-radius: 60px;
+    }
+    #nav > div {
+      border-radius: 60px 60px 0px 0px;
+    }
+    .na {
+      padding: 5% 5%;
+      margin: 0%;
+    }
+    span {
+      font-weight: bold;
+      color: #4c197d;
+    }
+  </style>
+  <body>
+    <div id="wrapper">
+      <div id="header"><h2>관리자 페이지</h2></div>
+      <div id="nav">
+        <div id="nav_1" class="na">
+          <ul>
+            <li>홈</li>
+            <li>상품</li>
+            <li>게시판</li>
+            <li>리뷰</li>
+            <li>고객관리</li>
+            <li>설정</li>
+          </ul>
+        </div>
+        <div id="nav_2" class="na">
+          <div class="item">
+            <div id="img">
+              <a href="#" target="_blank"
+                ><img
+                  src="../resources/image/차트.png"
+                  width="100%"
+                  height="250px"
+              /></a>
+              <span>홈</span>
+            </div>
+            <div id="img">
+              <a href="#" target="_blank">
+                <img
+                  src="../resources/image/리뷰.png"
+                  width="100%"
+                  height="250px"
+              /></a>
+              <span>리뷰 모음 바로가기</span>
+            </div>
+          </div>
+          <div class="item">
+            <div id="img">
+              <a href="#" target="_blank"
+                ><img
+                  src="../resources/image/상품목록.png"
+                  width="100%"
+                  height="250px"
+              /></a>
+              <span>상품목록 바로가기</span>
+            </div>
+            <div id="img">
+              <a href="#" target="_blank"
+                ><img
+                  src="../resources/image/고객관리.png"
+                  width="100%"
+                  height="250px"
+              /></a>
+              <span>고객관리 바로가기</span>
+            </div>
+          </div>
+          <div class="item">
+            <div id="img">
+              <a href="#" target="_blank"
+                ><img
+                  src="../resources/image/게시판.png"
+                  width="100%"
+                  height="250px"
+              /></a>
+              <span>게시판 바로가기</span>
+            </div>
+            <div id="img">
+              <a href="#" target="_blank"
+                ><img
+                  src="../resources/image/설정.png"
+                  width="100%"
+                  height="250px"
+              /></a>
+              <span>설정 바로가기</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

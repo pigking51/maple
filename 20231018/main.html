@@ -9,14 +9,12 @@
     * {
       box-sizing: border-box;
     }
-    body {
-      margin: 0%;
-    }
     html,
     body,
     #wrapper {
       width: 100%;
       height: 100%;
+      margin: 0%;
     }
     #wrapper {
       display: grid;
@@ -24,64 +22,33 @@
       gap: 1%;
     }
     #header {
-      background-color: beige;
       display: grid;
       grid-template-rows: 2fr 1fr;
-      gap: 3%;
     }
     #head_1 {
-      background-color: #ffd65c;
+      background-color: #d8d7d5;
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 0%;
     }
     #head_2 {
-      background-color: #d1b3e0;
-      margin: 0%;
-      list-style-type: none;
+      background-color: brown;
       border-radius: 60px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .aside {
+      background-color: yellowgreen;
+      padding: 15% 8%;
     }
     #content {
-      /* background-color: green; */
       display: grid;
       grid-template-columns: 1.4fr 5fr 1.4fr;
       gap: 1%;
     }
     #footer {
-      background-color: #ccccf2;
-    }
-    #head_1 > div {
-      height: 40%;
-    }
-    #head_2 {
-      list-style-type: none;
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-    }
-    #img {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    #con_2{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-    .item{
-        border: 1px solid gray;
-        display: grid;
-        grid-template-rows: 5fr 3fr 1fr;
-    }
-    }
-    /* #li_1 {
-      display: flex;
-      align-content: space-evenly;
-    } */
-    .aside {
-      background-color: palegreen;
-      padding: 15% 8%;
+      background-color: black;
     }
     div:not(div#content div) {
       border-radius: 60px;
@@ -89,25 +56,59 @@
     #content > div {
       border-radius: 60px 60px 0 0;
     }
-    #ul_2 {
-      list-style-type: none;
+    #con_2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 1%;
+      padding: 4% 0% 0% 0%;
+    }
+    #li_2 {
+      background-color: saddlebrown;
       padding: 8% 8%;
+      border-bottom: 1px dotted red;
+    }
+    #li_2:nth-child(1) {
+      border-top: 1px dotted red;
+    }
+    #ul_2 {
+      padding: 8%;
+    }
+    .item {
+      border: 1px solid silver;
+      display: grid;
+      grid-template-rows: 5fr 2fr 1fr;
+      gap: 1%;
+    }
+    .co {
+      display: flex;
+      justify-content: center;
+    }
+    .img_2 {
+      display: flex;
+      justify-content: center;
+    }
+    .item > button {
+      margin-top: 8.2%;
+      height: 50%;
+    }
+    ul {
+      list-style-type: none;
     }
     li {
       color: white;
+      font-weight: 300;
       letter-spacing: 0.3em;
     }
-    #li_2 {
-      background-color: #ddacac;
-      border-bottom: 1px solid black;
-      padding: 0%;
-    }
     li > a {
-      color: inherit;
       text-decoration: none;
+      color: inherit;
     }
-    #li_2:nth-child(1) {
-      border-top: 1px solid black;
+    .item div,
+    span {
+      border: 1px solid greenyellow;
+    }
+    h3 {
+      font-size: 1.3em;
     }
   </style>
   <body>
@@ -115,88 +116,84 @@
       <div id="header">
         <div id="head_1">
           <div id="img">
-            <img
-              src="../resources/image/cat.jpg"
-              width="inherit
-                "
-              height="50%"
-            />
-
-            <h1>Web Shopping</h1>
+            <img src="../resources/image/cat.jpg" />
           </div>
+          <h1>Web Shopping</h1>
         </div>
         <ul id="head_2">
-          <li id="li_1">HOME</li>
-          <li id="li_1">SHOPPING ABOUT</li>
-          <li id="li_1">NEWS</li>
-          <li id="li_1">MY ACCOUNT</li>
-          <li id="li_1">CONTACTS</li>
+          <li id="li_1"><a href="#" target="_blank">HOME</a></li>
+          <li id="li_1"><a href="#" target="_blank">SHOPPING ABOUT</a></li>
+          <li id="li_1"><a href="#" target="_blank">NEWS</a></li>
+          <li id="li_1"><a href="#" target="_blank">MY ACCOUNT</a></li>
+          <li id="li_1"><a href="#" target="_blank">CONTACTS</a></li>
         </ul>
       </div>
       <div id="content">
-        <div id="con_1" class="aside">
+        <div class="aside">
           <h3>카테고리</h3>
           <ul id="ul_2">
-            <li id="li_2"><a href="#" target="_blank">컴퓨터</a></li>
-            <li id="li_2"><a href="#" target="_blank">의류</a></li>
-            <li id="li_2"><a href="#" target="_blank">음악</a></li>
-            <li id="li_2"><a href="#" target="_blank">영화</a></li>
-            <li id="li_2"><a href="#" target="_blank">스포츠/레저</a></li>
-            <li id="li_2"><a href="#" target="_blank">가구/인테리어</a></li>
-            <li id="li_2"><a href="#" target="_blank">식품</a></li>
+            <li id="li_2">컴퓨터</li>
+            <li id="li_2">의류</li>
+            <li id="li_2">음악</li>
+            <li id="li_2">영화</li>
+            <li id="li_2">스포츠/레저</li>
+            <li id="li_2">가구/인테리어</li>
+            <li id="li_2">식품</li>
           </ul>
         </div>
         <div id="con_2">
           <div id="c1" class="item">
             <div class="img_2">
               <img
-                src="../resources/image/apple-606761_640.jpg"
-                width="50%"
-                height="50%"
+                src="../resources/image/coffee.jpg"
+                width="100%"
+                height="60%"
               />
             </div>
-            <span>컴퓨터</span>
+            <span class="co">커피</span>
             <button>쇼핑카트에 담기</button>
           </div>
           <div id="c2" class="item">
             <div class="img_2">
               <img
-                src="../resources/image/apple-606761_640.jpg"
-                width="50%"
-                height="50%"
+                src="../resources/image/coffee.jpg"
+                width="100%"
+                height="60%"
               />
             </div>
-            <span>컴퓨터</span>
+            <span class="co">커피</span>
             <button>쇼핑카트에 담기</button>
           </div>
           <div id="c3" class="item">
             <div class="img_2">
               <img
-                src="../resources/image/apple-606761_640.jpg"
-                width="50%"
-                height="50%"
+                src="../resources/image/coffee.jpg"
+                width="100%"
+                height="60%"
               />
             </div>
-            <span>컴퓨터</span>
+            <span class="co">커피</span>
             <button>쇼핑카트에 담기</button>
           </div>
         </div>
-        <div id="con_3" class="aside">
+        <div class="aside">
           <div>
             <h3>Shopping Cart</h3>
             <br />
             <p>현재 쇼핑카트에 물품이 없습니다.</p>
             <p><a href="#" target="_blank">쇼핑카트 보기</a></p>
             <br />
-            <h3>Log in</h3>
+            <br />
+            <h3>Log In</h3>
+            <br />
             <form action="#">
               <p>
                 아이디<br />
-                <input type="text" name="id" width="100" />
+                <input type="text" name="id" width="100%" />
               </p>
               <p>
                 패스워드<br />
-                <input type="password" name="pw" width="100" />
+                <input type="password" name="pw" width="100%" />
               </p>
               <p>
                 <button>로그인</button>&nbsp;<input
