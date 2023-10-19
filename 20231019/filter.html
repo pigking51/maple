@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>filter</title>
+  </head>
+  <style>
+    img {
+      transition: all 7s linear;
+    }
+    img:hover {
+      /*  blur : 이미지에 흐림 효과를 적용 */
+      /* filter: blur(50px); */
+
+      /*  brightness : 이미지의 밝기를 조절한다.
+          → %로 조절하는데 기본값은 100%
+          (200%로 하면 2배로 밝아짐)
+      */
+      /* filter: brightness(0%); */
+      /* filter: brightness(200%); */
+
+      /*  contrast : 이미지의 대비를 조정한다.
+          → bightness와 마찬가지로 %로 조정
+          이것도 기본값은 100%, 
+          0%하면 검정으로 변하는 brightness와 달리 이건 회색으로 변함 */
+      /* filter: contrast(150%); */
+
+      /*  drop-shadow : 이미지에 그림자 효과를 적용한다.
+          형태 : drop-shadow(h-shadow v-shadow blur spread color);
+          h-shadow - 필수, 가로 그림자의 픽셀값(음수값은 그림자의 위치가 왼쪽이라는거)
+          v-shadow - 필수, 세로 그림자의 픽셀값(음수값은 그림자의 위치가 위쪽이라는거)
+          blur - 선택, 흐림정도 픽셀값(음수값 없음 → 0이 최저임)
+          spread - 선택, 번짐정도 픽셀값(음수값 허용)
+          → 크롬과 사파리는 인식을 못하기에 바로 색상을 넣으면 됨
+          color - 선택, 그림자 색상
+          -webkit-filter: drop-shadow(8px 8px 10px yellowgreen);
+          →크롬, 사파리
+          -o-filter: drop-shadow(8px 8px 10px yellowgreen);
+          →오페라
+          -ms-filter: drop-shadow(8px 8px 10px yellowgreen);
+          →마이크로소프트, ???
+          -f-filter: drop-shadow(8px 8px 10px 10px yellowgreen);
+          →파이어폭스
+        ▷ 위에 것들은 거의 쓸일 없는데 글로벌로 운영하는 경우에 쓴다고함  */
+      /* filter: drop-shadow(8px 8px 10px yellowgreen); */
+
+      /*  grayscale : 이미지를 회색조로 변환한다. 
+          → 음수값 비허용, 0%가 기본값임
+      */
+      /* filter: grayscale(80%); */
+
+      /*  hue-retate : 이미지의 색조원(색조회전)값을 조정
+          → 색조원 : 색상환 같은거, 색상을 각도로 표현하는거라고함
+                     0일때 빨강, 120일때 초록, 240일때 파랑임
+      */
+      /* filter: hue-rotate(240deg); */
+
+      /* sepia : 이미지를 세피아로 변환한다. */
+      filter: sepia(100%);
+
+      /* https://georapbox.github.io/css-filters-playground/
+        → 필터효과 체험해보는 사이트
+      */
+    }
+  </style>
+  <body>
+    <!-- 
+        filter는 이미지에 효과 넣는것을 말함
+        (뽀샵같은거)
+        19일 복습때 해볼거 : ::after 헷갈리니 한번 찾아봐서 해보기
+     -->
+    <h1>filter</h1>
+    <img src="../resources/image/ribbonpig.gif" / width="300px"
+    height="300px"><br /><br /><br /><br />
+    <img src="../resources/image/shopping-bags-4243556_640.jpg" / >
+  </body>
+</html>
