@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>transform 복습</title>
+  </head>
+  <style>
+    div {
+      width: 400px;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url(../../resources/image/unknown.jpg);
+      background-size: cover;
+    }
+    .rotateTest:hover {
+      /* transform: rotate(45deg); */
+      /* transform: rotate(180deg); */
+      /* transform: rotateX(180deg); */
+      /* transform: rotateY(180deg); */
+      transform: rotateZ(180deg);
+      background-image: url(../../resources/image/dustbox.jpg);
+      background-size: cover;
+    }
+    .scaleTest:hover {
+      /* transform: scale(0.3, 0.3); */
+      /* transform: scale(0.5); */
+      /* transform: scaleY(2); */
+      /* transform: scaleX(2); */
+      transform: scaleZ(2);
+      background-image: url(../../resources/image/exetump.gif);
+      background-size: cover;
+    }
+    .skewTest:hover {
+      /* transform: skew(45deg, 45deg); */
+      /* transform: skewX(45deg); */
+      transform: skewY(45deg);
+      background-image: url(../../resources/image/cat.jpg);
+      background-size: cover;
+    }
+    .translateTest:hover {
+      /* transform: translate(300px, 300px); */
+      /* transform: translateX(300px); */
+      transform: translateY(700px);
+      background-image: url(../../resources/image/wraith.jpg);
+      background-size: cover;
+    }
+    h3 {
+      font-size: 3em;
+      font-weight: bold;
+    }
+  </style>
+  <body>
+    <h1>Transform 복습</h1>
+    <h3>rotate</h3>
+    <div class="rotateTest">rotate</div>
+    <h3>scale</h3>
+    <div class="scaleTest">scale</div>
+    <h3>skew</h3>
+    <div class="skewTest">skew</div>
+    <h3>translate</h3>
+    <div class="translateTest">transaction</div>
+    <h3>matrix</h3>
+    <div class="matrixTest">matrix</div>
+  </body>
+</html>
