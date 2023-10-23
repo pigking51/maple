@@ -1,0 +1,19 @@
+<html lang="ko">
+	<head>
+		<title>삼성전자</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="initial-scale=1, width=device-width" />
+		<meta name="author" content="ddd" />
+		<meta name="keywords " content="삼성, 전자, 가전, 반도체 " />
+		<meta name="description" content="대한민국 대표 가전 개발 및 생산업체 삼성전자의 공식 웹사이트" />
+		<meta name="og:image" property="윗주소+이미지" />
+		<meta name="og:title" property="윗제목 그대로 " />
+		<meta name="og:url" property="윗주소 그대로 " />
+		<meta name="og:description" property="윗 설명 그대로 " />
+		<link href="../css/xxx.css" rel="stylesheet"/>
+		<link href="../favicon.ico" rel="icon shortcut"/>
+	</head>
+	<body>
+
+	</body>
+</html>

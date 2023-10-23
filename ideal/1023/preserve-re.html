@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+      padding: 0%;
+      margin: 0%;
+    }
+    #wrap {
+      width: 500px;
+      height: 500px;
+      margin: 100px auto;
+      position: relative;
+    }
+    #wrap .card {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: all 8s linear;
+      transform-style: preserve-3d;
+    }
+    #wrap .card > div {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 30px;
+      position: absolute;
+      top: 0%;
+      left: 0%;
+      border: 3px solid black;
+    }
+    #wrap .card > div:nth-child(1) {
+      transform: translateZ(250px);
+    }
+    #wrap .card > div:nth-child(2) {
+      transform: translateX(-250px) rotateY(-90deg);
+    }
+    #wrap .card > div:nth-child(3) {
+      transform: translateX(250px) rotateY(-90deg);
+    }
+    #wrap .card > div:nth-child(4) {
+      transform: translateZ(-250px);
+    }
+    #wrap .card > div:nth-child(5) {
+      transform: translateY(-250px) rotateX(90deg);
+    }
+    #wrap .card > div:nth-child(6) {
+      transform: translateY(250px) rotateX(-90deg);
+    }
+    .card:hover {
+      transform: rotateY(360deg) rotateX(-360deg) rotateZ(360deg);
+    }
+  </style>
+  <body>
+    <div id="wrap">
+      <div class="card">
+        <div>front</div>
+        <div>left</div>
+        <div>right</div>
+        <div>back</div>
+        <div>top</div>
+        <div>bottom</div>
+      </div>
+    </div>
+  </body>
+</html>
