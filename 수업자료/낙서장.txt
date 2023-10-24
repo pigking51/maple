@@ -289,6 +289,8 @@ justify-content: center;
 <script>
 	funtion rand(min, max){
 		var result = Math. floor(Math. random()*(max-min+1)
+		var bg = document.getElementById('rand');
+console.log(bg);
 
 setInterval(party, 50) ;
 </script>
@@ -303,3 +305,52 @@ setInterval(party, 50) ;
 * ppt 자바스크립트 부분에 변수값으로 var 써져있는데
   요즘에는 let. const만 쓴다고 함
 * 변수 이름에 특수문자(_,$제외), 글의 시작에 숫자 사용불가
+--------------------------------------------------------------------------
+231024
+
+사이트상에 가장 위에있는 네비게이션바(GNB)
+→Global Navigation Bar
+GNB 하위로 나오는 네비게이션바(LNB)
+→Local Navigation Bar
+
+* 외부 css를 여러개 사용할때 순서에 따라 영향받는게 다를수 있다
+→ 보통 공통 css를 제일 먼저 적용하고, 예외적인 css를 나중에 배치한다고 함
+
+* 블록 요소의 특징
+1. 가로길이를 이야기하지 않으면 기본값 100%
+2. 한 가로줄을 혼자 차지한다.
+3. 원래 목적은 무언가를 담는 용도
+3-1. 블록 안에 블록 가능
+3-1. 블록 안에 인라인 가능
+
+* 인라인 요소의 특징
+1. 사이즈 자체를 지정할 수 없다.
+2. 한 가로줄 안에 같은 인라인끼리 나란히 옆에 올 수 있다.
+3. 인라인은 글씨다.
+4. 상하 마진, 패딩을 줄 수 없다.
+5-1. 인라인 안에 인라인 가능
+5-2. 인라인 안에 블록 불가능
+
+* a태그는 상위에서 색상설정한 것을 상속받지 않는다
+
+* font-weight에서 bold값은 600px, normal값은 400px
+
+* 애니메이션 속도는 0.4정도가 적당하다고 함
+
+* rgb + a 가 가능한데 a값은 투명도임
+
+* ::before/ ::after 는 모든 태그에 다 붙일수 있는게 아니라
+닫는 태그가 있는놈만 사용가능함
+
+* position: absolute
+  left: 50%;
+  right: 50%;
+  transform:
+   	translate(-50%,-50%);
+
+* 박스 안의 박스에서 정중앙에 위치시키는법
+  postion: absolute;
+  left: 50%;
+  top: 50%;
+  transform:
+ 	translate(-50%,-50%)

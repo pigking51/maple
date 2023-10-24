@@ -1,0 +1,97 @@
+/* CSS reset */
+/* *{
+    margin:0%;
+    padding:0%;
+    box-sizing: border-box;
+} */
+
+#header_inner {
+  height: 70px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.main {
+  float: left;
+}
+
+.main > a {
+  display: block;
+  padding: 10px 20px;
+  color: white;
+  font-weight: bold;
+  position: relative;
+}
+
+.main > a::before {
+  content: "";
+  display: block;
+  background-color: white;
+  height: 4px;
+  width: 0px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0px;
+  transition: all 0.4s linear;
+}
+.main:hover > a::before {
+  width: 100px;
+}
+
+/* .main > a::after {
+  content: "ㅋㅋㅋ";
+  color: green;
+} */
+a {
+  text-decoration: none;
+}
+
+.sub {
+  width: 140px;
+  background-color: #06c;
+  padding: 10px 5px;
+  box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  position: absolute;
+  display: none;
+}
+
+.sub a {
+  color: white;
+  display: block;
+  padding: 5px 0;
+}
+
+.main:last-of-type .sub {
+  margin-left: -40px;
+}
+
+.main:hover .sub {
+  display: block;
+}
+
+.sub a:hover {
+  background-color: #5af;
+}
+
+#slider {
+  /* display: inline; */
+  width: 800px;
+  height: 600px;
+  overflow: hidden;
+}
+
+#bus {
+  width: 3200px;
+  height: 600px;
+}
+
+.slide {
+  width: 800px;
+  height: 600px;
+  float: left;
+}

@@ -22,16 +22,17 @@
       integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous"
     />
+    <link href="../resources/css/common.css" rel="stylesheet" />
   </head>
   <body>
     <header class="bg-primary">
-      <div class="container py-2">
-        <h1>
+      <div id="header_inner" class="container py-2">
+        <h1 class="float-start">
           <a class="text-light text-decoration-none" href="index.html">
             삼성전자
           </a>
         </h1>
-        <nav>
+        <nav id="lnb" class="float-end">
           <ul>
             <li class="main">
               <a href="#">회사소개</a>
@@ -50,18 +51,64 @@
               </ul>
             </li>
             <li class="main">
-              <a href="#">회사소개</a>
+              <a href="#">고객센터</a>
               <ul class="sub">
-                <li><a href="#"></a></li>
-                <li></li>
-                <li></li>
+                <li><a href="#">QNA 게시판</a></li>
+                <li><a href="#">문의</a></li>
+                <li><a href="#">건의사항</a></li>
+              </ul>
+            </li>
+            <li class="main">
+              <a href="#">이벤트</a>
+              <ul class="sub">
+                <li><a href="#">진행중인 이벤트</a></li>
+                <li><a href="#">지난 이벤트</a></li>
               </ul>
             </li>
           </ul>
         </nav>
+      </header>
+        <section>
+          <div id="slider">
+            <div id="bus">
+              <img
+                class="slide"
+                src="../resources/image/4dollars.gif"
+                alt="slider"
+              />
+              <img
+                class="slide"
+                src="../resources/image/4dollars.jpg"
+                alt="slider"
+              />
+              <img
+                class="slide"
+                src="../resources/image/4dollars2.jpg"
+                alt="slider"
+              />
+              <img
+                class="slide"
+                src="../resources/image/coffee.jpg"
+                alt="slider"
+              />
+            </div>
+          </div>
+        </section>
       </div>
-    </header>
-    <div class="container bg-dark">
+    <script>
+      var current = 0;
+      function daum(){
+        current = current + 1;
+        if(current >= 4){
+          currnet = 0;
+        }
+        $("#bus").stop.animate({
+          marginleft: -1*800*currnet + "px"
+        },400);
+      }
+      setInterval(daum, 2000);
+    </script>
+    <!-- <div class="container bg-dark">
       <div class="row">
         <div class="col-md-8 bg-primary text-light">test1</div>
         <div class="col-md-3 bg-secondary text-light">test2</div>
@@ -70,6 +117,6 @@
       <span class="badge bg-primary">MTML</span>
       <span class="badge bg-warning">https</span>
       <span class="badge bg-success">???</span>
-    </div>
+    </div> -->
   </body>
 </html>
