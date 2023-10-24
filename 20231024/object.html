@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>object</title>
+  </head>
+  <body></body>
+  <script>
+    let name = "홍길동";
+    let age = 20;
+    let gender = "Male";
+    let address = "대전광역시 중구 선화동";
+
+    let name2 = "임꺽정";
+    let age2 = 21;
+    let gender2 = "Female";
+    let address2 = "대전광역시 중구 선화동";
+
+    // 객체 선언 방법
+    let person1 = {};
+    let person2 = new Object();
+
+    // 객체 생성 후 프로퍼티 추가 방법1'
+    person1.name = "홍길동";
+    person1.age = 20;
+    person1.gender = "Male";
+    person1.address = "대전광역시 중구 선화동";
+    console.log(person1);
+    console.log(person1.age);
+    // console.log(
+    //   `person1 - name : ${name}, age : ${age}, gender : ${gender}, address : ${address}`
+    // );
+
+    person2["name"] = "임꺽정";
+    person2["age"] = 21;
+    person2["gender"] = "Female";
+    person2["address"] = "대전광역시 중구 선화동";
+    console.log(person2);
+    // console.log(
+    //   `person2 - name : ${name2}, age : ${age2}, gender : ${gender2}, address : ${address2}`
+    // );
+
+    // 객체 선언과 동시에 프로퍼티를 추가하는 방법
+    let person3 = {
+      name: "김응삼",
+      age: 25,
+      gender: "none",
+      address: "한국 어딘가",
+      child: person2,
+    };
+    console.log(person3);
+
+    // 객체의 속성(프로퍼티)값을 가져오는 방법1
+    console.log(person3.age);
+    console.log(person3.child.age);
+
+    // 객체의 속성(프로퍼티)값을 가져오는 방법2
+    console.log(person3["name"]);
+    console.log(
+      `"저의 이름은 ${person3.name}이고 나이는 ${person2.age}이며, 성별은 ${person1.gender}입니다. 그리고 주소는 ${person2.address}입니다."`
+    );
+    document.write(
+      `"저의 이름은 ${person3.name}이고 나이는 ${person2.age}이며, 성별은 ${person1.gender}입니다. 그리고 주소는 ${person2.address}입니다."`
+    );
+  </script>
+</html>
