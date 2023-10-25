@@ -23,6 +23,7 @@
       crossorigin="anonymous"
     />
     <link href="../resources/css/common.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   </head>
   <body>
     <header class="bg-primary">
@@ -67,46 +68,45 @@
             </li>
           </ul>
         </nav>
-      </header>
-        <section>
-          <div id="slider">
-            <div id="bus">
-              <img
-                class="slide"
-                src="../resources/image/4dollars.gif"
-                alt="slider"
-              />
-              <img
-                class="slide"
-                src="../resources/image/4dollars.jpg"
-                alt="slider"
-              />
-              <img
-                class="slide"
-                src="../resources/image/4dollars2.jpg"
-                alt="slider"
-              />
-              <img
-                class="slide"
-                src="../resources/image/coffee.jpg"
-                alt="slider"
-              />
-            </div>
-          </div>
-        </section>
       </div>
+    </header>
+    <section>
+      <div id="slider">
+        <div id="bus">
+          <img
+            class="slide"
+            src="../resources/image/4dollars.gif"
+            alt="slider"
+          />
+          <img
+            class="slide"
+            src="../resources/image/4dollars.jpg"
+            alt="slider"
+          />
+          <img
+            class="slide"
+            src="../resources/image/4dollars2.jpg"
+            alt="slider"
+          />
+          <img class="slide" src="../resources/image/coffee.jpg" alt="slider" />
+        </div>
+      </div>
+    </section>
     <script>
       var current = 0;
-      function daum(){
+      function daum() {
         current = current + 1;
-        if(current >= 4){
+        if (current >= 4) {
           currnet = 0;
         }
-        $("#bus").stop.animate({
-          marginleft: -1*800*currnet + "px"
-        },400);
+        $("#bus").stop.animate(
+          {
+            marginleft: -1 * 800 * currnet + "px",
+          },
+          400
+        );
       }
-      setInterval(daum, 2000);
+      var auto = setInterval(daum, 2000);
     </script>
     <!-- <div class="container bg-dark">
       <div class="row">

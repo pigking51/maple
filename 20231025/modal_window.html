@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal Window</title>
+    <meta name="author" content="Choi Geon" />
+    <meta name="keywords" content="모달창, 모달, 메세지, 새창, 팝업" />
+    <meta
+      name="description"
+      content="modal  window를 통해 팝업 효과를 만들 수 있다."
+    />
+    <link href="css/modal.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+    <button id="modal_open" type="button">모달창 열기</button>
+    <p>
+      asdkjlklasdklvasdklvklcmvkmfkl;dald;asld;als;dlas;kdl;asd;lsakdl;adl;akcl;
+      asdkjlklasdklvasdklvklcmvkmfkl;dald;asld;als;dlas;kdl;asd;lsakdl;adl;akcl;
+      asdkjlklasdklvasdklvklcmvkmfkl;dald;asld;als;dlas;kdl;asd;lsakdl;adl;akcl;
+      asdkjlklasdklvasdklvklcmvkmfkl;dald;asld;als;dlas;kdl;asd;lsakdl;adl;akcl;
+      asdkjlklasdklvasdklvklcmvkmfkl;dald;asld;als;dlas;kdl;asd;lsakdl;adl;akcl;
+    </p>
+    <ul>
+      <li>치코리타</li>
+      <li>치코리타</li>
+      <li>치코리타</li>
+      <li>치코리타</li>
+      <li>치코리타</li>
+      <li>치코리타</li>
+    </ul>
+
+    <div id="modal_back">
+        <di id="modal_win">
+            <div id="modal_header">
+                <h4>경고</h4>
+                <button id="modal_close" type="button">&times;</button>
+            </div>
+            <div id="modal_body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum dolor sit. Volutpat odio facilisis mauris sit amet massa. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Mi eget mauris pharetra et. Non tellus orci ac auctor augue. Elit at imperdiet dui accumsan sit. Ornare arcu dui vivamus arcu felis. Egestas integer eget aliquet nibh praesent. In hac habitasse platea dictumst quisque sagittis purus. Pulvinar elementum integer enim neque volutpat ac.
+
+Senectus et netus et malesuada. Nunc pulvinar sapien et ligula ullamcorper malesuada proin. Neque convallis a cras semper auctor. Libero id faucibus nisl tincidunt eget. Leo a diam sollicitudin tempor id. A lacus vestibulum sed arcu non odio euismod lacinia. In tellus integer feugiat scelerisque. Feugiat in fermentum posuere urna nec tincidunt praesent. Porttitor rhoncus dolor purus non enim praesent elementum facilisis. Nisi scelerisque eu ultrices vitae auctor eu augue ut lectus. Ipsum faucibus vitae aliquet nec ullamcorper sit amet risus. Et malesuada fames ac turpis egestas sed. Sit amet nisl suscipit adipiscing bibendum est ultricies. Arcu ac tortor dignissim convallis aenean et tortor at. Pretium viverra suspendisse potenti nullam ac tortor vitae purus. Eros donec ac odio tempor orci dapibus ultrices. Elementum nibh tellus molestie nunc. Et magnis dis parturient montes nascetur. Est placerat in egestas erat imperdiet. Consequat interdum varius sit amet mattis vulputate enim.
+
+Sit amet nulla facilisi morbi tempus. Nulla facilisi cras fermentum odio eu. Etiam erat velit scelerisque in dictum non consectetur a erat. Enim nulla aliquet porttitor lacus luctus accumsan tortor posuere. Ut sem nulla pharetra diam. Fames ac turpis egestas maecenas. Bibendum neque egestas congue quisque egestas diam. Laoreet id donec ultrices tincidunt arcu non sodales neque. Eget felis eget nunc lobortis mattis aliquam faucibus purus. Faucibus interdum posuere lorem ipsum dolor sit.
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById("modal_open").onclick = function(){
+        document.getElementById("modal_back").style.display = "block";
+        };
+        document.getElementById("modal_close").onclick = function(){
+            document.getElementById("modal_back").style.display = "none";
+        };
+
+        // $("#modal_open).click(function(){
+        //     $("modal_back").show();
+        // });
+        // $("#modal_open).click(function(){
+        //     $("modal_back").show();
+        // });
+
+
+    </script>
+  </body>
+</html>
