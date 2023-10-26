@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>가위바위보 복습</title>
+  </head>
+  <body></body>
+  <script>
+    const person1 = prompt("안내면 진거", "가위바위보!");
+    const person2 = prompt("안내면 진거다", "가위바위보!");
+
+    let result = "";
+    switch (person1) {
+      case "가위":
+        switch (person2) {
+          case "가위":
+            result = "비겼다! 다시한번";
+            break;
+          case "바위":
+            result = "두번째 사람이 이김";
+            break;
+          case "보":
+            result = "첫번째 사람이 이김";
+            break;
+        }
+        break;
+      case "바위":
+        switch (person2) {
+          case "가위":
+            result = "첫번째 사람이 이김";
+            break;
+          case "바위":
+            result = "비겼다! 다시한번";
+            break;
+          case "보":
+            result = "두번째 사람이 이김";
+            break;
+        }
+        break;
+      case "보":
+        switch (person2) {
+          case "가위":
+            result = "두번째 사람이 이김";
+            break;
+          case "바위":
+            result = "첫번째 사람이 이김";
+            break;
+          case "보":
+            result = "비겼다! 다시한번";
+            break;
+        }
+        break;
+      default:
+        alert("장난치지마라");
+        location.reload();
+        break;
+    }
+
+    document.write(
+      `<h1>첫번째 사람 : ${person1} <br> 두번째 사람 : ${person2}<br><br> 결과 : ${result} </h1>`
+    );
+  </script>
+</html>

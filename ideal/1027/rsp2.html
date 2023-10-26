@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>가위바위보 2번째 복습</title>
+  </head>
+  <body></body>
+  <script>
+    const person1 = prompt("가위바위보", "짱켄뽀");
+    const person2 = prompt("2가위바위보", "짱켄뽀");
+
+    let result = "";
+    if (person1 == "가위") {
+      if (person2 == "가위") {
+        result = "비겼다! 다시한번";
+      } else if (person2 == "바위") {
+        result = "두번째 사람 승";
+      } else if (person2 == "보") {
+        result = "첫번째 사람 승";
+      } else {
+        alert("장난치치마라");
+      }
+    }
+    if (person1 == "바위") {
+      if (person2 == "가위") {
+        result = "첫번째 사람 승";
+      } else if (person2 == "바위") {
+        result = "비겼다! 다시한번";
+      } else if (person2 == "보") {
+        result = "두번째 사람 승";
+      } else {
+        alert("장난치치마라");
+      }
+    }
+    if (person1 == "보") {
+      if (person2 == "가위") {
+        result = "두번째 사람 승";
+      } else if (person2 == "바위") {
+        result = "첫번째 사람 승";
+      } else if (person2 == "보") {
+        result = "비겼다! 다시한번";
+      } else {
+        alert("장난치치마라");
+      }
+    }
+    document.write(`<h1> 첫번째 사람 : ${person1} <br>
+    두번째 사람 : ${person2} <br><br>
+    결과 : ${result}`);
+  </script>
+</html>
