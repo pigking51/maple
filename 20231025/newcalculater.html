@@ -20,27 +20,52 @@
 
     // 5. 화면상에 계산된 두개의 숫자와 연산자, 그리고 결과값이
     //    출력되게 한다.
-    input1 = prompt("첫번째 숫자를 입력", "숫자입력하세요");
 
-    input2 = prompt("연산자를 입력", "+,-,*,/,% 만 가능");
-    input3 = prompt("두번째 숫자를 입력", "숫자입력하세요");
+    // input1 = prompt("첫번째 숫자를 입력", "숫자입력하세요");
+    // input2 = prompt("연산자를 입력", "+,-,*,/,% 만 가능");
+    // input3 = prompt("두번째 숫자를 입력", "숫자입력하세요");
 
-    let x = input1;
-    let y = input2;
-    let z = input3;
+    // let x = input1;
+    // let y = input2;
+    // let z = input3;
 
-    if (y == "+") {
-      document.write(`${parseInt(x) + parseInt(z)}`);
-    } else if (y == "-") {
-      document.write(`${parseInt(x) - parseInt(z)}`);
-    } else if (y == "*") {
-      document.write(`${parseInt(x) * parseInt(z)}`);
-    } else if (y == "/") {
-      document.write(`${parseInt(x) / parseInt(z)}`);
-    } else if (y == "%") {
-      document.write(`${parseInt(x) % parseInt(z)}`);
+    // if (y == "+") {
+    //   document.write(`<h1>${x} + ${z} = ${parseInt(x) + parseInt(z)}</h1>`);
+    // } else if (y == "-") {
+    //   document.write(`<h1>${x} - ${z} = ${parseInt(x) - parseInt(z)}</h1>`);
+    // } else if (y == "*") {
+    //   document.write(`<h1>${x} * ${z} = ${parseInt(x) * parseInt(z)}</h1>`);
+    // } else if (y == "/") {
+    //   document.write(`<h1>${x} / ${z} = ${parseInt(x) / parseInt(z)}</h1>`);
+    // } else if (y == "%") {
+    //   document.write(`<h1>${x} % ${z} = ${parseInt(x) % parseInt(z)}</h1>`);
+    // } else {
+    //   alert("잘못 입력했으니 다시 입력하세요.");
+    // }
+
+    // ======== ↓ 답안지=======================
+    const num1 = +prompt("숫자를 입력하세요.");
+
+    const operator = prompt("연산자를 입력하세요.", "+,-,*,/,%");
+
+    const num2 = +prompt("숫자를 입력하세요.");
+
+    let result = 0;
+    if (operator == "+") {
+      // result = parseInt(num1) + parseInt(num2);
+      result = num1 + num2;
+    } else if (operator == "-") {
+      result = num1 - num2;
+    } else if (operator == "*") {
+      result = num1 * num2;
+    } else if (operator == "/") {
+      result = num1 / num2;
+    } else if (operator == "%") {
+      result = num1 % num2;
     } else {
-      document.write("다시 입력하세요.");
+      alert("산자를 잘못 입력하셨습니다.");
+      location.reload();
     }
+    document.write(`<h1>${num1} ${operator} ${num2} = ${result}</h1>`);
   </script>
 </html>

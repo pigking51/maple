@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    const rsp = prompt("가위바위보", "1p셋중 하나 적으세요");
+    const rsp2 = prompt("가위바위보", "2p셋중 하나 적으세요");
+
+    let result = "";
+    switch (rsp) {
+      case "가위":
+        switch (rsp2) {
+          case "바위":
+            result = "두번째 사람 승리";
+            break;
+          case "가위":
+            result = "비겼다! 다시하기";
+            break;
+          case "보":
+            result = "첫번째 사람 승리";
+            break;
+          default:
+            alert("가위, 바위, 보 외 금지");
+            break;
+        }
+        break;
+      case "바위":
+        switch (rsp2) {
+          case "바위":
+            result = "비겼다! 다시하기";
+            break;
+          case "가위":
+            result = "첫번째 사람 승리";
+            break;
+          case "보":
+            result = "두번째 사람 승리";
+            break;
+          default:
+            alert("가위, 바위, 보 외 금지");
+            break;
+        }
+        break;
+      case "보":
+        switch (rsp2) {
+          case "바위":
+            result = "첫번째 사람 승리";
+            break;
+          case "가위":
+            result = "두번째 사람 승리";
+            break;
+          case "보":
+            result = "비겼다! 다시하기";
+            break;
+          default:
+            alert("가위, 바위, 보 외 금지");
+            break;
+        }
+        break;
+      default:
+        alert("가위, 바위, 보 외 금지");
+        break;
+    }
+    document.write(`<h1>첫번째 사람 : ${rsp}<br>
+        두번째 사람 : ${rsp2}<br><br> 결과 : ${result}</h1> `);
+  </script>
+</html>
