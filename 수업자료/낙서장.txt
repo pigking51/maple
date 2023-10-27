@@ -379,3 +379,16 @@ GNB 하위로 나오는 네비게이션바(LNB)
 
 * 아이콘 사이트
 → https://fontawesome.com/
+-----------------------------------------------------------
+231027
+
+* https://pixlr.com/kr/e/#editor
+→ 이미지 배경지울때 사용
+
+* 익스플로러에서는 헥사코드에 투명도까지 넣은것을 인식못해서
+RGBA를 이용해서 넣어야한다
+
+* slick : 반응형 라이브러리 가져오는 사이트
+→ google에 slick검색해서 깃허브에 나오는거
+(https://kenwheeler.github.io/slick/)
+
