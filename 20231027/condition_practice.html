@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>조건문 연습</title>
+  </head>
+  <body></body>
+  <script>
+    // 사용자에게 좋아하는 숫자를입력받고 그 숫자가 짝수라면
+    // "당신이 좋아하는 숫자는 짝수입니다!!"
+    // "당신이 좋아하는 숫자는 홀수입니다!!"
+
+    const person = +prompt("좋아하는 숫자를 입력해주세요");
+    let str = "";
+    person % 2 == 0 ? (str = "짝수") : (str = "홀수"); // ← 이거 죽은 연산자? 라고 배웟다는데 집가서 해당부분도 복습하기
+    document.write(`<h1> 당신이 좋아하는 숫자는 ${str}입니다!!`);
+    // let result = "";
+    // let num = int();
+    // let num = parseInt();
+    // if (person1 == `${}`) {
+    //   result = "짝수";
+    // } else if (person == ) {
+    //   result = "홀수";
+    // } else {
+    //   result = "장난";
+    // }
+
+    // if (person % 2 == 0) {
+    //   result = "짝수";
+    // } else if (person % 2 == 1) {
+    //   result = "홀수";
+    // } else {
+    //   result = "장난";
+    // }
+
+    // document.write(`<h1> 당신이 좋아하는 숫자는 ${result}입니다!!`);
+  </script>
+</html>
