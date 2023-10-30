@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>break and continue</title>
+  </head>
+  <body></body>
+  <script>
+    let msg = "";
+    for (let i = 0; i < 10; i++) {
+      if (i == 3) {
+        break;
+      }
+      msg += i + "<br>";
+      // msg = msg + i + "<br>"
+    }
+    document.write(`${msg}`);
+    document.write(`<hr>`);
+    msg = "";
+
+    for (let i = 0; i < 10; i++) {
+      if (i == 3) {
+        continue;
+      }
+      msg += i + "<br>";
+      // msg = msg + i + "<br>"
+    }
+    document.write(`${msg}`);
+
+    let j = 0;
+    while (true) {
+      document.write(`<h1>${j}</h1>`);
+      j++;
+      if (j == 5);
+      break;
+    }
+  </script>
+</html>

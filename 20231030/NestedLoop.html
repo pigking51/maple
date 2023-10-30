@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NestedLoop</title>
+  </head>
+  <body></body>
+  <script>
+    // for (let i = 1; i <= 10; i++) {
+    //   for (let j = 1; j <= 10; j++) {
+    //     document.write(`<h3>i : ${i}값, j : ${j}값</h3>`);
+    //   }
+    // }
+    for (let i = 2; i <= 9; i++) {
+      for (let j = 1; j <= 9; j++) {
+        document.write(`<table>
+            <td>
+              <th>${i}단</th>  
+                </td>
+                <tr></tr>
+                
+            <td>    
+        <tr><h3>${i} X ${j} = ${i * j}</h3></tr>
+        </td>`);
+      }
+    }
+  </script>
+</html>

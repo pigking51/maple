@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><form action=""></form></title>
+  </head>
+  <body></body>
+  <script>
+    for (let i = 0; i <= 10; i++) {
+      document.write(`카운터 : ${i} <br/>`);
+    }
+    document.write(`<hr>`);
+    for (let i = 10; i >= 1; i--) {
+      document.write(`카운터 : ${i} <br/>`);
+    }
+    document.write(`<hr>`);
+    for (let i = 1; i < 10; i++) {
+      document.write(`3 X ${i} = ${3 * i}<br/>`);
+    }
+    document.write(`<hr>`);
+    // 1 ~ 10 까지의 합을 구하세요. (반복문을 사용하여)
+    // for (let i = 0; i <= 5; i++) {
+    //   for (let n = 10 - i; n >= 5; n--) {
+    //     document.write(`${i + n}`);
+    //   }
+    // }
+    let sum = 0; // 전역변수
+    for (let i = 1; i <= 10; i++) {
+      //   sum = sum + i;
+      sum += 1;
+    }
+    document.write(`<h1>1 ~ 10 까지의 합 : ${sum}</h1>`);
+    document.write(`<hr>`);
+    // 1 ~ 20까지의 숫자 중에서 짝수만 출력을 하세요
+    let result = 0;
+    for (let i = 1; i <= 20; i++) {
+      if (i % 2 == 0) {
+        result = i;
+        document.write(
+          `<h1 style="color: red;">1 ~ 20 중에서 짝수 : ${result}</h1>`
+        );
+      } else {
+        result = 0;
+      }
+    }
+    document.write(`<hr>`);
+    // 1 ~ 100까지의 숫자 중에서 홀수의 합을 출력 하세요
+    let oddnum = 0;
+    for (let i = 1; i <= 100; i++) {
+      if (i % 2 == 1) {
+        oddnum = oddnum + i;
+      } else {
+        result = 0;
+      }
+    }
+    document.write(`<h1>1~100 중에서 홀수의 합 : ${oddnum}</h1>`);
+  </script>
+</html>
