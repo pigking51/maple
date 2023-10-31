@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>for문 연습</title>
+  </head>
+  <body></body>
+  <script>
+    // 별찍기
+    // *****
+    // *****
+    // *****
+    // *****
+    // *****
+    for (let i = 1; i <= 5; i++) {
+      for (let j = 1; j <= 5; j++) {
+        document.write(`*`);
+      }
+      document.write(`<br>`);
+    }
+    document.write(`<hr>`);
+
+    for (let i = 1; i <= 5; i++) {
+      for (let j = 1; j <= i; j++) {
+        document.write(`*`);
+      }
+      document.write(`<br>`);
+    }
+    document.write(`<hr>`);
+    for (let i = 1; i <= 5; i++) {
+      for (let k = 1; k <= i; k++) {
+        for (let j = 4; j >= i; j--) {
+          if (k > 1) {
+            continue;
+          }
+          document.write(`&nbsp`);
+        }
+        document.write(`*`);
+      }
+      document.write(`<br>`);
+    }
+    // ↑ 이건 내가한거(방식이 이상함)
+    document.write(`<hr>`);
+    for (let i = 1; i <= 5; i++) {
+      for (let j = 4; j >= i; j--) {
+        document.write(`&nbsp`);
+      }
+      for (let k = 1; k <= i; k++) {
+        document.write(`*`);
+      }
+      document.write(`<br>`);
+    }
+  </script>
+</html>

@@ -5,25 +5,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NestedLoop</title>
   </head>
-  <body></body>
+  <style>
+    table {
+      margin: 20px;
+      float: left;
+    }
+    table,
+    th {
+      border: 1px solid #ccc;
+      border-collapse: collapse;
+    }
+    th,
+    td {
+      padding: 10px 15px;
+    }
+    th {
+      background-color: yellow;
+    }
+    td {
+      border: 1px dotted #222;
+    }
+  </style>
+  <body>
+    <!-- <table>
+      <h1>구구단</h1>
+      <tr>
+        <th>2단</th>
+      </tr>
+      <tr>
+        <td>2 X 1 = 2</td>
+      </tr>
+      <tr>
+        <td>2 X 2 = 4</td>
+      </tr>
+      <tr>
+        <td>2 X 3 = 6</td>
+      </tr>
+      <tr>
+        <td>2 X 4 = 8</td>
+      </tr>
+      <tr>
+        <td>2 X 5 = 10</td>
+      </tr>
+      <tr>
+        <td>2 X 6 = 12</td>
+      </tr>
+      <tr>
+        <td>2 X 7 = 14</td>
+      </tr>
+      <tr>
+        <td>2 X 8 = 16</td>
+      </tr>
+      <tr>
+        <td>2 X 9 = 18</td>
+      </tr>
+    </table> -->
+  </body>
   <script>
     // for (let i = 1; i <= 10; i++) {
     //   for (let j = 1; j <= 10; j++) {
     //     document.write(`<h3>i : ${i}값, j : ${j}값</h3>`);
     //   }
     // }
+    // let result = 0;
+    // for (let i = 2; i <= 9; i++) {
+    //   document.write(`<table><tr><th>${i}단</tr></th></table>`);
+    //   for (let j = 1; j <= 10; j++) {
+    //     document.write(`<table border="1" text_align="center">
+    //         <caption text_align="center">${i}단</caption>
+    //     <tr><td><h3>${i} X ${j} = ${i * j}</h3></td></tr></table>`);
+    //     if (j == 10) {
+    //       document.write(``);
+    //     }
+    //   }
+    // }
+
+    // document.write(`<h1>구구단</h1>`);
+    // for (let i = 2; i <= 9; i++) {
+    //   //단수
+    //   document.write(`<table>
+    //         <tr>
+    //           <th>${i}단</th>
+    //           </tr>
+    //           `);
+    //   for (let j = 1; j <= 9; j++) {
+    //     //곱해질 수
+    //     // document.write(`<h2>${i} X ${j} = ${i * j}</h2>`);
+    //     document.write(`
+    //       <tr>
+    //         <td>${i} X ${j} = ${i * j}</td>
+    //       </tr>
+    //       `);
+    //   }
+    //   document.write(`</table>`);
+    // }
+    //→ 일단 이건 맞음
+
+    document.write(`<fieldset><legend><h1>구구단</h1></legend><table>`);
     for (let i = 2; i <= 9; i++) {
+      document.write(`<tr><th>${i}단</th></tr>`);
       for (let j = 1; j <= 9; j++) {
-        document.write(`<table>
-            <td>
-              <th>${i}단</th>  
-                </td>
-                <tr></tr>
-                
-            <td>    
-        <tr><h3>${i} X ${j} = ${i * j}</h3></tr>
-        </td>`);
+        document.write(`<tr><td>${i} X ${j} = ${i * j}</td></tr>`);
       }
+      document.write(`<table></fieldset>`);
     }
   </script>
 </html>
