@@ -51,5 +51,68 @@
       }
       document.write(`<br>`);
     }
+    document.write(`<hr>`);
+
+    for (let i = 1; i <= 5; i++) {
+      for (let j = 5; j >= i; j--) {
+        document.write(`*`);
+      }
+      document.write(`<br>`);
+    }
+    document.write(`<hr>`);
+    for (let i = 1; i <= 5; i++) {
+      for (let k = 1; k < i; k++) {
+        document.write(`&nbsp;`);
+      }
+      for (let j = 5; j >= i; j--) {
+        document.write(`*`);
+      }
+      document.write(`<br>`);
+    }
+    document.write(`<hr>`);
+    // for (let i = 1; i <= 5; i++) {
+    //   for (let j = 1; j <= i - 1; j++) {
+    //     document.write(`&nbsp;`);
+    //   }
+    //   for (let k = 5; j >= i; k--) {
+    //     document.write(`*`);
+    //   }
+    // }
+    document.write(`<hr>`);
+    for (let i = 1; i <= 5; i++) {
+      for (let k = 4; k >= i; k--) {
+        document.write(`&nbsp;`);
+      }
+      for (let j = 1; j <= i; j++) {
+        document.write(`*`);
+        for (let n = 1; n < i + 1; n++) {
+          document.write(`*`);
+          if (n < 4) {
+            break;
+          }
+        }
+      }
+      document.write(`<br>`);
+    }
+
+    document.write(`<hr>`);
+    for (let i = 1; i <= 5; i++) {
+      for (let j = 4; j >= i; j--) {
+        document.write(`&nbsp`);
+      }
+      for (let k = 1; k <= 2 * i; k++) {
+        document.write(`*`);
+      }
+      document.write(`<br>`);
+    }
+    for (let i = 1; i <= 5; i++) {
+      for (let k = 1; k < i; k++) {
+        document.write(`&nbsp;`);
+      }
+      for (let j = 10; j >= 2 * i; j--) {
+        document.write(`*`);
+      }
+      document.write(`<br>`);
+    }
   </script>
 </html>
