@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Function</title>
+  </head>
+  <body>
+    <button onclick="showDialog()">대화상자오픈</button>
+    <button onclick="greeting('최','건')">눌러보세요</button>
+    <button onclick="returntest1('최','건')">return 테스트1</button>
+    <button onclick="returntest2('최','건')">return 테스트2</button>
+  </body>
+  <script>
+    // function makeStars() {
+    //     작성한 소스
+    // }
+    // → 함수선언
+    // makeStars();
+    // → 불러오기
+    function showDialog() {
+      alert("안녕하세요?");
+    }
+    function greeting(name, position) {
+      //   alert(name + " " + position + "님을 환영합니다.");
+      alert(`${name} ${position}님을 환영합니다`);
+      return `파라미터는 ${name}과 ${position}입니다.`;
+    }
+    function returntest1() {
+      console.log(showDialog());
+    }
+    function returntest2() {
+      console.log(greeting("최", "건"));
+    }
+  </script>
+</html>

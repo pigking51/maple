@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>03-randomNumber</title>
+  </head>
+  <style>
+    div {
+      background-color: yellow;
+      border: 2px solid red;
+      width: 200px;
+      height: 300px;
+      overflow: auto;
+    }
+  </style>
+  <body>
+    <input type="button" value="시작" onclick="randProc()" />
+    <hr color="blue" />
+    <h1>출력위치</h1>
+    <div id="res">
+      <!-- <p>1,2,3,4,5</p>
+      <p>6,7,8,9,10</p> -->
+    </div>
+  </body>
+  <script>
+    let numArr = [];
+    function randProc() {
+      //  1 ~ 100 까지의 숫자 5개 생성
+      for (let i = 0; i < 6; i++) {
+        numArr[i] = parseInt(Math.random() * 45 + 1);
+        // if (numArr.indexOf(numArr[i]) === -1) {
+        //   numArr.push(numArr[i]);
+        // } else {
+        //   i--;
+        // }
+        // numArr.push(parseInt(Math.random() * 100 + 1));
+        console.log(numArr);
+      }
+
+      // 2. div가 res인 div에 숫자 5개 추가(P태그를 사용하여)
+
+      // 2.1 p태그 생성
+      const p = document.createElement("p"); // <p></p>상태
+
+      // 2.2 생성한 p태그에 text를 넣어준다.
+      //   p.innerHTML = "새로 생성한 p태그입니다."; // <p>새로 생성한 p태그입니다.</p>상태
+      p.innerHTML = numArr.toString();
+      //  → 배열에 있는 것들을 , 찍어서 문자열로 나오게 해주는거
+
+      // 2.3 div요소를 가져와서 p태그를 넣어준다
+      const res = document.getElementById("res");
+      res.append(p);
+      //→ 추가하는 요소
+    }
+  </script>
+</html>
