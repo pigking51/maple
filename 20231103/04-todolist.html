@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>04-To_do List</title>
+  </head>
+  <style>
+    div {
+      width: 300px;
+      height: 600px;
+      border: 2px solid #c5c5c5;
+      border-radius: 10px;
+      position: absolute;
+      top: 100px;
+      left: 200px;
+      padding: 0 10px;
+      overflow: auto;
+    }
+    p {
+      /* background-color: yellowgreen; */
+      padding: 10px 10px;
+      border-radius: 10px;
+    }
+  </style>
+  <body>
+    <input type="text" id="input" placeholder="할일을 적어주세요" />
+    <button onclick="clickFunc()">CLICK</button>
+    <div></div>
+  </body>
+  <script>
+    let Arr = [];
+    function clickFunc() {
+      // 1. input 요소를 가져온다.
+      const input = document.querySelector("input");
+      // 2. 가져온 input요소의 value를 꺼낸다.
+      const inputVal = input.value;
+      // 2.1 가져온 value가 공백("")이면 내용을 입력해주세요. 라는 alert 띄우고
+      //     함수를 종료
+      // 3. p태그를 만든다.
+      if (inputVal == "") {
+        alert("내용을 입력해주세요.");
+        return;
+      }
+      const p = document.createElement("p");
+      // 4. 만든 p태그에 가져온 input value를 넣는다.
+      p.innerHTML = inputVal;
+
+      // 4.1 0 ~225 까지의 랜덤한 숫자 3개를 추출한다.
+
+      for (i = 0; i <= 2; i++) {
+        Arr[i] = parseInt(Math.random() * 256);
+        // Arr.push(parseInt(Math.random() * 256));
+      }
+      console.log(Arr);
+
+      // const num = document.Arr;
+
+      // 4.2 추출한 랜덤숫자로 p태그의 backgroundcolor를 바꿔준다.
+
+      // p.style.backgroundColor = `rgb(${Arr[0]},${Arr[1]},${Arr[2]})`;
+      p.style.backgroundColor = `rgb(${Arr.toString()})`;
+
+      const Luma = 0.2126 * Arr[0] + 0.7152 * Arr[1] + 0.0722 * Arr[2];
+      console.log(Luma);
+      // 127.5가 중간값이긴 한데 굳이 외울필요는 없다고함(아래보면 선생님께서 저거 사용하는게 더 낫다고 하심)
+
+      p.style.color = parseInt(Luma) <= 155 ? "white" : "black";
+
+      // 5. div 요소를 가져온다.
+      const div = document.querySelector("div");
+      // 6. 가져온 div 요소에 만든 p태그를 추가한다.
+      div.append(p);
+
+      // 7. input value를 공백으로 만든다.
+      input.value = "";
+
+      div.style.backgroundColor = `rgb(${Arr.toString()})`;
+    }
+    setInterval(clickFunc, 2000);
+  </script>
+</html>

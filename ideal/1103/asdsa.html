@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    html,
+    body,
+    #man {
+      width: 100%;
+      height: 100%;
+      background-color: bisque;
+    }
+  </style>
+  <body>
+    <div id="man"></div>
+  </body>
+  <script>
+    Arr = [];
+    function wow() {
+      for (i = 0; i <= 2; i++) {
+        Arr.push(parseInt(Math.random() * 256));
+      }
+      const div = document.querySelector("div");
+
+      div.style.backgroundColor = `rgb(${Arr[0]},${Arr[1]},${Arr[2]})`;
+      //   return;
+    }
+    setInterval(wow, 2000);
+  </script>
+</html>

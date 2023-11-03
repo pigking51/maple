@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>04-To_do List</title>
+  </head>
+  <style>
+    div {
+      width: 300px;
+      height: 600px;
+      border: 2px solid #c5c5c5;
+      border-radius: 10px;
+      position: absolute;
+      top: 100px;
+      left: 200px;
+      padding: 0 10px;
+      overflow: auto;
+    }
+    p {
+      /* background-color: yellowgreen; */
+      padding: 10px 10px;
+      border-radius: 10px;
+    }
+  </style>
+  <body>
+    <input type="text" id="input" placeholder="할일을 적어주세요" />
+    <button onclick="clickFunc()">CLICK</button>
+    <div></div>
+  </body>
+  <script>
+    let Arr = [];
+    function clickFunc() {
+      const input = document.querySelector("input");
+      const inputVal = input.value;
+      if (inputVal == "") {
+        alert("내용을 입력해주세요.");
+        return;
+      }
+      const p = document.createElement("p");
+      p.innerHTML = inputVal;
+
+      for (i = 0; i < 3; i++) {
+        Arr[i] = parseInt(Math.random() * 256);
+      }
+      p.style.backgroundColor = `rgb(${Arr[0]},${Arr[1]},${Arr[2]})`;
+      p.style.color = `rgb(${Arr[2]},${Arr[0]},${Arr[1]})`;
+
+      const div = document.querySelector("div");
+      div.append(p);
+
+      input.value = "";
+    }
+  </script>
+</html>
