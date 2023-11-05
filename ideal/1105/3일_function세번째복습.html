@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="input" placeholder="일단 뭐라도 써라" />
+    <h2><p></p></h2>
+  </body>
+  <script>
+    function clickFunc() {
+      const input = document.querySelector("input");
+
+      const inputVal = input.value;
+
+      const p = document.creatElement("p");
+
+      p.innerHTML = inputVal;
+
+      const h2 = document.querySelector("h2");
+
+      h2.append(p);
+
+      input.value = "";
+    }
+  </script>
+</html>

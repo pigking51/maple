@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>functionPractice</title>
+  </head>
+  <body>
+    <div id="name"></div>
+  </body>
+  <script>
+    const Username = prompt("이름을 입력하세요.");
+
+    const color = prompt("색깔을 입력해주세요");
+
+    const func = function (name, color) {
+      const divEl = document.getElementById("name");
+
+      divEl.innerHTML = name;
+
+      divEl.style.color = color;
+    };
+
+    func(Username, color);
+  </script>
+</html>
