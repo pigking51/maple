@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>01-ArrayFunction</title>
+  </head>
+  <body></body>
+  <script>
+    const arr = [1, 3, 5, 7, 9, "Smith", true];
+
+    document.write(`<h1>1. push() 함수</h1>`);
+    const arrLength = arr.push(4, false);
+    document.write(`<h2>push 이후의 배열 : [${arr}]</h2>`);
+    document.write(`<h2>push 이후의 배열 길이 : [${arrLength}]</h2>`);
+
+    document.write(`<hr>`);
+
+    document.write(`<h1>2. pop() 함수</h1>`);
+    document.write(`<h2>pop 으로 제거한 요소 : [${arr.pop()}]</h2>`);
+    document.write(`<h2>pop 이후의 배열 길이 : [${arrLength}]</h2>`);
+
+    document.write(`<hr>`);
+
+    document.write(`<h1>3. unshift() 함수</h1>`);
+    document.write(`<h2>unshift 이후의 배열 길이 : [${arr.unshift()}]</h2>`);
+    document.write(`<h2>unshift 으로 제거한 요소 : [${arr}]</h2>`);
+
+    document.write(`<hr>`);
+
+    document.write(`<h1>4. shift() 함수</h1>`);
+    document.write(`<h2>shift 으로 제거한 요소 : [${arr}]</h2>`);
+    document.write(`<h2>shift 이후의 배열 길이 : [${arr.shift()}]</h2>`);
+  </script>
+</html>
