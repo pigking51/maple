@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>setInterval</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    html,
+    body,
+    div {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+  <body>
+    <div>
+      <p>버튼을 누르면 3초마다 경고 박스가 화면에 표시됩니다.</p>
+      <button onclick="showAlert()">눌러보세요</button>
+      <button onclick="stopInterval()">반복취소버튼</button>
+    </div>
+  </body>
+  <script>
+    let startInterval;
+    let arr = [];
+    function showAlert() {
+      startInterval = setInterval(function () {
+        for (i = 0; i < 3; i++) {
+          arr[i] = parseInt(Math.random() * 256);
+          // arr[i].push(parseInt(Math.random()*256));
+        }
+        let p = document.querySelector("p");
+        let d = document.querySelector("div");
+
+        p.style.backgroundColor = `rgb(${arr.toString()})`;
+        d.style.backgroundColor = `rgb(${arr[2]}, ${arr[0]}, ${arr[1]})`;
+      }, 300);
+    }
+    function stopInterval() {
+      clearInterval(startInterval);
+    }
+  </script>
+</html>
