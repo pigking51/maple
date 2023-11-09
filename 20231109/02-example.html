@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="p1">안녕하세요. 아이디가 p1인 p 태그입니다.</p>
+    <p id="p2">안녕하세요. 아이디가 p2인 p 태그입니다.</p>
+    <p class="p1" id="p3">
+      안녕하세요. 아이디가 p3이고 클래스가 p1인 p 태그입니다.
+    </p>
+    <p class="p1" id="p4">
+      안녕하세요. 아이디가 p4이고 클래스가 p1인 p 태그입니다.
+    </p>
+
+    <button onclick="tchange()">p1 텍스트 '변경된 내용입니다.' 로 변경</button
+    ><br /><br />
+    <button onclick="tcolor()">p2 텍스트 색상 변경</button><br /><br />
+    <button onclick="tbgcolor()">p3 배경색상 변경</button><br /><br />
+    <button onclick="tsize()">p4 폰트사이즈 변경</button><br /><br />
+  </body>
+  <script>
+    // const p1 = document.querySelector("#p1");
+    // console.log(p1);
+
+    // p1.innerHTML = "이것은 1.2번 내용에 따른 변경텍스트입니다.";
+    // p1.style.color = `rgb(45, 222, 123)`;
+    // p1.style.backgroundColor = `rgb(100, 100, 100)`;
+
+    // const p4 = document.querySelector(".p1#p4");
+
+    // p4.innerHTML = "이것은 2.1번 내용에 따른 변경텍스트입니다.";
+    // p4.style.color = `rgb(150, 22, 134)`;
+    // p4.style.backgroundColor = `rgb(255,50,180)`;
+
+    function tchange() {
+      const p1 = document.querySelector("#p1");
+      p1.innerHTML = "변경된 내용입니다.";
+    }
+    function tcolor() {
+      const p2 = document.querySelector("#p2");
+      p2.style.color = `rgb(100,128,220)`;
+    }
+    function tbgcolor() {
+      const p3 = document.querySelector("#p3");
+      p3.style.backgroundColor = `rgb(220,100,128)`;
+    }
+    function tsize() {
+      const p4 = document.querySelector("#p4");
+      p4.style.fontSize = `2.5em`;
+    }
+  </script>
+</html>
