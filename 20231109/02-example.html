@@ -5,24 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body>
-    <p id="p1">안녕하세요. 아이디가 p1인 p 태그입니다.</p>
-    <p id="p2">안녕하세요. 아이디가 p2인 p 태그입니다.</p>
-    <p class="p1" id="p3">
-      안녕하세요. 아이디가 p3이고 클래스가 p1인 p 태그입니다.
-    </p>
-    <p class="p1" id="p4">
-      안녕하세요. 아이디가 p4이고 클래스가 p1인 p 태그입니다.
-    </p>
 
-    <button onclick="tchange()">p1 텍스트 '변경된 내용입니다.' 로 변경</button
-    ><br /><br />
-    <button onclick="tcolor()">p2 텍스트 색상 변경</button><br /><br />
-    <button onclick="tbgcolor()">p3 배경색상 변경</button><br /><br />
-    <button onclick="tsize()">p4 폰트사이즈 변경</button><br /><br />
+  <body>
+    <div id="man">
+      <p id="p1">안녕하세요. 아이디가 p1인 p 태그입니다.</p>
+      <p id="p2">안녕하세요. 아이디가 p2인 p 태그입니다.</p>
+      <p class="p1" id="p3">
+        안녕하세요. 아이디가 p3이고 클래스가 p1인 p 태그입니다.
+      </p>
+      <p class="p1" id="p4">
+        안녕하세요. 아이디가 p4이고 클래스가 p1인 p 태그입니다.
+      </p>
+      이름 : <input id="input1" value="" /><br /><br />
+
+      <button onclick="tchange()">p1 텍스트 '변경된 내용입니다.' 로 변경</button
+      ><br /><br />
+      <button onclick="tcolor()">p2 텍스트 색상 변경</button><br /><br />
+      <button onclick="tbgcolor()">p3 배경색상 변경</button><br /><br />
+      <button onclick="tsize()">p4 폰트사이즈 변경</button><br /><br />
+      <button onclick="getInput1()">input1 데이터 가져오기</button><br /><br />
+      <button onclick="changeInput1()">input1 데이터 변경하기</button
+      ><br /><br />
+      <button onclick="changebgcolor()">
+        input1에 입력한 색상명으로 p1 배경색 변경</button
+      ><br /><br />
+    </div>
   </body>
   <script>
     // const p1 = document.querySelector("#p1");
+    // console.log(p1.innerHTML);
     // console.log(p1);
 
     // p1.innerHTML = "이것은 1.2번 내용에 따른 변경텍스트입니다.";
@@ -47,9 +58,37 @@
       const p3 = document.querySelector("#p3");
       p3.style.backgroundColor = `rgb(220,100,128)`;
     }
+
     function tsize() {
+      const Arr = [];
+      for (i = 0; i < 3; i++) {
+        Arr[i] = parseInt(Math.random() * 256);
+      }
       const p4 = document.querySelector("#p4");
       p4.style.fontSize = `2.5em`;
+      p4.style.border = `5px dashed rgba(${Arr[0]}, ${Arr[1]}, ${Arr[2]}, ${Arr[2]})`;
+    }
+    function getInput1() {
+      const input1 = document.getElementById("input1");
+      // <p> </p> ← 이렇게 태그가 열고 닫는 태그가 있어야만 innnerHTML사용가능함
+      alert(input1.value);
+    }
+    function changeInput1() {
+      const input1 = document.getElementById("input1");
+      // <p> </p> ← 이렇게 태그가 열고 닫는 태그가 있어야만 innnerHTML사용가능함
+
+      if (input1.value == "") {
+        input1.value = `뭐라도 쓰세요`;
+      } else {
+        input1.value = `아무거나`;
+      }
+    }
+    function changebgcolor() {
+      const input1 = document.querySelector("#input1");
+      const val = input1.value;
+      const p1 = document.querySelector("#p1");
+      // p1.style.color = `input1.value;
+      p1.style.backgroundColor = val;
     }
   </script>
 </html>

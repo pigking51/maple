@@ -31,27 +31,57 @@
     } else {
       alert(`b가 a보다 큽니다.`);
     }
-    // 5 ~ 7번문제
-    const Arr = [];
-    const num1 = a;
-    const num2 = b;
+    // 5 ~ 7번문제 - 객체와 배열 구분할것!
 
-    Arr[0] = num1;
-    Arr[1] = num2;
+    const obj = {};
+    // const obj = new Object();
 
-    console.log(Arr);
+    obj.num1 = a;
+    obj.num2 = b;
+
+    // obj["num1"] = a;
+    // obj["num2"] = b;
+
+    console.log(obj.num1);
+    console.log(obj.num2);
+    // console.log(obj[num1]);
+    // console.log(obj[num2]);
 
     // 8번문제
     const Arr2 = [];
+    // const Arr2 = new array();
     for (i = 1; i < 11; i++) {
       Arr2[i - 1] = i;
     }
+    // arr[0] = 1;
+    // arr[1] = 2;
+    // arr[2] = 3;
+    // arr[3] = 4;
+    // arr[4] = 5;
+    // arr[5] = 6;
+    // arr[6] = 7;
+    // arr[7] = 8;
+    // arr[8] = 9;
+    // arr[9] = 10;
+
+    // Arr2.push(1);
+    // Arr2.push(2);
+    // Arr2.push(3);
+    // Arr2.push(4);
+    // Arr2.push(5);
+    // Arr2.push(6);
+    // Arr2.push(7);
+    // Arr2.push(8);
+    // Arr2.push(9);
+    // Arr2.push(10);
+
     console.log(Arr2);
 
     // 9번문제
     const Arr3 = [];
     for (i = 1; i < 101; i++) {
       Arr3[i - 1] = i;
+      // Arr3.push(i);
     }
     console.log(Arr3);
 
@@ -59,6 +89,9 @@
     const Arr4 = [];
     for (i = 0; 2 * i + 2 < 101; i++) {
       Arr4[i] = 2 * i + 2;
+      if (i % 2 == 0) {
+        // Arr4.push(i);
+      }
     }
     console.log(Arr4);
 
@@ -67,6 +100,10 @@
     for (i = 1; 2 * i - 1 < 101; i++) {
       Arr5[i - 1] = 2 * i - 1;
     }
+    // if(i % 2 == 1){
+    // if(i % 2 !==0)
+    //   // Arr5.push(i);
+    // }
     console.log(Arr5);
 
     // 12번문제
@@ -87,17 +124,26 @@
     //   p.innerHTML = `${f + s}`;
     // }
 
-    const f = parseInt(prompt("입력1"));
-    const s = parseInt(prompt("입력2"));
+    // const f = parseInt(prompt("입력1"));
+    // const s = parseInt(prompt("입력2"));
 
-    console.log(f + s);
+    // console.log(f + s);
 
-    const func = function (num1, num2) {
-      const p = document.querySelector("p");
+    // const func = function (num1, num2) {
+    //   const p = document.querySelector("p");
 
-      p.innerHTML = `${f + s}`;
-    };
+    //   p.innerHTML = `${f + s}`;
+    // };
 
-    func(f, s);
+    // func(f, s);
+
+    function sum(x, y) {
+      console.log(x + y);
+
+      const pTag = document.querySelector("p");
+      pTag.innerHTML = x + y;
+    }
+
+    sum(185425, 112348);
   </script>
 </html>
