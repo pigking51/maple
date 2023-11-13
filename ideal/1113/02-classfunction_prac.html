@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    div {
+      width: 500px;
+      height: 500px;
+      border: 3px solid red;
+    }
+    .yellow {
+      background-color: yellow;
+    }
+    .blue {
+      background-color: blue;
+    }
+  </style>
+  <body>
+    <div id="div1" class="void"></div>
+    <button id="btn">노란색으로 변경</button>
+    <button id="btn2">배경색 제거</button>
+    <button id="btn3">토글버튼</button>
+    <button id="btn4">yellow & blue</button>
+  </body>
+  <script>
+    const btn = document.querySelector("#btn");
+    const div1 = document.querySelector("#div1");
+    btn.addEventListener("click", function () {
+      const divClass = div1.classList;
+      //   alert(divClass);
+      div1.classList.add("yellow");
+    });
+    btn2.addEventListener("click", function () {
+      const divClass = div1.classList;
+      //   alert(divClass);
+      div1.classList.remove("yellow");
+    });
+    btn3.addEventListener("click", function () {
+      const divClass = div1.classList;
+      //   alert(divClass);
+      div1.classList.toggle("yellow");
+    });
+    btn4.addEventListener("click", function () {
+      const classCheck = div1.classList.contains("yellow"); // 해당부분 다시 공부하기
+      //   alert(divClass);
+      if (classCheck) {
+        div1.classList.remove("yellow");
+        div1.classList.add("blue");
+      } else {
+        div1.classList.remove("blue");
+        div1.classList.add("yellow");
+      }
+    });
+  </script>
+</html>

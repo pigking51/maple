@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>addEvertListener 연습</title>
+  </head>
+  <body>
+    <button id="btn">클릭해보세요~</button>
+    <button id="p1">클릭해보세요~2</button>
+    <input type="text" id="input1" />
+  </body>
+  <script>
+    function clickFunc() {
+      alert("이건 안쓰는거다");
+    }
+
+    // addEventListener() 함수
+    // 어떤 대상 요소에 이벤트 핸들러(함수)를 할당한다.
+    // const btn = document.querySelector("#btn");
+    const btn = document.getElementById("btn");
+    // btn.addEventListener("click", clickFunc);
+
+    btn.addEventListener("click", function () {
+      alert("익명함수로 이래쓸수도 있음");
+    });
+
+    const p1 = document.getElementById("p1");
+    // p1.addEventListener("click", function () {
+    //   alert(p1.innerHTML);
+    // });
+
+    p1.addEventListener("dblclick", function () {
+      alert("이건 더블클릭!!");
+    });
+
+    // p1.addEventListener("contextmenu", function () {
+    //   alert(
+    //     "이건 원래 오른쪽 마우스 눌렀을때 경고뜨는거지만 크롬에서는 지원 안한다고 함"
+    //   );
+    const input1 = document.querySelector("#input1");
+    //-----------------------------코드와 키 값이 중요!!
+
+    // input1.addEventListener("keydown", function (event) {
+    //   console.log(event);
+    // });
+    // input1.addEventListener("keypress", function (event) {
+    //   console.log(event);
+    // });
+    input1.addEventListener("keyup", function (event) {
+      console.log(event);
+    });
+  </script>
+</html>
