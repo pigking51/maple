@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>changeContext</title>
+  </head>
+  <body>
+    <div id="ex">무궁화 꽃이 피었습니다.</div>
+    <a href="#" onclick="get()">div 요소 내용 가져오기</a><br />
+    <a
+      href="#"
+      onclick="set(`
+    // 장미꽃이 피었습니다
+    `)"
+      >div 요소 내용 변경하기</a
+    ><br />
+  </body>
+  <script>
+    function get() {
+      const val = document.getElementById("ex").innerHTML;
+      alert(val);
+    }
+
+    function set() {
+      //   document.getElementById("ex").innerHTML = v;
+      const input = prompt("변경할 내용을 입력해주세요");
+      document.getElementById("ex").innerHTML = input;
+    }
+
+    // addEventListener("dblclick", set);
+    // const input = prompt("변경할 내용을 입력해주세요");
+    // const val2 = input.value;
+    // document.getElementById("ex").innerHTML = val2;
+
+    // 2번째거 다시 눌렀을때 prompt창 떠서 입력하는 거 나오고 거기 텍스트에 입력한대로
+    // 텍스트 변경되게 만들기
+  </script>
+</html>

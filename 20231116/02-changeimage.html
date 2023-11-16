@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>changeImage</title>
+  </head>
+  <body>
+    <img
+      id="image"
+      src="../resources/image/icetuna.png"
+      width="500"
+      height="500"
+    />
+    <input type="button" onclick="changeImage()" value="눌러보세요!" />
+  </body>
+  <script>
+    const body = document.querySelector("body");
+    function changeImage() {
+      //   body.children[0].src = "../resources/image/redwhip.png";
+
+      const img = document.querySelector("#image");
+      //   img.src = "../resources/image/redwhip.png";
+
+      img.setAttribute("src", "../resources/image/redwhip.png");
+      console.log(img.getAttribute("src"));
+      console.log(img.getAttribute("id"));
+      console.log(img.getAttribute("class"));
+    }
+  </script>
+</html>

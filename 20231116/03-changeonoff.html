@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>changeOnOff</title>
+  </head>
+  <style>
+    #wrapper {
+      width: 500px;
+      height: 500px;
+      background: linear-gradient(135deg, gray, gray, lightgray, white);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #img_wp {
+      width: 80%;
+      height: 80%;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 10px solid black;
+    }
+    #img_wp.off {
+      border: 5px solid black;
+    }
+    img {
+      width: 50%;
+      height: 50%;
+      filter: opacity(0.5) drop-shadow(0 0 0 red) saturate(1000%);
+    }
+
+    img.off {
+      filter: opacity(0.5) drop-shadow(0 0 0 lightgray);
+    }
+    img:hover {
+      cursor: pointer;
+    }
+  </style>
+  <body>
+    <div id="wrapper">
+      <div id="img_wp" class="off">
+        <img src="../resources/image/73432.png" onclick="C()" class="off" />
+      </div>
+    </div>
+  </body>
+  <script>
+    function C() {
+      const swi = document.querySelector("img");
+      const ar = document.querySelector("#img_wp");
+      swi.addEventListener("click", function () {
+        swi.classList.toggle("off");
+        ar.classList.toggle("off");
+      });
+    }
+  </script>
+</html>
