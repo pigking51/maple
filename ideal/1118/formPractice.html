@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>formPractice</title>
+  </head>
+  <body>
+    <form>
+      <p>이 름 : <input type="text" name="name" /></p>
+      <p>
+        성 별 :
+        <input
+          type="radio"
+          name="gender"
+          value="남성"
+          id="male"
+          checked
+        /><label for="male">남</label>
+        <input type="radio" name="gender" value="여성" id="female" /><label
+          for="female"
+          >여</label
+        >
+      </p>
+      <p>
+        취 미 : <input type="checkbox" name="hobby" id="trip" /><label
+          for="trip"
+          >여행</label
+        >
+        <input type="checkbox" name="hobby" id="reading" checked /><label
+          for="reading"
+          >독서</label
+        >
+        <input type="checkbox" name="hobby" id="movie" /><label for="movie"
+          >영화감상</label
+        >
+        <input type="checkbox" name="hobby" id="HTML" /><label for="HTML"
+          >HTML 공부</label
+        >
+        <input type="checkbox" name="hobby" id="CSS" /><label for="CSS"
+          >CSS 공부</label
+        >
+        <input type="checkbox" name="hobby" id="javascript" checked /><label
+          for="javascript"
+          >javascript 공부</label
+        >
+        <input type="checkbox" name="hobby" id="jquery" /><label for="jquery"
+          >jQuery 공부</label
+        >
+      </p>
+      <p><input type="button" id="submit" value="결과출력" /></p>
+      <!-- <p><button id="submit">결과출력</button></p> -->
+    </form>
+    <textarea rows="10" cols="100" id="result"></textarea>
+  </body>
+  <script>
+    const submit = document.getElementById("submit");
+    submit.addEventListener("click", function () {
+      const name = document.querySelector("input[type=text]").value;
+      const gender = document.querySelector("input[type=radio]:checked");
+      const hobby = document.querySelectorAll("input[type=checkbox]:checked");
+
+      const hobbyArr = [];
+      hobby.forEach(function (el) {
+        hobbyArr.push(el.nextElementSibling.innerHTML);
+      });
+
+      // const result = document.querySelector("#result");
+      const result = document.querySelector("textarea");
+
+      result.innerHTML = `${name}님!\n당신은 ${
+        gender.value
+      }이고\n취미는 ${hobbyArr.toString()}이군요!`;
+    });
+  </script>
+</html>

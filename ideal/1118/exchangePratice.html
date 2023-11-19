@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>exchangePractice</title>
   </head>
   <style>
     body {
       font-size: 24px;
     }
-    .container {
+    .wrapper {
       width: 800px;
       height: 800px;
       border: 2px solid red;
@@ -19,38 +19,34 @@
       padding: 10px;
     }
 
-    .container > div {
+    .wrapper > div {
       border: 2px solid blue;
     }
 
-    .holder1 {
+    .head1 {
       display: grid;
       grid-template-columns: 3fr 1fr 3fr;
       padding: 32px;
       gap: 10px;
     }
 
-    .holder1 > div:nth-child(odd) {
+    .head1 > div:nth-child(odd) {
       border: 2px solid #646464;
       padding: 10px;
     }
-    /* .holder1 > div {
-      border: 2px solid yellow;
-    } */
 
-    .holder1 > div:nth-child(2) {
+    .head1 > div:nth-child(2) {
       display: flex;
       flex-direction: column;
       justify-content: center;
       gap: 20px;
     }
-
-    .holder1 > div:nth-child(2) > button {
+    .head1 > div:nth-child(2) > button {
       padding: 15px 0;
       font-size: 24px;
     }
 
-    .holder2 {
+    .head2 {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -61,12 +57,12 @@
     }
 
     .selected {
-      background-color: yellow;
+      background-color: green;
     }
   </style>
   <body>
-    <div class="container">
-      <div class="holder1">
+    <div class="wrapper">
+      <div class="head1">
         <div>
           <p>4</p>
           <p>5</p>
@@ -85,9 +81,9 @@
           <p>7</p>
         </div>
       </div>
-      <div class="holder2">
+      <div class="head2">
         <div>
-          <input type="number" />
+          <input type="text" name="number" />&nbsp;
           <button>추가하기</button>
         </div>
       </div>
@@ -95,25 +91,17 @@
   </body>
   <script>
     const pTags = document.querySelectorAll("p");
-    // console.log(pTags);
     pTags.forEach(function (el) {
       el.addEventListener("click", function () {
         el.classList.toggle("selected");
       });
     });
-
-    const holder1 = document.querySelector(".holder1");
-
-    // holder1의 첫번째 자식 요소 가져오기
-    const firstDiv = holder1.firstElementChild;
-
-    // holder1의 마지막 자식 요소 가져오기
-    const lastDiv = holder1.lastElementChild;
+    const head1 = document.querySelector(".head1");
+    const firstDiv = head1.firstElementChild;
+    const lastDiv = head1.lastElementChild;
 
     function leftToRight() {
       const selectedPtags = firstDiv.querySelectorAll("p[class=selected]");
-      //   console.log(selectPtags);
-
       selectedPtags.forEach(function (el) {
         el.remove();
         el.setAttribute("class", "");

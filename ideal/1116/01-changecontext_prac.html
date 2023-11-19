@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>changeConText_prac</title>
+  </head>
+  <body>
+    <div id="ex">무궁화 꽃이 피었습니다</div>
+    <a href="#" onclick="get()">div요소 가져오기</a><br />
+    <a href="#" onclick="set(`장미꽃이 피었습니다`)">div요소 내용 변경하기</a
+    ><br />
+  </body>
+  <script>
+    function get() {
+      /const val = document.querySelect("#ex").innerHTML;/;
+      const val2 = document.getElementById("ex").innerHTML;
+      alert(val2);
+    }
+  </script>
+</html>
