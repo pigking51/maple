@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <!-- ↑ jQuery에서는 무조건 외부 javascript로 함 // jQuery검색 후 
+    CDN(위에것처럼 링크주소로 하는 방식) 클릭한 다음 가장 최신꺼(현재는 3.x임) 받으면 되는데 // 링크 여러개 있는건 좌측에서부터
+  우로갈수록 점점 압축된 파일이라 많은기능 쓸거면 제일 왼쪽꺼 누르기 -->
+  <body>
+    <h1>제목입니다.</h1>
+    <h2 id="para">작은 제목입니다.</h2>
+    <h3 class="sample">샘플입니다.</h3>
+  </body>
+  <script>
+    //전체 배경색을 변경
+    //h1 요소의 글자색은 파랑
+    //id가 para인 요소의 글자색은 녹색
+    //class가 sample요소의 글자색은 빨강
+
+    $("*").css("background-color", "pearl");
+    $("h1").css("color", "blue");
+    $("#para").css("color", "green");
+    $(".sample").css("color", "red");
+    // $("h1, #para, .sample").css("color", "blue");
+  </script>
+</html>

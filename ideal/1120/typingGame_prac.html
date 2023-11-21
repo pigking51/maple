@@ -46,8 +46,15 @@
         // const inputVal = container.lastElementChild.
         // const leftVal = span.style.left.value;
 
+        console.log(`${span.style.top}`);
+        const Arr = [];
         let startInterval;
+        let onemore = `${span.style.top}`;
         startInterval = setInterval(function () {
+          for (i = 0; i < Arr.length; i++) {
+            onemore += 10;
+            span.style.top = onemore + "px";
+          }
           //   const Arr = [];
           //   span.style.transition = "transformX(1px)";
           // Arr.push(Math.floor(Math.random() * 256 + 1));

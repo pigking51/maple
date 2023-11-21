@@ -63,5 +63,33 @@
     });
 
     init();
+
+    function wordrain() {
+      const words = document.querySelectorAll(".word");
+      console.log(words[0].style.top);
+      console.log(words[0].getBoundingClientRect().top);
+      console.log(words[0].getBoundingClientRect().bottom);
+      setInterval(function () {
+        words.forEach(function (el) {
+          // const colorArr = [];
+          // for (i = 0; i < 3; i++) {
+          //   colorArr.push(Math.floor(Math.random() * 256));
+          // }
+          // el.style.color = `rgb(${colorArr.toString()})`;
+          const rectTop = el.getBoundingClientRect().top;
+          el.style.top = `${rectTop - 75}px`;
+          if (el.getBoundingClientRect().bottom > 799) {
+            // 해상도 차이로 높이값이 다른데 전체 viewfort값에서 container를 뺀 값의 /2를 하면 됨
+            alert(`Game Over
+            남은 수 : ${words.length}
+            `);
+            el.remove();
+          }
+        });
+      }, 1000);
+    }
+
+    wordrain();
+    input.focus();
   </script>
 </html>

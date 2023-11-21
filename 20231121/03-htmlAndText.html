@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <body>
+    <p>1<span>홍길동</span></p>
+    <p>2<span>개나리</span></p>
+    <p>3<span>김고촌</span></p>
+  </body>
+  <script>
+    // alert($("p").html()); // innerHTML함수와 같은 값을 나타냄
+    // // → 얘는 태그가 여러개일시 첫번째 내용 자체(태그포함)가 나옴
+    // alert($("p").text());
+    // → 얘는 p태그 안에 있는내용(그 하위에 있는것들도)만 나옴
+    $("p").each(function (i, v) {
+      console.log(v);
+      alert($(v).html());
+    });
+
+    // $("p").each(function(index, value){
+
+    // })
+
+    // forEach(function(value, (index, array) → 이둘은 잘 안써서 value만 쓰는데 보통 el로 씀){
+
+    // })
+  </script>
+</html>
