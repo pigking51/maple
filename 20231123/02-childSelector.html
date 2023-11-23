@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  </head>
+  <body>
+    <p>여자에게 인기있는 남자들</p>
+    <ol>
+      <li>능력있는 남자</li>
+      <li>돈 많은 남자</li>
+      <li>잘 생긴 남자</li>
+      <li>프로그래머</li>
+    </ol>
+    <br />
+    <p>남자에게 인기있는 여자들</p>
+    <ol>
+      <li>예쁜 여자</li>
+      <li>귀여운 여자</li>
+      <li>섹시한 여자</li>
+    </ol>
+    <div>
+      <p>이렇게만 쓰면 되는건가</p>
+    </div>
+  </body>
+  <script>
+    $("li:first-child").css("border", "2px solid red");
+    $("li:last-child").css("border", "2px solid yellow");
+    $("li:first").css("backgroundColor", "yellow");
+    $("li:last").css("backgroundColor", "pink");
+    $("li:only-child").css("backgroundColor", "cyan");
+    $("li:nth-child(2)").not("li:first").css("backgroundColor", "yellowgreen");
+    $("li").not("li:first").css("backgroundColor", "teal");
+  </script>
+</html>
