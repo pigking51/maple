@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  </head>
+  <style>
+    p:hover {
+      cursor: pointer;
+    }
+    img {
+      width: 250px;
+      height: 200px;
+    }
+  </style>
+  <body>
+    <!-- <p id="container">클릭해보세요</p> -->
+    <p title="flower">이미지1</p>
+    <p title="moun">이미지2</p>
+    <p title="dog">이미지3</p>
+    <p title="man">이미지4</p>
+  </body>
+  <script>
+    // $("[title=flower]").on("click", function () {
+    //   $("[title=flower]").append(
+    //     `<img src="../resources/image/f2.jpg" width="400" height="300">
+    //           `
+    //   );
+    // });
+    // $("[title=moun]").on("click", function () {
+    //   $("[title=moun]").append(
+    //     `<img src="../resources/image/m.jpg" width="400" height="300">
+    //           `
+    //   );
+    // });
+    // $("[title=dog]").on("click", function () {
+    //   $("[title=dog]").append(
+    //     `<img src="../resources/image/dog1.jpg" width="400" height="300">
+    //           `
+    //   );
+    // });
+    // $("[title=man]").on("click", function () {
+    //   $("[title=man]").append(
+    //     `<img src="../resources/image/4dollars2.jpg" width="400" height="300">
+    //           `
+    //   );
+    // });
+    // $("p").on("click", function () {
+    //   $("body").css("border", "20px solid yellow");
+    //   $("[title=man]").append(
+    //     `<img src="../resources/image/4dollars2.jpg" width="400" height="300">`
+    //   );
+    //   $("[title=flower]").append(
+    //     `<img src="../resources/image/f2.jpg" width="400" height="300">`
+    //   );
+    //   $("[title=moun]").append(
+    //     `<img src="../resources/image/m.jpg" width="400" height="300">`
+    //   );
+    //   $("[title=dog]").append(
+    //     `<img src="../resources/image/dog1.jpg" width="400" height="300">`
+    //   );
+    // });
+
+    const imgArr = ["f2.jpg", "m.jpg", "dog1.jpg", "4dollars.jpg"];
+    $("p").on("click", function () {
+      console.log($(this).index());
+      const idx = $(this).index();
+      // $(this).append(`<img src="../resources/image/${imgArr[idx]}">`);
+      //   $(`<img src="../resources/image/${imgArr[idx]}">`).appendTo(this);
+
+      //   $(this).prepend(`<img src="../resources/image/${imgArr[idx]}">`);
+      //   $(`<img src="../resources/image/${imgArr[idx]}">`).prependTo(this);
+
+      //   $(this).after(`<img src="../resources/image/${imgArr[idx]}">`);
+      //   $(`<img src="../resources/image/${imgArr[idx]}">`).insertAfter(this);
+
+      $(this).before(`<img src="../resources/image/${imgArr[idx]}">`);
+      $(`<img src="../resources/image/${imgArr[idx]}">`).inserBefore(this);
+    });
+  </script>
+</html>

@@ -41,12 +41,11 @@
     });
 
     $("#btnView").on("click", function () {
-      alert(
-        // $("#user").val(),
-        // $("#gend:checked").val(),
-        $("option:checked").val()
-        // $("#intro").val(),
-      );
+      const name = $("#user").val();
+      const gender = $("[name=gend]:checked").val();
+      const intro = $("textarea").val();
+      const job = $(":selected").val();
+      alert(`${name}, ${gender}, ${intro}, ${job}`);
     });
   </script>
 </html>
