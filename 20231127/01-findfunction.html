@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>findFunction</title>
+  </head>
+  <style>
+    .wrapper {
+      width: 500px;
+    }
+    .wrapper * {
+      display: block;
+      border: 2px solid lightgray;
+      color: lightgray;
+      padding: 10px;
+      margin: 20px;
+    }
+    ul {
+      list-style-type: none;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+  <body>
+    <div class="wrapper">
+      wrapper div
+      <div>
+        div
+        <ul>
+          ul
+          <li>
+            li
+            <span>span</span>
+          </li>
+        </ul>
+      </div>
+      <div>
+        div
+        <ul>
+          ul
+          <li>
+            li
+            <span>span</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+  <script>
+    // $(".wrapper").find("li").css({
+    //   color: "red",
+    //   border: "2px solid red",
+    // });
+    // $("span").parentsUntil("div").css({
+    //   color: "red",
+    //   border: "2px solid red",
+    // });
+
+    // 1. 첫번째 div의 li에서 시작해서 두번째 div의 span 선택
+    // $("li:first").parents("div").siblings().find("span").css("color", "red");
+    // $("li").first().parents("div").siblings().find("span").css("color", "red");
+    $($(".wrapper > div")[0])
+      .find("li")
+      .parents("div")
+      .siblings()
+      .find("span")
+      .css("color", "red");
+    $(".wrapper").find("span").css("border", "3px solid black");
+    // 2. 두번째 div의 span에서 시작해서 첫번째 div의 span 선택
+    // $("span:last").parents("div").siblings().find("span").css("color", "blue");
+    $($(".wrapper > div")[1])
+      .find("li")
+      .parents("div")
+      .siblings()
+      .find("span")
+      .css("color", "blue");
+    // $("span")
+    //   .last()
+    //   .parents("div")
+    //   .siblings()
+    //   .find("span")
+    //   .css("color", "yellow");
+  </script>
+</html>
