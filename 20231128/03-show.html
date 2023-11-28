@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>show</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  </head>
+  <body>
+    <p>HIDE 버튼을 누르면 화면에서 없어집니다!!</p>
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+    <button id="toggle">Toggle</button>
+  </body>
+  <script>
+    $("#hide").on("click", function () {
+      $("#hide").prev().hide(500);
+    });
+
+    $("#show").on("click", function () {
+      $("#show").prev().prev().show(500);
+    });
+
+    $("#toggle").on("click", function () {
+      $("#toggle").prev().prev().prev().toggle(500);
+    });
+  </script>
+</html>
