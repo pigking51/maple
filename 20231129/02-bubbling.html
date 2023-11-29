@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bubbling</title>
+  </head>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script
+    src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"
+    integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c="
+    crossorigin="anonymous"
+  ></script>
+  <style>
+    form {
+      background-color: green;
+      position: relative;
+      width: 400px;
+      height: 400px;
+      text-align: center;
+      cursor: pointer;
+      left: 750px;
+    }
+    div {
+      background-color: blue;
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      top: 50px;
+      left: 50px;
+    }
+    p {
+      background-color: red;
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      top: 50px;
+      left: 50px;
+      margin: 0;
+    }
+  </style>
+
+  <body>
+    <!-- <div onclick="alert(`div에 할당된 핸들러!!`)">
+      <em onclick="alert(`p태그에 할당된 핸들러!!!`)">
+        <code onclick="alert(`code태그에 할당된 핸들러!!!!`)">EM</code>을
+        클릭했는데도 <code>div</code>에 할당한 이벤트가 동작합니다.
+      </em>
+    </div> -->
+    <form>
+      FORM
+      <div>
+        DIV
+        <p>P</p>
+      </div>
+    </form>
+    <div onclick="alert(`버튼을 감싸고 있는 div`)">
+      <button>클릭해주세요</button>
+    </div>
+  </body>
+  <script>
+    const form = document.querySelector("form");
+
+    form.addEventListener("click", function (e) {
+      alert(`target: ${e.target.tagName}, this: ${this.tagName}`);
+    });
+    const btn = document.querySelector("button");
+    btn.addEventListener("click", function (e) {
+      alert("버튼클릭");
+      e.stopPropagation();
+    });
+  </script>
+</html>

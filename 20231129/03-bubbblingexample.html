@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bubblingExample</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  </head>
+  <style>
+    div {
+      border: 3px solid orange;
+    }
+    p {
+      cursor: pointer;
+    }
+  </style>
+  <body>
+    <div>
+      <p>무궁화 꽃이 피었습니다.</p>
+    </div>
+
+    <p id="pTag">은주는 예쁘다~~~</p>
+
+    <div>
+      <p>사뿐히 즈려밟고 가시옵소서</p>
+    </div>
+  </body>
+  <script>
+    // ↓ 이벤트 핸들러가 시작되는 시점은 p태그 생성 이전 → 처음에 있던 3개의 p태그에 대해서만 적용
+    // 새로은 p태그 생성되는 시점은 p태그를 클릭했을때
+    // $("div").on("click", function (e) {
+    //   const pTag = e.target;
+    //   if (this != pTag) {
+    //     const txt = $(pTag).html();
+    //     $(this).append(`<p style="color:red;">${txt}</p>`);
+    //   }
+    //   console.log(pTag);
+    // });
+
+    $("div").on("click", "p", function () {
+      console.log(this);
+      const parent = $(this).parent("div");
+      const txt = $(this).html();
+      $(parent).append(`<p style="color:red;">${txt}</p>`);
+    });
+  </script>
+</html>

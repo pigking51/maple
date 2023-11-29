@@ -24,7 +24,7 @@
   </style>
   <body>
     <p>
-      FadeIn 버튼을 누르면 요소가 나타나고, FadeOut 버튼을 누르면 요소가
+      Fade In 버튼을 누르면 요소가 나타나고, Fade Out 버튼을 누르면 요소가
       사라집니다.
     </p>
     <button id="in">Fade In</button>
@@ -35,5 +35,29 @@
     <div id="div2"></div>
     <div id="div3"></div>
   </body>
-  <script></script>
+  <script>
+    $("#in").on("click", function () {
+      $("#div1").fadeIn();
+      $("#div2").fadeIn("slow");
+      $("#div3").fadeIn(6000);
+    });
+
+    $("#out").on("click", function () {
+      $("#div1").fadeOut();
+      $("#div2").fadeOut("slow");
+      $("#div3").fadeOut(6000);
+    });
+
+    $("#toggle").on("click", function () {
+      $("#div1").fadeToggle(1000);
+      $("#div2").fadeToggle(2000);
+      $("#div3").fadeToggle(4000);
+    });
+
+    $("#to").on("click", function () {
+      $("#div1").fadeTo(1000, 0.15).slideUp();
+      $("#div2").fadeTo(2000, 0.4).slideUp();
+      $("#div3").fadeTo(4000, 0.7).slideUp();
+    });
+  </script>
 </html>

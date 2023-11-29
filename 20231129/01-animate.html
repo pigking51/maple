@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script
+    src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"
+    integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c="
+    crossorigin="anonymous"
+  ></script>
+  <style>
+    div {
+      background-color: green;
+      width: 300px;
+      height: 300px;
+      position: absolute;
+    }
+  </style>
+  <body>
+    <div>Div</div>
+  </body>
+  <script>
+    $("div").on("click", function () {
+      //   $("div").animate({ left: "250px" });
+      //   $("div").animate({
+      //     left: "250px",
+      //     top: "250px",
+      //     opacity: "0.1",
+      //     height: "600px",
+      //     width: "600px",
+      //   });
+      $("div").animate({
+        height: "600px",
+        opacity: "0.3",
+        fontSize: "2em",
+        backgroundColor: "beige",
+      });
+      $("div").animate({
+        width: "50px",
+        opacity: "0.6",
+        fontSize: "1.5em",
+        backgroundColor: "teal",
+      });
+      $("div").animate({
+        height: "4000px",
+        opacity: "0.1",
+        fontSize: "3em",
+        backgroundColor: "pink",
+      });
+      $("div").animate({
+        width: "100%",
+        opacity: "0.9",
+        fontSize: "7em",
+        backgroundColor: "gray",
+      });
+
+      // ({}) 형식으로 입력 시 단위없는 숫자는 굳이 "" 안붙여도 되지만 fontWeight는 붙여야된다
+    });
+  </script>
+</html>
