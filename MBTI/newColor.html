@@ -14,7 +14,108 @@
    구글에서 pretendard cdn검색 후 맨 위 깃허브 페이지에서 웹폰트 부분 HTML 복사 -->
 
     <link rel="stylesheet" href="resources/css/style.css" />
-    <link rel="stylesheet" href="resources/css/home.css" />
+    <link rel="stylesheet" href="resources/css/new.css" />
   </head>
-  <body></body>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <body>
+    <!-- 개발자모드에서 확인했을때 보라색 빗금 영역이 있다: gap으로 인한 것이므로
+         flex 아니면 grid 둘중하나 -->
+    <div class="container">
+      <div class="header">
+        <h1 class="header-heading">새 컬러 등록하기</h1>
+        <a class="cancel" href="javascript:history.go(-1)">
+          <img class="cancel-icon" src="resources/img/x.svg" />
+        </a>
+      </div>
+      <div class="section">
+        <h2 class="section-heading">MBTI</h2>
+        <div class="mbti-options">
+          <div class="mbti-option">
+            <span class="mbti-char">E</span>
+            외향형
+          </div>
+          <div class="mbti-option selected">
+            <span class="mbti-char">I</span>
+            내향형
+          </div>
+        </div>
+        <div class="mbti-options">
+          <div class="mbti-option">
+            <span class="mbti-char">S</span>
+            감각형
+          </div>
+          <div class="mbti-option">
+            <span class="mbti-char">N</span>
+            직관형
+          </div>
+        </div>
+        <div class="mbti-options">
+          <div class="mbti-option">
+            <span class="mbti-char">T</span>
+            사고형
+          </div>
+          <div class="mbti-option">
+            <span class="mbti-char">F</span>
+            감정형
+          </div>
+        </div>
+        <div class="mbti-options">
+          <div class="mbti-option">
+            <span class="mbti-char">J</span>
+            판단형
+          </div>
+          <div class="mbti-option">
+            <span class="mbti-char">P</span>
+            인식형
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <h2 class="section-heading">
+          컬러
+          <button class="random" type="button">
+            <img class="repeat-icon" src="resources/img/repeat.svg" />
+          </button>
+        </h2>
+        <div class="color-input-container">
+          <input class="color-input" type="text" value="#9441FF" />
+          <span
+            class="color-input-chip"
+            style="background-color: #9441ff"
+          ></span>
+        </div>
+      </div>
+      <button class="submit">컬러 등록</button>
+    </div>
+  </body>
+  <script>
+    $(".color-input").on("change", function () {
+      // const inputVal = $(".color-input").val();
+      const inputVal = $(this).val();
+      // alert($(this).val());
+      // console.log(inputVal);
+      const chip = $(".color-input-chip");
+      if (inputVal.length == 7) {
+        chip.css("backgroundColor", inputVal);
+      }
+    });
+
+    // addEventListener("change", function () {
+    //   const inputVal = document.querySelector(".color-input").value;
+    //   console.log(inputVal);
+    //   const chip = document.querySelector(".color-input-chip");
+
+    //   if (inputVal.length == 7) {
+    //     chip.style.backgroundColor = inputVal;
+    //   }
+    // });
+
+    $(".repeat-icon").on("click", function () {
+      const inputVal = $(".color-input").val();
+      const chip = $(".color-input-chip");
+      $("inputVal").attr("value", "#9441FF");
+      $("inputval").html("<p>#000000</p>");
+      chip.css("backgroundColor", "#000000");
+    });
+  </script>
 </html>
