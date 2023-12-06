@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>player</title>
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
+    />
+    <link rel="stylesheet" href="resources/css/player.css" />
+  </head>
+  <body>
+    <div class="player">
+      <div class="progress-bar">
+        <div class="progress"></div>
+      </div>
+      <div class="player-main">
+        <div class="info">
+          <a href="#"
+            ><img class="current" src="resources/img/img_current_song.png"
+          /></a>
+          <div class="title">After Sunset</div>
+          <div class="artist">Benjamin</div>
+        </div>
+        <div class="controls">
+          <img src="resources/img/icon_before.svg" />
+          <img src="resources/img/icon_pause.svg" />
+          <img src="resources/img/icon_after.svg" />
+          <!-- → 위 이미지들은 이미 사이즈가 정해져 있어서 
+            안적어도 문제없지만 사이즈 적어줘야함(위의것은 다 w:48 h:48임) -->
+        </div>
+        <div class="time">2:34 / 5:56</div>
+      </div>
+    </div>
+  </body>
+</html>
