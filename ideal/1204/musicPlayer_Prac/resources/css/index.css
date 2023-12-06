@@ -125,9 +125,10 @@ header {
 }
 
 .card {
-  border: 1px solid #ffffff;
+  border: 2px solid #ffffff;
   border-radius: 16px;
   padding: 56px 96px;
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
