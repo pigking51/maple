@@ -1,4 +1,4 @@
-/* * {
+* {
   box-sizing: border-box;
 }
 
@@ -12,7 +12,7 @@ body {
   margin: 0;
   background-color: #000000;
   color: #d9d9d9;
-} */
+}
 
 section {
   max-width: 1120px;
@@ -215,7 +215,7 @@ section:last-child {
   color: #868686;
 }
 
-/* @media screen and (max-width: 815px) {
+@media screen and (max-width: 815px) {
   .playlists {
     gap: 16px;
   }
@@ -260,9 +260,9 @@ section:last-child {
   }
   .chart-change {
     font-size: 12px;
-  } */
-/* } */
-@media screen and (max-width: 1066px) {
+  }
+}
+/* @media screen and (max-width: 1066px) {
   section {
     padding: 0 24px;
   }
@@ -319,4 +319,4 @@ section:last-child {
   section {
     padding: 0 8px;
   }
-}
+} */

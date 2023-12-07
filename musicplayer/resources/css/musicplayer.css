@@ -1,7 +1,6 @@
-/* * {
+* {
   box-sizing: border-box;
 }
-
 html {
   font-family: Pretendard;
   word-break: keep-all;
@@ -9,20 +8,53 @@ html {
 }
 
 body {
-  margin: 0;
-  background-color: #000000;
+  background-color: #000;
   color: #d9d9d9;
-} */
+  margin: 0;
+}
+
+.side-bar {
+  padding: 16px;
+  background-color: #161519;
+  color: #8c8993;
+  width: 240px;
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  left: 0;
+}
+
+.menu-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 48px;
+  /* → margin에 한번에 다 쓸수 있지만
+     다른 사람들이 보기 편하게 따로 적어주는것이
+     좋음 */
+}
+
+.menu-item {
+  padding: 8px 24px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.menu-item:hover {
+  cursor: pointer;
+}
+
+.menu-item.active {
+  background-color: rgba(205, 187, 255, 0.1);
+  color: #ffffff;
+}
 
 section {
   max-width: 1120px;
   width: 100%;
   margin: 80px auto;
   padding: 0 36px;
-}
-
-section:last-child {
-  padding-bottom: 24px;
 }
 
 .featured {
@@ -127,7 +159,7 @@ section:last-child {
 .station {
   width: 100%;
   /* 상위 컨테이너 크기보다 사진이 크게나올경우
-   width값을 100%로 설정하기 */
+     width값을 100%로 설정하기 */
   border-radius: 16px;
 }
 
@@ -215,53 +247,63 @@ section:last-child {
   color: #868686;
 }
 
-/* @media screen and (max-width: 815px) {
-  .playlists {
-    gap: 16px;
-  }
-  .playlist {
-    flex-basis: 30%;
-  }
-  .chart-cover {
-    width: 130px;
-    height: 130px;
-  }
-  .chart-title {
-    font-size: 25px;
-    font-weight: 500;
-  }
-  .chart-artist {
-    font-size: 20px;
-  }
-  .artist-name {
-    font-size: 17px;
-    margin: 15px 0 0;
-  }
-  .stations {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.progress-bar {
+  height: 6px;
+  background-color: #4d4d54;
 }
 
-@media screen and (max-width: 650px) {
-  .playlist {
-    flex-basis: 48%;
-  }
-  .artist-name {
-    font-size: 12px;
-    margin: 15px 0 0;
-  }
-  .chart-title {
-    font-size: 18px;
-  }
-  .chart-number {
-    width: 30px;
-    height: 30px;
-    font-size: 15px;
-  }
-  .chart-change {
-    font-size: 12px;
-  } */
-/* } */
+.progress {
+  background-color: #7000ff;
+  width: 70%;
+  height: 100%;
+}
+
+.player-main {
+  background-color: rgba(48, 48, 55, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 40px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.current {
+  border-radius: 14px;
+}
+
+.title {
+  color: #d9d9d9;
+}
+
+.artist {
+  color: #8c8993;
+}
+
+.info,
+.time {
+  flex-basis: 300px;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.controls img {
+  cursor: pointer;
+}
+
+.time {
+  text-align: right;
+  color: #8c8993;
+}
+
 @media screen and (max-width: 1066px) {
   section {
     padding: 0 24px;

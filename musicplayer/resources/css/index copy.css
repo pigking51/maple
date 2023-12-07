@@ -1,13 +1,14 @@
-/* html {
+html {
   font-family: pretendard;
   word-break: keep-all;
   /* 한국어 단어보존만 keep-all이고
-  다른나라 언어는 break-all로 씀}
+  다른나라 언어는 break-all로 씀 */
+}
 body {
   background-color: #000;
   color: #ffffff;
   margin: 0;
-} */
+}
 
 header {
   font-weight: 700;
@@ -23,7 +24,7 @@ header {
 .wrap {
   margin: 0 auto;
   /* margin값이 정해지지 않은 것 같을 때 조금씩 줄여보다가 margin값 사라지는 것 확인 후
-     width 값이 정해져있는지 확인*/
+     width 값이 정해져있는지 확인 */
   max-width: 1000px;
   width: 100%;
   padding: 32px;
