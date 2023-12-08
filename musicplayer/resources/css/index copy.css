@@ -30,6 +30,14 @@ header {
   padding: 32px;
 }
 
+/* .wrap:hover {
+  cursor: pointer;
+} */
+
+header span {
+  cursor: pointer;
+}
+
 .hero {
   position: relative;
 }
