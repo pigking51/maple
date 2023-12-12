@@ -1,0 +1,110 @@
+body {
+  position: relative;
+}
+nav {
+  justify-content: center;
+  margin: 0px 8px 8px;
+}
+
+#navbarSupportedContent {
+  float: left 80%;
+}
+
+#navbarSupportedContent > a {
+  margin: 64px;
+}
+
+.nav-link.active > h6 {
+  font-size: 8px;
+}
+
+.right-menu {
+  width: 150px;
+}
+
+.carousel-item {
+  height: 840px;
+}
+
+#main {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main1 {
+  background-image: url(../../resources/image/ocean-3085239_1280.jpg);
+}
+.main2 {
+  background-image: url(../../resources/image/dokdo-1790316_1280.jpg);
+}
+
+.carousel-caption {
+  top: 150px;
+}
+
+.carousel-caption span {
+  font-size: 64px;
+  font-weight: 800;
+}
+
+.carousel-caption h5,
+span,
+p {
+  color: #ffffff;
+}
+
+.show {
+  border: 1px solid #ffffff;
+  border-radius: 25px;
+  color: #ffffff;
+  padding: 8px;
+  width: 30%;
+  position: relative;
+  left: 35%;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.right-down {
+  background-color: #09847f;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 600;
+  position: absolute;
+  right: 160px;
+  top: 550px;
+}
+
+.right-down p {
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.card h1,
+h3,
+p {
+  color: black;
+}
+
+.card {
+  margin: 16px;
+}
+
+.col-lg-9.card {
+  margin-right: 0;
+}
