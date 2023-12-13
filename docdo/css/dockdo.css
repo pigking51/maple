@@ -6,9 +6,11 @@ body {
 }
 nav {
   justify-content: center;
-  margin: 0px 8px 8px;
+  margin: 0px 0px 8px;
 }
-
+.navbar-brand div:last-child {
+  font-size: 0.25em;
+}
 #navbarSupportedContent {
   float: left 80%;
 }
@@ -113,10 +115,17 @@ p {
 }
 
 .col-lg-12.card {
+  width: 90%;
   display: grid;
   grid-template-columns: 1fr 5fr;
-  margin: 16px 32px;
+  gap: 32px;
+  margin: 16px auto;
   padding: 32px 56px;
+}
+
+.m1 > .carousel-caption.d-none.d-md-block {
+  position: absolute;
+  top: 250px;
 }
 
 .footer-float {
@@ -215,6 +224,8 @@ footer > div > div {
   top: 40%;
   bottom: 40%;
   right: 16px;
+  width: 60px;
+  height: 80px;
 }
 
 .carousel.slide > .carousel-control-prev {
@@ -223,4 +234,18 @@ footer > div > div {
   top: 40%;
   bottom: 40%;
   left: 16px;
+  width: 60px;
+  height: 80px;
+}
+
+@media screen and (max-width: 991px) {
+  .col-lg-3.right-menu {
+    display: none;
+  }
+
+  .m1 > .carousel-caption.d-none.d-md-block {
+    position: absolute;
+    top: 250px;
+    font-size: 0.5em;
+  }
 }

@@ -1,0 +1,191 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container-fluid {
+  gap: 56px;
+}
+
+.mainBar {
+  margin-right: 0;
+  gap: 40px;
+}
+
+.mainBar p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+.main {
+  position: relative;
+  height: 933px;
+  border-radius: 0 0 100px 0;
+}
+
+#main1 {
+  background-image: url(../../resources/image/dokdo-1790316_1280.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#main2 {
+  background-image: url(../../resources/image/dokdo-1790322_1280.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-inner {
+  position: absolute;
+  top: 35%;
+  left: 35%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.main-inner span {
+  font-size: 72px;
+  font-weight: 700;
+}
+.main-inner div {
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+  padding: 8px 16px;
+}
+
+.carousel-control-prev {
+  width: 25%;
+  height: 25%;
+  position: absolute;
+  top: 365px;
+  left: 8px;
+}
+.carousel-control-next {
+  width: 25%;
+  height: 25%;
+  top: 365px;
+  right: 8px;
+}
+
+.reserve {
+  background-color: #09847f;
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  position: absolute;
+  bottom: 0px;
+  right: 128px;
+}
+
+.reserve a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.row {
+  margin: 32px 0 56px;
+  /* justify-content: flex-end; */
+}
+
+.row .col-6 {
+  margin: 0 32px 16px;
+}
+
+.row > .col-10 {
+  margin-left: 20%;
+}
+
+.col-12.row {
+  justify-content: space-around;
+}
+
+.main-last {
+  background-color: #09847f;
+  border-radius: 35px;
+  margin: 0 auto;
+  display: flex;
+  padding: 16px;
+  justify-content: space-between;
+}
+
+.main-last a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.main-last-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+}
+.main-last-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+}
+
+.inform-wrap {
+  justify-content: space-between;
+}
+
+.inform {
+  /* position: absolute;
+  top: 35%;
+  left: 0px; */
+  border: 1px solid #3333;
+  width: 300px;
+  height: 312px;
+  margin-left: 32px;
+  padding: 12px;
+}
+
+.col-3.inform {
+  justify-content: space-between;
+}
+
+/* .inform .carousel-control-prev,
+.inform .carousel-control-next {
+  background-color: #434250;
+} */
+
+.col-6.carousel.slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-top {
+  background: url(../../resources/image/nature-6820205_1280.jpg);
+  background-repeat: no-repeat;
+  height: 680px;
+  border-radius: 85px 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-wrap {
+  font-size: 1.6em;
+  color: #ffffff;
+}
+
+.title-wrap span {
+  font-size: 72px;
+  font-weight: 700;
+}

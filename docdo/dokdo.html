@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dokdo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/dokdo.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <!-- 네비게이션바 시작 -->
+    <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 mainBar nav-underline">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <p>ㆍ</p>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- 네비게이션바 끝 -->
+    <!-- 메인화면 캐러셀 시작 -->
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="main" id="main1">
+            <div class="main-inner">
+              <h3>
+                대한민국
+                <span>독도</span>
+                세종에서 만나다
+              </h3>
+              <p>
+                독도에 대한 의미를 새기는 특별한 공간<br />
+                독도의 삶과 역사를 잊지 않기 위해 독도전시관이 앞장서겠습니다.
+              </p>
+              <div class="info">전시안내 보기</div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="main" id="main2">
+            <div class="main-inner">
+              <h3>
+                <sur>대한민국</sur>
+                <span>독도</span>
+                <sub>세종에서 만나다</sub>
+              </h3>
+              <p>
+                독도에 대한 의미를 새기는 특별한 공간<br />
+                독도의 삶과 역사를 잊지 않기 위해 독도전시관이 앞장서겠습니다.
+              </p>
+              <div class="info">전시안내 보기</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- 메인화면 캐러셀 끝 -->
+    <div class="reserve">
+      <img src="../resources/image/user.png" width="50" height="50" />
+      <a href="#">
+        <div>
+          단체예약<br />
+          신청
+        </div>
+      </a>
+    </div>
+    <!-- 본문 카드 시작  -->
+    <div class="row">
+      <div class="col-12 row">
+        <div class="col-6 card" style="width: 420px">
+          <div class="card-body">
+            <h5 class="card-title">독도 바로알기</h5>
+            <p class="card-text">
+              독도의 역사를 배우고, 자연을 체험하며 독도영토주권<br />
+              수호 의지를 다질 수 있는 소중한 시간이 되기를 바랍니다.
+            </p>
+            <a href="#" class="btn btn-primary">바로가기</a>
+            <img
+              src="../resources/image/sealion-4339210_1280.png"
+              class="card-img-right"
+              width="200"
+              height="100"
+              alt="..."
+            />
+          </div>
+        </div>
+        <div class="col-6 card" style="width: 420px">
+          <img src="..." class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">관람안내</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <!-- 공지사항 캐러셀 시작 -->
+      <div class="row inform-wrap">
+        <div class="col-3 inform">
+          <h5>공지사항</h5>
+          <p class="card-text">
+            독도의 미래를 생각하는 공간으로<br />
+            앞으로도 지속적으로 활용되기를 바랍니다.
+          </p>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <div
+          id="carouselExampleInterval"
+          class="col-6 carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 공지사항 캐러셀 끝 -->
+    <!--본문 카드 끝  -->
+    <div>
+      <!-- 영상관/체험관 띄우는거 시작 -->
+      <div class="main-last">
+        <a class="main-last-left"
+          ><div>
+            <h3>체험존 안내</h3>
+            <p>
+              독도체험관은 대한민국 동쪽 끝,<br />
+              우리의 섬 독도를 만나는 체험 공간입니다.
+            </p>
+          </div>
+          <div>
+            <img src="../resources/image/dog1.jpg" width="80" height="80" />
+          </div>
+        </a>
+        <a class="main-last-right"
+          ><div>
+            <h3>영상관 안내</h3>
+            <p>
+              가상현실(VR)과 같은 최신 기법을 활용하여<br />
+              실감형 콘텐츠 등을 적용한 독도 영상관 입니다.
+            </p>
+          </div>
+          <div>
+            <img src="../resources/image/cat.jpg" width="80" height="80" />
+          </div>
+        </a>
+      </div>
+      <!-- 영상관/체험관 띄우는거 끝 -->
+      <!-- footer 시작 -->
+      <footer>
+        <div class="footer-top">
+          <div class="title-wrap">
+            <p>한국의 아름다운 섬, <span>독도</span></p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <p>
+              <a href="#">이용약관</a>
+              ㆍ
+              <a href="#">개인정보취급방침</a>
+              ㆍ
+              <a href="#">이메일주소무단수집거부</a>
+            </p>
+            <p>
+              주소. (30126) 세종특별자치시 새롬서로 68 새롬고등학교 1층
+              독도전시관 문의전화. 044-999-6393
+            </p>
+            <p>© 2022 Dokdo Exhibitonon All rights reserved .</p>
+          </div>
+          <div>
+            <img src="../resources/image/f2.jpg" />
+            <img src="../resources/image/f3.jpg" />
+          </div>
+        </div>
+      </footer>
+      <!-- footer 끝 -->
+    </div>
+  </body>
+</html>
