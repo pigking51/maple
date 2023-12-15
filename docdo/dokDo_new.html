@@ -32,7 +32,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul
-            class="navbar-nav me-auto mb-2 mb-lg-0 container justify-content-center"
+            class="navbar-nav me-auto mb-2 mb-lg-0 container justify-content-center menu"
           >
             <li class="nav-item dropdown">
               <a
@@ -124,7 +124,26 @@
     </nav>
     <!-- 네비게이션바 끝 -->
     <!-- 메인캐러셀 시작 -->
-    <div class="fake"></div>
+    <div class="container-fluid fake">
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
     <div id="carouselExample" class="carousel slide main-slide">
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -156,24 +175,7 @@
           </div>
         </div>
       </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExample"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExample"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+
       <!-- 메인캐러셀 화면전환될때 이미지만 움직이게 변경하기 -->
       <!-- 메인캐러셀 끝 -->
       <!-- 예약확인 시작 -->
@@ -186,17 +188,17 @@
     </div>
     <!-- 예약확인 끝 -->
     <!-- 본문 카드1 시작 -->
-    <div class="container-fluid justify-content-space-between two-cards">
+    <div class="container-fluid two-cards">
       <div class="card container-fluid pair">
         <div class="card-body">
           <div>
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">독도 바로알기</h5>
             <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              독도의 역사를 배우고, 자연을 체험하며 독도영토주권<br />
+              수호 의지를 다질 수 있는 소중한 시간이 되기를 바랍니다.
             </p>
           </div>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <a href="#" class="btn">바로가기</a>
         </div>
         <div class="img-box">
           <img
@@ -210,7 +212,12 @@
       <div class="card container-fluid pair">
         <div class="card-body">
           <div>
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">관람안내</h5>
+            <div>
+              <img />
+              <h5>044-999-6393</h5>
+              <a href="#" class="btn question">관람 문의하기</a>
+            </div>
             <p class="card-text">
               Some quick example text to build on the card title and make up the
               bulk of the card's content.
@@ -230,30 +237,43 @@
     </div>
     <!-- 본문 카드1 끝 -->
     <!-- 본문 카드2 시작 -->
-    <div class="row two-cards2">
-      <div class="card container-fluid col-3">
+    <div class="row container-fluid two-cards2">
+      <div class="row card container-fluid col-3">
         <div class="card-body">
           <div>
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">독도 바로알기</h5>
             <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              독도의 역사를 배우고, 자연을 체험하며 독도영토주권<br />
+              수호 의지를 다질 수 있는 소중한 시간이 되기를 바랍니다.
             </p>
           </div>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
-        <div class="img-box">
-          <img
-            src="../resources/image/sealion-4339210_1280.png"
-            width="150"
-            height="150"
-            alt="..."
-          />
+        <div
+          class="container-fluid justify-content-space-between card-button-wrap"
+        >
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
       <div
         id="carouselExampleInterval"
-        class="carousel slide col-8"
+        class="carousel slide col-7"
         data-bs-ride="carousel"
       >
         <div class="carousel-inner">
@@ -310,58 +330,106 @@
             </div>
           </div>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleInterval"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleInterval"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        <!-- <div class="card2-button"> -->
+
+        <!-- </div> -->
       </div>
     </div>
     <!-- 본문 카드2 끝 -->
     <!-- 본문하단~footer사이 배너 시작 -->
     <div class="container-fluid banner">
-      <a
-        ><div>
-          <h3>체험존 안내</h3>
-          <p>
-            독도체험관은 대한민국 동쪽 끝,<br />
-            우리의 섬 독도를 만나는 체험 공간입니다.
-          </p>
-        </div>
-        <div>
-          <img src="../resources/image/dog1.jpg" width="80" height="80" /></div
-      ></a>
-      <a
-        ><div>
-          <h3>영상관 안내</h3>
-          <p>
-            가상현실(VR)과 같은 최신 기법을 활용하여<br />
-            실감형 콘텐츠 등을 적용한 독도 영상관 입니다.
-          </p>
-        </div>
-        <div>
-          <img src="../resources/image/cat.jpg" width="80" height="80" /></div
-      ></a>
+      <div class="container">
+        <a href="#"
+          ><div class="container banner-1">
+            <div>
+              <h3>체험존 안내</h3>
+              <p>
+                독도체험관은 대한민국 동쪽 끝,<br />
+                우리의 섬 독도를 만나는 체험 공간입니다.
+              </p>
+            </div>
+
+            <div>
+              <img src="../resources/image/dog1.jpg" width="120" height="120" />
+            </div>
+          </div>
+        </a>
+
+        <a href="#"
+          ><div class="banner-2">
+            <div>
+              <h3>영상관 안내</h3>
+              <p>
+                가상현실(VR)과 같은 최신 기법을 활용하여<br />
+                실감형 콘텐츠 등을 적용한 독도 영상관 입니다.
+              </p>
+            </div>
+
+            <div>
+              <img src="../resources/image/cat.jpg" width="120" height="120" />
+            </div>
+          </div>
+        </a>
+      </div>
     </div>
     <!-- 본문하단~footer사이 배너 끝-->
     <!-- footer시작 -->
     <!-- footer-top 시작 -->
-    <!-- footer-top 끝 -->
-    <!-- footer-bottom 시작 -->
-    <!-- footer-bottom 끝 -->
+    <footer>
+      <div class="container-fluid footer-top">
+        <div>
+          <div class="container=sm align-items-center">
+            <img
+              src="../resources/image/화면_캡처_2023-12-14_142155-removebg-preview.png"
+            />
+          </div>
+          <p>"경상북도 울릉읍 독도리 1-96"</p>
+        </div>
+      </div>
+      <!-- footer-top 끝 -->
+      <!-- footer-bottom 시작 -->
+      <div class="container-fluid footer-bottom">
+        <div class="fb-wrap">
+          <div class="fb-l">
+            <p>
+              <a href="#">이용약관</a>
+              ㆍ
+              <a href="#">개인정보취급방침</a>
+              ㆍ
+              <a href="#">이메일주소무단수집거부</a>
+            </p>
+            <br />
+            <div>
+              <p>
+                주소. (30126) 세종특별자치시 새롬서로 68 새롬고등학교 1층
+                독도전시관
+              </p>
+              <p>문의전화. 044-999-6393</p>
+            </div>
+            <br /><br />
+            <p class="fb-1-bottom">
+              © 2022 Dokdo Exhibitonon All rights reserved .
+            </p>
+          </div>
+          <div class="fb-r">
+            <div class="icon">
+              <img
+                src="../resources/image/화면_캡처_2023-12-15_164202-removebg-preview.png"
+                width="109"
+                height="77"
+              />
+            </div>
+            <div class="come">
+              <div>
+                <img src="../resources/image/user.png" width="40" height="40" />
+                <p>독도전시관<br />오시는길</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer-bottom 끝 -->
+    </footer>
     <!-- footer끝 -->
   </body>
 </html>
