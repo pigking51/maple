@@ -34,6 +34,10 @@ nav {
   gap: 32px;
 }
 
+.dropdown-menu {
+  text-align: center;
+}
+
 /* .toggle-visable {
   display: none;
   display: flex;

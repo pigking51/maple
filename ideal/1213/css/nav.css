@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  word-break: keep-all;
+}
+nav {
+  background: rgba(0, 0, 0, 0.5);
+}
+.container-fluid {
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+.navbar-brand p {
+  font-size: 0.5em;
+  margin-bottom: 0px;
+}
+.navbar-brand span {
+  font-size: 1.7em;
+}
+
+nav .row {
+  gap: 4px;
+  margin: 0 4px;
+  padding: 0;
+}
+
+.main-title {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+.main {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 1270px;
+  border-radius: 0 0 100px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main div {
+  color: #ffffff;
+  text-align: center;
+}
+
+.main span {
+  font-size: 72px;
+  font-weight: 800;
+}
+
+#main1 {
+  background-image: url(../../../resources/image/dokdo-1790316_1280.jpg);
+}
+#main2 {
+  background-image: url(../../../resources/image/dokdo-1790322_1280.jpg);
+}
