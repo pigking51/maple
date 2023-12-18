@@ -17,12 +17,29 @@ body {
   color: #ffffff;
 }
 /* 네비시작 */
+.main-total {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav {
+  border-bottom: 2px solid black;
+}
+
+/* nav:{} */
 
 .menu {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   gap: 32px;
 }
+
+/* .toggle-visable {
+  display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
 
 .right {
   display: flex;
@@ -38,6 +55,10 @@ body {
 .right p {
   padding-bottom: 0;
   margin-bottom: 0;
+}
+
+.navbar-toggler {
+  background-color: #ffffff;
 }
 
 /* 네비끝 */
@@ -146,7 +167,7 @@ body {
   flex-direction: row;
   width: 784px;
   height: 500px;
-  padding: 89px 84px 33px;
+  padding: 80px 72px 32px;
   margin: 0;
   border-radius: 25px;
 }
@@ -163,6 +184,15 @@ body {
   justify-content: space-between;
 }
 
+.first_card {
+  background-image: url(../../resources/image/first_card.png);
+  background-size: cover;
+}
+
+.first_card .card-text {
+  margin: 32px 0 96px;
+}
+
 .card-body .btn {
   display: flex;
   justify-content: center;
@@ -176,6 +206,51 @@ body {
 .card-body .btn:hover {
   background-color: #09847f;
   color: #ffffff;
+}
+
+.card-body h2 {
+  font-weight: 900;
+  font-size: 1.8em;
+}
+
+.one-two {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.one-two > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 76px;
+  height: 76px;
+  background-color: #d9d9d9;
+}
+.one-two img {
+  border-radius: 50%;
+}
+.one-two h5 {
+  margin: 0;
+}
+
+.one-two a {
+  width: 100px;
+  height: 16px;
+}
+
+.one-two-text {
+  list-style-type: circle;
+}
+
+.one-two-text li {
+  display: flex;
+}
+.one-two-text strong {
+  padding-right: 48px;
+}
+.one-two-text span {
+  color: #999999;
 }
 
 .question {
@@ -196,6 +271,8 @@ body {
 
 .card.container-fluid.col-3 {
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .two-cards2 .card-button-wrap {
@@ -203,19 +280,75 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 20%;
+  height: 30%;
+}
+
+.two-cards2 .card-button-wrap > button {
+  width: 64px;
+  height: 60px;
 }
 
 .two-cards2 .carousel-control-prev {
   position: absolute;
   left: 0;
-  bottom: 8px;
+  top: 20%;
+  bottom: 6px;
 }
 .two-cards2 .carousel-control-next {
   position: absolute;
   right: 0;
-  bottom: 8px;
+  top: 20%;
+  bottom: 6px;
 }
+
+.cardMany {
+  overflow-y: hidden;
+}
+
+.lotOfCard {
+  display: flex;
+  gap: 32px;
+  transform: translateX(-80px);
+}
+
+.lotOfCard .btn {
+  width: 60px;
+  height: 20px;
+  padding: 2px 4px;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.lotOfCard a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.lotOfCard h5 {
+  font-size: 18px;
+}
+
+.body-tag {
+  border: 1px solid #09847f;
+  border-radius: 10px;
+  width: 50px;
+  padding: 2px 4px;
+}
+
+.carousel-inner {
+  gap: 0;
+  padding: 0;
+}
+
+.lotOfCard.se-slide {
+  transform: translateX(50px);
+}
+
+/* .lotOfCard > div {
+  width: 439.615px;
+  margin-right: 60px;
+} */
+
 /* 카드 끝 */
 /* 배너 시작 */
 .banner {
@@ -223,7 +356,7 @@ body {
   justify-content: center;
   position: absolute;
   left: 0%;
-  top: 2230px;
+  top: 2300px;
 }
 
 .banner > div {
@@ -272,6 +405,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 100px 0 0 0;
 }
 
 .footer-top > div {
@@ -346,6 +480,9 @@ footer {
 /* footer 끝 */
 
 @media screen and (max-width: 991px) {
+  .menu {
+    display: inline-block;
+  }
   .right {
     display: none;
   }

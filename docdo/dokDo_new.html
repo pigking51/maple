@@ -18,7 +18,12 @@
       style="background-color: transparent"
     >
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">독도전시관</a>
+        <a class="navbar-brand" href="#">
+          <div class="main-total">
+            <img src="../resources/image/main_logo-removebg-preview.png" />
+            <img src="../resources/image/main_title-removebg-preview.png" />
+          </div>
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -189,10 +194,10 @@
     <!-- 예약확인 끝 -->
     <!-- 본문 카드1 시작 -->
     <div class="container-fluid two-cards">
-      <div class="card container-fluid pair">
+      <div class="card container-fluid pair first_card">
         <div class="card-body">
           <div>
-            <h5 class="card-title">독도 바로알기</h5>
+            <h2 class="card-title">독도 바로알기</h2>
             <p class="card-text">
               독도의 역사를 배우고, 자연을 체험하며 독도영토주권<br />
               수호 의지를 다질 수 있는 소중한 시간이 되기를 바랍니다.
@@ -200,38 +205,45 @@
           </div>
           <a href="#" class="btn">바로가기</a>
         </div>
-        <div class="img-box">
+        <!-- <div class="img-box">
           <img
-            src="../resources/image/sealion-4339210_1280.png"
+            src="../resources/image/first_card.png"
             width="150"
             height="150"
             alt="..."
           />
-        </div>
+        </div> -->
       </div>
       <div class="card container-fluid pair">
         <div class="card-body">
+          <h2 class="card-title">관람안내</h2>
           <div>
-            <h5 class="card-title">관람안내</h5>
-            <div>
-              <img />
+            <div class="one-two">
+              <div>
+                <img src="../resources/image/sound-removebg-preview.png" />
+              </div>
               <h5>044-999-6393</h5>
               <a href="#" class="btn question">관람 문의하기</a>
             </div>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
           </div>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-        <div class="img-box">
-          <img
-            src="../resources/image/sealion-4339210_1280.png"
-            width="150"
-            height="150"
-            alt="..."
-          />
+          <ul class="card-text one-two-text">
+            <li>
+              <strong>관람시간</strong>
+              <p>
+                화요일-토요일 9:00 ~ 17:00 (점심시간 12:00~13:00, 입장마감
+                16:30)
+                <span>※ 관람시간은 학교 사정에 따라 변경될 수 있습니다.</span>
+              </p>
+            </li>
+            <li>
+              <strong>휴관안내</strong>
+              <p>일요일, 월요일 및 공휴일</p>
+            </li>
+            <li>
+              <strong>위 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;치</strong>
+              <p>세종특별자치시 새롬서로 68 새롬고등학교 1층</p>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -273,59 +285,183 @@
       </div>
       <div
         id="carouselExampleInterval"
-        class="carousel slide col-7"
+        class="carousel slide col-7 cardMany"
         data-bs-ride="carousel"
       >
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="10000">
-            <div class="card" style="width: 18rem">
-              <img src="..." class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="lotOfCard">
+              <div class="card" style="width: 80rem; height: 25rem">
+                <a href="#">
+                  <img
+                    src="../resources/image/빡침-분노.gif"
+                    height="120"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <div class="btn">News</div>
+                    <!-- <i class="body-tag">news</i> -->
+                    <h5 class="card-title">
+                      독도전시관 공사 기간 임시 휴관 안내
+                    </h5>
+                    <p class="card-text">
+                      &lt;독도전시관 내부 공사 및 임시 휴관 안내&gt;
+                      공사기간:2023.12.19.(화).....
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="card" style="width: 80rem; height: 25rem">
+                <a href="#">
+                  <img
+                    src="../resources/image/sealion-4339210_1280.jpg"
+                    height="120"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <div class="btn">News</div>
+                    <h5 class="card-title">
+                      2023년 독도의 날 기념 독도 홍보영...
+                    </h5>
+                    <p class="card-text">
+                      2023년 독도의 날 기념 독도 홍보영상<br />
+                      공모전 수상자 명단입니다. 상품은 11월중<br />
+                      수령 안내...
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="card" style="width: 80rem; height: 25rem">
+                <a href="#">
+                  <img
+                    src="../resources/image/4dollars.gif"
+                    height="120"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <div class="btn">News</div>
+                    <h5 class="card-title">
+                      2023년 새롬고와 함께하는 독도특별...
+                    </h5>
+                    <p class="card-text">
+                      2023년 새롬고와 함께하는 독도특별전을<br />
+                      '만나고 싶은 우리 땅 독도'라는 제목으로<br />
+                      .....
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="card" style="width: 80rem; height: 25rem">
+                <a href="#">
+                  <img
+                    src="../resources/image/간식.gif"
+                    height="120"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <div class="btn">News</div>
+                    <h5 class="card-title">
+                      2023년 독도의 날 기념 독도 홍보영...
+                    </h5>
+                    <p class="card-text">
+                      세종특별자치시교육청 독도전시관에서<br />
+                      2023년 독도의 날(10월 25일)을 기념하여<br />
+                      독도 홍보영상 공.....
+                    </p>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <div class="card" style="width: 18rem">
-              <img src="..." class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+          <div class="carousel-item" data-bs-interval="10000">
+            <div class="lotOfCard se-slide">
+              <div class="card" style="width: 80rem; height: 25rem">
+                <a href="#">
+                  <img
+                    src="../resources/image/빡침-분노.gif"
+                    height="120"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <div class="btn">News</div>
+                    <!-- <i class="body-tag">news</i> -->
+                    <h5 class="card-title">
+                      독도전시관 공사 기간 임시 휴관 안내
+                    </h5>
+                    <p class="card-text">
+                      &lt;독도전시관 내부 공사 및 임시 휴관 안내&gt;
+                      공사기간:2023.12.19.(화).....
+                    </p>
+                  </div>
+                </a>
               </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="card" style="width: 18rem">
-              <img src="..." class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+              <div class="card" style="width: 80rem; height: 25rem">
+                <a href="#">
+                  <img
+                    src="../resources/image/sealion-4339210_1280.jpg"
+                    height="120"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <div class="btn">News</div>
+                    <h5 class="card-title">
+                      2023년 독도의 날 기념 독도 홍보영...
+                    </h5>
+                    <p class="card-text">
+                      2023년 독도의 날 기념 독도 홍보영상<br />
+                      공모전 수상자 명단입니다. 상품은 11월중<br />
+                      수령 안내...
+                    </p>
+                  </div>
+                </a>
               </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="card" style="width: 18rem">
-              <img src="..." class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+              <div class="card" style="width: 80rem; height: 25rem">
+                <a href="#">
+                  <img
+                    src="../resources/image/4dollars.gif"
+                    height="120"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <div class="btn">News</div>
+                    <h5 class="card-title">
+                      2023년 새롬고와 함께하는 독도특별...
+                    </h5>
+                    <p class="card-text">
+                      2023년 새롬고와 함께하는 독도특별전을<br />
+                      '만나고 싶은 우리 땅 독도'라는 제목으로<br />
+                      .....
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="card" style="width: 80rem; height: 25rem">
+                <a href="#">
+                  <img
+                    src="../resources/image/간식.gif"
+                    height="120"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <div class="btn">News</div>
+                    <h5 class="card-title">
+                      2023년 독도의 날 기념 독도 홍보영...
+                    </h5>
+                    <p class="card-text">
+                      세종특별자치시교육청 독도전시관에서<br />
+                      2023년 독도의 날(10월 25일)을 기념하여<br />
+                      독도 홍보영상 공.....
+                    </p>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
