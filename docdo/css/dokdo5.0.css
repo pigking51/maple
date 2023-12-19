@@ -1,0 +1,334 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  word-break: keep-all;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  font-size: 16px;
+  color: #000000;
+}
+
+.main-total {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav {
+  border-bottom: 2px solid black;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 32px;
+}
+
+.dropdown-menu {
+  text-align: center;
+}
+
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+}
+
+.right a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #333;
+}
+.right p {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.navbar-toggler {
+  background-color: #ffffff;
+}
+/* nav 끝 */
+
+.main-slide {
+  position: absolute;
+  top: 0;
+  bottom: 933px;
+  right: 0;
+  left: 0;
+}
+
+.main {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 933px;
+  /* position: absolute;
+    top: 933px; */
+  display: flex;
+  font-size: 16px;
+  text-align: center;
+  color: #d9d9d9;
+  font-weight: 400;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 0 100px 0;
+}
+
+.main a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#main1 {
+  background-image: url(../../resources/image/dokdo-1790316_1280.jpg);
+}
+#main2 {
+  background-image: url(../../resources/image/dokdo-1790322_1280.jpg);
+}
+.show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.show div {
+  border: 1px solid #ffffff;
+  border-radius: 25px;
+  width: 50%;
+  padding: 8px 0px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: green;
+  height: 20%;
+  padding: 32px 8px;
+  border-radius: 50%;
+}
+
+.fake {
+  width: 100%;
+  height: 870px;
+  position: relative;
+}
+
+.first-button {
+  position: absolute;
+  top: 45%;
+  right: 0;
+  width: 120px;
+  height: 120px;
+}
+
+/* 메인 캐러셀 끌 */
+article {
+  padding: 123px;
+}
+
+.two-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.card.pair {
+  flex-direction: row;
+  width: 784px;
+  height: 500px;
+  padding: 80px 72px 32px;
+  margin: 0;
+  border-radius: 25px;
+}
+
+.card.pair.info {
+  padding: 80px 72px 32px 120px;
+}
+
+.img-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.first_card {
+  background-image: url(../../resources/image/first_card.png);
+  background-size: cover;
+}
+
+.first_card .card-text {
+  margin: 32px 0 96px;
+}
+
+.card-body .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  border: 2px solid #09847f;
+  width: 198px;
+  height: 68px;
+  color: #09847f;
+}
+.card-body .btn:hover {
+  background-color: #09847f;
+  color: #ffffff;
+}
+
+.card-body h2 {
+  font-weight: 900;
+  font-size: 1.8em;
+}
+
+.one-two {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.one-two > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 76px;
+  height: 76px;
+  background-color: #d9d9d9;
+}
+.one-two img {
+  border-radius: 50%;
+}
+
+.one-two h5 {
+  font-size: 2em;
+  font-weight: 800;
+  margin: 0;
+}
+
+.one-two .btn {
+  width: 160px;
+  height: 40px;
+}
+
+.one-two-text {
+  list-style-type: circle;
+}
+
+.one-two-text li {
+  display: flex;
+}
+.one-two-text strong {
+  padding-right: 48px;
+}
+.one-two-text span {
+  color: #999999;
+}
+
+.question {
+  padding: 8px 16px;
+}
+/* 첫번째 카드 끝 */
+.two-cards2 {
+  margin: 80px 0px;
+  padding: 128px 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.two-cards2 > div {
+  padding: 32px;
+}
+
+.card.container-fluid.col-3 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.two-cards2 .card-button-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30%;
+}
+
+.two-cards2 .card-button-wrap > button {
+  width: 64px;
+  height: 60px;
+}
+
+.two-cards2 .carousel-control-prev {
+  position: absolute;
+  left: 0;
+  top: 20%;
+  bottom: 6px;
+}
+.two-cards2 .carousel-control-next {
+  position: absolute;
+  right: 0;
+  top: 20%;
+  bottom: 6px;
+}
+
+.cardMany {
+  overflow-y: hidden;
+}
+
+.lotOfCard {
+  display: flex;
+  gap: 32px;
+  transform: translateX(-80px);
+}
+
+.lotOfCard .btn {
+  width: 60px;
+  height: 20px;
+  padding: 2px 4px;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.lotOfCard a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.lotOfCard h5 {
+  font-size: 18px;
+}
+
+.body-tag {
+  border: 1px solid #09847f;
+  border-radius: 10px;
+  width: 50px;
+  padding: 2px 4px;
+}
+
+.carousel-inner {
+  gap: 0;
+  padding: 0;
+}
+
+.lotOfCard.se-slide {
+  transform: translateX(50px);
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+  }
+}
