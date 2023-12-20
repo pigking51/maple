@@ -27,6 +27,10 @@ nav {
   border-bottom: 2px solid black;
 }
 
+nav > .dropdown {
+  color: #ffffff;
+}
+
 .menu {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -117,7 +121,8 @@ nav {
 }
 
 #main1 {
-  background-image: url(../../resources/image/dokdo-1790316_1280.jpg);
+  background-image: url(../../resources/image/ocean-3085239_1280.jpg);
+  filter: grayscale(40%);
 }
 #main2 {
   background-image: url(../../resources/image/dokdo-1790322_1280.jpg);
@@ -159,6 +164,12 @@ nav {
   top: 900px;
   right: 72px;
   z-index: 1;
+}
+
+.go {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
 }
 /* 예약확인 끝 */
 /* 카드시작 */
@@ -311,14 +322,19 @@ nav {
   bottom: 6px;
 }
 
-.cardMany {
-  overflow-y: hidden;
-}
+/* .carousel-inner {
+  width: 500px;
+} */
 
 .lotOfCard {
   display: flex;
   gap: 32px;
-  transform: translateX(-80px);
+  transform: translateX(-90px);
+  overflow-y: hidden;
+}
+
+.lotOfCard > .card {
+  width: 400px;
 }
 
 .lotOfCard .btn {
@@ -351,7 +367,7 @@ nav {
 }
 
 .lotOfCard.se-slide {
-  transform: translateX(50px);
+  transform: translateX(90px);
 }
 
 /* 카드 끝 */
@@ -367,12 +383,18 @@ nav {
 
 .banner > div {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   color: #000000;
   background-color: #09847f;
   border-radius: 32px;
   margin: 8px 16px;
   padding: 32px 16px;
+}
+
+.banner-pro div {
+  padding: 8px 56px;
+  width: 100%;
+  height: 100%;
 }
 
 .banner a {
@@ -386,13 +408,39 @@ nav {
   height: 100%;
   width: 100%;
   gap: 48px;
+  border-right: 1px solid #ffffff;
 }
+
+.banner-1 > div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner-1 > div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
 .banner-2 {
   display: flex;
   align-items: center;
   height: 100%;
   width: 100%;
   gap: 48px;
+}
+
+.banner-2 > div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner-2 > div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 /* 배너 끝 */
@@ -406,7 +454,7 @@ footer {
   background-image: url(../../resources/image/travel-3085240_1280.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  filter: sepia(60%);
+  filter: contrast(50%);
   height: 760px;
   width: 100%;
   display: flex;
@@ -478,7 +526,7 @@ footer {
   line-height: 1.3;
 }
 
-.come > div {
+.come div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -489,7 +537,7 @@ footer {
 @media screen and (max-width: 1610px) {
   html,
   body {
-    height: 4375px;
+    height: 4030px;
   }
 
   .menu {
@@ -543,7 +591,22 @@ footer {
     width: 185px;
     margin: 0;
   }
+
   .banner {
+    top: 72%;
+  }
+
+  .banner > .banner-pro {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 1430px) {
+  .banner .banner-font {
+    padding: 8px 0;
+  }
+  .banner-1 > div:nth-child(2) {
+    padding: 8px 56px 8px 32px;
   }
 }
 
@@ -555,7 +618,11 @@ footer {
     display: none;
   }
   .two-cards {
-    display: block;
+    flex-direction: column;
+  }
+
+  .two-cards > .card.pair {
+    margin: 32px;
   }
   .card {
     flex-direction: row;
@@ -582,19 +649,85 @@ footer {
     width: 100%;
   }
 
-  .banner {
-    top: 85%;
+  .lotOfCard {
+    overflow: hidden;
   }
 
-  .banner-pro {
-    display: block;
+  .lotOfCard .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 0.8em;
+    margin: 16px 0;
+    gap: 4px;
+    flex-wrap: wrap;
+  }
+
+  .lotOfCard a {
+    width: 150px;
+  }
+  .lotOfCard img {
+    width: 100%;
+  }
+  .lotOfCard .card-body {
+    height: 260px;
+    padding: 16px 0;
+  }
+
+  .banner {
+    top: 82%;
+  }
+
+  .banner > div {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .banner-pro > div {
     height: 210px;
   }
+
+  .banner-1 {
+    border-right: none;
+    border-bottom: 1px solid #ffffff;
+  }
 }
 
+@media screen and (max-width: 850px) {
+  .banner > div {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .two-cards > .card.pair {
+    width: 80%;
+    margin: 32px 0;
+  }
+
+  .banner-font > h3 {
+    font-size: 1em;
+  }
+  .banner-font > p {
+    font-size: 0.6em;
+  }
+}
+
+@media screen and (max-width: 615px) {
+  .card {
+    font-size: 0.5em;
+    margin: 16px 0;
+  }
+  .banner-pro div {
+    margin: 16px 0;
+    padding: 8px 0;
+  }
+}
 /* 
 @media screen and (max-width: 956px) {
   .menu {
