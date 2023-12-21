@@ -39,6 +39,13 @@
           <ul
             class="navbar-nav me-auto mb-2 mb-lg-0 container justify-content-center menu"
           >
+            <!-- <li class="nav-item hidden-lgrg">
+              <div class="right">
+                <a href="page/etc/login/login.html">로그인</a>
+                <p>ㆍ</p>
+                <a href="page/etc/register/register1.html">회원가입</a>
+              </div>
+            </li> -->
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
@@ -98,7 +105,9 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="page/guide.html">전시안내</a>
+              <a class="nav-link" href="page/guide.html"
+                >전시안내&nbsp;&nbsp;&nbsp;</a
+              >
             </li>
             <li class="nav-item dropdown">
               <a
@@ -164,7 +173,7 @@
     <!-- 메인캐러셀 시작 -->
     <div class="container-fluid fake">
       <button
-        class="carousel-control-prev"
+        class="carousel-control-prev move-R"
         type="button"
         data-bs-target="#carouselExample"
         data-bs-slide="prev"
@@ -173,7 +182,7 @@
         <span class="visually-hidden">Previous</span>
       </button>
       <button
-        class="carousel-control-next"
+        class="carousel-control-next move-L"
         type="button"
         data-bs-target="#carouselExample"
         data-bs-slide="next"
@@ -181,6 +190,11 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
+      <div class="scroll">
+        <span>
+          <em>Scroll</em>
+        </span>
+      </div>
     </div>
     <div id="carouselExample" class="carousel slide main-slide">
       <div class="carousel-inner">
@@ -195,7 +209,12 @@
                 독도의 삶과 역사를 잊지 않기 위해 독도전시관이 앞장서겠습니다.
               </p>
               <a href="page/guide.html" class="show"
-                ><div>전시안내 보기</div></a
+                ><div>
+                  전시안내 보기
+                  <span class="masker">
+                    <span> 전시안내 보기 </span>
+                  </span>
+                </div></a
               >
             </div>
           </div>
@@ -281,7 +300,7 @@
     <!-- 본문 카드1 끝 -->
     <!-- 본문 카드2 시작 -->
     <div class="row container-fluid two-cards2">
-      <div class="row card container-fluid col-3">
+      <div class="card container-fluid col-3">
         <div class="card-body">
           <div>
             <h2 class="card-title">공지사항</h2>
@@ -316,7 +335,7 @@
       </div>
       <div
         id="carouselExampleInterval"
-        class="carousel slide col-6 cardMany"
+        class="carousel slide col-8 cardMany"
         data-bs-ride="carousel"
       >
         <div class="carousel-inner">
@@ -624,6 +643,45 @@
         nav.style.backgroundColor = `transparent`;
         nav.style.color = `#000000`;
       }
+    });
+
+    const button = document.querySelector(".navbar-toggler");
+    const right = document.querySelector(".right");
+    const menu = document.querySelector(".menu");
+    button.addEventListener("click", function () {
+      console.log(button.ariaExpanded);
+
+      if (button.ariaExpanded == true) {
+        menu.insertAdjacentHTML = `<li class=nav-item>${right}</li>`;
+      }
+    });
+
+    const main1 = document.querySelector("#main1");
+    const main2 = document.querySelector("#main2");
+    const fake = document.querySelector(".fake");
+    const Lbutton = document.querySelector(".move-R");
+    const Rbutton = document.querySelector(".move-L");
+    main1.addEventListener("mouseover", function () {
+      Lbutton.style.transition = "1s";
+      Rbutton.style.transition = "1s";
+      Lbutton.style.transform = "translateX(90px)";
+      Rbutton.style.transform = "translateX(-90px)";
+    });
+    main1.addEventListener("mouseout", function () {
+      fake.style.transition = "1s";
+      Lbutton.style.transform = "translateX(-30px)";
+      Rbutton.style.transform = "translateX(30px)";
+    });
+    main2.addEventListener("mouseover", function () {
+      Lbutton.style.transition = "1s";
+      Rbutton.style.transition = "1s";
+      Lbutton.style.transform = "translateX(90px)";
+      Rbutton.style.transform = "translateX(-90px)";
+    });
+    main2.addEventListener("mouseout", function () {
+      fake.style.transition = "1s";
+      Lbutton.style.transform = "translateX(-30px)";
+      Rbutton.style.transform = "translateX(30px)";
     });
   </script>
 </html>
