@@ -233,12 +233,12 @@ a .masker {
   animation: pagedownFillarc 1.5s linear 0s infinite;
   -webkit-animation: pagedownFillarc 1.5s linear 0s infinite;
 }
-@keyframes pagedownFillarc {
+/* @keyframes pagedownFillarc {
   from {
   }
   to {
   }
-}
+} */
 
 /* 메인캐러셀 끝 */
 /* 예약확인 시작 */
@@ -562,7 +562,6 @@ a .masker {
 
 /* 배너 끝 */
 /* footer 시작 */
-
 footer {
   margin-top: 160px;
 }
@@ -649,7 +648,6 @@ footer {
   justify-content: center;
   align-items: center;
 }
-
 /* footer 끝 */
 @media screen and (max-width: 1610px) {
   html,
@@ -660,9 +658,10 @@ footer {
   .menu {
     font-size: 1rem;
     font-weight: 600;
+    gap: 16px;
   }
   .right {
-    display: none;
+    font-size: 8px;
   }
   .two-cards {
     display: flex;
@@ -740,9 +739,9 @@ footer {
     border-radius: 15px;
     background-color: #09847f;
   } */
-  /* .right {
+  .right {
     display: none;
-  } */
+  }
   .two-cards {
     flex-direction: column;
   }
