@@ -10,15 +10,6 @@
   justify-content: center;
 }
 
-.title-inner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: #ffffff;
-  font-weight: 800;
-}
-
 .login {
   width: 100%;
   height: 100%;
@@ -37,7 +28,153 @@
   justify-content: center;
 }
 
+.join > h3 {
+  font-size: 32px;
+  font-weight: bold;
+  padding: 0 0 56px 0;
+}
+
+.join input {
+  width: 493px;
+  height: 72px;
+  float: left;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 50px;
+  padding: 16px 16px 16px 16px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.login .btn {
+  width: 493px;
+  height: 72px;
+  text-decoration: none;
+  color: #666666;
+  background-color: transparent;
+  border: 2px solid #666666;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .login a {
   text-decoration: none;
   color: #666666;
+}
+
+.rg-Search {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0 20px 0;
+}
+
+.rg-Search > a {
+  padding: 0 8px 0 8px;
+}
+/* 로그인 끝 */
+/* 회원가입 시작 */
+.register-wrap {
+  padding: 144px 0 112px 0;
+}
+
+.register-box {
+  width: 80rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.register-box > h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+.register-box > p {
+  margin: 16px 0 0 0;
+}
+
+.box {
+  width: 100%;
+  border-bottom: 1px dashed #666666;
+  padding: 0 0 32px 0;
+}
+
+.box > label {
+  display: block;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 32px 8px;
+}
+.box > #membershipTerm {
+  width: 100%;
+  padding: 16px;
+  border: 1px solid #dbdbdb;
+  color: #666666;
+  resize: none;
+}
+
+.box > .check {
+  text-align: right;
+  padding: 16px 0 0 0;
+}
+
+.register-box > .proceed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 32px 0;
+  gap: 8px;
+}
+
+.proceed a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  border-radius: 45px;
+  border: none;
+  margin: 2px 0;
+  padding: 0 16px;
+  height: 45px;
+}
+
+.ag {
+  background-color: #000000;
+}
+.ag:hover {
+  background-color: #565555;
+  animation: change 1s;
+}
+
+@keyframes change {
+  from {
+    background-color: #000000;
+  }
+  to {
+    background-color: #565555;
+  }
+}
+.mn {
+  background-color: #76777e;
+  transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+.mn:hover {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #76777e;
+  /* animation: change 1s; */
+}
+/* 회원가입 끝 */
+
+@media screen and (max-width: 510px) {
+  .join input {
+    width: 400px;
+  }
+  .join .btn {
+    width: 400px;
+  }
 }
