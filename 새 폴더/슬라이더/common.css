@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap");
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  color: #333333;
+  font-size: 0.95em;
+  letter-spacing: -0.01em;
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+}
+/* header 관련 스타일 */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 10px;
+}
+
+main .container {
+  z-index: -1;
+}
+
+.slick-prev {
+  border-radius: 25px;
+}
+.slick-next {
+  border-radius: 25px;
+}
+
+/* .slick-arrow {
+  display: hidden;
+} */

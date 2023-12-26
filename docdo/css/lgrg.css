@@ -169,6 +169,163 @@
   /* animation: change 1s; */
 }
 /* 회원가입 끝 */
+/* 회원가입 2페이지 시작 */
+.second-regi {
+  width: (100%-30rem);
+}
+.register-wrap {
+  width: 100%;
+  margin: 0;
+  padding: 160px 0 120px 0;
+}
+
+.register2-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.register2-box h3 {
+  font-size: 32px;
+  font-weight: 600;
+}
+.register2-box > p {
+  letter-spacing: -1.5px;
+}
+
+table {
+  border-top: 2px solid;
+  margin-top: 32px;
+}
+
+table tr {
+  border-bottom: 1px solid #eaecf1;
+}
+
+table th {
+  background-color: #f5f5f5;
+  padding: 16px 8px;
+  text-align: center;
+}
+
+table td {
+  padding: 16px;
+}
+
+td .btn {
+  display: inline-block;
+  background-color: transparent;
+  border: 1px solid #eaecf1;
+  border-radius: 25px;
+  color: #000000;
+  margin: 0 2px;
+  padding: 0 16px;
+  height: 40px;
+  line-height: 39px;
+  vertical-align: middle;
+}
+
+td input {
+  height: 32px;
+  margin: 2px 0;
+  padding: 7px 8px;
+  border: 1px solid #dddddd;
+  vertical-align: middle;
+}
+
+td select {
+  height: 32px;
+}
+
+td em {
+  font-size: 0.8em;
+}
+
+td p {
+  vertical-align: middle;
+}
+
+.marking {
+  display: inline-block;
+  position: relative;
+  width: 10px;
+  height: 14px;
+  margin-bottom: -2px;
+  vertical-align: middle;
+  text-indent: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marking:after {
+  content: "*";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 17px;
+  font-size: 14px;
+  font-weight: 600;
+  text-indent: 0;
+  color: #c51917;
+}
+
+#zip {
+  text-decoration: none;
+}
+
+.input100 {
+  width: 100px;
+}
+
+.input400 {
+  width: 400px;
+}
+
+.inputFull {
+  display: block;
+  width: 100%;
+}
+
+.btn-area > .btn {
+  border: none;
+  border-radius: 35px;
+  margin: 2px 0;
+  padding: 0 16px;
+  width: 150px;
+  height: 50px;
+  line-height: 49px;
+}
+
+.btn-area > .rg-exit {
+  background-color: #76777e;
+}
+.btn-area > .rg-exit:hover {
+  background-color: white;
+  animation: change 3s ease-in-out;
+}
+@keyframes change {
+  from {
+    background-color: #76777e;
+    color: #ffffff;
+    width: 0;
+    white-space: -1px;
+    padding: 0;
+  }
+  to {
+    background-color: #ffffff;
+    color: #000000;
+    width: 150px;
+  }
+}
+
+.btn-area > .rg-sign {
+  background-color: #2d2b2b;
+}
+
+/* 회원가입 2페이지 끝 */
 
 @media screen and (max-width: 510px) {
   .join input {
