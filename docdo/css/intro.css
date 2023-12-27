@@ -1,0 +1,233 @@
+.title-img.myPage {
+  background: url(../../resources/image/south-korea-6758748_1280.jpg) no-repeat;
+  background-size: cover;
+  border-radius: 0 0 100px 0;
+  width: 100%;
+  height: 28rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 인사말 시작 */
+
+.Inb {
+  position: absolute;
+  bottom: 23rem;
+  left: 50%;
+  transition: 0.5s;
+  transform: translateX(-50%);
+}
+
+.wrap {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.sub-nav {
+  width: 100%;
+  background: linear-gradient(45deg, #05875a, #09847f);
+  border-radius: 45px 0 45px 0;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.sub-nav > .sub-nav-ul {
+  list-style: none;
+  margin-bottom: 0;
+  margin-left: 60px;
+}
+
+.sub-nav li {
+  display: inline-block;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 2px 24px;
+}
+
+.sub-nav a {
+  text-decoration: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.on {
+  font-weight: 500;
+}
+
+.active {
+  position: relative;
+}
+
+.on:before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  top: -8px;
+  left: 50%;
+  position: absolute;
+}
+
+.sub-nav::after {
+  background: url(../../resources/image/first_card-nobg.png) no-repeat right
+    bottom/contain;
+  content: "";
+  display: inline-block;
+  width: 50%;
+  height: 560%;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  border-radius: 0 0 45px 0;
+}
+
+section {
+  padding: 200px 0 176px;
+}
+.gt-article > div {
+  display: flex;
+}
+
+.gt-at-1 > .img {
+  padding-right: 143px;
+  width: 50%;
+}
+
+.img > img {
+  border-radius: 0 0 65px 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.gt-at-1 > .txt {
+  width: 780px;
+  margin-right: auto;
+  padding-top: 72px;
+}
+
+.txt i {
+  font-style: normal;
+  color: #099789;
+}
+
+.txt strong {
+  display: block;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.txt p {
+  font-size: 24px;
+  margin: 0;
+}
+
+.gt-at-2 {
+  margin-top: 72px;
+}
+
+.gt-at-2 > .txt {
+  width: 780px;
+  margin-left: auto;
+  padding-top: 72px;
+}
+
+.gt-at-2 > .img {
+  padding-left: 143px;
+  width: 50%;
+}
+
+@media screen and (max-width: 1020px) {
+  .gt-article strong {
+    font-size: 32px;
+  }
+
+  .gt-article p {
+    font-size: 16px;
+  }
+
+  .gt-article img {
+    width: 85%;
+    height: 100%;
+    padding: 0 auto;
+  }
+
+  .gt-article .img {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .gt-article .txt {
+    width: 85%;
+    margin: 0;
+  }
+
+  .gt-at-1 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .gt-at-2 {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  /* 인사말 끝 */
+  /* 연혁 시작 */
+  .at-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #444444;
+    font-size: 10px;
+  }
+
+  .at-title strong span b {
+    color: #000000;
+  }
+
+  .at-title > i {
+    font-size: 10px;
+    font-style: none;
+    font-weight: 100;
+  }
+
+  .at-title > strong {
+    font-size: 32px;
+    margin-bottom: 32px;
+  }
+
+  .at-contents {
+    margin-top: 72px;
+  }
+
+  .item {
+    display: flex;
+  }
+  .item > p {
+    width: 50%;
+  }
+  .item > dl {
+    width: 50%;
+  }
+
+  /* 연혁 끝 */
+}
+@media screen and (max-width: 800px) {
+  .gt-article strong {
+    font-size: 16px;
+  }
+
+  .gt-article p {
+    font-size: 10px;
+  }
+}
