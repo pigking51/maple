@@ -270,4 +270,20 @@ footer {
   .right {
     display: none;
   }
+  .title-inner h2 {
+    font-size: 40px;
+  }
+  .title-inner p {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .Inb > .sub-nav::after {
+    height: 500rem;
+    width: 16rem;
+  }
+  .sub-nav > .sub-nav-ul {
+    margin-left: 32px;
+    padding: 0;
+  }
 }

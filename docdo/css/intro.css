@@ -11,6 +11,7 @@
 }
 
 /* 인사말 시작 */
+/* 중간 네비바 시작 */
 
 .Inb {
   position: absolute;
@@ -26,7 +27,8 @@
 }
 
 .sub-nav {
-  width: 100%;
+  width: 80%;
+  margin: 0 auto;
   background: linear-gradient(45deg, #05875a, #09847f);
   border-radius: 45px 0 45px 0;
   height: 5rem;
@@ -86,7 +88,7 @@
   position: absolute;
   border-radius: 0 0 45px 0;
 }
-
+/* 중간 네비바 끝 */
 section {
   padding: 200px 0 176px;
 }
@@ -124,7 +126,7 @@ section {
 }
 
 .txt p {
-  font-size: 24px;
+  font-size: 16px;
   margin: 0;
 }
 
@@ -143,6 +145,164 @@ section {
   width: 50%;
 }
 
+/* 인사말 끝 */
+/* 연혁 시작 */
+.at-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #444444;
+  font-size: 10px;
+}
+
+.at-title strong {
+  color: #000000;
+}
+
+.at-title > i {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 100;
+}
+
+.at-title > strong {
+  font-size: 32px;
+  margin-bottom: 32px;
+}
+
+.at-contents {
+  margin-top: 72px;
+}
+
+.it {
+  display: flex;
+}
+
+.it > p {
+  width: 50%;
+  animation: moveUp 1.2s ease;
+}
+.it > p {
+  width: 50%;
+  animation: moveUp 1.2s ease;
+}
+@keyframes moveUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    translatez: 0;
+    transform: translateY(0%);
+  }
+}
+
+p > img {
+  width: 80%;
+}
+.it > dl {
+  width: 50%;
+  padding: 40px 0 0 96px;
+  position: relative;
+  display: table-cell;
+  vertical-align: top;
+  font-size: 0.8rem;
+}
+
+.it > dl::before {
+  content: "";
+  width: 0.1rem;
+  position: absolute;
+  top: 0;
+  bottom: -1rem;
+  left: 0;
+  background-color: #dbdbdb;
+}
+
+.it:last-child dl::after {
+  content: "";
+  display: block;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background-color: #dddddd;
+  position: absolute;
+  bottom: 0;
+  left: -0.15rem;
+}
+
+.it dt {
+  font-size: 40px;
+  color: #09847f;
+  margin-bottom: 24px;
+  font-weight: 600;
+  font-family: "Montserrat", "Noto Sans KR";
+  line-height: 1;
+}
+
+.it dt::after {
+  content: "";
+  display: block;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background-color: #09847f;
+  position: absolute;
+  top: 3.5rem;
+  left: -0.15rem;
+}
+
+.it dd {
+  display: block;
+}
+
+.it b {
+  display: inline-block;
+  font-family: "Montserrat", "Noto Sans KR";
+  min-width: 10rem;
+}
+
+/* 연혁 끝 */
+/* 오시는길 시작 */
+.map-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.location-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #393846;
+  box-shadow: 0 40px 30px 0 40px 30px #0000001a;
+  position: absolute;
+  bottom: 8rem;
+  left: 8rem;
+  overflow: hidden;
+  color: #ffffff;
+  width: 20rem;
+  height: 20rem;
+  padding: 56px;
+}
+.location-info i {
+  font-style: normal;
+}
+.location-info b {
+  font-size: 40px;
+}
+.map-nav > .map-bottom-content {
+  display: flex;
+  justify-content: center;
+  padding: 4rem 0 0 0.8rem;
+}
+/* 오시는길 끝 */
+/* @media screen and (max-width:1120px) {
+  
+  
+} */
 @media screen and (max-width: 1020px) {
   .gt-article strong {
     font-size: 32px;
@@ -181,53 +341,48 @@ section {
     justify-content: center;
     align-items: center;
   }
-  /* 인사말 끝 */
-  /* 연혁 시작 */
-  .at-title {
-    display: flex;
+
+  .it {
     flex-direction: column;
-    justify-content: center;
-    color: #444444;
-    font-size: 10px;
+    align-items: flex-start;
   }
-
-  .at-title strong span b {
-    color: #000000;
+  .it > p {
+    width: 100%;
   }
-
-  .at-title > i {
-    font-size: 10px;
-    font-style: none;
-    font-weight: 100;
+  .it > dl {
+    width: 100%;
   }
-
-  .at-title > strong {
-    font-size: 32px;
-    margin-bottom: 32px;
+  dl::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0.4rem;
+    height: 0.4rem;
+    bottom: 0;
+    left: -0.15rem;
+    border-radius: 50%;
+    background-color: #dddddd;
   }
-
-  .at-contents {
-    margin-top: 72px;
-  }
-
-  .item {
-    display: flex;
-  }
-  .item > p {
-    width: 50%;
-  }
-  .item > dl {
-    width: 50%;
-  }
-
-  /* 연혁 끝 */
 }
+
 @media screen and (max-width: 800px) {
   .gt-article strong {
     font-size: 16px;
   }
 
   .gt-article p {
+    font-size: 10px;
+  }
+  /* 
+  .it dd {
+    display: block;
+  } */
+
+  .it b {
+    font-size: 12px;
+    width: 100%;
+  }
+  .it span {
     font-size: 10px;
   }
 }
