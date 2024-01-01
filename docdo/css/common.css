@@ -62,6 +62,83 @@ nav {
 }
 /* nav 끝 */
 /* 본문 시작 */
+/* 중간 네비바 시작 */
+.Inb {
+  position: absolute;
+  bottom: 23rem;
+  left: 50%;
+  transition: 0.5s;
+  transform: translateX(-50%);
+}
+
+.wrap {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.sub-nav {
+  width: 80%;
+  margin: 0 auto;
+  background: linear-gradient(45deg, #05875a, #09847f);
+  border-radius: 45px 0 45px 0;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.sub-nav > .sub-nav-ul {
+  list-style: none;
+  margin-bottom: 0;
+  margin-left: 60px;
+}
+
+.sub-nav li {
+  display: inline-block;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 2px 24px;
+}
+
+.sub-nav a {
+  text-decoration: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.on {
+  font-weight: 500;
+}
+
+.active {
+  position: relative;
+}
+
+.on:before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  top: -8px;
+  left: 50%;
+  position: absolute;
+}
+
+.sub-nav::after {
+  background: url(../../resources/image/first_card-nobg.png) no-repeat right
+    bottom/contain;
+  content: "";
+  display: inline-block;
+  width: 50%;
+  height: 560%;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  border-radius: 0 0 45px 0;
+}
+/* 중간 네비바 끝 */
 .title-inner {
   display: flex;
   flex-direction: column;
