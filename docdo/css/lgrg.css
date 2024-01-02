@@ -1,3 +1,7 @@
+.dropdown.on-bar {
+  border-bottom: 3px solid #099784;
+}
+
 .title-img.myPage {
   background: url(../../resources/image/bridge-6820200_1280.jpg) no-repeat;
   background-size: cover;

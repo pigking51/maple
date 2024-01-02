@@ -11,87 +11,7 @@
 }
 
 /* 인사말 시작 */
-/* 중간 네비바 시작 */
 
-.Inb {
-  position: absolute;
-  bottom: 23rem;
-  left: 50%;
-  transition: 0.5s;
-  transform: translateX(-50%);
-}
-
-.wrap {
-  width: 90%;
-  margin: 0 auto;
-}
-
-.sub-nav {
-  width: 80%;
-  margin: 0 auto;
-  background: linear-gradient(45deg, #05875a, #09847f);
-  border-radius: 45px 0 45px 0;
-  height: 5rem;
-  display: flex;
-  align-items: center;
-  position: relative;
-}
-
-.sub-nav > .sub-nav-ul {
-  list-style: none;
-  margin-bottom: 0;
-  margin-left: 60px;
-}
-
-.sub-nav li {
-  display: inline-block;
-  color: #ffffff;
-  font-size: 12px;
-  padding: 2px 24px;
-}
-
-.sub-nav a {
-  text-decoration: none;
-  color: #ffffff;
-  cursor: pointer;
-}
-
-.on {
-  font-weight: 500;
-}
-
-.active {
-  position: relative;
-}
-
-.on:before {
-  content: "";
-  display: inline-block;
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background-color: #ffffff;
-  top: -8px;
-  left: 50%;
-  position: absolute;
-}
-
-.sub-nav::after {
-  background: url(../../resources/image/first_card-nobg.png) no-repeat right
-    bottom/contain;
-  content: "";
-  display: inline-block;
-  width: 50%;
-  height: 560%;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  border-radius: 0 0 45px 0;
-}
-/* 중간 네비바 끝 */
-section {
-  padding: 200px 0 176px;
-}
 .gt-article > div {
   display: flex;
 }
@@ -115,7 +35,6 @@ section {
 }
 
 .txt i {
-  font-style: normal;
   color: #099789;
 }
 
@@ -161,7 +80,6 @@ section {
 
 .at-title > i {
   font-size: 16px;
-  font-style: normal;
   font-weight: 100;
 }
 
@@ -283,12 +201,9 @@ p > img {
   left: 8rem;
   overflow: hidden;
   color: #ffffff;
-  width: 20rem;
-  height: 20rem;
+  width: 20%;
+  height: 37%;
   padding: 56px;
-}
-.location-info i {
-  font-style: normal;
 }
 .location-info b {
   font-size: 40px;
@@ -299,10 +214,21 @@ p > img {
   padding: 4rem 0 0 0.8rem;
 }
 /* 오시는길 끝 */
-/* @media screen and (max-width:1120px) {
-  
-  
-} */
+@media screen and (max-width: 1540px) {
+  .location-info {
+    width: 10rem;
+    height: 10rem;
+    bottom: 15rem;
+    left: 4rem;
+    padding: 24px;
+  }
+  .location-info i {
+    font-size: 12px;
+  }
+  .location-info b {
+    font-size: 24px;
+  }
+}
 @media screen and (max-width: 1020px) {
   .gt-article strong {
     font-size: 32px;
@@ -384,5 +310,9 @@ p > img {
   }
   .it span {
     font-size: 10px;
+  }
+
+  .location-info {
+    display: none;
   }
 }

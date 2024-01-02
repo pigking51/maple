@@ -19,7 +19,7 @@ body {
   align-items: center;
 }
 nav {
-  border-bottom: 2px solid black;
+  border-bottom: 1px solid black;
 }
 
 .menu {
@@ -70,15 +70,9 @@ nav {
   transition: 0.5s;
   transform: translateX(-50%);
 }
-
-.wrap {
-  width: 90%;
-  margin: 0 auto;
-}
-
 .sub-nav {
-  width: 80%;
-  margin: 0 auto;
+  width: 100%;
+  /* margin: 0 auto; */
   background: linear-gradient(45deg, #05875a, #09847f);
   border-radius: 45px 0 45px 0;
   height: 5rem;
@@ -139,6 +133,7 @@ nav {
   border-radius: 0 0 45px 0;
 }
 /* 중간 네비바 끝 */
+
 .title-inner {
   display: flex;
   flex-direction: column;
@@ -150,6 +145,19 @@ nav {
 .title-inner > h2 {
   font-size: 64px;
   font-weight: 900;
+}
+
+section {
+  padding: 200px 0 176px;
+}
+
+section i {
+  font-style: normal;
+}
+
+.wrap {
+  width: 100rem;
+  margin: 0 auto;
 }
 /* 본문 끝 */
 /* footer 시작 */

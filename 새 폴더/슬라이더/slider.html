@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+    .wrapper {
+      max-width: 960px;
+      width: 100%;
+      height: 640px;
+    }
+    .cerasel {
+      max-width: 960px;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+    .cerasel-inner {
+      display: flex;
+      max-width: 960px;
+      width: 100%;
+      height: 100%;
+      animation: fade 10s infinite;
+    }
+    @keyframes fade {
+      0% {
+        opacity: 0;
+      }
+      20% {
+        opacity: 1;
+        transform: translateX(-960px);
+      }
+      20.1% {
+        opacity: 0;
+      }
+      40% {
+        opacity: 1;
+        transform: translateX(-1920px);
+      }
+      40.1% {
+        opacity: 0;
+      }
+      60% {
+        opacity: 1;
+        transform: translateX(-2880px);
+      }
+      60.1% {
+        opacity: 0;
+      }
+      80% {
+        opacity: 1;
+        transform: translateX(-3840px);
+      }
+      80.1% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(-4800px);
+      }
+    }
+    img {
+      width: 960px;
+      height: 640px;
+    }
+  </style>
+  <body>
+    <div class="wrapper">
+      <div class="cerasel">
+        <div class="cerasel-inner">
+          <div>
+            <img src="../../resources/image/4dollars.gif" />
+          </div>
+          <div>
+            <img src="../../resources/image/73432.png" />
+          </div>
+          <div>
+            <img
+              src="../../resources/image/alex-haigh-fEt6Wd4t4j0-unsplash.jpg"
+            />
+          </div>
+          <div>
+            <img src="../../resources/image/apple-1868496_640.jpg" />
+          </div>
+          <div>
+            <img
+              src="../../resources/image/blake-wisz-X6aY_j6JD_Y-unsplash.jpg"
+            />
+          </div>
+          <div class="final">
+            <img
+              src="../../resources/image/asia-culturecenter-33MXW8CEpMg-unsplash.jpg"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const imgFL = document.querySelector(".final");
+      console.log(imgFL.offsetLeft);
+    </script>
+  </body>
+</html>
