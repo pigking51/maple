@@ -65,7 +65,7 @@ nav {
 /* 중간 네비바 시작 */
 .Inb {
   position: absolute;
-  bottom: 23rem;
+  bottom: 18rem;
   left: 50%;
   transition: 0.5s;
   transform: translateX(-50%);
@@ -148,7 +148,7 @@ nav {
 }
 
 section {
-  padding: 200px 0 176px;
+  padding: 144px 0 112px;
 }
 
 section i {
@@ -156,7 +156,7 @@ section i {
 }
 
 .wrap {
-  width: 100rem;
+  width: 80%;
   margin: 0 auto;
 }
 /* 본문 끝 */

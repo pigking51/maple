@@ -21,8 +21,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 104px 72px;
-  margin-top: 160px;
 }
 
 .join {
@@ -361,6 +359,70 @@ td p {
   text-align: center;
 }
 /* 아이디 찾기 끝 */
+/* 본인확인 시작 */
+.mem-txt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mem-txt strong {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.lgrg {
+  display: flex;
+  margin-top: 112px;
+  gap: 72px;
+}
+
+.lgrg > .item {
+  width: 50%;
+  border: 1px solid #ddd;
+  padding: 64px;
+  text-align: center;
+}
+
+.lgrg > .item img {
+  width: 80px;
+  height: 67px;
+  margin-bottom: 32px;
+}
+
+.item.se-check {
+  margin-top: 12px;
+  padding-bottom: 64px;
+}
+
+.item.se-check > .btn {
+  padding: 24px 48px;
+  border-radius: 45px;
+}
+
+.item.se-check > ul {
+  border-top: 1px dashed #ddd;
+  list-style: none;
+  position: relative;
+  margin-top: 56px;
+  padding-top: 56px;
+}
+
+.item.se-check > li::before {
+  content: "";
+  display: block;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background-color: #dbdbdb;
+  position: absolute;
+  bottom: 0;
+  left: -0.15rem;
+}
+
+/* 본인확인 끝 */
 
 @media screen and (max-width: 510px) {
   .join input {

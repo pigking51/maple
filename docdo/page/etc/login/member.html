@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SearchPW</title>
+    <title>Member</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -79,7 +79,7 @@
                 </li>
               </ul>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown on-bar">
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
@@ -168,9 +168,9 @@
           </ul>
         </div>
         <div class="right">
-          <a href="../login/login.html">로그인</a>
+          <a href="login.html">로그인</a>
           <p>ㆍ</p>
-          <a href="register1.html">회원가입</a>
+          <a href="../register/register1.html">회원가입</a>
         </div>
       </div>
     </nav>
@@ -183,98 +183,43 @@
       </div>
     </div>
     <section>
-      <div class="register-wrap">
-        <form>
-          <div class="register-box">
-            <h3>비밀번호 찾기</h3>
-            <p>회원가입시 입력한 정보를 입력해주세요.</p>
-            <table>
-              <colgroup>
-                <col data-memver-form="th" style="width: 20%" />
-                <col data-memver-form="td" style="width: 80%" />
-              </colgroup>
-              <tr>
-                <th>아이디</th>
-                <td>
-                  <input
-                    type="text"
-                    name="ID"
-                    value
-                    title="아이디"
-                    class="inputFull"
-                  />
-                </td>
-              </tr>
-              <tr>
-                <th>이름</th>
-                <td>
-                  <input
-                    type="text"
-                    name="name"
-                    value
-                    title="이름"
-                    class="inputFull"
-                  />
-                </td>
-              </tr>
-              <tr>
-                <th>연락처</th>
-                <td>
-                  <input
-                    type="tel"
-                    name="tel"
-                    value
-                    title="연락처"
-                    class="input100"
-                  />
-                  -
-                  <input
-                    type="tel"
-                    name="tel"
-                    value
-                    title="연락처"
-                    class="input100"
-                  />
-                  -
-                  <input
-                    type="tel"
-                    name="tel"
-                    value
-                    title="연락처"
-                    class="input100"
-                  />
-                </td>
-              </tr>
-              <tr>
-                <th>이메일</th>
-                <td>
-                  <input
-                    type="text"
-                    name="email"
-                    value
-                    title="이메일"
-                    class="inputFull"
-                  />
-                </td>
-              </tr>
-            </table>
-            <div class="btn-area">
-              <a href="#" class="btn btn-dark">비밀번호 찾기</a>
-              <a href="searchID.html" class="btn btn-light">아이디 찾기</a>
-            </div>
-            <p class="last-p">
-              아이디, 이름, 이메일을 입력하고 확인 버튼을누르세요.<br />
-              아이디, 이름, 이메일이 일치하면 임시비밀번호가 회원가입 당시
-              입력하신 이메일로 발송됩니다.<br />
-              메일 수신거부를 하셨던 회원님일 경우 임시비밀번호 메일발송을 위해
-              수신거부가 해제됩니다
-            </p>
+      <div class="wrap">
+        <div class="mem-txt">
+          <strong>본인인증안내</strong>
+          <p>
+            원활한 홈페이지서비스이용과 익명의 사용자로 인한 피해를 방지 하고자
+            본인확인서비스를 시행하고 있습니다.
+          </p>
+          <p>
+            본인인증 방법 선택 후 팝업창이 나타나지 않으면 브라우저의 팝업차단을
+            해제해 주시기 바랍니다.
+          </p>
+        </div>
+        <div class="lgrg">
+          <div class="item se-check">
+            <img
+              src="../../../resource/img/free-icon-mobile-search-4322333.png"
+            />
+            <h2>휴대전화 본인확인</h2>
+            <p>개인정보보호법에 의거 휴대전화를 통하여 본인 확인</p>
+            <a class="btn btn-secondary">휴대전화 인증하기</a>
+            <ul>
+              <li>
+                생년월일, 성명, 내/외국인, 휴대폰번호, 통신사를 입력하여
+                본인확인을 받습니다.
+              </li>
+              <li>
+                본인 명의의 휴대전화가 아닐경우 본인확인이 이루어지지 않습니다.
+              </li>
+            </ul>
           </div>
-        </form>
+          <div class="item"></div>
+        </div>
       </div>
     </section>
     <!-- 본문 끝 -->
     <!-- footer 시작 -->
+    <!-- footer top 시작 -->
     <footer>
       <div class="container-fluid footer-top">
         <div class="typing-wrap">
@@ -292,11 +237,11 @@
         <div class="fb-wrap">
           <div class="fb-l">
             <p>
-              <a href="../contract.html">이용약관</a>
+              <a href="contract.html">이용약관</a>
               ㆍ
-              <a href="../individual.html">개인정보취급방침</a>
+              <a href="individual.html">개인정보취급방침</a>
               ㆍ
-              <a href="../email.html">이메일주소무단수집거부</a>
+              <a href="email.html">이메일주소무단수집거부</a>
             </p>
             <br />
             <div>
@@ -314,7 +259,7 @@
           <div class="fb-r">
             <div class="icon">
               <div class="reserved">
-                <a href="../../info/groupReservation.html" class="go">
+                <a href="../info/groupReservation.html" class="go">
                   <div>
                     <img src="../../../../resources/image/user.png" ght="40" />
                     <p>단체예약<br />신청</p>
@@ -323,7 +268,7 @@
               </div>
             </div>
             <div class="come">
-              <a href="../../intro/map.html" class="go">
+              <a href="../intro/map.html" class="go">
                 <div>
                   <img
                     src="../../../../resources/image/user.png"
