@@ -201,19 +201,57 @@
               src="../../../resource/img/free-icon-mobile-search-4322333.png"
             />
             <h2>휴대전화 본인확인</h2>
-            <p>개인정보보호법에 의거 휴대전화를 통하여 본인 확인</p>
+            <p class="tx_reference">
+              개인정보보호법에 의거 휴대전화를 통하여 본인 확인
+            </p>
             <a class="btn btn-secondary">휴대전화 인증하기</a>
             <ul>
               <li>
                 생년월일, 성명, 내/외국인, 휴대폰번호, 통신사를 입력하여
                 본인확인을 받습니다.
               </li>
-              <li>
+              <li class="se-li">
                 본인 명의의 휴대전화가 아닐경우 본인확인이 이루어지지 않습니다.
               </li>
             </ul>
           </div>
-          <div class="item"></div>
+          <div class="item se-Login">
+            <img
+              src="../../../resource/img/free-icon-desktop-computer-locked-screen-31633.png"
+            />
+            <h2>회원로그인</h2>
+            <p>홈페이지 로그인은 아이디와 비밀번호로 로그인하실 수 있습니다.</p>
+            <form method="post" action="member.html">
+              <div class="box-area">
+                <div class="insert-info">
+                  <input
+                    type="text"
+                    name="ID"
+                    placeholder="아이디를 입력해주세요."
+                  />
+                </div>
+                <div class="insert-info pw-box">
+                  <input
+                    type="password"
+                    name="PW"
+                    placeholder="비밀번호를 입력해주세요."
+                  />
+                  <p class="tx_reference">※ 글 수정, 삭제시 필요합니다.</p>
+                </div>
+                <div class="lg-btn">
+                  <input type="submit" value="Login" class="btn" />
+                </div>
+              </div>
+            </form>
+            <div class="social">
+              <div>
+                <a href="searchID.html">아이디 찾기</a>
+              </div>
+              <div>
+                <a href="searchPW.html" class="social-2a">비밀번호 찾기</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
