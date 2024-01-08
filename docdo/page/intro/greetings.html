@@ -298,9 +298,13 @@
     const navHeight = nav.getBoundingClientRect().height;
     document.addEventListener(`scroll`, () => {
       if (window.scrollY > navHeight) {
-        nav.style.backgroundColor = `#09847f`;
-        nav.style.color = `#d9d9d9`;
-        nav.style.fontWeight = "800";
+        // nav.style.backgroundColor = `#09847f`;
+        // nav.style.color = `#d9d9d9`;
+        // nav.style.fontWeight = "800";
+        nav.animate([{ backgroundColor: "#09847f" }], {
+          duration: 1500,
+          easing: "linear",
+        });
       } else {
         nav.style.backgroundColor = `transparent`;
         nav.style.color = `#000000`;

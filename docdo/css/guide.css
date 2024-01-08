@@ -1,6 +1,7 @@
 .html,
 body {
   height: 5000px;
+  color: lightslategray;
 }
 .gd-Big-Wrap {
   width: 100%;
@@ -42,9 +43,16 @@ body {
   background: url(../resource/img/ocean-3085239_1280.jpg) no-repeat;
   background-size: cover;
 }
-
+/* 
 .gd-wrap {
   width: 1600px;
+  height: 712px;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 auto;
+} */
+.gd-wrap {
+  width: 80%;
   height: 712px;
   display: flex;
   justify-content: flex-end;
@@ -61,7 +69,7 @@ body {
 }
 
 .content-wrap:nth-child(1) {
-  margin: 16rem 10rem 0 0;
+  margin: 16rem 6rem 0 0;
 }
 
 .gd-footer {
