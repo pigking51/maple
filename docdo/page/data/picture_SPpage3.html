@@ -213,43 +213,61 @@
           <div class="picture_container wrap">
             <ul class="picture_list">
               <li>
-                <img src="../../resource/img/4dollars.jpg" width="100%" />
-                <em>독도에서 바라본 울릉도의 일몰</em>
+                <img
+                  src="../../resource/img/travel-3085240_1280.jpg"
+                  width="100%"
+                />
+                <em>서도 계단에서 바라본 동도</em>
                 <span class="write">
                   <em>2023-02-15</em>
                 </span>
               </li>
               <li>
-                <img src="../../resource/img/4dollars.jpg" width="100%" />
-                <em>서도에서 바라본 동도</em>
+                <img
+                  src="../../resource/img/travel-3085240_1280.jpg"
+                  width="100%"
+                />
+                <em>울릉장구채</em>
                 <span class="write">
                   <em>2023-02-15</em>
                 </span>
               </li>
               <li>
-                <img src="../../resource/img/4dollars.jpg" width="100%" />
-                <em>동도 얼굴바위의 일출</em>
+                <img
+                  src="../../resource/img/travel-3085240_1280.jpg"
+                  width="100%"
+                />
+                <em>해무 속의 동도 능선</em>
                 <span class="write">
                   <em>2023-02-15</em>
                 </span>
               </li>
               <li>
-                <img src="../../resource/img/4dollars.jpg" width="100%" />
-                <em>갯제비쑥</em>
+                <img
+                  src="../../resource/img/travel-3085240_1280.jpg"
+                  width="100%"
+                />
+                <em>동도 선착장에서 바라본 서도</em>
                 <span class="write">
                   <em>2023-02-15</em>
                 </span>
               </li>
               <li>
-                <img src="../../resource/img/4dollars.jpg" width="100%" />
-                <em>동도 한반도바위</em>
+                <img
+                  src="../../resource/img/travel-3085240_1280.jpg"
+                  width="100%"
+                />
+                <em>삼형제굴에서 바라본 동도, 촛대바위</em>
                 <span class="write">
                   <em>2023-02-15</em>
                 </span>
               </li>
               <li>
-                <img src="../../resource/img/4dollars.jpg" width="100%" />
-                <em>포란 중인 괭이갈매기</em>
+                <img
+                  src="../../resource/img/travel-3085240_1280.jpg"
+                  width="100%"
+                />
+                <em>대한봉(서도 정상) 가는 길</em>
                 <span class="write">
                   <em>2023-02-15</em>
                 </span>
@@ -260,10 +278,10 @@
             <div class="page_control_prev">
               <a href="picture.html" class="btn_end"></a>
             </div>
-            <ol>
-              <li class="on"><a href="#">1</a></li>
+            <ol class="control_change">
+              <li><a href="picture.html">1</a></li>
               <li><a href="picture_SPpage2.html">2</a></li>
-              <li><a href="picture_SPpage3.html">3</a></li>
+              <li class="on"><a href="#">3</a></li>
               <li><a href="picture_SPpage4.html">4</a></li>
               <li><a href="picture_SPpage5.html">5</a></li>
             </ol>
@@ -614,11 +632,14 @@
     const twoBlock = document.querySelector(".two-block");
     const threeBlock = document.querySelector(".three-block");
     const fourBlock = document.querySelector(".four-block");
+    console.log(change);
 
     const Wi = document.querySelector(".which");
     const Ji = document.querySelector(".jimyoung");
     const Sa = document.querySelector(".sangsung");
     const Wo = document.querySelector(".wol");
+
+    const NC = document.querySelector(".control_change");
 
     Wi.addEventListener("click", function () {
       Wi.classList.add("active");
@@ -627,13 +648,13 @@
         Sa.classList.remove("active");
         Wo.classList.remove("active");
         oneBlock.style.display = "block";
-        oneBlock.animate([{ opacity: 0 }], {
-          duration: 1000,
-          easing: "ease-in-out",
-        });
         twoBlock.style.display = "none";
         threeBlock.style.display = "none";
         fourBlock.style.display = "none";
+      }
+      if (NC.firstElementChild.classList.contains("on") == false) {
+        NC.children.classList.remove("on");
+        NC.firstElementChild.classList.add("on");
       }
     });
     Ji.addEventListener("click", function () {
@@ -647,6 +668,10 @@
         threeBlock.style.display = "none";
         fourBlock.style.display = "none";
       }
+      if (NC.firstElementChild.classList.contains("on") == false) {
+        NC.children.classList.remove("on");
+        NC.firstElementChild.classList.add("on");
+      }
     });
     Sa.addEventListener("click", function () {
       Sa.classList.add("active");
@@ -659,6 +684,10 @@
         threeBlock.style.display = "block";
         fourBlock.style.display = "none";
       }
+      if (NC.firstElementChild.classList.contains("on") == false) {
+        NC.children.classList.remove("on");
+        NC.firstElementChild.classList.add("on");
+      }
     });
     Wo.addEventListener("click", function () {
       Wo.classList.add("active");
@@ -670,6 +699,10 @@
         twoBlock.style.display = "none";
         threeBlock.style.display = "none";
         fourBlock.style.display = "block";
+      }
+      if (NC.firstElementChild.classList.contains("on") == false) {
+        NC.children.classList.remove("on");
+        NC.firstElementChild.classList.add("on");
       }
     });
   </script>

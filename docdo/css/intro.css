@@ -1,3 +1,7 @@
+.his-body {
+  height: 3600px;
+}
+
 .title-img.myPage {
   background: url(../../resources/image/south-korea-6758748_1280.jpg) no-repeat;
   background-size: cover;
@@ -216,8 +220,18 @@ p > img {
   justify-content: center;
   padding: 4rem 0 0 0.8rem;
 }
+
 /* 오시는길 끝 */
 @media screen and (max-width: 1540px) {
+  /* html,
+  body {
+    height: 2520px;
+  } */
+
+  .his-body {
+    height: 4100px;
+  }
+
   .location-info {
     width: 10rem;
     height: 10rem;

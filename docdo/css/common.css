@@ -8,9 +8,12 @@
 html,
 body {
   width: 100%;
-  /* height: 100%; */
-  height: 2960px;
+  height: 100%;
   position: relative;
+}
+
+.email-body {
+  height: 100%;
 }
 
 /* nav 시작 */
@@ -76,7 +79,7 @@ a {
 /* 중간 네비바 시작 */
 .Inb {
   position: absolute;
-  bottom: 150rem;
+  bottom: -3rem;
   left: 50%;
   transition: 0.5s;
   transform: translateX(-50%);
@@ -361,16 +364,6 @@ footer {
 
   .right {
     font-size: 8px;
-  }
-}
-
-@media screen and (max-width: 1560px) {
-  html,
-  body {
-    height: 2660px;
-  }
-  .Inb {
-    bottom: 132rem;
   }
 }
 

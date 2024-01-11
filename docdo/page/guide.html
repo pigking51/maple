@@ -268,7 +268,7 @@
           <div class="fb-r">
             <div class="icon">
               <div class="reserved">
-                <a href="../../info/groupReservation.html" class="go">
+                <a href="info/groupReservation.html" class="go">
                   <div>
                     <img src="../../../../resources/image/user.png" ght="40" />
                     <p>단체예약<br />신청</p>
@@ -277,7 +277,7 @@
               </div>
             </div>
             <div class="come">
-              <a href="../../intro/map.html" class="go">
+              <a href="intro/map.html" class="go">
                 <div>
                   <img
                     src="../../../../resources/image/user.png"
@@ -300,9 +300,13 @@
     const navHeight = nav.getBoundingClientRect().height;
     document.addEventListener(`scroll`, () => {
       if (window.scrollY > navHeight) {
-        nav.style.backgroundColor = `#09847f`;
-        nav.style.color = `#d9d9d9`;
-        nav.style.fontWeight = "800";
+        // nav.style.backgroundColor = `#09847f`;
+        // nav.style.color = `#d9d9d9`;
+        // nav.style.fontWeight = "800";
+        nav.animate([{ backgroundColor: "#09847f" }], {
+          duration: 1000,
+          easing: "linear",
+        });
       } else {
         nav.style.backgroundColor = `transparent`;
         nav.style.color = `#000000`;

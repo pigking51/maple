@@ -224,13 +224,17 @@ em {
 }
 .picture_list {
   padding-bottom: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 8px;
 }
-.picture_list > li {
+
+/* .picture_list > li {
   float: left;
   width: 32%;
   margin-top: 24px;
   font-size: 21px;
-}
+} */
 .picture_list > li:hover {
   animation: bright 2s;
 }
@@ -244,10 +248,10 @@ em {
   }
 }
 
-.picture_list > li:nth-child(3n + 2) {
+/* .picture_list > li:nth-child(3n + 2) {
   margin: 18px 2% 0;
   padding-top: 6px;
-}
+} */
 
 .picture_list > li > em {
   display: inline-block;
@@ -331,6 +335,11 @@ div[class^="page_control"] {
 /* 사진 끝 */
 
 @media screen and (max-width: 1570px) {
+  html,
+  body {
+    height: 2520px;
+  }
+
   .preview_info {
     font-size: 14px;
     padding: 56px;
@@ -445,6 +454,10 @@ div[class^="page_control"] {
   .ul_cards {
     grid-template-columns: 1fr 1fr;
     gap: 8px;
+  }
+
+  .picture_list {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
