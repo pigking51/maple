@@ -210,7 +210,7 @@
       </ul>
       <div class="one-block">
         <div class="picture_wrap">
-          <div class="picture_container wrap">
+          <div class="picture_container wrap blockPage">
             <ul class="picture_list">
               <li>
                 <img
@@ -248,6 +248,53 @@
                   width="100%"
                 />
                 <em>동도 정상에서 바라본 서도</em>
+                <span class="write">
+                  <em>2023-02-15</em>
+                </span>
+              </li>
+            </ul>
+          </div>
+          <!-- 서브 재클릭시 나오는 화면 -->
+          <div class="picture_container wrap hiddenPage" style="display: none">
+            <ul class="picture_list">
+              <li>
+                <img src="../../resource/img/4dollars.jpg" width="100%" />
+                <em>동도 숫돌바위</em>
+                <span class="write">
+                  <em>2023-02-15</em>
+                </span>
+              </li>
+              <li>
+                <img src="../../resource/img/4dollars.jpg" width="100%" />
+                <em>동틀 무렵의 동도 망양대</em>
+                <span class="write">
+                  <em>2023-02-15</em>
+                </span>
+              </li>
+              <li>
+                <img src="../../resource/img/4dollars.jpg" width="100%" />
+                <em>서도 몰돌해변에서 바라본 동도</em>
+                <span class="write">
+                  <em>2023-02-15</em>
+                </span>
+              </li>
+              <li>
+                <img src="../../resource/img/4dollars.jpg" width="100%" />
+                <em>땅채송화</em>
+                <span class="write">
+                  <em>2023-02-15</em>
+                </span>
+              </li>
+              <li>
+                <img src="../../resource/img/4dollars.jpg" width="100%" />
+                <em>서도 코끼리바위</em>
+                <span class="write">
+                  <em>2023-02-15</em>
+                </span>
+              </li>
+              <li>
+                <img src="../../resource/img/4dollars.jpg" width="100%" />
+                <em>동도 유채꽃, 망양대</em>
                 <span class="write">
                   <em>2023-02-15</em>
                 </span>
@@ -410,7 +457,7 @@
               </li>
               <li>
                 <img
-                  src="../../resource/img/seagull-7756735_640.jpg"
+                  src="../../resource/img/sea-6820202_640.jpg"
                   width="100%"
                 />
                 <em>동도 독립문바위</em>
@@ -424,7 +471,7 @@
             <div class="page_control_prev">
               <a href="#" class="btn_end"></a>
             </div>
-            <ol>
+            <ol class="control_change">
               <li class="on"><a href="#">1</a></li>
               <li><a href="#">2</a></li>
               <li><a href="#">3</a></li>
@@ -619,6 +666,10 @@
     const Wo = document.querySelector(".wol");
 
     const NC = document.querySelector(".control_change");
+    const DE = NC.querySelector(".on");
+
+    const blockPage = document.querySelector(".blockPage");
+    const hiddenPage = document.querySelector(".hiddenPage");
 
     Wi.addEventListener("click", function () {
       Wi.classList.add("active");
@@ -631,10 +682,12 @@
         threeBlock.style.display = "none";
         fourBlock.style.display = "none";
       }
-      if (NC.firstElementChild.classList.contains("on") == false) {
-        NC.children.classList.remove("on");
-        NC.firstElementChild.classList.add("on");
+      if ((hiddenPage.style.display == "none") == true) {
+        blockPage.style.display = "none";
+        hiddenPage.style.display = "block";
       }
+      NC.firstElementChild.classList.add("on");
+      DE.classList.remove("on");
     });
     Ji.addEventListener("click", function () {
       Ji.classList.add("active");
@@ -646,10 +699,6 @@
         twoBlock.style.display = "block";
         threeBlock.style.display = "none";
         fourBlock.style.display = "none";
-      }
-      if (NC.firstElementChild.classList.contains("on") == false) {
-        NC.children.classList.remove("on");
-        NC.firstElementChild.classList.add("on");
       }
     });
     Sa.addEventListener("click", function () {
@@ -663,10 +712,6 @@
         threeBlock.style.display = "block";
         fourBlock.style.display = "none";
       }
-      if (NC.firstElementChild.classList.contains("on") == false) {
-        NC.children.classList.remove("on");
-        NC.firstElementChild.classList.add("on");
-      }
     });
     Wo.addEventListener("click", function () {
       Wo.classList.add("active");
@@ -678,10 +723,6 @@
         twoBlock.style.display = "none";
         threeBlock.style.display = "none";
         fourBlock.style.display = "block";
-      }
-      if (NC.firstElementChild.classList.contains("on") == false) {
-        NC.children.classList.remove("on");
-        NC.firstElementChild.classList.add("on");
       }
     });
   </script>

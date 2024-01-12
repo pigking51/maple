@@ -213,61 +213,43 @@
           <div class="picture_container wrap">
             <ul class="picture_list">
               <li>
-                <img
-                  src="../../resource/img/south-korea-6758748_1280.jpg"
-                  width="100%"
-                />
-                <em>갯괴불주머니</em>
+                <img src="../../resource/img/4dollars.jpg" width="100%" />
+                <em>독도에서 바라본 울릉도의 일몰</em>
                 <span class="write">
                   <em>2023-02-15</em>
                 </span>
               </li>
               <li>
-                <img
-                  src="../../resource/img/south-korea-6758748_1280.jpg"
-                  width="100%"
-                />
-                <em>서도 왕호장근 군락지, 탕건봉</em>
+                <img src="../../resource/img/4dollars.jpg" width="100%" />
+                <em>서도에서 바라본 동도</em>
                 <span class="write">
                   <em>2023-02-15</em>
                 </span>
               </li>
               <li>
-                <img
-                  src="../../resource/img/south-korea-6758748_1280.jpg"
-                  width="100%"
-                />
-                <em>가제바위에서 바라본 독도</em>
+                <img src="../../resource/img/4dollars.jpg" width="100%" />
+                <em>동도 얼굴바위의 일출</em>
                 <span class="write">
                   <em>2023-02-15</em>
                 </span>
               </li>
               <li>
-                <img
-                  src="../../resource/img/south-korea-6758748_1280.jpg"
-                  width="100%"
-                />
-                <em>동도 천장굴 상부</em>
+                <img src="../../resource/img/4dollars.jpg" width="100%" />
+                <em>갯제비쑥</em>
                 <span class="write">
                   <em>2023-02-15</em>
                 </span>
               </li>
               <li>
-                <img
-                  src="../../resource/img/south-korea-6758748_1280.jpg"
-                  width="100%"
-                />
-                <em>독도에 돌아온 괭이갈매기</em>
+                <img src="../../resource/img/4dollars.jpg" width="100%" />
+                <em>동도 한반도바위</em>
                 <span class="write">
                   <em>2023-02-15</em>
                 </span>
               </li>
               <li>
-                <img
-                  src="../../resource/img/south-korea-6758748_1280.jpg"
-                  width="100%"
-                />
-                <em>서도 선착장에서 바라본 독도</em>
+                <img src="../../resource/img/4dollars.jpg" width="100%" />
+                <em>포란 중인 괭이갈매기</em>
                 <span class="write">
                   <em>2023-02-15</em>
                 </span>
@@ -293,7 +275,7 @@
       </div>
       <div class="two-block">
         <div class="picture_wrap">
-          <div class="picture_container wrap">
+          <div class="picture_container wrap blockPage">
             <ul class="picture_list">
               <li>
                 <img
@@ -357,12 +339,77 @@
               </li>
             </ul>
           </div>
+          <!-- 서브 재클릭시 나오는 화면 -->
+          <div class="picture_container wrap hiddenPage" style="display: none">
+            <ul class="picture_list">
+              <li>
+                <img
+                  src="../../resource/img/seagull-7756735_640.jpg"
+                  width="100%"
+                />
+                <em>서도 왕호장근 군락지의 괭이갈매기 떼</em>
+                <span class="write">
+                  <em>2023-02-15</em>
+                </span>
+              </li>
+              <li>
+                <img
+                  src="../../resource/img/seagull-7756735_640.jpg"
+                  width="100%"
+                />
+                <em>왕호장근</em>
+                <span class="write">
+                  <em>2023-02-15</em>
+                </span>
+              </li>
+              <li>
+                <img
+                  src="../../resource/img/seagull-7756735_640.jpg"
+                  width="100%"
+                />
+                <em>서도 정상에서 바라본 동도</em>
+                <span class="write">
+                  <em>2023-02-15</em>
+                </span>
+              </li>
+              <li>
+                <img
+                  src="../../resource/img/seagull-7756735_640.jpg"
+                  width="100%"
+                />
+                <em>서도 계단에서 바라본 동도</em>
+                <span class="write">
+                  <em>2023-02-15</em>
+                </span>
+              </li>
+              <li>
+                <img
+                  src="../../resource/img/seagull-7756735_640.jpg"
+                  width="100%"
+                />
+                <em>동도 망양대 계단의 괭이갈매기</em>
+                <span class="write">
+                  <em>2023-02-15</em>
+                </span>
+              </li>
+              <li>
+                <img
+                  src="../../resource/img/seagull-7756735_640.jpg"
+                  width="100%"
+                />
+                <em>대황</em>
+                <span class="write">
+                  <em>2023-02-15</em>
+                </span>
+              </li>
+            </ul>
+          </div>
           <div class="pagination">
             <div class="page_control_prev">
               <a href="picture_SM.html" class="btn_end"></a>
             </div>
-            <ol>
-              <li><a href="picture_SM.html.html">1</a></li>
+            <ol class="control_change">
+              <li><a href="picture_SM.html">1</a></li>
               <li class="on"><a href="#">2</a></li>
               <li><a href="picture_SMpage3.html">3</a></li>
               <li><a href="picture_SMpage4.html">4</a></li>
@@ -640,6 +687,12 @@
 
     twoBlock.style.display = "block";
 
+    const NC = document.querySelector(".control_change");
+    const DE = NC.querySelector(".on");
+
+    const blockPage = document.querySelector(".blockPage");
+    const hiddenPage = document.querySelector(".hiddenPage");
+
     Wi.addEventListener("click", function () {
       Wi.classList.add("active");
       if (Wi.classList.contains("active")) {
@@ -663,6 +716,12 @@
         threeBlock.style.display = "none";
         fourBlock.style.display = "none";
       }
+      if ((hiddenPage.style.display == "none") == true) {
+        blockPage.style.display = "none";
+        hiddenPage.style.display = "block";
+      }
+      NC.firstElementChild.classList.add("on");
+      DE.classList.remove("on");
     });
     Sa.addEventListener("click", function () {
       Sa.classList.add("active");
