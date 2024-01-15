@@ -3,14 +3,386 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Notice</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/rounge.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
   </head>
   <body>
     <!-- 네비 시작 -->
+    <nav
+      class="navbar sticky-top navbar-expand-lg"
+      style="background-color: transparent"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../../dokDo_new.html">
+          <div class="main-total">
+            <img
+              src="../../../resources/image/main_logo-removebg-preview.png"
+            />
+            <img
+              src="../../../resources/image/main_title-removebg-preview.png"
+            />
+          </div>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul
+            class="navbar-nav me-auto mb-2 mb-lg-0 container justify-content-center menu"
+          >
+            <!-- <li class="nav-item hidden-lgrg">
+      <div class="right">
+        <a href="page/etc/login/login.html">로그인</a>
+        <p>ㆍ</p>
+        <a href="page/etc/register/register1.html">회원가입</a>
+      </div>
+    </li> -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                전시관 소개
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="../intro/greetings.html"
+                    >인사말</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../intro/history.html"
+                    >전시관 연혁</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../intro/map.html">오시는길</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                관람 정보
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="../info/info.html">관람안내</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../info/groupReservation.html"
+                    >단체예약</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../info/check-cancel.html"
+                    >예약확인ㆍ취소</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../guide.html"
+                >전시안내&nbsp;&nbsp;&nbsp;</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                독도 자료실
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="../data/now.html">독도현황</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../data/picture.html"
+                    >독도사진</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../data/educateData.html"
+                    >교육자료실</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                열린광장
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="notice.html">공지사항</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="photo.html">포토앨범</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="right">
+          <a href="../etc/login/login.html">로그인</a>
+          <p>ㆍ</p>
+          <a href="../etc/register/register1.html">회원가입</a>
+        </div>
+      </div>
+    </nav>
     <!-- 네비 끝 -->
     <!-- 본문 시작 -->
+    <div class="ex-fake"></div>
+    <div class="title-img myPage">
+      <div class="title-inner">
+        <h2>공지사항</h2>
+      </div>
+      <div class="Inb wrap">
+        <div class="sub-nav">
+          <ul class="sub-nav-ul">
+            <li class="active">
+              <a href="now.html" class="about_sub01 on">공지사항</a>
+            </li>
+            <li>
+              <a href="picture.html" class="about_sub02">포토앨범</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <section>
+      <div class="wrap">
+        <div class="edu">
+          <form>
+            <select>
+              <option>전체</option>
+              <option>제목</option>
+            </select>
+            <input
+              type="text"
+              name="text_search"
+              class="text_search"
+              placeholder="검색어를 입력하세요."
+            />
+            <input type="button" value="검색" class="search" />
+          </form>
+        </div>
+
+        <table class="notice_table">
+          <colgroup>
+            <col data-memver-form="td" style="width: 90%" />
+          </colgroup>
+          <tr>
+            <td>
+              <a href="#"></a>
+              <span
+                ><i>02</i>
+                2024.01
+              </span>
+              <a class="btn btn-primary">공지</a>독도전시관 공사 기간 임시
+              휴관 연장 안내
+            </a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="#">
+                <div>
+                <span
+                  ><i>16</i>
+                  2023.12
+                </span>
+                <a class="btn btn-primary">공지</a>독도전시관 공사 기간 임시
+                휴관 연장 안내
+                </div>
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span
+                ><i>25</i>
+                2023.10
+              </span>
+              제목
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span
+                ><i>24</i>
+                2023.10
+              </span>
+              제목
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span>
+                <i>20</i>
+                2023.09
+              </span>
+              제목
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span
+                ><i>02</i>
+                2023.09
+              </span>
+              제목
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span
+                ><i>20</i>
+                2023.04
+              </span>
+              제목
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span
+                ><i>16</i>
+                2023.03
+              </span>
+              <div>제목</div>
+            </td>
+          </tr>
+        </table>
+        <div class="pagination onePage">
+          <div class="page_control_prev">
+            <a href="#" class="btn_end"></a>
+          </div>
+          <ol>
+            <li class="on"><a href="#">1</a></li>
+          </ol>
+          <div class="page_control_next">
+            <a href="#" class="btn_end last"></a>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- 본문 끝 -->
     <!-- footer 시작 -->
+    <footer>
+      <div class="container-fluid footer-top">
+        <div class="typing-wrap">
+          <div class="container=sm align-items-center">
+            <img
+              src="../../../resources/image/화면_캡처_2023-12-14_142155-removebg-preview.png"
+            />
+          </div>
+          <p class="typing">"경상북도 울릉읍 독도리 1-96"</p>
+        </div>
+      </div>
+      <!-- footer-top 끝 -->
+      <!-- footer-bottom 시작 -->
+      <div class="container-fluid footer-bottom">
+        <div class="fb-wrap">
+          <div class="fb-l">
+            <p>
+              <a href="../etc/contract.html">이용약관</a>
+              ㆍ
+              <a href="../etc/individual.html">개인정보취급방침</a>
+              ㆍ
+              <a href="../etc/email.html">이메일주소무단수집거부</a>
+            </p>
+            <br />
+            <div>
+              <p>
+                주소. (30126) 세종특별자치시 새롬서로 68 새롬고등학교 1층
+                독도전시관
+              </p>
+              <p>문의전화. 044-999-6393</p>
+            </div>
+            <br />
+            <p class="fb-1-bottom">
+              © 2022 Dokdo Exhibitonon All rights reserved .
+            </p>
+          </div>
+          <div class="fb-r">
+            <div class="icon">
+              <div class="reserved">
+                <a href="../info/groupReservation.html" class="go">
+                  <div>
+                    <img src="../../../resources/image/user.png" ght="40" />
+                    <p>단체예약<br />신청</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="come">
+              <a href="../intro/map.html" class="go">
+                <div>
+                  <img
+                    src="../../../resources/image/user.png"
+                    width="40"
+                    height="40"
+                  />
+                  <p>독도전시관<br />오시는길</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer-bottom 끝 -->
+    </footer>
     <!-- footer 끝 -->
   </body>
+  <script>
+    const nav = document.querySelector("nav");
+    const navHeight = nav.getBoundingClientRect().height;
+    document.addEventListener(`scroll`, () => {
+      if (window.scrollY > navHeight) {
+        // nav.style.backgroundColor = `#09847f`;
+        // nav.style.color = `#d9d9d9`;
+        // nav.style.fontWeight = "800";
+        nav.animate([{ backgroundColor: "#09847f" }], {
+          duration: 1000,
+          easing: "linear",
+        });
+      } else {
+        nav.style.backgroundColor = `transparent`;
+        nav.style.color = `#000000`;
+      }
+    });
+  </script>
 </html>

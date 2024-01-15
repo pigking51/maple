@@ -1,0 +1,220 @@
+.title-img.myPage {
+  background: url(../../resources/image/dokdo-1790316_1280.jpg) no-repeat;
+  background-size: cover;
+  border-radius: 0 0 100px 0;
+  width: 100%;
+  height: 32rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 공지사항 시작 */
+.edu {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  padding: 40px 0;
+  width: 100%;
+}
+
+form,
+.notice_table {
+  background-color: #f6f6f6;
+}
+
+.edu form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.edu select {
+  display: block;
+  width: 130px;
+  height: 56px;
+  margin-right: 16px;
+  padding: 0 18px;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.edu .text_search {
+  height: 52px;
+  padding: 8px 12px;
+  background-color: #ffffff;
+  width: 33%;
+  margin-right: 8px;
+}
+.edu .search {
+  width: 100px;
+  height: 50px;
+  background-color: #444444;
+  color: white;
+  font-weight: 600;
+  margin: 2px 0;
+  padding: 0px 16px;
+}
+
+.edu .search:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+table a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.notice_table {
+  width: 100%;
+  /* text-align: center; */
+  position: relative;
+}
+.notice_table tr {
+  position: relative;
+}
+
+.notice_table tr:first-child {
+  border-top: 2px solid #000000;
+}
+
+.notice_table th,
+td {
+  padding: 20px 10px;
+}
+/* .notice_table th {
+  position: absolute;
+  top: 0;
+  left: 8px;
+} */
+.notice_table td {
+  width: 100%;
+  padding: 32px 16px 40px 124px;
+  display: flex;
+  align-items: center;
+}
+.notice_table > a {
+  width: 100%;
+}
+.notice_table > a div {
+  width: 100%;
+  display: flex;
+}
+.notice_table td .btn {
+  background-color: #000000;
+  border-radius: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  text-align: center;
+  padding: 4px 2px;
+  margin-right: 8px;
+}
+
+.notice_table th:nth-child(2),
+td:nth-child(2) {
+  text-align: left;
+}
+
+.notice_table span {
+  color: #999999;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 8px;
+}
+.notice_table span::after {
+  content: "";
+  border-right: 1px solid #999999;
+
+  padding: 40px 16px 0 24px;
+  /* top: 16px;
+  right: 25px; */
+}
+.notice_table span > i {
+  display: block;
+  color: #dadada;
+  font-size: 40px;
+  padding-right: 32px;
+}
+
+.hidden-search_table {
+  display: none;
+}
+
+.pagination {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination ol {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+.pagination li {
+  margin: 0 8px;
+}
+
+.pagination a {
+  color: #999999;
+  margin: 0 3px;
+  border: 1px solid #ddd;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  position: relative;
+  font-size: 16px;
+  transition: all 0.3s ease 0s;
+  opacity: 1;
+}
+.pagination .on a {
+  color: #000000;
+  font-weight: 600;
+}
+
+div[class^="page_control"] {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  margin: 0 9px;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.btn_end::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url(../resource/img/free-icon-previous-4147447.png) no-repeat 50%
+    13px / 9.1px;
+  opacity: 0.4;
+}
+.btn_end.last::after {
+  transform: rotateY(180deg);
+}
+
+.onePage > div {
+  width: auto;
+}

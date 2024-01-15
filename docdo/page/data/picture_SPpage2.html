@@ -574,9 +574,9 @@
             <div class="page_control_prev">
               <a href="picture_WT.html" class="btn_end"></a>
             </div>
-            <ol>
-              <li class="on"><a href="picture_WT.html">1</a></li>
-              <li><a href="picture_WTpage2.html">2</a></li>
+            <ol class="control_change">
+              <li><a href="picture_WT.html">1</a></li>
+              <li class="on"><a href="picture_WTpage2.html">2</a></li>
               <li><a href="picture_WTpage3.html">3</a></li>
               <li><a href="picture_WTpage4.html">4</a></li>
               <li><a href="picture_WTpage5.html">5</a></li>
@@ -687,6 +687,7 @@
 
     const NC = document.querySelector(".control_change");
     const DE = NC.querySelector(".on");
+    const HF = DE.querySelector("a");
 
     const blockPage = document.querySelector(".blockPage");
     const hiddenPage = document.querySelector(".hiddenPage");
@@ -704,6 +705,7 @@
       }
       if ((hiddenPage.style.display == "none") == true) {
         blockPage.style.display = "none";
+        HF.href = "picture_SPpage2.html";
         hiddenPage.style.display = "block";
       }
       NC.firstElementChild.classList.add("on");

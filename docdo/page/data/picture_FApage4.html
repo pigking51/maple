@@ -688,6 +688,7 @@
 
     const NC = document.querySelector(".control_change");
     const DE = NC.querySelector(".on");
+    const HF = DE.querySelector("a");
 
     const blockPage = document.querySelector(".blockPage");
     const hiddenPage = document.querySelector(".hiddenPage");
@@ -733,6 +734,7 @@
       }
       if ((hiddenPage.style.display == "none") == true) {
         blockPage.style.display = "none";
+        HF.href = "picture_FApage4.html";
         hiddenPage.style.display = "block";
       }
       NC.firstElementChild.classList.add("on");

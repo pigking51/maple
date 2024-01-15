@@ -456,7 +456,7 @@
               <li><a href="picture_FApage2.html">2</a></li>
               <li><a href="picture_FApage3.html">3</a></li>
               <li><a href="picture_FApage4.html">4</a></li>
-              <li class="on"><a href="picture_FApage5.html">5</a></li>
+              <li class="on"><a href="#">5</a></li>
             </ol>
             <div class="page_control_next">
               <a href="picture_FApage5.html" class="btn_end last"></a>
@@ -649,6 +649,7 @@
 
     const NC = document.querySelector(".control_change");
     const DE = NC.querySelector(".on");
+    const HF = DE.querySelector("a");
 
     const blockPage = document.querySelector(".blockPage");
     const hiddenPage = document.querySelector(".hiddenPage");
@@ -694,6 +695,7 @@
       }
       if ((hiddenPage.style.display == "none") == true) {
         blockPage.style.display = "none";
+        HF.href = "picture_FApage5.html";
         hiddenPage.style.display = "block";
       }
       NC.firstElementChild.classList.add("on");

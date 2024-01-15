@@ -252,16 +252,6 @@ em {
   }
 }
 
-/* .picture_list > li:nth-child(3n + 2) {
-  margin: 18px 2% 0;
-  padding-top: 6px;
-} */
-
-/* .hiddenPage {
-  width: 100%;
-  margin: 0;
-} */
-
 .picture_list > li > em {
   display: inline-block;
   padding: 28px 0 12px;
@@ -342,6 +332,96 @@ div[class^="page_control"] {
 }
 
 /* 사진 끝 */
+/* 교육자료실 시작 */
+.edu {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  padding: 40px 0;
+  width: 100%;
+}
+
+form,
+.search_table {
+  background-color: #f6f6f6;
+}
+
+.edu form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.edu select {
+  display: block;
+  width: 130px;
+  height: 56px;
+  margin-right: 16px;
+  padding: 0 18px;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.edu .text_search {
+  height: 52px;
+  padding: 8px 12px;
+  background-color: #ffffff;
+  width: 33%;
+  margin-right: 8px;
+}
+.edu .search {
+  width: 100px;
+  height: 50px;
+  background-color: #444444;
+  color: white;
+  font-weight: 600;
+  margin: 2px 0;
+  padding: 0px 16px;
+}
+
+.edu .search:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+table a {
+  text-decoration: none;
+  color: #000000;
+  padding: 10px;
+}
+
+.search_table {
+  width: 100%;
+  text-align: center;
+}
+
+.search_table tr:first-child {
+  border-top: 2px solid #000000;
+}
+
+.search_table tr:last-child {
+  border-top: 1px solid #999999;
+}
+
+.search_table th,
+td {
+  padding: 20px 10px;
+}
+
+.search_table th:nth-child(2),
+td:nth-child(2) {
+  text-align: left;
+}
+
+.hidden-search_table {
+  display: none;
+}
+
+.onePage > div {
+  width: auto;
+}
+
+/* 교육자료실 끝 */
 
 @media screen and (max-width: 1570px) {
   html,
@@ -476,5 +556,28 @@ div[class^="page_control"] {
   }
   .block3-map .site-map {
     height: 240px;
+  }
+
+  .search_table {
+    display: none;
+  }
+  .hidden-search_table {
+    display: block;
+    position: relative;
+    width: 100%;
+  }
+  .hidden-search_table tr {
+    width: 100%;
+  }
+  .hidden-search_table td:first-child {
+    width: 100%;
+    padding: 24px 114px 24px 10px;
+  }
+  .hidden-search_table td:last-child {
+    position: absolute;
+    right: 0;
+    bottom: -8px;
+    width: 120px;
+    padding: 24px 10px;
   }
 }
