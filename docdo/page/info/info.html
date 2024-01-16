@@ -19,7 +19,7 @@
       style="background-color: transparent"
     >
       <div class="container-fluid">
-        <a class="navbar-brand" href="../../dokDo_new.html">
+        <a class="navbar-brand" href="../../index.html">
           <div class="main-total">
             <img
               src="../../../resources/image/main_logo-removebg-preview.png"
@@ -174,20 +174,20 @@
         <h2>관람안내</h2>
         <p>대한민국 독도, 세종에서 만나다!</p>
       </div>
-    </div>
-    <div class="Inb wrap">
-      <div class="sub-nav">
-        <ul class="sub-nav-ul">
-          <li class="active">
-            <a href="info.html" class="about_sub01 on">관람안내</a>
-          </li>
-          <li>
-            <a href="groupReservation.html" class="about_sub02">단체예약</a>
-          </li>
-          <li>
-            <a href="check-cancel.html" class="about_sub03">예약확인ㆍ취소</a>
-          </li>
-        </ul>
+      <div class="Inb wrap">
+        <div class="sub-nav">
+          <ul class="sub-nav-ul">
+            <li class="active">
+              <a href="info.html" class="about_sub01 on">관람안내</a>
+            </li>
+            <li>
+              <a href="groupReservation.html" class="about_sub02">단체예약</a>
+            </li>
+            <li>
+              <a href="check-cancel.html" class="about_sub03">예약확인ㆍ취소</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
     <section>
@@ -297,7 +297,7 @@
               </div>
             </div>
             <div class="come">
-              <a href="map.html" class="go">
+              <a href="../intro/map.html" class="go">
                 <div>
                   <img
                     src="../../../resources/image/user.png"
@@ -320,9 +320,13 @@
     const navHeight = nav.getBoundingClientRect().height;
     document.addEventListener(`scroll`, () => {
       if (window.scrollY > navHeight) {
-        nav.style.backgroundColor = `#09847f`;
-        nav.style.color = `#d9d9d9`;
-        nav.style.fontWeight = "800";
+        // nav.style.backgroundColor = `#09847f`;
+        // nav.style.color = `#d9d9d9`;
+        // nav.style.fontWeight = "800";
+        nav.animate([{ backgroundColor: "#09847f" }], {
+          duration: 1000,
+          easing: "linear",
+        });
       } else {
         nav.style.backgroundColor = `transparent`;
         nav.style.color = `#000000`;

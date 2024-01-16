@@ -265,4 +265,27 @@ small {
     width: 100%;
     padding: 56px;
   }
+
+  .wrap-inner {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .wrap-inner > p {
+    width: 100%;
+  }
+  .wrap-inner > div {
+    width: 100%;
+    padding-left: 0;
+  }
+  .wrap-inner > div > ul {
+    padding-left: 0;
+  }
+  .wrap-inner2 {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .wrap-inner2 b {
+    padding-right: 104px;
+  }
 }

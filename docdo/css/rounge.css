@@ -72,8 +72,8 @@ table a {
 
 .notice_table {
   width: 100%;
-  /* text-align: center; */
   position: relative;
+  font-weight: 600;
 }
 .notice_table tr {
   position: relative;
@@ -94,17 +94,11 @@ td {
 } */
 .notice_table td {
   width: 100%;
-  padding: 32px 16px 40px 124px;
+  padding: 36px 16px 32px 124px;
   display: flex;
   align-items: center;
 }
-.notice_table > a {
-  width: 100%;
-}
-.notice_table > a div {
-  width: 100%;
-  display: flex;
-}
+
 .notice_table td .btn {
   background-color: #000000;
   border-radius: 30%;
@@ -115,11 +109,6 @@ td {
   text-align: center;
   padding: 4px 2px;
   margin-right: 8px;
-}
-
-.notice_table th:nth-child(2),
-td:nth-child(2) {
-  text-align: left;
 }
 
 .notice_table span {
@@ -134,8 +123,6 @@ td:nth-child(2) {
   border-right: 1px solid #999999;
 
   padding: 40px 16px 0 24px;
-  /* top: 16px;
-  right: 25px; */
 }
 .notice_table span > i {
   display: block;
@@ -217,4 +204,65 @@ div[class^="page_control"] {
 
 .onePage > div {
   width: auto;
+}
+
+/* 공지사항 끝 */
+/* 포토앨범 시작 */
+
+.picture_wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.picture_wrap ul {
+  list-style: none;
+}
+
+.picture_wrap img {
+  width: 100%;
+}
+
+em {
+  font-style: normal;
+}
+.picture_list {
+  padding-bottom: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+  width: 100%;
+  margin: 0;
+}
+
+.picture_list > li:hover {
+  animation: bright 2s;
+}
+
+@keyframes bright {
+  0% {
+    filter: brightness(100%);
+  }
+  100% {
+    filter: brightness(150%);
+  }
+}
+
+.picture_list > li > em {
+  display: inline-block;
+  padding: 28px 0 12px;
+}
+
+.picture_list .write {
+  font-size: 16px;
+  color: #999999;
+  display: block;
+  padding-bottom: 28px;
+}
+/* 포토앨범 끝 */
+
+@media screen and (max-width: 715px) {
+  .notice_table {
+    font-size: 12px;
+  }
 }

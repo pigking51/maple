@@ -14,11 +14,11 @@
   <body>
     <!-- 네비게이션바 시작 -->
     <nav
-      class="navbar sticky-top bg-transparent navbar-expand-lg"
+      class="navbar sticky-top navbar-expand-lg"
       style="background-color: transparent"
     >
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.html">
           <div class="main-total">
             <img src="../resources/image/main_logo-removebg-preview.png" />
             <img src="../resources/image/main_title-removebg-preview.png" />
@@ -50,9 +50,21 @@
                 전시관 소개
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">인사말</a></li>
-                <li><a class="dropdown-item" href="#">전시관 연혁</a></li>
-                <li><a class="dropdown-item" href="#">오시는길</a></li>
+                <li>
+                  <a class="dropdown-item" href="page/intro/greetings.html"
+                    >인사말</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="page/intro/history.html"
+                    >전시관 연혁</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="page/intro/map.html"
+                    >오시는길</a
+                  >
+                </li>
               </ul>
             </li>
             <li class="nav-item dropdown">
@@ -66,13 +78,27 @@
                 관람 정보
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">관람안내</a></li>
-                <li><a class="dropdown-item" href="#">단체예약</a></li>
-                <li><a class="dropdown-item" href="#">예약확인ㆍ취소</a></li>
+                <li>
+                  <a class="dropdown-item" href="page/info/info.html"
+                    >관람안내</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="page/info/groupReservation.html"
+                    >단체예약</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="page/info/check-cancel.html"
+                    >예약확인ㆍ취소</a
+                  >
+                </li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">전시안내</a>
+              <a class="nav-link" href="page/guide.html">전시안내</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -85,9 +111,21 @@
                 독도 자료실
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">독도현황</a></li>
-                <li><a class="dropdown-item" href="#">독도사진</a></li>
-                <li><a class="dropdown-item" href="#">교육자료실</a></li>
+                <li>
+                  <a class="dropdown-item" href="page/data/now.html"
+                    >독도현황</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="page/data/picture.html"
+                    >독도사진</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="page/data/educateData.html"
+                    >교육자료실</a
+                  >
+                </li>
               </ul>
             </li>
             <li class="nav-item dropdown">
@@ -96,22 +134,29 @@
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
-                ㅉ
                 aria-expanded="false"
               >
                 열린광장
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">공지사항</a></li>
-                <li><a class="dropdown-item" href="#">포토앨범</a></li>
+                <li>
+                  <a class="dropdown-item" href="page/rounge/notice.html"
+                    >공지사항</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="page/rounge/photo.html"
+                    >포토앨범</a
+                  >
+                </li>
               </ul>
             </li>
           </ul>
         </div>
         <div class="right">
-          <a href="#">로그인</a>
+          <a href="page/etc/login/login.html">로그인</a>
           <p>ㆍ</p>
-          <a href="#">회원가입</a>
+          <a href="page/etc/register/register1.html">회원가입</a>
         </div>
       </div>
     </nav>
@@ -149,7 +194,9 @@
                 독도에 대한 의미를 새기는 특별한 공간<br />
                 독도의 삶과 역사를 잊지 않기 위해 독도전시관이 앞장서겠습니다.
               </p>
-              <a href="#" class="show"><div>전시안내 보기</div></a>
+              <a href="page/guide.html" class="show"
+                ><div>전시안내 보기</div></a
+              >
             </div>
           </div>
         </div>
@@ -163,7 +210,9 @@
                 독도에 대한 의미를 새기는 특별한 공간<br />
                 독도의 삶과 역사를 잊지 않기 위해 독도전시관이 앞장서겠습니다.
               </p>
-              <a href="#" class="show"><div>전시안내 보기</div></a>
+              <a href="page/guide.html" class="show"
+                ><div>전시안내 보기</div></a
+              >
             </div>
           </div>
         </div>
@@ -174,8 +223,10 @@
       <!-- 예약확인 시작 -->
       <div class="reserved">
         <div>
-          <img src="../resources/image/user.png" width="40" height="40" />
-          <p>단체예약<br />신청</p>
+          <a href="page/info/groupReservation.html">
+            <img src="../resources/image/user.png" width="40" height="40" />
+            <p>단체예약<br />신청</p>
+          </a>
         </div>
       </div>
     </div>
@@ -191,16 +242,8 @@
               수호 의지를 다질 수 있는 소중한 시간이 되기를 바랍니다.
             </p>
           </div>
-          <a href="#" class="btn">바로가기</a>
+          <a href="page/data/now.html" class="btn">바로가기</a>
         </div>
-        <!-- <div class="img-box">
-          <img
-            src="../resources/image/first_card.png"
-            width="150"
-            height="150"
-            alt="..."
-          />
-        </div> -->
       </div>
       <div class="card container-fluid pair">
         <div class="card-body">
@@ -211,7 +254,9 @@
                 <img src="../resources/image/sound-removebg-preview.png" />
               </div>
               <h5>044-999-6393</h5>
-              <a href="#" class="btn question">관람 문의하기</a>
+              <a href="page/info/info.html" class="btn question"
+                >관람 문의하기</a
+              >
             </div>
           </div>
           <ul class="card-text one-two-text">
@@ -280,7 +325,7 @@
           <div class="carousel-item active" data-bs-interval="10000">
             <div class="lotOfCard">
               <div class="card" style="width: 80rem; height: 25rem">
-                <a href="#">
+                <a href="page/rounge/notice.html">
                   <img
                     src="../resources/image/빡침-분노.gif"
                     height="120"
@@ -301,7 +346,7 @@
                 </a>
               </div>
               <div class="card" style="width: 80rem; height: 25rem">
-                <a href="#">
+                <a href="page/rounge/notice.html">
                   <img
                     src="../resources/image/sealion-4339210_1280.jpg"
                     height="120"
@@ -322,7 +367,7 @@
                 </a>
               </div>
               <div class="card" style="width: 80rem; height: 25rem">
-                <a href="#">
+                <a href="page/rounge/notice.html">
                   <img
                     src="../resources/image/4dollars.gif"
                     height="120"
@@ -343,7 +388,7 @@
                 </a>
               </div>
               <div class="card" style="width: 80rem; height: 25rem">
-                <a href="#">
+                <a href="page/rounge/notice.html">
                   <img
                     src="../resources/image/간식.gif"
                     height="120"
@@ -368,7 +413,7 @@
           <div class="carousel-item" data-bs-interval="10000">
             <div class="lotOfCard se-slide">
               <div class="card" style="width: 80rem; height: 25rem">
-                <a href="#">
+                <a href="page/rounge/notice.html">
                   <img
                     src="../resources/image/빡침-분노.gif"
                     height="120"
@@ -389,7 +434,7 @@
                 </a>
               </div>
               <div class="card" style="width: 80rem; height: 25rem">
-                <a href="#">
+                <a href="page/rounge/notice.html">
                   <img
                     src="../resources/image/sealion-4339210_1280.jpg"
                     height="120"
@@ -410,7 +455,7 @@
                 </a>
               </div>
               <div class="card" style="width: 80rem; height: 25rem">
-                <a href="#">
+                <a href="page/rounge/notice.html">
                   <img
                     src="../resources/image/4dollars.gif"
                     height="120"
@@ -431,7 +476,7 @@
                 </a>
               </div>
               <div class="card" style="width: 80rem; height: 25rem">
-                <a href="#">
+                <a href="page/rounge/notice.html">
                   <img
                     src="../resources/image/간식.gif"
                     height="120"
@@ -463,7 +508,7 @@
     <!-- 본문하단~footer사이 배너 시작 -->
     <div class="container-fluid banner">
       <div class="container">
-        <a href="#"
+        <a href="page/guide.html"
           ><div class="container banner-1">
             <div>
               <h3>체험존 안내</h3>
@@ -479,7 +524,7 @@
           </div>
         </a>
 
-        <a href="#"
+        <a href="page/guide.html"
           ><div class="banner-2">
             <div>
               <h3>영상관 안내</h3>
@@ -516,11 +561,11 @@
         <div class="fb-wrap">
           <div class="fb-l">
             <p>
-              <a href="#">이용약관</a>
+              <a href="page/etc/contract.html">이용약관</a>
               ㆍ
-              <a href="#">개인정보취급방침</a>
+              <a href="page/etc/individual.html">개인정보취급방침</a>
               ㆍ
-              <a href="#">이메일주소무단수집거부</a>
+              <a href="page/etc/email.html">이메일주소무단수집거부</a>
             </p>
             <br />
             <div>
@@ -545,8 +590,14 @@
             </div>
             <div class="come">
               <div>
-                <img src="../resources/image/user.png" width="40" height="40" />
-                <p>독도전시관<br />오시는길</p>
+                <a href="page/intro/map.html">
+                  <img
+                    src="../resources/image/user.png"
+                    width="40"
+                    height="40"
+                  />
+                  <p>독도전시관<br />오시는길</p>
+                </a>
               </div>
             </div>
           </div>
@@ -556,4 +607,22 @@
     </footer>
     <!-- footer끝 -->
   </body>
+  <script>
+    const nav = document.querySelector("nav");
+    const navHeight = nav.getBoundingClientRect().height;
+    document.addEventListener(`scroll`, () => {
+      if (window.scrollY > navHeight) {
+        // nav.style.backgroundColor = `#09847f`;
+        // nav.style.color = `#d9d9d9`;
+        // nav.style.fontWeight = "800";
+        nav.animate([{ backgroundColor: "#09847f" }], {
+          duration: 1000,
+          easing: "linear",
+        });
+      } else {
+        nav.style.backgroundColor = `transparent`;
+        nav.style.color = `#000000`;
+      }
+    });
+  </script>
 </html>
