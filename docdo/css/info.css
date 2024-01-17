@@ -233,6 +233,7 @@ table th[class="sat"] {
 
 .side-scroll {
   height: 280px;
+  min-width: 322px;
   overflow-y: scroll;
 }
 
@@ -251,6 +252,32 @@ small {
 }
 
 /* 단체예약신청 끝 */
+@media screen and (max-width: 1765px) {
+  .mg-space .preview-info {
+    padding: 40px;
+  }
+}
+@media screen and (max-width: 1765px) {
+  .mg-space .preview-info {
+    padding: 24px;
+    font-size: 14px;
+  }
+  .mg-space .preview-info b {
+    font-size: 24px;
+    padding-bottom: 8px;
+  }
+  .mg-space .preview-info p {
+    margin-bottom: 8px;
+  }
+}
+@media screen and (max-width: 1380px) {
+  .mg-space .preview-info {
+    padding: 8px;
+  }
+  .mg-space .preview-info ul {
+    padding: 0;
+  }
+}
 @media screen and (max-width: 1020px) {
   .res-txt > strong {
     font-size: 32px;
@@ -274,6 +301,9 @@ small {
   .wrap-inner > p {
     width: 100%;
   }
+  .wrap-inner > p > img {
+    max-height: 696px;
+  }
   .wrap-inner > div {
     width: 100%;
     padding-left: 0;
@@ -287,5 +317,16 @@ small {
   }
   .wrap-inner2 b {
     padding-right: 104px;
+  }
+}
+
+@media screen and (max-width: 996px) {
+  .flex {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .flex > div {
+    width: 100%;
   }
 }

@@ -446,6 +446,11 @@ a .masker {
   width: 400px;
 }
 
+.lotOfCard > .card img {
+  max-width: 220px;
+  padding: 4px 8px;
+}
+
 .lotOfCard .btn {
   width: 60px;
   height: 20px;
@@ -461,6 +466,7 @@ a .masker {
 
 .lotOfCard h5 {
   font-size: 18px;
+  font-weight: 600;
 }
 
 .body-tag {
@@ -750,6 +756,13 @@ footer {
     margin: 0;
   }
 
+  .lotOfCard h5 {
+    font-size: 16px;
+  }
+  .lotOfCard .card-text {
+    font-size: 14px;
+  }
+
   .banner {
     top: 72%;
   }
@@ -826,11 +839,14 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
     font-size: 0.8em;
     margin: 16px 0;
-    gap: 4px;
     flex-wrap: wrap;
+    min-width: 186px;
+  }
+
+  .lotOfCard .card img {
+    max-height: 120px;
   }
 
   .lotOfCard a {
@@ -842,6 +858,10 @@ footer {
   .lotOfCard .card-body {
     height: 260px;
     padding: 16px 0;
+  }
+
+  .lotOfCard .card-text {
+    height: 126px;
   }
 
   .banner {
@@ -866,6 +886,12 @@ footer {
 }
 
 @media screen and (max-width: 850px) {
+  .lotOfCard {
+    gap: 16px;
+  }
+  .lotOfCard .card {
+    padding: 8px;
+  }
   .banner > div {
     flex-direction: column;
     justify-content: center;

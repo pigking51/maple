@@ -328,7 +328,8 @@
                 <a href="page/rounge/notice.html">
                   <img
                     src="../resources/image/빡침-분노.gif"
-                    height="120"
+                    width="auto"
+                    height="148"
                     class="card-img-top"
                     alt="..."
                   />
@@ -349,7 +350,8 @@
                 <a href="page/rounge/notice.html">
                   <img
                     src="../resources/image/sealion-4339210_1280.jpg"
-                    height="120"
+                    width="auto"
+                    height="148"
                     class="card-img-top"
                     alt="..."
                   />
@@ -370,7 +372,8 @@
                 <a href="page/rounge/notice.html">
                   <img
                     src="../resources/image/4dollars.gif"
-                    height="120"
+                    width="auto"
+                    height="148"
                     class="card-img-top"
                     alt="..."
                   />
@@ -391,7 +394,8 @@
                 <a href="page/rounge/notice.html">
                   <img
                     src="../resources/image/간식.gif"
-                    height="120"
+                    width="auto"
+                    height="148"
                     class="card-img-top"
                     alt="..."
                   />
@@ -416,7 +420,8 @@
                 <a href="page/rounge/notice.html">
                   <img
                     src="../resources/image/빡침-분노.gif"
-                    height="120"
+                    width="auto"
+                    height="148"
                     class="card-img-top"
                     alt="..."
                   />
@@ -437,7 +442,8 @@
                 <a href="page/rounge/notice.html">
                   <img
                     src="../resources/image/sealion-4339210_1280.jpg"
-                    height="120"
+                    width="auto"
+                    height="148"
                     class="card-img-top"
                     alt="..."
                   />
@@ -458,7 +464,8 @@
                 <a href="page/rounge/notice.html">
                   <img
                     src="../resources/image/4dollars.gif"
-                    height="120"
+                    width="auto"
+                    height="148"
                     class="card-img-top"
                     alt="..."
                   />
@@ -479,7 +486,8 @@
                 <a href="page/rounge/notice.html">
                   <img
                     src="../resources/image/간식.gif"
-                    height="120"
+                    width="auto"
+                    height="148"
                     class="card-img-top"
                     alt="..."
                   />
@@ -519,7 +527,11 @@
             </div>
 
             <div>
-              <img src="../resources/image/dog1.jpg" width="120" height="120" />
+              <img
+                src="../resources/image/굳건이.png"
+                width="auto"
+                height="105.59"
+              />
             </div>
           </div>
         </a>
@@ -535,7 +547,11 @@
             </div>
 
             <div>
-              <img src="../resources/image/cat.jpg" width="120" height="120" />
+              <img
+                src="../resources/image/굳건이.png"
+                width="auto"
+                height="105.59"
+              />
             </div>
           </div>
         </a>
@@ -622,6 +638,36 @@
       } else {
         nav.style.backgroundColor = `transparent`;
         nav.style.color = `#000000`;
+      }
+    });
+    const banner = document.querySelector(".banner");
+    const bannerHeight = banner.getBoundingClientRect().top;
+    const bnH = bannerHeight + window.pageYOffset;
+    console.log(bnH);
+    const scrollBar = window.scrollY + 692.75;
+    console.log(scrollBar);
+    console.log(bannerHeight);
+
+    const scrollBT = window.innerHeight - 100;
+    console.log(scrollBT);
+    console.log(window.innerHeight);
+
+    document.addEventListener("scroll", () => {
+      if ((scrollBT = bannerHeight)) {
+        // alert("이건 된다");
+        banner.animate(
+          [
+            {
+              transform: "translateY(185.59px)",
+              opacity: 0,
+            },
+            { transform: "translateY(0)", opacity: 1 },
+          ],
+          {
+            duration: 1200,
+            easing: "linear",
+          }
+        );
       }
     });
   </script>
