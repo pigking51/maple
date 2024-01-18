@@ -195,8 +195,8 @@
                 독도의 삶과 역사를 잊지 않기 위해 독도전시관이 앞장서겠습니다.
               </p>
               <a href="page/guide.html" class="show"
-                ><div>전시안내 보기</div></a
-              >
+                ><div>전시안내 보기</div>
+              </a>
             </div>
           </div>
         </div>
@@ -210,9 +210,9 @@
                 독도에 대한 의미를 새기는 특별한 공간<br />
                 독도의 삶과 역사를 잊지 않기 위해 독도전시관이 앞장서겠습니다.
               </p>
-              <a href="page/guide.html" class="show"
-                ><div>전시안내 보기</div></a
-              >
+              <a href="page/guide.html" class="show repair"
+                ><div>전시안내 보기</div>
+              </a>
             </div>
           </div>
         </div>
@@ -286,10 +286,10 @@
       <div class="row card container-fluid col-3">
         <div class="card-body">
           <div>
-            <h5 class="card-title">독도 바로알기</h5>
+            <h5 class="card-title">공지사항</h5>
             <p class="card-text">
-              독도의 역사를 배우고, 자연을 체험하며 독도영토주권<br />
-              수호 의지를 다질 수 있는 소중한 시간이 되기를 바랍니다.
+              독도의 미래를 생각하는 공간으로 앞으로도 지속적으로 활용되기를
+              바랍니다.
             </p>
           </div>
         </div>
@@ -641,19 +641,20 @@
       }
     });
     const banner = document.querySelector(".banner");
-    const bannerHeight = banner.getBoundingClientRect().top;
+    const bannerHeight = banner.getBoundingClientRect().top + 696.54;
     const bnH = bannerHeight + window.pageYOffset;
-    console.log(bnH);
-    const scrollBar = window.scrollY + 692.75;
+
+    const scrollBar = window.scrollTop;
     console.log(scrollBar);
     console.log(bannerHeight);
+    console.log(window.scrollY);
 
-    const scrollBT = window.innerHeight - 100;
-    console.log(scrollBT);
-    console.log(window.innerHeight);
+    // const asd = scrollBar.getBoundingClientRect
 
-    document.addEventListener("scroll", () => {
-      if ((scrollBT = bannerHeight)) {
+    const scrollBT = window.innerHeight - 300;
+
+    document.addEventListener(`scroll`, () => {
+      if (window.scrollY > bannerHeight) {
         // alert("이건 된다");
         banner.animate(
           [

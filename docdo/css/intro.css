@@ -208,7 +208,6 @@ p > img {
   left: 8rem;
   overflow: hidden;
   color: #ffffff;
-  width: 20%;
   height: 37%;
   padding: 56px;
 }
@@ -285,6 +284,10 @@ p > img {
     align-items: center;
   }
 
+  .map-bottom-content ul {
+    padding-left: 256px;
+  }
+
   .it {
     flex-direction: column;
     align-items: flex-start;
@@ -327,6 +330,10 @@ p > img {
   }
   .it span {
     font-size: 10px;
+  }
+
+  .map-bottom-content ul {
+    padding-left: 32px;
   }
 
   .location-info {
