@@ -591,6 +591,7 @@ a .masker {
   height: 100%;
   width: 100%;
   gap: 48px;
+  padding-left: 28px;
 }
 
 .banner-2 > div:nth-child(1) {
@@ -955,6 +956,7 @@ footer {
   .banner-2 {
     justify-content: space-between;
     margin-top: 8px;
+    padding-left: 0;
   }
 }
 

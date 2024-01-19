@@ -197,8 +197,8 @@
             <p>
               <img
                 src="../../../resources/image/asia-culturecenter-33MXW8CEpMg-unsplash.jpg"
-                width="auto"
-                height="auto"
+                width="100%"
+                height="100%"
               />
             </p>
             <div class="preview-info">
@@ -331,6 +331,16 @@
         nav.style.backgroundColor = `transparent`;
         nav.style.color = `#000000`;
       }
+    });
+    const Mbutton = document.querySelector(".navbar-toggler");
+    const Mnavbar = document.querySelector(".navbar-collapse");
+    Mbutton.addEventListener("click", function () {
+      // alert("왜 변화가 없음?");
+      Mnavbar.style.position = "absolute";
+      Mnavbar.style.top = "63px";
+      Mnavbar.style.left = "0";
+      Mnavbar.style.right = "0";
+      Mnavbar.style.backgroundColor = "#09847f";
     });
   </script>
 </html>

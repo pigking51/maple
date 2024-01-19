@@ -44,7 +44,7 @@
           <ul
             class="navbar-nav me-auto mb-2 mb-lg-0 container justify-content-center menu"
           >
-            <!-- <li class="nav-item hidden-lgrg">
+            <!-- <li class="nav-item hidden-lgrg" style="display: none">
               <div class="right">
                 <a href="page/etc/login/login.html">로그인</a>
                 <p>ㆍ</p>
@@ -582,6 +582,17 @@
       } else {
         location.href = "register2.html";
       }
+    });
+    const Mbutton = document.querySelector(".navbar-toggler");
+    const Mnavbar = document.querySelector(".navbar-collapse");
+    const Mlgrg = document.querySelector(".hidden-lgrg");
+    Mbutton.addEventListener("click", function () {
+      // alert("왜 변화가 없음?");
+      Mnavbar.style.position = "absolute";
+      Mnavbar.style.top = "63px";
+      Mnavbar.style.left = "0";
+      Mnavbar.style.right = "0";
+      Mnavbar.style.backgroundColor = "#09847f";
     });
   </script>
 </html>

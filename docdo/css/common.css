@@ -29,6 +29,13 @@ a {
   text-decoration: none;
 }
 
+.show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
 .menu {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -93,6 +100,7 @@ a {
   display: flex;
   align-items: center;
   position: relative;
+  z-index: -2;
 }
 
 .sub-nav > .sub-nav-ul {
@@ -145,6 +153,7 @@ a {
   right: 0;
   position: absolute;
   border-radius: 0 0 45px 0;
+  z-index: -1;
 }
 /* 중간 네비바 끝 */
 

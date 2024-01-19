@@ -651,7 +651,7 @@
 
     // const asd = scrollBar.getBoundingClientRect
 
-    const scrollBT = window.innerHeight - 300;
+    const scrollBT = window.innerHeight - 400;
 
     document.addEventListener(`scroll`, () => {
       if (window.scrollY > bannerHeight) {
@@ -670,6 +670,15 @@
           }
         );
       }
+    });
+    const Mbutton = document.querySelector(".navbar-toggler");
+    const Mnavbar = document.querySelector(".navbar-collapse");
+    Mbutton.addEventListener("click", function () {
+      Mnavbar.style.position = "absolute";
+      Mnavbar.style.top = "63px";
+      Mnavbar.style.left = "0";
+      Mnavbar.style.right = "0";
+      Mnavbar.style.backgroundColor = "#09847f";
     });
   </script>
 </html>
