@@ -1,0 +1,135 @@
+.title {
+  background-color: orange;
+}
+
+section {
+  background-color: #000000;
+  background: url(../../resource/img/andrey-metelev-DEuansgqjns-unsplash.jpg);
+  background-position: cover;
+  color: #ffffff;
+  padding: 64px;
+}
+.wrap {
+  background-color: #000000;
+  filter: opacity(0.6);
+  border-radius: 10%;
+}
+
+.sub-title {
+  font-weight: 800;
+}
+
+.at-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #444444;
+  font-size: 10px;
+}
+
+.at-title strong {
+  color: #000000;
+}
+
+.at-title > i {
+  font-size: 16px;
+  font-weight: 100;
+}
+
+.at-title > strong {
+  font-size: 32px;
+  margin-bottom: 32px;
+}
+
+.at-contents {
+  margin-top: 72px;
+}
+
+.it {
+  display: flex;
+}
+
+.it > p {
+  width: 50%;
+  animation: moveUp 1.2s ease;
+}
+.it > p {
+  width: 50%;
+  animation: moveUp 1.2s ease;
+}
+@keyframes moveUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    translatez: 0;
+    transform: translateY(0%);
+  }
+}
+
+p > img {
+  width: 80%;
+}
+.it > dl {
+  width: 50%;
+  padding: 40px 0 0 96px;
+  position: relative;
+  display: table-cell;
+  vertical-align: top;
+  font-size: 0.8rem;
+}
+
+.it > dl::before {
+  content: "";
+  width: 0.1rem;
+  position: absolute;
+  top: 0;
+  bottom: -1rem;
+  left: 0;
+  background-color: #dbdbdb;
+}
+
+.it:last-child dl::after {
+  content: "";
+  display: block;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background-color: #dddddd;
+  position: absolute;
+  bottom: 0;
+  left: -0.15rem;
+}
+
+.it dt {
+  font-size: 40px;
+  color: #09847f;
+  margin-bottom: 24px;
+  font-weight: 600;
+  font-family: "Montserrat", "Noto Sans KR";
+  line-height: 1;
+}
+
+.it dt::after {
+  content: "";
+  display: block;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background-color: #09847f;
+  position: absolute;
+  top: 3.5rem;
+  left: -0.15rem;
+}
+
+.it dd {
+  display: block;
+}
+
+.it b {
+  display: inline-block;
+  font-family: "Montserrat", "Noto Sans KR";
+  min-width: 10rem;
+}

@@ -1,0 +1,42 @@
+section {
+  background-color: #000000;
+  background: url(../../resource/img/andrey-metelev-DEuansgqjns-unsplash.jpg)
+    no-repeat;
+  background-position: cover;
+  color: rgb(132, 40, 218);
+  padding: 64px;
+}
+
+.sub-title {
+  color: #000000;
+  font-weight: 800;
+}
+
+.wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.wrap > div {
+  margin: 16px;
+  padding: 24px;
+}
+
+.wrap > div:last-child {
+  grid-area: 2/1/3/-1;
+  color: #ffffff;
+  width: 100%;
+}
+
+.article3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #000000;
+  filter: opacity(0.8);
+  border-radius: 10%;
+}
+
+.article3 > div:first-child {
+  margin-bottom: 32px;
+}

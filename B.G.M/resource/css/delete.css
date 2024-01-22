@@ -1,0 +1,46 @@
+.title {
+  background-color: orange;
+}
+
+section {
+  background-color: #000000;
+  background: url(../../resource/img/andrey-metelev-DEuansgqjns-unsplash.jpg);
+  background-position: cover;
+  color: #ffffff;
+  padding: 64px;
+}
+.wrap {
+  background-color: #000000;
+  filter: opacity(0.6);
+  border-radius: 10%;
+}
+
+.delete {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.delete > div {
+  width: 100%;
+}
+
+.delete .item {
+  display: flex;
+  width: 100%;
+  padding: 24px;
+  margin: 0 auto;
+}
+
+.item > div:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin-right: 16px;
+}
+.item > div:last-child {
+  width: 50%;
+  margin-right: 16px;
+  text-align: left;
+}
