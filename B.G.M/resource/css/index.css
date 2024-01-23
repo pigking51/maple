@@ -4,7 +4,7 @@
   align-items: center;
   padding: 56px 32px;
   color: #ffffff;
-  background: linear-gradient(0deg, #000000 15%, #999999 70%, #1e1e1e);
+  background: linear-gradient(0deg, #000000 25%, #999999 70%, #1e1e1e);
 }
 .title-inner {
   display: flex;
@@ -17,7 +17,9 @@
 .main-title h2 {
   font-size: 16rem;
   font-weight: 600;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   box-shadow: 8px 16px 16px hsl(0deg 0% 0% / 0.25);
+  border-radius: 15%;
 }
 
 section {

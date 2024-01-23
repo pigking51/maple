@@ -2,15 +2,24 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  word-break: keep-all;
 }
 body {
   position: relative;
   font-size: 16px;
 }
+
+/* nav[class="one-nav"] {
+  z-index: 3;
+}
+
+nav[class="two-nav"] {
+  z-index: 2;
+} */
 .title {
   width: 100%;
   height: 450px;
-  background-color: orange;
+  background: linear-gradient(75deg, orange, yellow, pink);
   filter: opacity(0.6);
   display: flex;
   justify-content: center;
@@ -21,6 +30,7 @@ body {
 .title h2 {
   font-weight: 800;
   color: #000000;
+  filter: opacity(0.8);
   font-size: 64px;
 }
 

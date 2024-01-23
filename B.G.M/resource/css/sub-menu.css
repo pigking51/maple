@@ -1,0 +1,18 @@
+.poke > div > div {
+  width: 100%;
+}
+
+.contents-wrap {
+  display: block;
+  width: 100%;
+}
+
+.poke-img {
+  float: left;
+  width: 43%;
+  box-shadow: 8px 16px 8px 8px #000000;
+}
+.poke-content {
+  float: right;
+  width: 43%;
+}

@@ -1,0 +1,9 @@
+section {
+  background: linear-gradient(45deg, #9b7a5bd3, #9b7654 45%, #eead70);
+  color: #ffffff;
+  padding: 64px;
+}
+
+.sub-title > h2 {
+  text-align: center;
+}

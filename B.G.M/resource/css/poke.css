@@ -5,20 +5,3 @@ section {
   color: #ffffff;
   padding: 64px;
 }
-.poke > div > div {
-  width: 100%;
-}
-
-.contents-wrap {
-  display: block;
-  width: 100%;
-}
-
-.poke-img {
-  float: left;
-  width: 43%;
-}
-.poke-content {
-  float: right;
-  width: 43%;
-}
