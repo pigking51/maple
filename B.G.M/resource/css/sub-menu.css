@@ -10,7 +10,8 @@
 .poke-img {
   float: left;
   width: 43%;
-  box-shadow: 8px 16px 8px 8px #000000;
+  /* box-shadow: 8px 16px 8px 8px #000000; */
+  box-shadow: 16px 16px 8px 8px #000000;
 }
 .poke-content {
   float: right;

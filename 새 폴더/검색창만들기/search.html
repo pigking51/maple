@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    ul {
+      list-style: none;
+    }
+    input,
+    button {
+      padding: 5px 10px;
+    }
+
+    .list {
+      border: 1px solid green;
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .list > li {
+      flex-basis: 48%;
+      margin-bottom: 20px;
+    }
+    .list > li > img {
+      width: 80%;
+      background: url();
+    }
+  </style>
+  <body>
+    <section class="container">
+      <h1>Pokemon Roms Search List</h1>
+      <form class="search-form">
+        <input type="text" class="search" />
+        <button class="searchBtn">search</button>
+      </form>
+      <ul class="list">
+        <li>
+          <img src="../../B.G.M/resource/img/red-title.webp" alt="레드버전" />
+          <p>name</p>
+          <p>title</p>
+        </li>
+        <li>
+          <img src="../../B.G.M/resource/img/green-title.jpg" alt="그린버전" />
+          <p>name</p>
+          <p>title</p>
+        </li>
+        <li>
+          <img src="../../B.G.M/resource/img/blue-title.webp" alt="블루버전" />
+          <p>name</p>
+          <p>title</p>
+        </li>
+        <li>
+          <img
+            src="../../B.G.M/resource/img/yellow-title.jpeg"
+            alt="옐로우버전"
+          />
+          <p>name</p>
+          <p>title</p>
+        </li>
+        <li>
+          <img src="../../B.G.M/resource/img/gold-title.jpg" alt="골드버전" />
+          <p>name</p>
+          <p>title</p>
+        </li>
+        <li>
+          <img src="../../B.G.M/resource/img/sliver-title.jpg" alt="실버버전" />
+          <p>name</p>
+          <p>title</p>
+        </li>
+        <li>
+          <img
+            src="../../B.G.M/resource/img/krystal-title.jpeg"
+            alt="크리스탈버전"
+          />
+          <p>name</p>
+          <p>title</p>
+        </li>
+        <li>
+          <img src="../../B.G.M/resource/img/ruby-title.png" alt="루비버전" />
+          <p>name</p>
+          <p>title</p>
+        </li>
+        <li>
+          <img
+            src="../../B.G.M/resource/img/shappa-title.jpg"
+            alt="사파이어버전"
+          />
+          <p>name</p>
+          <p>title</p>
+        </li>
+        <li>
+          <img
+            src="../../B.G.M/resource/img/emerald-title.jpeg"
+            alt="에메랄드버전"
+          />
+          <p>name</p>
+          <p>title</p>
+        </li>
+        <li>
+          <img
+            src="../../B.G.M/resource/img/FR-title.jpeg"
+            alt="파이어레드버전"
+          />
+          <p>name</p>
+          <p>title</p>
+        </li>
+        <li>
+          <img src="../../B.G.M/resource/img/LG-title.png" alt="리프그린버전" />
+          <p>name</p>
+          <p>title</p>
+        </li>
+      </ul>
+    </section>
+  </body>
+  <script>
+    const pokemons = [
+      {
+        id: 1,
+        name: `레드버전`,
+        type: `1세대`,
+        url: `../../B.G.M/resource/img/red-title.webp`,
+      },
+      {
+        id: 2,
+        name: `그린버전`,
+        type: `1세대`,
+        url: `../../B.G.M/resource/img/green-title.jpg`,
+      },
+      {
+        id: 3,
+        name: `블루버전`,
+        type: `1세대`,
+        url: `../../B.G.M/resource/img/blue-title.webp`,
+      },
+      {
+        id: 4,
+        name: `옐로우버전`,
+        type: `1세대`,
+        url: `../../B.G.M/resource/img/yellow-title.jpeg`,
+      },
+      {
+        id: 5,
+        name: `골드버전`,
+        type: `2세대`,
+        url: `../../B.G.M/resource/img/gold-title.jpg`,
+      },
+      {
+        id: 6,
+        name: `실버버전`,
+        type: `2세대`,
+        url: `../../B.G.M/resource/img/sliver-title.jpg`,
+      },
+      {
+        id: 7,
+        name: `크리스탈버전`,
+        type: `2세대`,
+        url: `../../B.G.M/resource/img/krystal-title.jpeg`,
+      },
+      {
+        id: 8,
+        name: `루비버전`,
+        type: `3세대`,
+        url: `../../B.G.M/resource/img/ruby-title.png`,
+      },
+      {
+        id: 9,
+        name: `사파이어버전`,
+        type: `3세대`,
+        url: `../../B.G.M/resource/img/shappa-title.jpg`,
+      },
+      {
+        id: 10,
+        name: `에메랄드버전`,
+        type: `3세대`,
+        url: `../../B.G.M/resource/img/emerald-title.jpeg`,
+      },
+      {
+        id: 11,
+        name: `파이어레드버전`,
+        type: `3세대`,
+        url: `../../B.G.M/resource/img/FR-title.jpeg`,
+      },
+      {
+        id: 12,
+        name: `리프그린버전`,
+        type: `3세대`,
+        url: `../../B.G.M/resource/img/LG-title.png`,
+      },
+    ];
+
+    const pokeTag = [
+      {
+        name: `포켓몬`,
+      },
+      {
+        name: `버전`,
+      },
+      {
+        name: `레드`,
+      },
+      {
+        name: `그린`,
+      },
+      {
+        name: `블루`,
+      },
+      {
+        name: `파이어`,
+      },
+      {
+        name: `리프`,
+      },
+      {
+        name: `골드`,
+      },
+      {
+        name: `실버`,
+      },
+      {
+        name: `크리스탈`,
+      },
+      {
+        name: `루비`,
+      },
+      {
+        name: `사파이어`,
+      },
+      {
+        name: `에메랄드`,
+      },
+      {
+        name: `옐로우`,
+      },
+    ];
+    const onlineTag = [
+      { name: `스타크래프트` },
+      { name: `starcraft` },
+      { name: `스타크래프트2` },
+      { name: `starcraft2` },
+      { name: `오리지널` },
+      { name: `부르드워` },
+      { name: `자유의날개` },
+      { name: `군단의심장` },
+      { name: `군단의심장` },
+      { name: `공허의유산` },
+    ];
+    const mobileTag = [
+      { name: `세븐나이츠` },
+      { name: `다함께차차차` },
+      { name: `애니팡` },
+      { name: `윈드러너` },
+    ];
+    const etcTag = [
+      { name: `메탈슬러그` },
+      { name: `metalslug` },
+      { name: `환세취호전` },
+      { name: `hwan` },
+    ];
+
+    const list = document.querySelector(".list");
+
+    // function showList(val = "") {
+    //   list.innerHTML = "";
+    //   const res = pokemons.forEach((pokemon) => {
+    //     if (pokemon.name.includes(val)) {
+    //       const li = document.createElement(`li`);
+    //       li.innerHTML = `
+    //       <img src='${pokemon.url}' alt = '${pokemon.name}'>
+    //       <p>이름: ${pokemon.name}</p>
+    //       <p>속성: ${pokemon.type}</p>
+    //       `;
+    //       list.appendChild(li);
+    //     }
+    //   }); // end showList
+    // }
+
+    // showList();
+
+    function searchAction(val = "") {
+      const les = pokeTag.forEach((keyword) => {
+        if (keyword.name.includes(val)) {
+          location.href = `../../B.G.M/page/poke/poke-intro.html`;
+        }
+      });
+
+      const aes = onlineTag.forEach((keyword) => {
+        if (keyword.name.includes(val)) {
+          location.href = `../../B.G.M/page/online/online-intro.html`;
+        }
+      });
+
+      const ves = mobileTag.forEach((keyword) => {
+        if (keyword.name.includes(val)) {
+          location.href = `../../B.G.M/page/mobile/mobile-intro.html`;
+        }
+        // else if(val == ""){
+        //   alert(`내용이 없습니다!`);
+        //   return false;
+        // }
+      });
+
+      const yes = etcTag.forEach((keyword) => {
+        if (keyword.name.includes(val)) {
+          location.href = `../../B.G.M/page/etc/etc-intro.html`;
+        }
+      });
+    }
+
+    // else if (onlineTag.name.includes(val)) {
+    //   location.href = `../../B.G.M/page/online/online-intro.html`;
+    // } else if (moblieTag.name.includes(val)) {
+    //   location.href = `../../B.G.M/page/mobile/mobile-intro.html`;
+    // } else if (etcTag.name.includes(val)) {
+    //   location.href = `../../B.G.M/page/etc/etc-intro.html`;
+    // } else {
+    //   alert(`결과가 없습니다!`);
+    // }
+
+    // 검색기능
+    const searchInput = document.querySelector(".search");
+    const searchBtn = document.querySelector(".searchBtn");
+
+    // searchBtn.addEventListener("click", (e) => {
+    //   e.preventDefault();
+    //   const val = searchInput.value;
+    //   console.log(val);
+    //   showList(val);
+    // });
+
+    // searchBtn.addEventListener("click", (e) => {
+    //   e.preventDefault();
+    //   const val = searchInput.value;
+    //   console.log(val);
+    //   showList(val);
+    // });
+
+    searchBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      const sval = searchInput.value;
+      console.log(sval);
+      if (sval == "") {
+        alert(`내용이 없습니다!`);
+      } else {
+        searchAction(sval);
+      }
+    });
+  </script>
+</html>
