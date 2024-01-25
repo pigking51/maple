@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Search</title>
+    <title>Document</title>
   </head>
   <style>
     * {
@@ -121,9 +121,6 @@
     </section>
   </body>
   <script>
-    const searchInput = document.querySelector(".search");
-    const searchBtn = document.querySelector(".searchBtn");
-
     const pokemons = [
       {
         id: 1,
@@ -270,80 +267,45 @@
 
     const list = document.querySelector(".list");
 
+    // 검색기능
+    const searchInput = document.querySelector(".search");
+    const searchBtn = document.querySelector(".searchBtn");
+    const sval = searchInput.value;
+
     function showList(val = "") {
       list.innerHTML = "";
       const res = pokemons.forEach((pokemon) => {
         if (pokemon.name.includes(val)) {
           const li = document.createElement(`li`);
           li.innerHTML = `
-          <img src='${pokemon.url}' alt = '${pokemon.name}'>
-          <p>이름: ${pokemon.name}</p>
-          <p>속성: ${pokemon.type}</p>
-          `;
+            <img src='${pokemon.url}' alt = '${pokemon.name}'>
+            <p>이름: ${pokemon.name}</p>
+            <p>속성: ${pokemon.type}</p>
+            `;
           list.appendChild(li);
         }
       }); // end showList
     }
 
-    // showList();
+    const totalTag = [...pokeTag, ...onlineTag, ...mobileTag, ...etcTag];
+    // searchBtn.addEventListener("click", (e) => {});
 
+    // searchInput.addEventListener("keyup", function () {
+    //   console.log(sval);
+    //   pokemons.forEach((pokemon) => {
+    //     if (pokemon.name.includes(sval)) {
+    //       showList(sval);
+    //     }
+    //   });
+    // });
     searchBtn.addEventListener("click", (e) => {
       e.preventDefault();
-      const val = searchInput.value;
-      console.log(val);
-      showList(val);
+      console.log(sval);
+      showList(sval);
     });
-
-    searchInput.addEventListener("keyup", function () {
-      const sval = searchInput.value;
-      pokemons.forEach((pokemon) => {
-        if (pokemon.name.includes(sval)) {
-          showList(sval);
-        }
-      });
-    });
-
-    // function searchAction(val = "") {
-    //   const les = pokeTag.forEach((keyword) => {
-    //     if (keyword.name.includes(val)) {
-    //       location.href = `../../B.G.M/page/poke/poke-intro.html`;
-    //     }
-    //   });
-
-    //   const aes = onlineTag.forEach((keyword) => {
-    //     if (keyword.name.includes(val)) {
-    //       location.href = `../../B.G.M/page/online/online-intro.html`;
-    //     }
-    //   });
-
-    //   const ves = mobileTag.forEach((keyword) => {
-    //     if (keyword.name.includes(val)) {
-    //       location.href = `../../B.G.M/page/mobile/mobile-intro.html`;
-    //     }
-    //   });
-
-    //   const yes = etcTag.forEach((keyword) => {
-    //     if (keyword.name.includes(val)) {
-    //       location.href = `../../B.G.M/page/etc/etc-intro.html`;
-    //     }
-    //   });
-    // }
-
-    // else if (onlineTag.name.includes(val)) {
-    //   location.href = `../../B.G.M/page/online/online-intro.html`;
-    // } else if (moblieTag.name.includes(val)) {
-    //   location.href = `../../B.G.M/page/mobile/mobile-intro.html`;
-    // } else if (etcTag.name.includes(val)) {
-    //   location.href = `../../B.G.M/page/etc/etc-intro.html`;
-    // } else {
-    //   alert(`결과가 없습니다!`);
-    // }
-
-    // // 검색기능
 
     // searchBtn.addEventListener("click", (e) => {
     //   e.preventDefault();
-    //   const sval = searchInput.value;
     //   console.log(sval);
     //   if (sval == "") {
     //     alert(`내용이 없습니다!`);
@@ -351,5 +313,28 @@
     //     searchAction(sval);
     //   }
     // });
+
+    // 실시간 검색
+
+    // ↓ 실시간 검색(실패 = NEXT.js 설치해야 되나봄)
+
+    // const [search, setSearch] = useState("");
+    // const handleChange = useCallback((e) => {
+    //     seaSearch(e.target.value)},[search])
+
+    // useEffect(()=>{
+    //     const getResponse = async () => {
+    //         try{
+    //             //api 요청
+    //         } catch(e){
+    //             console.error(e.response)
+    //         }
+    //     }
+    //     getResponse()
+    // }, [search] )
+
+    // return (
+    //     <input type="text" value={search} onChange={handleChange} >
+    // )
   </script>
 </html>

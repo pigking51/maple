@@ -182,8 +182,8 @@
     <!-- 본문 시작 -->
     <div class="title">
       <div class="sub-title">
-        <h2>스타크래프트</h2>
-        <p>1&2</p>
+        <h2>온라인 게임</h2>
+        <p>생각보다 다양하게 하진 못함</p>
       </div>
     </div>
     <section>
@@ -356,6 +356,121 @@
     const start = document.querySelector(".top");
     start.addEventListener("click", function () {
       window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    // ↓ 네비바 검색 활성화(키워드 입력하면 관련 인트로 페이지로 이동)
+
+    const pokeTag = [
+      {
+        name: `포켓몬`,
+      },
+      {
+        name: `버전`,
+      },
+      {
+        name: `레드`,
+      },
+      {
+        name: `그린`,
+      },
+      {
+        name: `블루`,
+      },
+      {
+        name: `파이어`,
+      },
+      {
+        name: `리프`,
+      },
+      {
+        name: `골드`,
+      },
+      {
+        name: `실버`,
+      },
+      {
+        name: `크리스탈`,
+      },
+      {
+        name: `루비`,
+      },
+      {
+        name: `사파이어`,
+      },
+      {
+        name: `에메랄드`,
+      },
+      {
+        name: `옐로우`,
+      },
+    ];
+    const onlineTag = [
+      { name: `스타크래프트` },
+      { name: `starcraft` },
+      { name: `스타크래프트2` },
+      { name: `starcraft2` },
+      { name: `오리지널` },
+      { name: `부르드워` },
+      { name: `자유의날개` },
+      { name: `군단의심장` },
+      { name: `군단의심장` },
+      { name: `공허의유산` },
+    ];
+    const mobileTag = [
+      { name: `세븐나이츠` },
+      { name: `다함께차차차` },
+      { name: `애니팡` },
+      { name: `윈드러너` },
+    ];
+    const etcTag = [
+      { name: `메탈슬러그` },
+      { name: `metalslug` },
+      { name: `환세취호전` },
+      { name: `hwan` },
+    ];
+
+    const searchInput = document.querySelector(".search");
+    const searchBtn = document.querySelector(".searchBtn");
+
+    function searchAction(val = "") {
+      const les = pokeTag.forEach((keyword) => {
+        if (keyword.name.includes(val)) {
+          location.href = `../../B.G.M/page/poke/poke-intro.html`;
+        }
+      });
+
+      const aes = onlineTag.forEach((keyword) => {
+        if (keyword.name.includes(val)) {
+          location.href = `../../B.G.M/page/online/online-intro.html`;
+        }
+      });
+
+      const ves = mobileTag.forEach((keyword) => {
+        if (keyword.name.includes(val)) {
+          location.href = `../../B.G.M/page/mobile/mobile-intro.html`;
+        }
+        // else if(val == ""){
+        //   alert(`내용이 없습니다!`);
+        //   return false;
+        // }
+      });
+
+      const yes = etcTag.forEach((keyword) => {
+        if (keyword.name.includes(val)) {
+          location.href = `../../B.G.M/page/etc/etc-intro.html`;
+        }
+      });
+    }
+
+    searchBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      const sval = searchInput.value;
+      console.log(sval);
+      if (sval == "") {
+        alert(`내용이 없습니다!`);
+      } else {
+        searchAction(sval);
+      }
     });
   </script>
 </html>
