@@ -31,7 +31,6 @@
     }
     .list > li > img {
       width: 80%;
-      background: url();
     }
   </style>
   <body>
@@ -278,14 +277,12 @@
           li.innerHTML = `
           <img src='${pokemon.url}' alt = '${pokemon.name}'>
           <p>이름: ${pokemon.name}</p>
-          <p>속성: ${pokemon.type}</p>
+          <p>구분: ${pokemon.type}</p>
           `;
           list.appendChild(li);
         }
       }); // end showList
     }
-
-    // showList();
 
     searchBtn.addEventListener("click", (e) => {
       e.preventDefault();

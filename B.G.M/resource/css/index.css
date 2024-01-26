@@ -23,13 +23,23 @@
 }
 
 section {
+  width: 100%;
   background-color: #000000;
   background: url(../../resource/img/element5-digital-LTyDj7u_TU4-unsplash.jpg);
   color: rgb(132, 40, 218);
   padding: 64px;
 }
 
-.wrap {
+/* section > div {
+  overflow: hidden;
+}
+section > div > div {
+  width: 200%;
+  display: flex;
+  justify-content: space-between;
+} */
+
+section .wrap {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
@@ -126,3 +136,38 @@ a.button {
   font-size: 32px;
   cursor: pointer;
 }
+
+/* .wrap-2 {
+  max-width: 1920px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.wrap-2 > .inner-wrap {
+  width: 100%;
+  margin: 64px 48px;
+}
+
+ul {
+  list-style: none;
+}
+input,
+button {
+  padding: 5px 10px;
+}
+
+.list {
+  border: 1px solid green;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.list > li {
+  flex-basis: 48%;
+  margin-bottom: 20px;
+}
+.list > li > img {
+  width: 80%;
+} */
