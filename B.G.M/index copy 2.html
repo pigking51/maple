@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>::::::Big.Game.Man</title>
+    <link href="resource/css/index-ex.css" rel="stylesheet" />
     <link href="resource/css/index.css" rel="stylesheet" />
     <link href="resource/css/common.css" rel="stylesheet" />
     <link
@@ -186,33 +187,130 @@
           <!-- 이름 부분에 애니메이션 있는 버튼 넣어보기 -->
           <div class="g-pack poke">
             <a href="#">
-              <img src="resource/img/de.gif" width="300" height="300" />
+              <img
+                src="resource/img/thimo-pedersen-Ur8cmw5onKY-unsplash.jpg"
+                width="300"
+                height="300"
+              />
               <h5>포켓몬</h5>
             </a>
           </div>
           <div class="g-pack PC">
             <a href="#">
-              <img src="resource/img/de.gif" width="300" height="300" />
-              <h5>온라인겜</h5>
+              <img
+                src="resource/img/florian-olivo-Mf23RF8xArY-unsplash.jpg"
+                width="300"
+                height="300"
+              />
+              <h5>온라인게임</h5>
             </a>
           </div>
           <div class="g-pack moblie">
             <a href="#">
-              <img src="resource/img/de.gif" width="300" height="300" />
-              <h5>폰겜</h5>
+              <img
+                src="resource/img/onur-binay-9Pnbee5Xfw4-unsplash.jpg"
+                width="300"
+                height="300"
+              />
+              <h5>모바일게임</h5>
             </a>
           </div>
           <div class="g-pack etc">
             <a href="#">
-              <img src="resource/img/de.gif" width="300" height="300" />
-              <h5>기타 잡것</h5>
+              <img
+                src="resource/img/benjamin-szabo-QVN5ydW0k1k-unsplash.jpg"
+                width="300"
+                height="300"
+              />
+              <h5>기타 게임</h5>
             </a>
           </div>
         </div>
         <div class="article3">
           <div class="top">top</div>
-          <div class="side-banner"></div>
+          <div>
+            <h5>추가할 게임 목록</h5>
+          </div>
+          <div class="side-banner">
+            <div>
+              <input
+                type="text"
+                id="input"
+                placeholder="게임을 입력해주세요!"
+              />
+              <button class="addGame">추가하기</button>
+              <div class="addContent"></div>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="wrap-2">
+        <section class="container">
+          <h1>검색결과</h1>
+
+          <ul class="list">
+            <li>
+              <img src="resource/img/red-title.webp" alt="레드버전" />
+              <p>name</p>
+              <p>title</p>
+            </li>
+            <li>
+              <img src="resource/img/green-title.jpg" alt="그린버전" />
+              <p>name</p>
+              <p>title</p>
+            </li>
+            <li>
+              <img src="resource/img/blue-title.webp" alt="블루버전" />
+              <p>name</p>
+              <p>title</p>
+            </li>
+            <li>
+              <img src="resource/img/yellow-title.jpeg" alt="옐로우버전" />
+              <p>name</p>
+              <p>title</p>
+            </li>
+            <li>
+              <img src="resource/img/gold-title.jpg" alt="골드버전" />
+              <p>name</p>
+              <p>title</p>
+            </li>
+            <li>
+              <img src="resource/img/sliver-title.jpg" alt="실버버전" />
+              <p>name</p>
+              <p>title</p>
+            </li>
+            <li>
+              <img src="resource/img/krystal-title.jpeg" alt="크리스탈버전" />
+              <p>name</p>
+              <p>title</p>
+            </li>
+            <li>
+              <img src="resource/img/ruby-title.png" alt="루비버전" />
+              <p>name</p>
+              <p>title</p>
+            </li>
+            <li>
+              <img src="resource/img/shappa-title.jpg" alt="사파이어버전" />
+              <p>name</p>
+              <p>title</p>
+            </li>
+            <li>
+              <img src="resource/img/emerald-title.jpeg" alt="에메랄드버전" />
+              <p>name</p>
+              <p>title</p>
+            </li>
+            <li>
+              <img src="resource/img/FR-title.jpeg" alt="파이어레드버전" />
+              <p>name</p>
+              <p>title</p>
+            </li>
+            <li>
+              <img src="resource/img/LG-title.png" alt="리프그린버전" />
+              <p>name</p>
+              <p>title</p>
+            </li>
+          </ul>
+        </section>
       </div>
     </section>
     <!-- 본문 끝 -->
@@ -336,25 +434,25 @@
     function searchAction(val = "") {
       const les = pokeTag.forEach((keyword) => {
         if (keyword.name.includes(val)) {
-          location.href = `../../B.G.M/page/poke/poke-intro.html`;
+          location.href = `page/poke/poke-intro.html`;
         }
       });
 
       const aes = onlineTag.forEach((keyword) => {
         if (keyword.name.includes(val)) {
-          location.href = `../../B.G.M/page/online/online-intro.html`;
+          location.href = `page/online/online-intro.html`;
         }
       });
 
       const ves = mobileTag.forEach((keyword) => {
         if (keyword.name.includes(val)) {
-          location.href = `../../B.G.M/page/mobile/mobile-intro.html`;
+          location.href = `page/mobile/mobile-intro.html`;
         }
       });
 
       const yes = etcTag.forEach((keyword) => {
         if (keyword.name.includes(val)) {
-          location.href = `../../B.G.M/page/etc/etc-intro.html`;
+          location.href = `page/etc/etc-intro.html`;
         }
       });
     }
@@ -379,8 +477,204 @@
       }
     });
 
-    searchInput.addEventListener("click", function () {
-      window.scrollTo();
+    // ↓ 검색 시 검색결과창으로 스크롤
+
+    const wrap2 = document.querySelector(".wrap-2").offsetTop;
+
+    const pokemons = [
+      {
+        id: 1,
+        name: `레드버전`,
+        type: `1세대`,
+        url: `../../B.G.M/resource/img/red-title.webp`,
+      },
+      {
+        id: 2,
+        name: `그린버전`,
+        type: `1세대`,
+        url: `../../B.G.M/resource/img/green-title.jpg`,
+      },
+      {
+        id: 3,
+        name: `블루버전`,
+        type: `1세대`,
+        url: `../../B.G.M/resource/img/blue-title.webp`,
+      },
+      {
+        id: 4,
+        name: `옐로우버전`,
+        type: `1세대`,
+        url: `../../B.G.M/resource/img/yellow-title.jpeg`,
+      },
+      {
+        id: 5,
+        name: `골드버전`,
+        type: `2세대`,
+        url: `../../B.G.M/resource/img/gold-title.jpg`,
+      },
+      {
+        id: 6,
+        name: `실버버전`,
+        type: `2세대`,
+        url: `../../B.G.M/resource/img/sliver-title.jpg`,
+      },
+      {
+        id: 7,
+        name: `크리스탈버전`,
+        type: `2세대`,
+        url: `../../B.G.M/resource/img/krystal-title.jpeg`,
+      },
+      {
+        id: 8,
+        name: `루비버전`,
+        type: `3세대`,
+        url: `../../B.G.M/resource/img/ruby-title.png`,
+      },
+      {
+        id: 9,
+        name: `사파이어버전`,
+        type: `3세대`,
+        url: `../../B.G.M/resource/img/shappa-title.jpg`,
+      },
+      {
+        id: 10,
+        name: `에메랄드버전`,
+        type: `3세대`,
+        url: `../../B.G.M/resource/img/emerald-title.jpeg`,
+      },
+      {
+        id: 11,
+        name: `파이어레드버전`,
+        type: `3세대`,
+        url: `../../B.G.M/resource/img/FR-title.jpeg`,
+      },
+      {
+        id: 12,
+        name: `리프그린버전`,
+        type: `3세대`,
+        url: `../../B.G.M/resource/img/LG-title.png`,
+      },
+    ];
+
+    const games = [
+      {
+        id: 1,
+        keyword: `포켓몬`,
+        type: `poke`,
+        name: `포켓몬게임, pokemon, 레드, 그린, 블루, 옐로우, 골드, 실버, 크리스탈, 루비, 사파이어, 에메랄드, 파이어레드, 리프그린`,
+        url: `../../B.G.M/resource/img/yellow-start.jpg`,
+      },
+      {
+        id: 2,
+        keyword: `온라인게임`,
+        type: `online`,
+        name: `온라인게임, online, 스타크래프트, 브루드워, 오리지널, 스타크래프트2, starcraft, starcraft2, 자유의 날개, 군단의 심장, 공허의 유산`,
+        url: `../../B.G.M/resource/img/SC-original.webp`,
+      },
+      {
+        id: 3,
+        keyword: `모바일게임`,
+        type: `mobile`,
+        name: `모바일게임, 핸드폰게임, 폰겜, 세븐나이츠, 다함께 차차차, 애니팡`,
+        url: `../../B.G.M/resource/img/seven_knights.webp`,
+      },
+      {
+        id: 4,
+        keyword: `기타게임`,
+        type: `etc`,
+        name: `기타게임, 메탈슬러그, 환세취호전, metalslug, hwan`,
+        url: `../../B.G.M/resource/img/MS1-title.jpeg`,
+      },
+    ];
+
+    searchInput.addEventListener("keyup", function () {
+      window.scrollTo({ top: wrap2, behavior: "smooth" });
+    });
+
+    const list = document.querySelector(".list");
+
+    function showList(val = "") {
+      list.innerHTML = "";
+      const res = games.forEach((game) => {
+        if (game.name.includes(val)) {
+          const li = document.createElement(`li`);
+          li.innerHTML = `<div class="create-title">
+            <a href="page/${game.type}/${game.type}-intro.html">
+                <img src='${game.url}' alt = '${game.name}'>
+      <p>이름: ${game.keyword}</p>
+      <p>구분: ${game.type}</p>
+      </a>
+      </div>
+      `;
+          list.appendChild(li);
+        }
+      }); // end showList
+    }
+
+    searchInput.addEventListener("keyup", function () {
+      const sval = searchInput.value;
+      games.forEach((game) => {
+        if (game.name.includes(sval)) {
+          showList(sval);
+        }
+      });
+    });
+
+    // ↓ 클릭 또는 hover 시 하위 게임들 목록 가로로 쭉 나열
+
+    const cTitle = document.querySelector(".create-title");
+    const cTitles = document.querySelector(".create-titles");
+
+    // cTitle.addEventListener("mouseover", function () {
+    //   const Cname = cTitle.firstElementChild.firstElementChild.alt;
+    //   const nes = pokeTag.forEach((poke) => {
+    //     if (poke.name.includes(Cname)) {
+    //       const Nli = document.createElement("ul");
+    //       ul.innerHTML = `
+    //       <li>
+    //         <img src='${poke.url}' alt='${poke.name}' >
+    //         <p>이름:'${poke.keyword}'</p>
+    //         <p>구분:'${poke.type}'</p>
+    //         </li>
+    //       `;
+    //     }
+    //   });
+      // cTitles.animate[
+      //   ({
+      //     transition: transformX(320),
+      //   },
+      //   { delay: 1000, easeing: ease - In })
+      // ];
+    });
+
+    // ↓ 추가할 게임 목록만들기
+
+    const GamePlus = [];
+    const addGame = document.querySelector(".addGame");
+
+    addGame.addEventListener("click", function () {
+      // const inputGame = document.querySelector("#input").value;
+      const inputGame = document.querySelector("#input");
+      const inputGameVal = inputGame.value;
+      console.log(inputGameVal);
+      if (inputGameVal == "") {
+        alert("내용을 입력해주세요!");
+        return;
+      }
+      const p = document.createElement("p");
+      p.innerHTML = inputGameVal;
+
+      for (i = 0; i <= 2; i++) {
+        GamePlus[i] = parseInt(Math.random() * 256);
+      }
+
+      p.style.backgroundColor = `rgb(${GamePlus.toString()})`;
+
+      const div = document.querySelector(".addContent");
+      div.append(p);
+
+      inputGameVal = "";
+      // ↑ 입력 후 내용제거 다시확인할것
     });
   </script>
 </html>

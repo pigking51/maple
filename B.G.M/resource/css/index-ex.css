@@ -1,0 +1,27 @@
+input,
+button {
+  padding: 5px 10px;
+}
+.container {
+  color: #d9d9d9;
+}
+
+.list {
+  border: 1px solid green;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  background: linear-gradient(
+    240deg,
+    rgba(255, 255, 255, 0.6) 15%,
+    #000000 85%
+  );
+}
+
+.list > li {
+  flex-basis: 48%;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
