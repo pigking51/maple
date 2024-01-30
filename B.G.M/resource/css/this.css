@@ -9,7 +9,13 @@ section {
 
 .sub-title {
   color: #000000;
+}
+.sub-title h3 {
   font-weight: 800;
+  font-size: 54px;
+}
+.sub-title p {
+  font-weight: 600;
 }
 
 .wrap {
@@ -37,6 +43,15 @@ section {
   border-radius: 10%;
 }
 
+.article3 img {
+  border-radius: 25px;
+  box-shadow: 4px 4px 16px 8px #ffffff;
+}
+
 .article3 > div:first-child {
   margin-bottom: 32px;
+}
+
+section mark {
+  background-color: #ffff00;
 }

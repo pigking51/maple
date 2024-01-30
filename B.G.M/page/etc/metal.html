@@ -198,12 +198,12 @@
           </ul>
           <form class="d-flex" role="search">
             <input
-              class="form-control me-2"
+              class="form-control me-2 search"
               type="search"
-              placeholder="Search"
+              placeholder="게임을 입력하세요!"
               aria-label="Search"
             />
-            <button class="btn btn-outline-success" type="submit">
+            <button class="btn btn-outline-success searchBtn" type="submit">
               Search
             </button>
           </form>
@@ -406,6 +406,7 @@
             </div>
           </div>
         </div>
+        <div class="top">top</div>
       </div>
     </section>
     <!-- 본문 끝 -->
@@ -447,6 +448,10 @@
         nav.style.backgroundColor = `transparent`;
         nav.style.color = `#ffffff`;
       }
+    });
+    const start = document.querySelector(".top");
+    start.addEventListener("click", function () {
+      window.scrollTo({ top: 0, behavior: "smooth" });
     });
 
     // ↓ 네비바 검색 활성화(키워드 입력하면 관련 인트로 페이지로 이동)
@@ -526,19 +531,19 @@
     function searchAction(val = "") {
       const les = pokeTag.forEach((keyword) => {
         if (keyword.name.includes(val)) {
-          location.href = `../../B.G.M/page/poke/poke-intro.html`;
+          location.href = `..poke/poke-intro.html`;
         }
       });
 
       const aes = onlineTag.forEach((keyword) => {
         if (keyword.name.includes(val)) {
-          location.href = `../../B.G.M/page/online/online-intro.html`;
+          location.href = `..online/online-intro.html`;
         }
       });
 
       const ves = mobileTag.forEach((keyword) => {
         if (keyword.name.includes(val)) {
-          location.href = `../../B.G.M/page/mobile/mobile-intro.html`;
+          location.href = `../mobile/mobile-intro.html`;
         }
         // else if(val == ""){
         //   alert(`내용이 없습니다!`);
@@ -548,7 +553,7 @@
 
       const yes = etcTag.forEach((keyword) => {
         if (keyword.name.includes(val)) {
-          location.href = `../../B.G.M/page/etc/etc-intro.html`;
+          location.href = `etc-intro.html`;
         }
       });
     }

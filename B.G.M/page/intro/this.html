@@ -70,7 +70,11 @@
                     >기본소개</a
                   >
                 </li>
-                <li><a class="dropdown-item" href="#">1세대</a></li>
+                <li>
+                  <a class="dropdown-item" href="../poke/1st-Generation.html"
+                    >1세대</a
+                  >
+                </li>
                 <li><a class="dropdown-item" href="#">2세대</a></li>
                 <li><a class="dropdown-item" href="#">3세대</a></li>
                 <li><a class="dropdown-item" href="#">4세대</a></li>
@@ -92,8 +96,16 @@
                 온라인게임
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">기본소개</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="../online/online-intro.html"
+                    >기본소개</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../online/star.html"
+                    >스타크래프트</a
+                  >
+                </li>
                 <li><a class="dropdown-item" href="#">Another action</a></li>
                 <li><a class="dropdown-item" href="#">Another action</a></li>
                 <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -111,7 +123,11 @@
                 폰게임
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">기본소개</a></li>
+                <li>
+                  <a class="dropdown-item" href="../mobile/mobile-intro.html"
+                    >기본소개</a
+                  >
+                </li>
                 <li><a class="dropdown-item" href="#">Another action</a></li>
                 <li><a class="dropdown-item" href="#">Another action</a></li>
                 <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -130,8 +146,16 @@
                 기타
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">기본소개</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="../etc/etc-intro.html"
+                    >기본소개</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../etc/metal.html"
+                    >메탈슬러그</a
+                  >
+                </li>
                 <li><a class="dropdown-item" href="#">Another action</a></li>
                 <li><a class="dropdown-item" href="#">Another action</a></li>
               </ul>
@@ -139,12 +163,12 @@
           </ul>
           <form class="d-flex" role="search">
             <input
-              class="form-control me-2"
+              class="form-control me-2 search"
               type="search"
-              placeholder="Search"
+              placeholder="게임을 입력하세요!"
               aria-label="Search"
             />
-            <button class="btn btn-outline-success" type="submit">
+            <button class="btn btn-outline-success searchBtn" type="submit">
               Search
             </button>
           </form>
@@ -159,14 +183,14 @@
         <div class="article2">
           <div class="sub-title">
             <h3>이곳은?</h3>
-            <p>사이트 소개</p>
+            <p>이 사이트는 이러한 사이트입니다.</p>
           </div>
         </div>
         <div class="right-side"></div>
         <div class="article3">
           <div>
             <img
-              src="../../resource/img/mike-meyers-v8XaVfyo41Q-unsplash.jpg"
+              src="../../resource/img/1485265732475.gif"
               width="120"
               height="120"
             />
@@ -222,6 +246,126 @@
       } else {
         nav.style.backgroundColor = `transparent`;
         nav.style.color = `#ffffff`;
+      }
+    });
+
+    // ↓ 네비바 검색 활성화(키워드 입력하면 관련 인트로 페이지로 이동)
+
+    const pokeTag = [
+      {
+        name: `포켓몬`,
+      },
+      {
+        name: `버전`,
+      },
+      {
+        name: `레드`,
+      },
+      {
+        name: `그린`,
+      },
+      {
+        name: `블루`,
+      },
+      {
+        name: `파이어`,
+      },
+      {
+        name: `리프`,
+      },
+      {
+        name: `골드`,
+      },
+      {
+        name: `실버`,
+      },
+      {
+        name: `크리스탈`,
+      },
+      {
+        name: `루비`,
+      },
+      {
+        name: `사파이어`,
+      },
+      {
+        name: `에메랄드`,
+      },
+      {
+        name: `옐로우`,
+      },
+    ];
+    const onlineTag = [
+      { name: `스타크래프트` },
+      { name: `starcraft` },
+      { name: `스타크래프트2` },
+      { name: `starcraft2` },
+      { name: `오리지널` },
+      { name: `부르드워` },
+      { name: `자유의날개` },
+      { name: `군단의심장` },
+      { name: `군단의심장` },
+      { name: `공허의유산` },
+    ];
+    const mobileTag = [
+      { name: `세븐나이츠` },
+      { name: `다함께차차차` },
+      { name: `애니팡` },
+      { name: `윈드러너` },
+    ];
+    const etcTag = [
+      { name: `메탈슬러그` },
+      { name: `metalslug` },
+      { name: `환세취호전` },
+      { name: `hwan` },
+    ];
+
+    const searchInput = document.querySelector(".search");
+    const searchBtn = document.querySelector(".searchBtn");
+
+    function searchAction(val = "") {
+      const les = pokeTag.forEach((keyword) => {
+        if (keyword.name.includes(val)) {
+          location.href = `../poke/poke-intro.html`;
+        }
+      });
+
+      const aes = onlineTag.forEach((keyword) => {
+        if (keyword.name.includes(val)) {
+          location.href = `../online/online-intro.html`;
+        }
+      });
+
+      const ves = mobileTag.forEach((keyword) => {
+        if (keyword.name.includes(val)) {
+          location.href = `../mobile/mobile-intro.html`;
+        }
+      });
+
+      const yes = etcTag.forEach((keyword) => {
+        if (keyword.name.includes(val)) {
+          location.href = `../etc/etc-intro.html`;
+        }
+      });
+    }
+
+    searchBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      const sval = searchInput.value;
+
+      // ↓ 키워드에 없는 것 검색 시 알람 따로 뜨게 하려했는데 실패함
+      // const totalTag = [...pokeTag, ...onlineTag, ...mobileTag, ...etcTag];
+      // const EtotalTag = totalTag.every((keyword) => {});
+      //  else if (sval != keyword.name) {
+      //   alert(`제작자가 안해본 게임입니다!`);
+      //   return;
+      // }
+
+      console.log(sval);
+      if (sval == "") {
+        alert(`입력한 내용이 없습니다!`);
+      } else {
+        searchAction(sval);
       }
     });
   </script>

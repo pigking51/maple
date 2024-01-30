@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    html {
+      box-sizing: border-box;
+      height: 100%;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: inherit;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      /* display: flex;
+      justify-content: center; */
+      display: inline-block;
+      width: 100%;
+    }
+
+    .thumbnails {
+      display: inline;
+
+      li {
+        display: inline;
+      }
+
+      a {
+        display: inline-block;
+      }
+
+      img {
+        width: 30vmin;
+        height: 20vmin;
+        object-fit: cover;
+        object-position: top;
+      }
+    }
+
+    .slides {
+      overflow: hidden;
+      width: 150vmin;
+      height: 100vmin;
+
+      li {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 1;
+      }
+
+      img {
+        /* height: 100vmin; */
+        width: 100%;
+        height: 100%;
+        /* object-fit: cover; */
+        object-position: top;
+      }
+    }
+
+    .slides li:target {
+      z-index: 3;
+      -webkit-animation: slide 1s 1;
+    }
+
+    .slides li:not(:target) {
+      -webkit-animation: hidden 1s 1;
+    }
+
+    @keyframes slide {
+      0% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(0%);
+      }
+    }
+
+    @keyframes hidden {
+      0% {
+        z-index: 2;
+      }
+      100% {
+        z-index: 2;
+      }
+    }
+  </style>
+  <body>
+    <div class="container">
+      <ul class="slides">
+        <li id="slide1">
+          <img src="../../B.G.M/resource/img/red-start2.jpg" alt="" />
+        </li>
+        <li id="slide2">
+          <img src="../../B.G.M/resource/img/blue-start3.jpg" alt="" />
+        </li>
+        <li id="slide3">
+          <img src="../../B.G.M/resource/img/green-start.jpg" alt="" />
+        </li>
+        <li id="slide4">
+          <img src="../../B.G.M/resource/img/yellow-start.jpg" alt="" />
+        </li>
+        <li id="slide5">
+          <img src="../../B.G.M/resource/img/gold-start.jpeg" alt="" />
+        </li>
+      </ul>
+
+      <ul class="thumbnails">
+        <li>
+          <a href="#slide1"
+            ><img src="../../B.G.M/resource/img/red-start2.jpg"
+          /></a>
+        </li>
+        <li>
+          <a href="#slide2"
+            ><img src="../../B.G.M/resource/img/blue-start3.jpg"
+          /></a>
+        </li>
+        <li>
+          <a href="#slide3"
+            ><img src="../../B.G.M/resource/img/green-start2.jpg"
+          /></a>
+        </li>
+        <li>
+          <a href="#slide4"
+            ><img src="../../B.G.M/resource/img/yellow-start.jpg"
+          /></a>
+        </li>
+        <li>
+          <a href="#slide5"
+            ><img src="../../B.G.M/resource/img/gold-start.jpeg"
+          /></a>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
