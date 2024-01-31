@@ -41,6 +41,7 @@ section {
   background-color: #000000;
   filter: opacity(0.8);
   border-radius: 10%;
+  height: 640px;
 }
 
 .article3 img {

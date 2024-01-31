@@ -365,7 +365,7 @@ a .masker {
 .card-body .btn:hover {
   background-color: #09847f;
   color: #ffffff;
-  animation: ;
+  /* animation: ; */
 }
 
 .card-body h2 {

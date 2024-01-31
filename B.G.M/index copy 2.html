@@ -672,8 +672,14 @@
       const div = document.querySelector(".addContent");
       div.append(p);
 
-      inputGameVal = "";
+      stop();
+
       // ↑ 입력 후 내용제거 다시확인할것
     });
+
+    function stop() {
+      const input = document.querySelector("#input");
+      input.value = "";
+    }
   </script>
 </html>

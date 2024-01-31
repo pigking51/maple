@@ -261,6 +261,49 @@ button {
   width: 80%;
 } */
 
+.deleteItem {
+  display: none;
+}
+.deleteItem:hover {
+  box-shadow: 0 0 4px 2px #333;
+  animation: all 2s;
+}
+
+.addContent {
+  position: relative;
+}
+.addContent p {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+}
+
+.addContent p::after {
+  content: "";
+  background-image: url(../img/free-icon-x-mark-10528556.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* position: absolute;
+  top: 14px;
+  right: 40px;
+  width: 16px;
+  height: 16px; */
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-left: 4px;
+  box-shadow: 2px 2px 8px 2px #333;
+}
+
+.addContent:hover p::after {
+  box-shadow: 0 0 8px 0 #333;
+  animation: all 2s;
+}
+
+/* ↑ 게임목록 삭제 아이콘 선택불가문제
+  선택시 아이콘변화 및 해당 div 삭제 알아볼것
+*/
+
 @media screen and (max-width: 991px) {
   .list {
     justify-content: center;
