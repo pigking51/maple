@@ -15,13 +15,48 @@
     }
     section {
       width: 100%;
+      height: 50%;
+    }
+    .wrap {
+      width: 100%;
+      height: 100%;
+      position: relative;
       overflow: hidden;
+      border: 2px solid red;
     }
     .frame {
       width: 300%;
       max-width: 5760px;
+      min-width: 500px;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
+      position: relative;
+      border: 6px solid yellow;
+    }
+
+    .btn {
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      background-color: #d9d9d9;
+      width: 36px;
+      height: 36px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 2;
+      cursor: pointer;
+      box-shadow: 0 0 8px 4px #fff;
+    }
+
+    .btn.btn-prev {
+      left: 16px;
+    }
+    .btn.btn-next {
+      right: 16px;
+    }
+    h2 {
+      text-align: center;
     }
     .frame1 {
       width: 100%;
@@ -44,11 +79,62 @@
   </style>
   <body>
     <section>
-      <div class="frame">
-        <div class="frame1"><h2>여기는 첫 페이지 입니다.</h2></div>
-        <div class="frame2"><h2>여기는 두번째 페이지 입니다.</h2></div>
-        <div class="frame3"><h2>여기는 마지막 페이지 입니다.</h2></div>
+      <div class="wrap">
+        <div class="btn btn-prev">이거</div>
+        <div class="btn btn-next">눌러</div>
+        <div class="frame">
+          <div class="frame1"><h2>여기는 첫 페이지 입니다.</h2></div>
+          <div class="frame2"><h2>여기는 두번째 페이지 입니다.</h2></div>
+          <div class="frame3"><h2>여기는 마지막 페이지 입니다.</h2></div>
+        </div>
       </div>
     </section>
   </body>
+  <script>
+    const wrap = document.querySelector(".wrap");
+    const prev = document.querySelector(".btn-prev");
+    const next = document.querySelector(".btn-next");
+    const frame = document.querySelector(".frame");
+    const frame1 = document.querySelector(".frame1");
+    const frame2 = document.querySelector(".frame2");
+    const frame3 = document.querySelector(".frame3");
+    const h2 = document.querySelector("h2");
+
+    prev.addEventListener("click", function () {
+      // frame.style.transform = `translateX(-1920px)`;
+      // const wrapStart = wrap.getBoundingClientRect().left;
+      // const frameStart = frame.getBoundingClientRect().left;
+      const frWidth = frame3.clientWidth;
+      const frWidth2 = frame2.clientWidth;
+      const frWidth1 = frame1.clientWidth;
+
+      prev.style.backgroundColor = `green`;
+      frame.style.transform = `translateX(${frWidth1 + 6}px)`;
+      frame.style.transition = `all ease 2s`;
+
+      // else {
+      //   frame.style.transform = `translateX(5760px)`;
+      //   frame.style.transition = `all 6s`;
+      // }
+    });
+    next.addEventListener("click", function () {
+      // frame.style.transform = `translateX(-1920px)`;
+      const frWidth = frame3.clientWidth;
+      const frWidth2 = frame2.clientWidth;
+      const frWidth1 = frame1.clientWidth;
+
+      const wrapEnd = wrap.getBoundingClientRect().right;
+      const frameEnd = frame.getBoundingClientRect().right;
+      const frame3End = frame3.getBoundingClientRect().right;
+
+      next.style.backgroundColor = `green`;
+      frame.style.transform = `translateX(-${frWidth1 + 6}px)`;
+      frame.style.transition = `all ease 2s`;
+
+      // else {
+      //   frame.style.transform = `translateX(5760px)`;
+      //   frame.style.transition = `all 6s`;
+      // }
+    });
+  </script>
 </html>
