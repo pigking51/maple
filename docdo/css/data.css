@@ -70,6 +70,11 @@ img {
   width: 100%;
 }
 
+.fb-r img {
+  width: 40px !important;
+  height: 40px !important;
+}
+
 .preview_info {
   padding: 72px;
 }
@@ -424,11 +429,6 @@ td:nth-child(2) {
 /* 교육자료실 끝 */
 
 @media screen and (max-width: 1570px) {
-  html,
-  body {
-    height: 2520px;
-  }
-
   .preview_info {
     font-size: 14px;
     padding: 56px;

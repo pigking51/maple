@@ -565,7 +565,7 @@
               src="../resources/image/화면_캡처_2023-12-14_142155-removebg-preview.png"
             />
           </div>
-          <p>"경상북도 울릉읍 독도리 1-96"</p>
+          <p class="typing">"경상북도 울릉읍 독도리 1-96"</p>
         </div>
       </div>
       <!-- footer-top 끝 -->
@@ -620,33 +620,13 @@
     </footer>
     <!-- footer끝 -->
   </body>
+  <script src="script/common.js"></script>
   <script>
-    const nav = document.querySelector("nav");
-    const navHeight = nav.getBoundingClientRect().height;
-    document.addEventListener(`scroll`, () => {
-      if (window.scrollY > navHeight) {
-        // nav.style.backgroundColor = `#09847f`;
-        // nav.style.color = `#d9d9d9`;
-        // nav.style.fontWeight = "800";
-        nav.animate([{ backgroundColor: "#09847f" }], {
-          duration: 1000,
-          easing: "linear",
-        });
-      } else {
-        nav.style.backgroundColor = `transparent`;
-        nav.style.color = `#000000`;
-      }
-    });
     const banner = document.querySelector(".banner");
     const bannerHeight = banner.getBoundingClientRect().top + 696.54;
     const bnH = bannerHeight + window.pageYOffset;
 
     const scrollBar = window.scrollTop;
-    console.log(scrollBar);
-    console.log(bannerHeight);
-    console.log(window.scrollY);
-
-    // const asd = scrollBar.getBoundingClientRect
 
     const scrollBT = window.innerHeight - 400;
 
@@ -667,15 +647,6 @@
           }
         );
       }
-    });
-    const Mbutton = document.querySelector(".navbar-toggler");
-    const Mnavbar = document.querySelector(".navbar-collapse");
-    Mbutton.addEventListener("click", function () {
-      Mnavbar.style.position = "absolute";
-      Mnavbar.style.top = "63px";
-      Mnavbar.style.left = "0";
-      Mnavbar.style.right = "0";
-      Mnavbar.style.backgroundColor = "#09847f";
     });
   </script>
 </html>

@@ -656,24 +656,8 @@
     </footer>
     <!-- footer 끝 -->
   </body>
+  <script src="../../script/common.js"></script>
   <script>
-    const nav = document.querySelector("nav");
-    const navHeight = nav.getBoundingClientRect().height;
-    document.addEventListener(`scroll`, () => {
-      if (window.scrollY > navHeight) {
-        // nav.style.backgroundColor = `#09847f`;
-        // nav.style.color = `#d9d9d9`;
-        // nav.style.fontWeight = "800";
-        nav.animate([{ backgroundColor: "#09847f" }], {
-          duration: 1000,
-          easing: "linear",
-        });
-      } else {
-        nav.style.backgroundColor = `transparent`;
-        nav.style.color = `#000000`;
-      }
-    });
-
     const change = document.querySelectorAll(".change");
     const oneBlock = document.querySelector(".one-block");
     const twoBlock = document.querySelector(".two-block");
@@ -752,16 +736,6 @@
       }
       NC.firstElementChild.classList.add("on");
       DE.classList.remove("on");
-    });
-    const Mbutton = document.querySelector(".navbar-toggler");
-    const Mnavbar = document.querySelector(".navbar-collapse");
-    Mbutton.addEventListener("click", function () {
-      // alert("왜 변화가 없음?");
-      Mnavbar.style.position = "absolute";
-      Mnavbar.style.top = "63px";
-      Mnavbar.style.left = "0";
-      Mnavbar.style.right = "0";
-      Mnavbar.style.backgroundColor = "#09847f";
     });
   </script>
 </html>

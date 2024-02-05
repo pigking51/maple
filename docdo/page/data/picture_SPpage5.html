@@ -386,17 +386,17 @@
           </div>
           <div class="pagination">
             <div class="page_control_prev">
-              <a href="#" class="btn_end"></a>
+              <a href="picture_SM.html" class="btn_end"></a>
             </div>
             <ol>
-              <li class="on"><a href="#">1</a></li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-              <li><a href="#">4</a></li>
-              <li><a href="#">5</a></li>
+              <li class="on"><a href="picture_SM.html">1</a></li>
+              <li><a href="picture_SMpage2.html">2</a></li>
+              <li><a href="picture_SMpage3.html">3</a></li>
+              <li><a href="picture_SMpage4.html">4</a></li>
+              <li><a href="picture_SMpage5.html">5</a></li>
             </ol>
             <div class="page_control_next">
-              <a href="#" class="btn_end last"></a>
+              <a href="picture_SMpage5.html" class="btn_end last"></a>
             </div>
           </div>
         </div>
@@ -469,17 +469,17 @@
           </div>
           <div class="pagination">
             <div class="page_control_prev">
-              <a href="#" class="btn_end"></a>
+              <a href="picture_FA.html" class="btn_end"></a>
             </div>
             <ol class="control_change">
-              <li class="on"><a href="#">1</a></li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-              <li><a href="#">4</a></li>
-              <li><a href="#">5</a></li>
+              <li class="on"><a href="picture_FA.html">1</a></li>
+              <li><a href="picture_FApage2.html">2</a></li>
+              <li><a href="picture_FApage3.html">3</a></li>
+              <li><a href="picture_FApage4.html">4</a></li>
+              <li><a href="picture_FApage5.html">5</a></li>
             </ol>
             <div class="page_control_next">
-              <a href="#" class="btn_end last"></a>
+              <a href="picture_FApage5.html" class="btn_end last"></a>
             </div>
           </div>
         </div>
@@ -552,17 +552,17 @@
           </div>
           <div class="pagination">
             <div class="page_control_prev">
-              <a href="#" class="btn_end"></a>
+              <a href="picture_WT.html" class="btn_end"></a>
             </div>
             <ol>
-              <li class="on"><a href="#">1</a></li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-              <li><a href="#">4</a></li>
-              <li><a href="#">5</a></li>
+              <li class="on"><a href="picture_WT.html">1</a></li>
+              <li><a href="picture_WTpage2.html">2</a></li>
+              <li><a href="picture_WTpage3.html">3</a></li>
+              <li><a href="picture_WTpage4.html">4</a></li>
+              <li><a href="picture_WTpage5.html">5</a></li>
             </ol>
             <div class="page_control_next">
-              <a href="#" class="btn_end last"></a>
+              <a href="picture_WTpage5.html" class="btn_end last"></a>
             </div>
           </div>
         </div>
@@ -636,24 +636,8 @@
     </footer>
     <!-- footer 끝 -->
   </body>
+  <script src="../../script/common.js"></script>
   <script>
-    const nav = document.querySelector("nav");
-    const navHeight = nav.getBoundingClientRect().height;
-    document.addEventListener(`scroll`, () => {
-      if (window.scrollY > navHeight) {
-        // nav.style.backgroundColor = `#09847f`;
-        // nav.style.color = `#d9d9d9`;
-        // nav.style.fontWeight = "800";
-        nav.animate([{ backgroundColor: "#09847f" }], {
-          duration: 1000,
-          easing: "linear",
-        });
-      } else {
-        nav.style.backgroundColor = `transparent`;
-        nav.style.color = `#000000`;
-      }
-    });
-
     const change = document.querySelectorAll(".change");
     const oneBlock = document.querySelector(".one-block");
     const twoBlock = document.querySelector(".two-block");
@@ -726,16 +710,6 @@
         threeBlock.style.display = "none";
         fourBlock.style.display = "block";
       }
-    });
-    const Mbutton = document.querySelector(".navbar-toggler");
-    const Mnavbar = document.querySelector(".navbar-collapse");
-    Mbutton.addEventListener("click", function () {
-      // alert("왜 변화가 없음?");
-      Mnavbar.style.position = "absolute";
-      Mnavbar.style.top = "63px";
-      Mnavbar.style.left = "0";
-      Mnavbar.style.right = "0";
-      Mnavbar.style.backgroundColor = "#09847f";
     });
   </script>
 </html>

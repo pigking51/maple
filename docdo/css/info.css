@@ -165,6 +165,7 @@
   display: block;
   width: 16px;
   height: 16px;
+  cursor: pointer;
 }
 
 .control > .btn {
@@ -180,6 +181,7 @@
   transform: rotateY(-180deg);
   width: 26px;
   height: 26px;
+  cursor: pointer;
 }
 
 .flex {
@@ -207,6 +209,7 @@ table th {
   border: 1px solid lightgrey;
   height: 70px;
   line-height: 0rem;
+  cursor: pointer;
 }
 
 table td > a {

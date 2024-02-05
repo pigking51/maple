@@ -557,20 +557,8 @@
     </footer>
     <!-- footer 끝 -->
   </body>
+  <script src="../../../script/common.js"></script>
   <script>
-    const nav = document.querySelector("nav");
-    const navHeight = nav.getBoundingClientRect().height;
-    document.addEventListener(`scroll`, () => {
-      if (window.scrollY > navHeight) {
-        nav.style.backgroundColor = `#09847f`;
-        nav.style.color = `#d9d9d9`;
-        nav.style.fontWeight = "800";
-      } else {
-        nav.style.backgroundColor = `transparent`;
-        nav.style.color = `#000000`;
-      }
-    });
-
     const agree1 = document.querySelector("#MS-agree");
     const agree2 = document.querySelector("#ID-agree");
     const agreeAll = document.querySelector(".ag");
@@ -582,17 +570,6 @@
       } else {
         location.href = "register2.html";
       }
-    });
-    const Mbutton = document.querySelector(".navbar-toggler");
-    const Mnavbar = document.querySelector(".navbar-collapse");
-    const Mlgrg = document.querySelector(".hidden-lgrg");
-    Mbutton.addEventListener("click", function () {
-      // alert("왜 변화가 없음?");
-      Mnavbar.style.position = "absolute";
-      Mnavbar.style.top = "63px";
-      Mnavbar.style.left = "0";
-      Mnavbar.style.right = "0";
-      Mnavbar.style.backgroundColor = "#09847f";
     });
   </script>
 </html>

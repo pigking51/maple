@@ -22,7 +22,8 @@ body {
   align-items: center;
 }
 nav {
-  border-bottom: 1px solid #ffffff;
+  /* border-bottom: 1px solid #ffffff; */
+  border-bottom: 1px solid #000000;
 }
 
 a {
@@ -162,7 +163,7 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #ffffff;
+  color: palegreen;
 }
 
 .title-inner > h2 {
@@ -362,6 +363,10 @@ footer {
   
 } */
 /*  ↑ 확인 후 설정할것 */
+/* 기타 몇몇 공통사항 */
+.result-content:hover {
+  background-color: lightyellow;
+}
 
 @media screen and (max-width: 1610px) {
   .menu {

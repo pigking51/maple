@@ -1,11 +1,9 @@
 .html,
 body {
-  height: 5000px;
-  color: lightslategray;
+  color: #ffffff;
 }
 .gd-Big-Wrap {
   width: 100%;
-  height: 3975px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -30,6 +28,7 @@ body {
   right: 0;
   bottom: 0;
   background-size: cover;
+  color: #000000;
 }
 .section:nth-child(3) {
   background: url(../resource/img/dokdo-1790322_1280.jpg) no-repeat;
@@ -53,7 +52,6 @@ body {
 } */
 .gd-wrap {
   width: 80%;
-  height: 712px;
   display: flex;
   justify-content: flex-end;
   margin: 0 auto;

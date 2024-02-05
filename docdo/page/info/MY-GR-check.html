@@ -196,13 +196,13 @@
     <!-- footer-top 시작 -->
     <footer>
       <div class="container-fluid footer-top">
-        <div>
+        <div class="typing-wrap">
           <div class="container=sm align-items-center">
             <img
-              src="../../resource/img/화면_캡처_2023-12-14_142155-removebg-preview.png"
+              src="../../../resources/image/화면_캡처_2023-12-14_142155-removebg-preview.png"
             />
           </div>
-          <p>"경상북도 울릉읍 독도리 1-96"</p>
+          <p class="typing">"경상북도 울릉읍 독도리 1-96"</p>
         </div>
       </div>
       <!-- footer-top 끝 -->
@@ -211,11 +211,11 @@
         <div class="fb-wrap">
           <div class="fb-l">
             <p>
-              <a href="#">이용약관</a>
+              <a href="../etc/contract.html">이용약관</a>
               ㆍ
-              <a href="#">개인정보취급방침</a>
+              <a href="../etc/individual.html">개인정보취급방침</a>
               ㆍ
-              <a href="#">이메일주소무단수집거부</a>
+              <a href="../etc/email.html">이메일주소무단수집거부</a>
             </p>
             <br />
             <div>
@@ -225,24 +225,33 @@
               </p>
               <p>문의전화. 044-999-6393</p>
             </div>
-            <br /><br />
+            <br />
             <p class="fb-1-bottom">
               © 2022 Dokdo Exhibitonon All rights reserved .
             </p>
           </div>
           <div class="fb-r">
             <div class="icon">
-              <img
-                src="../../resource/img/화면_캡처_2023-12-15_164202-removebg-preview.png"
-                width="109"
-                height="77"
-              />
+              <div class="reserved">
+                <a href="../info/groupReservation.html" class="go">
+                  <div>
+                    <img src="../../../resources/image/user.png" ght="40" />
+                    <p>단체예약<br />신청</p>
+                  </div>
+                </a>
+              </div>
             </div>
             <div class="come">
-              <div>
-                <img src="../resources/image/user.png" width="40" height="40" />
-                <p>독도전시관<br />오시는길</p>
-              </div>
+              <a href="../intro/map.html" class="go">
+                <div>
+                  <img
+                    src="../../../resources/image/user.png"
+                    width="40"
+                    height="40"
+                  />
+                  <p>독도전시관<br />오시는길</p>
+                </div>
+              </a>
             </div>
           </div>
         </div>
@@ -251,32 +260,5 @@
     </footer>
     <!-- footer끝 -->
   </body>
-  <script>
-    const nav = document.querySelector("nav");
-    const navHeight = nav.getBoundingClientRect().height;
-    document.addEventListener(`scroll`, () => {
-      if (window.scrollY > navHeight) {
-        // nav.style.backgroundColor = `#09847f`;
-        // nav.style.color = `#d9d9d9`;
-        // nav.style.fontWeight = "800";
-        nav.animate([{ backgroundColor: "#09847f" }], {
-          duration: 1000,
-          easing: "linear",
-        });
-      } else {
-        nav.style.backgroundColor = `transparent`;
-        nav.style.color = `#000000`;
-      }
-    });
-    const Mbutton = document.querySelector(".navbar-toggler");
-    const Mnavbar = document.querySelector(".navbar-collapse");
-    Mbutton.addEventListener("click", function () {
-      // alert("왜 변화가 없음?");
-      Mnavbar.style.position = "absolute";
-      Mnavbar.style.top = "63px";
-      Mnavbar.style.left = "0";
-      Mnavbar.style.right = "0";
-      Mnavbar.style.backgroundColor = "#09847f";
-    });
-  </script>
+  <script src="../../script/common.js"></script>
 </html>
