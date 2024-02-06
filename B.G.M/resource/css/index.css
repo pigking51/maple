@@ -53,7 +53,49 @@ section .wrap {
   font-weight: 600;
 }
 
+/* .message-community{
+  
+} */
+
+.text-delete {
+  width: 16px;
+  height: 16px;
+  float: right;
+  margin-top: 4px;
+  background: url(../img/free-icon-x-mark-10528556.png) no-repeat;
+}
+
+.message-container {
+  height: 800px;
+}
+
+.message-container > .text-box {
+  background-color: skyblue;
+  width: 100%;
+  min-height: 480px;
+  padding: 8px;
+  border-radius: 10px;
+  overflow: auto;
+}
+
+.text-box > .bubble {
+  border-radius: 15px;
+  background-color: lightcyan;
+  font-weight: 600;
+  padding: 10px 8px;
+  position: relative;
+  margin: 8px 0;
+}
+.message-footer {
+  display: flex;
+}
+
+.message-footer > textarea {
+  resize: none;
+}
+
 a.button {
+  transform: ra;
   display: block;
   position: relative;
   float: left;
@@ -297,7 +339,16 @@ button {
 
 .addContent:hover p::after {
   box-shadow: 0 0 8px 0 #333;
-  animation: all 2s;
+  animation: push 0.5s;
+}
+@keyframes push {
+  0% {
+    transform: translateY(0);
+    box-shadow: 0 0 4px 0 #333;
+  }
+  100% {
+    transform: translateY(4px);
+  }
 }
 
 /* ↑ 게임목록 삭제 아이콘 선택불가문제

@@ -355,14 +355,7 @@ footer {
   align-items: center;
 }
 /* footer 끝 */
-/* section {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  
-} */
-/*  ↑ 확인 후 설정할것 */
+
 /* 기타 몇몇 공통사항 */
 .result-content:hover {
   background-color: lightyellow;
