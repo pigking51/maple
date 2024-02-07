@@ -1,0 +1,385 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  word-break: keep-all;
+}
+
+html,
+body {
+  width: 100%;
+  position: relative;
+}
+
+.email-body {
+  height: 100%;
+}
+
+/* nav 시작 */
+.main-total {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav {
+  border-bottom: 1px solid #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 32px;
+  text-align: center;
+}
+
+.menu > .hidden-lgrg {
+  display: none;
+}
+
+.dropdown-menu {
+  text-align: center;
+}
+
+.dropdown-item:hover {
+  background-color: lightblue;
+}
+
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+}
+
+.right a {
+  text-decoration: none;
+  color: #333;
+}
+.right p {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.navbar-toggler {
+  background-color: #ffffff;
+}
+/* nav 끝 */
+/* 본문 시작 */
+.ex-fake {
+  width: 100%;
+  height: 28rem;
+  position: relative;
+  z-index: -1;
+}
+/* 중간 네비바 시작 */
+.Inb {
+  position: absolute;
+  bottom: -3rem;
+  left: 50%;
+  transition: 0.5s;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+.sub-nav {
+  width: 100%;
+  /* margin: 0 auto; */
+  background: linear-gradient(45deg, #05875a, #09847f);
+  border-radius: 45px 0 45px 0;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: -2;
+}
+
+.sub-nav > .sub-nav-ul {
+  list-style: none;
+  margin-bottom: 0;
+  margin-left: 60px;
+}
+
+.sub-nav li {
+  display: inline-block;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 2px 24px;
+}
+
+.sub-nav a {
+  text-decoration: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.on {
+  font-weight: 500;
+}
+
+.active {
+  position: relative;
+}
+
+.on:before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  top: -8px;
+  left: 50%;
+  position: absolute;
+}
+
+.sub-nav::after {
+  background: url(../Images/dokdo_icon_05.png) no-repeat right bottom/contain;
+  content: "";
+  display: inline-block;
+  width: 50%;
+  height: 560%;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  border-radius: 0 0 45px 0;
+  z-index: -1;
+}
+/* 중간 네비바 끝 */
+
+.title-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: palegreen;
+}
+
+.title-inner > h2 {
+  font-size: 64px;
+  font-weight: 900;
+}
+
+section {
+  padding: 144px 0 112px;
+}
+
+section i {
+  font-style: normal;
+}
+
+.wrap {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.point {
+  color: #099789;
+}
+
+.preview-info {
+  height: 100%;
+  padding: 72px;
+  background: #f7f7f7;
+  border-radius: 0 0 45px 0;
+}
+.preview-info b {
+  display: inline-block;
+}
+/* 본문 끝 */
+/* footer 시작 */
+footer {
+  margin-top: 160px;
+}
+
+.footer-top {
+  background-image: url(../Images/dokdo_img_09.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: contrast(50%);
+  height: 760px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px 0 0 0;
+}
+
+.footer-top > div {
+  text-align: center;
+}
+
+.typing {
+  font-size: 24px;
+  min-width: 11px;
+  white-space: nowrap;
+  margin: 0;
+  position: fixed;
+  color: transparent;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.typing::before {
+  content: "경상북도 울릉읍 독도리 1-96";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  overflow: hidden;
+  border-right: 3px solid #ffffff;
+  animation: typing 5s steps(31) infinite;
+}
+
+@keyframes typing {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+.footer-bottom {
+  display: flex;
+  background-color: #393846;
+}
+
+.fb-wrap {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  margin: 0 auto;
+  padding: 32px 0 40px;
+  color: #ffffff;
+  font-size: 14px;
+  width: 100%;
+}
+
+.fb-wrap a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.fb-1-bottom {
+  font-size: 16px;
+  color: #999999;
+}
+
+.fb-r {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.reserved {
+  background-color: #09847f;
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  top: 900px;
+  right: 72px;
+  z-index: 1;
+  line-height: 1.3;
+}
+.reserved:hover {
+  animation: scaling 1s ease-in-out infinite;
+}
+@keyframes scaling {
+  from {
+    transform: scale(1.2);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.go {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+.come {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #b4613d;
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+  line-height: 1.3;
+}
+
+.come div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* footer 끝 */
+
+/* 기타 몇몇 공통사항 */
+.result-content:hover {
+  background-color: lightyellow;
+}
+
+@media screen and (max-width: 1610px) {
+  .menu {
+    font-size: 1rem;
+    font-weight: 600;
+    gap: 16px;
+  }
+
+  .right {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .menu {
+    display: inline-block;
+  }
+
+  .right {
+    display: none;
+  }
+  .title-inner h2 {
+    font-size: 40px;
+  }
+  .title-inner p {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .Inb > .sub-nav::after {
+    height: 500rem;
+    width: 16rem;
+  }
+  .sub-nav > .sub-nav-ul {
+    margin-left: 32px;
+    padding: 0;
+  }
+}

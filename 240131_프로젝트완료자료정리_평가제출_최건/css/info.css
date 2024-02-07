@@ -1,0 +1,326 @@
+.title-img.myPage {
+  background: url(../Images/dokdo_vis_04.jpg) no-repeat;
+  background-size: cover;
+  border-radius: 0 0 100px 0;
+  width: 100%;
+  height: 32rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 본문시작 */
+/* 관람안내 시작 */
+.wrap-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrap-inner > p {
+  width: 60%;
+  height: 100%;
+}
+
+.wrap-mid ul {
+  list-style: none;
+}
+
+.preview-info > ul b {
+  font-size: 32px;
+  padding: 0 0 16px;
+}
+
+.wrap-inner2 {
+  display: flex;
+  padding-top: 112px;
+}
+.wrap-inner2 b {
+  font-size: 32px;
+  padding: 0 144px 16px 0;
+}
+
+.wrap-inner2 > ul {
+  position: relative;
+}
+.wrap-inner2 li {
+  position: relative;
+  padding-top: 16px;
+  padding-left: 8px;
+}
+.wrap-inner2 li + li {
+  margin-top: 16px;
+}
+
+.wrap-inner2 li::before {
+  display: lnline-block;
+  content: "";
+  border-radius: 50%;
+  background-color: #b9b6b5;
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  top: 22px;
+  left: -8px;
+}
+/* 관람안내 끝 */
+/* 단체예약 시작 */
+.res-txt {
+  text-align: center;
+}
+.res-txt > strong {
+  font-size: 40px;
+}
+
+.point {
+  color: #099789;
+}
+
+.res-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 64px;
+}
+.res-btn .btn.btn-primary {
+  color: #09847f;
+  background-color: #ffffff;
+  border: 3px solid #09847f;
+  border-radius: 45px;
+  overflow: hidden;
+  padding: 16px 48px;
+}
+.res-btn > .fc {
+  margin-right: 16px;
+}
+
+.mg-space {
+  margin-top: 64px;
+}
+
+.mg-space .fade-cs {
+  width: 60%;
+  height: 100%;
+}
+
+.mg-space img {
+  width: 100%;
+  height: 100%;
+}
+
+.mg-space .preview-info {
+  width: 40%;
+  padding: 4rem;
+}
+
+.mg-space b {
+  font-size: 32px;
+}
+
+.mg-space ul {
+  list-style: none;
+}
+
+.mg-space ul span {
+  font-weight: 600;
+}
+
+/* 단체예약 끝 */
+/* 단체예약신청 시작 */
+.control {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.control > div {
+  display: flex;
+  align-items: center;
+  width: 75%;
+  position: relative;
+}
+
+.control > div p {
+  margin: 0;
+  padding: 0 20px 0 48px;
+}
+.control > div p::before {
+  content: "";
+  background: url(../Images/dokdo_icon_07.png) no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 6px;
+  left: 16px;
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+
+.control > .btn {
+  border-radius: 30px;
+  padding: 8px 24px;
+}
+
+.control > .btn-secondary {
+  margin-left: 8px;
+}
+
+.btn_next > img {
+  transform: rotateY(-180deg);
+  width: 26px;
+  height: 26px;
+}
+
+.flex {
+  display: flex;
+}
+.calendar {
+  width: 40%;
+}
+.calendar > table {
+  width: 100%;
+  text-align: center;
+}
+
+table th {
+  background-color: #ebedf1;
+  border-top: 3px solid #000000;
+  border-bottom: 3px solid #000000;
+  font-weight: 600;
+}
+
+.calendar > table th {
+  padding: 10px;
+}
+.calendar > table td {
+  border: 1px solid lightgrey;
+  height: 70px;
+  line-height: 0rem;
+}
+
+table td > a {
+  display: block;
+  position: relative;
+  height: 100%;
+  padding: 28px 10px 5px;
+}
+
+table th[class="sun"] {
+  color: red;
+}
+table th[class="sat"] {
+  color: blue;
+}
+.list {
+  width: 60%;
+  padding: 34px;
+  border-top: 1px solid #e0e6e9;
+}
+.list > p {
+  padding: 0 0 22px 0;
+}
+
+.side-scroll {
+  height: 280px;
+  min-width: 322px;
+  overflow-y: scroll;
+}
+
+.side-scroll > table {
+  width: 100%;
+  text-align: center;
+}
+
+.side-scroll > table th {
+  border-top: 3px solid #000000;
+  padding: 16px;
+}
+
+small {
+  font-size: smaller;
+}
+
+/* 단체예약신청 끝 */
+@media screen and (max-width: 1765px) {
+  .mg-space .preview-info {
+    padding: 40px;
+  }
+}
+@media screen and (max-width: 1765px) {
+  .mg-space .preview-info {
+    padding: 24px;
+    font-size: 14px;
+  }
+  .mg-space .preview-info b {
+    font-size: 24px;
+    padding-bottom: 8px;
+  }
+  .mg-space .preview-info p {
+    margin-bottom: 8px;
+  }
+}
+@media screen and (max-width: 1380px) {
+  .mg-space .preview-info {
+    padding: 8px;
+  }
+  .mg-space .preview-info ul {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 1020px) {
+  .res-txt > strong {
+    font-size: 32px;
+  }
+  .mg-space {
+    flex-direction: column;
+  }
+  .mg-space .fade-cs {
+    width: 100%;
+  }
+  .mg-space .preview-info {
+    width: 100%;
+    padding: 56px;
+  }
+
+  .wrap-inner {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .wrap-inner > p {
+    width: 100%;
+  }
+  .wrap-inner > p > img {
+    max-height: 696px;
+  }
+  .wrap-inner > div {
+    width: 100%;
+    padding-left: 0;
+  }
+  .wrap-inner > div > ul {
+    padding-left: 0;
+  }
+  .wrap-inner2 {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .wrap-inner2 b {
+    padding-right: 104px;
+  }
+}
+
+@media screen and (max-width: 996px) {
+  .flex {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .flex > div {
+    width: 100%;
+  }
+}

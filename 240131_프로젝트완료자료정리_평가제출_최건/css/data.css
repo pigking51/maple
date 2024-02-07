@@ -1,0 +1,574 @@
+.title-img.myPage {
+  background: url(../Images/dokdo_vis_05.jpg) no-repeat;
+  background-size: cover;
+  border-radius: 0 0 100px 0;
+  width: 100%;
+  height: 32rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+ul {
+  list-style: none;
+}
+.tabs {
+  margin-bottom: 96px;
+}
+
+.tabs > li {
+  float: left;
+  border: 1px solid #ccc;
+  margin-right: 4px;
+  padding: 12px 48px;
+}
+
+.tabs .active {
+  border: 1px solid #444;
+}
+
+/* 현황 시작 */
+b {
+  display: inline-block;
+}
+
+.change {
+  cursor: pointer;
+}
+
+.text_tac {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.sub-title {
+  display: inline-block;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.wrap > p {
+  margin-top: 24px;
+  margin-bottom: 0;
+}
+
+.inner_wrap {
+  display: flex;
+}
+
+img {
+  width: 100%;
+}
+.fb-r img {
+  width: 40px !important;
+  height: 40px !important;
+}
+
+.preview_info {
+  padding: 72px;
+}
+
+.preview_info > ul {
+  padding-left: 0;
+}
+
+.preview_info div {
+  display: flex;
+}
+.preview_info b {
+  display: inline-block;
+  font-size: 32px;
+  padding-bottom: 16px;
+}
+
+.preview_info div:nth-child(2n) {
+  border-top: 1px solid #ddd;
+  padding-top: 24px;
+  margin-top: 24px;
+}
+
+.two-block {
+  display: none;
+}
+
+.three-block {
+  display: none;
+}
+
+.four-block {
+  display: none;
+}
+
+.two-table {
+  width: 65%;
+  height: 100%;
+  border-bottom: 1px solid #999999;
+  text-align: center;
+  margin: 0 auto 96px;
+  table-layout: fixed;
+}
+
+.two-table > tr {
+  padding: 16px;
+}
+.two-table th {
+  background-color: beige;
+  border-top: 1px solid #000000;
+  padding: 16px;
+}
+.two-table td {
+  padding: 16px;
+  /* border: 1px solid #000000; */
+}
+
+.ul_cards {
+  font-size: 16px;
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 8px;
+}
+
+.ul_cards > li {
+  padding: 24px;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 0 0 45px 0;
+}
+.ul_cards > li:hover {
+  animation: here 3s ease-in infinite;
+}
+@keyframes here {
+  0% {
+    border: 1px solid rgba(0, 0, 0, 0);
+  }
+  100% {
+    border: 1px solid rgba(0, 0, 0, 1);
+  }
+}
+
+.ul_cards b {
+  font-size: 16px;
+  padding-bottom: 12px;
+}
+.two-block .site-map {
+  width: 100%;
+  height: 860px;
+  background: url(../Images/dokdo_now_img_02.png) no-repeat;
+  background-size: 100%;
+  border-radius: 0 0 0 85px;
+}
+
+.site-map {
+  margin: 64px 0 32px;
+}
+
+.two-block > p {
+  text-align: center;
+}
+
+.not-oneP {
+  margin-top: 32px;
+}
+
+.block3-map {
+  margin: 64px 0 32px;
+}
+
+.block3-map > p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-weight: 500;
+  background-color: #393846;
+  padding: 24px 0;
+  margin-bottom: 0;
+}
+
+.block3-map i {
+  display: block;
+  width: 0.4rem;
+  height: 0.4rem;
+  margin: 0 0.4rem;
+  border-radius: 100%;
+  background-color: #fff;
+}
+
+.block3-map .site-map {
+  width: 100%;
+  height: 860px;
+  background: url(../Images/dokdo_now_img_03.png) no-repeat;
+  background-size: 100%;
+  border-radius: 0 0 0 85px;
+  margin: 0;
+}
+
+/* 현황 끝 */
+/* 사진 시작 */
+.picture_wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.picture_wrap img {
+  width: 100%;
+}
+
+em {
+  font-style: normal;
+}
+.picture_list {
+  padding-bottom: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 8px;
+}
+
+.picture_list > li:hover {
+  animation: bright 2s;
+}
+
+@keyframes bright {
+  0% {
+    filter: brightness(100%);
+  }
+  100% {
+    filter: brightness(150%);
+  }
+}
+
+.picture_list > li > em {
+  display: inline-block;
+  padding: 28px 0 12px;
+}
+
+.picture_list .write {
+  font-size: 16px;
+  color: #999999;
+  display: block;
+  padding-bottom: 28px;
+}
+
+.pagination {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination ol {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+.pagination li {
+  margin: 0 8px;
+}
+
+.pagination a {
+  color: #999999;
+  margin: 0 3px;
+  border: 1px solid #ddd;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  position: relative;
+  font-size: 16px;
+  transition: all 0.3s ease 0s;
+  opacity: 1;
+}
+.pagination .on a {
+  color: #000000;
+  font-weight: 600;
+}
+
+div[class^="page_control"] {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  margin: 0 9px;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.btn_end::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url(../Images/dokdo_icon_09.png) no-repeat 50% 13px / 9.1px;
+  opacity: 0.4;
+}
+.btn_end.last::after {
+  transform: rotateY(180deg);
+}
+
+/* 사진 끝 */
+/* 교육자료실 시작 */
+.edu {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  padding: 40px 0;
+  width: 100%;
+}
+
+form,
+.search_table {
+  background-color: #f6f6f6;
+}
+
+.edu form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.edu select {
+  display: block;
+  width: 130px;
+  height: 56px;
+  margin-right: 16px;
+  padding: 0 18px;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.edu .text_search {
+  height: 52px;
+  padding: 8px 12px;
+  background-color: #ffffff;
+  width: 33%;
+  margin-right: 8px;
+}
+.edu .search {
+  width: 100px;
+  height: 50px;
+  background-color: #444444;
+  color: white;
+  font-weight: 600;
+  margin: 2px 0;
+  padding: 0px 16px;
+}
+
+.edu .search:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+table a {
+  text-decoration: none;
+  color: #000000;
+  padding: 10px;
+}
+
+.search_table {
+  width: 100%;
+  text-align: center;
+}
+
+.search_table tr:first-child {
+  border-top: 2px solid #000000;
+}
+
+.search_table tr:last-child {
+  border-top: 1px solid #999999;
+}
+
+.search_table th,
+td {
+  padding: 20px 10px;
+}
+
+.search_table th:nth-child(2),
+td:nth-child(2) {
+  text-align: left;
+}
+
+.hidden-search_table {
+  display: none;
+}
+
+.onePage > div {
+  width: auto;
+}
+
+/* 교육자료실 끝 */
+
+@media screen and (max-width: 1570px) {
+  .preview_info {
+    font-size: 14px;
+    padding: 56px;
+    border-radius: 0 0 65px 0;
+  }
+  .preview_info b {
+    font-size: 24px;
+    padding-bottom: 8px;
+  }
+
+  .preview_info div:nth-child(2n) {
+    padding-top: 16px;
+    margin-top: 16px;
+  }
+  .two-block .site-map {
+    height: 660px;
+    border-radius: 0 0 0 65px;
+  }
+  .block3-map .site-map {
+    height: 660px;
+    border-radius: 0 0 0 65px;
+  }
+}
+@media screen and (max-width: 1370px) {
+  .preview_info {
+    font-size: 14px;
+    padding: 40px;
+    border-radius: 0 0 45px 0;
+  }
+  .preview_info b {
+    padding-bottom: 6px;
+  }
+
+  .preview_info div:nth-child(2n) {
+    padding-top: 12px;
+    margin-top: 12px;
+  }
+  .two-block .site-map {
+    height: 560px;
+    border-radius: 0 0 0 45px;
+  }
+  .block3-map .site-map {
+    height: 560px;
+    border-radius: 0 0 0 45px;
+  }
+}
+@media screen and (max-width: 1320px) {
+  .preview_info {
+    padding-top: 16px;
+    font-size: 12px;
+  }
+  .two-block .site-map {
+    height: 460px;
+    border-radius: 0 0 0 45px;
+  }
+  .block3-map .site-map {
+    height: 460px;
+    border-radius: 0 0 0 45px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .inner_wrap {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .inner_wrap > .img {
+    width: 100%;
+  }
+
+  .inner_wrap > .preview_info {
+    width: 100%;
+  }
+
+  .two-table {
+    width: 80%;
+  }
+
+  .ul_cards {
+    font-size: 14px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px;
+  }
+
+  .ul_cards > li {
+    border-radius: 0 0 25px 0;
+  }
+
+  .ul_cards b {
+    font-size: 16px;
+  }
+  .two-block .site-map {
+    height: 440px;
+  }
+  .block3-map .site-map {
+    height: 440px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .tabs > li {
+    margin-right: 4px;
+    padding: 8px 24px;
+    font-size: 12px;
+  }
+
+  .two-table {
+    width: 90%;
+    font-size: 12px;
+  }
+  .ul_cards {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+
+  .picture_list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .two-block .site-map {
+    height: 240px;
+  }
+  .block3-map .site-map {
+    height: 240px;
+  }
+
+  .search_table {
+    display: none;
+  }
+  .hidden-search_table {
+    display: block;
+    position: relative;
+    width: 100%;
+  }
+  .hidden-search_table tr {
+    width: 100%;
+  }
+  .hidden-search_table td:first-child {
+    width: 100%;
+    padding: 24px 114px 24px 10px;
+  }
+  .hidden-search_table td:last-child {
+    position: absolute;
+    right: 0;
+    bottom: -8px;
+    width: 120px;
+    padding: 24px 10px;
+  }
+}

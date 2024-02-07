@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Now</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/data.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  </head>
+  <body>
+    <!-- 네비 시작 -->
+    <nav
+      class="navbar sticky-top navbar-expand-lg"
+      style="background-color: transparent"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../../index.html">
+          <div class="main-total">
+            <img src="../../Images/dokdo_icon_01.png" />
+            <img src="../../Images/dokdo_icon_02.png" />
+          </div>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul
+            class="navbar-nav me-auto mb-2 mb-lg-0 container justify-content-center menu"
+          >
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                전시관 소개
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="../intro/greetings.html"
+                    >인사말</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../intro/history.html"
+                    >전시관 연혁</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../intro/map.html">오시는길</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                관람 정보
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="../info/info.html">관람안내</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../info/groupReservation.html"
+                    >단체예약</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../info/check-cancel.html"
+                    >예약확인ㆍ취소</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../guide.html"
+                >전시안내&nbsp;&nbsp;&nbsp;</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                독도 자료실
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="now.html">독도현황</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="picture.html">독도사진</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="educateData.html"
+                    >교육자료실</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                열린광장
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="../rounge/notice.html"
+                    >공지사항</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../rounge/photo.html"
+                    >포토앨범</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="right">
+          <a href="../etc/login/login.html">로그인</a>
+          <p>ㆍ</p>
+          <a href="../etc/register/register1.html">회원가입</a>
+        </div>
+      </div>
+    </nav>
+    <!-- 네비 끝 -->
+    <!-- 본문 시작 -->
+    <div class="ex-fake"></div>
+    <div class="title-img myPage">
+      <div class="title-inner">
+        <h2>독도현황</h2>
+        <p>대한민국 독도, 세종에서 만나다!</p>
+      </div>
+      <div class="Inb wrap">
+        <div class="sub-nav">
+          <ul class="sub-nav-ul">
+            <li class="active">
+              <a href="now.html" class="about_sub01 on">독도현황</a>
+            </li>
+            <li><a href="picture.html" class="about_sub02">독도사진</a></li>
+            <li>
+              <a href="educateData.html" class="about_sub03">교육자료실</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <section>
+      <ul class="tabs">
+        <li class="change which active">독도의 위치</li>
+        <li class="change jimyoung">독도의 지형과 지명</li>
+        <li class="change sangsung">독도의 생성</li>
+      </ul>
+      <div class="wrap one-block">
+        <div class="text_tac">
+          <stong class="sub-title"
+            ><i class="point">독도의 위치</i> 바로알기</stong
+          >
+        </div>
+        <div class="inner_wrap">
+          <div class="img">
+            <img src="../../Images/dokdo_now_img_01.png" alt="지리상 위치" />
+          </div>
+          <div class="preview_info">
+            <ul>
+              <li>
+                <b>수리적 위치</b>
+                <p>-&nbsp;동도 : 북 37도 14분 26.8초, 동경 131도 52분 10.4초</p>
+                <p>
+                  -&nbsp;서도 : 북위 37도 14분 30.6초, 동경 131도 51분 54.6초
+                </p>
+              </li>
+              <li>
+                <b>지리적 위치</b>
+                <p>-&nbsp;경북 울진군 죽변에서 동쪽으로 216.8km(117.1 해리)</p>
+                <p>-&nbsp;울릉도에서 동남쪽으로 87.4km(47.2 해리)</p>
+                <p>-&nbsp;일본 시마네현 오키섬에서는 157.5km(85.0 해리)</p>
+                <p>※ 해리(海里) = 1.852km</p>
+                <p>
+                  ※ 울릉도에서 독도까지의 거리는 오키섬에서 독도까지의 거리보다
+                  약 1.8km 가깝다.
+                </p>
+              </li>
+              <li>
+                <b>행정적 위치</b>
+                <p>경상북도 울릉군 울릉읍 독도리 1~96(우:40240)</p>
+                <div>
+                  <span>동도</span>
+                  <ul>
+                    <li>
+                      <span>-&nbsp;독도경비대</span>
+                      : 경상북도 울릉군 울릉읍 독도이사부길 55
+                    </li>
+                    <li>
+                      <span>-&nbsp;독도등대</span>
+                      : 경상북도 울릉군 울릉읍 독도이사부실 63
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <span>서도</span>
+                  <ul>
+                    <span>-&nbsp;주민숙소</span>
+                    : 경상북도 울릉군 울릉읍 독도안용복길 3
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p>[자료출처 : 독도종합정보시스템]</p>
+      </div>
+      <div class="wrap two-block">
+        <div class="text_tac">
+          <stong class="sub-title"
+            >독도는 <i class="point">동도와 서도 2개의 큰 섬과</i><br />
+            그 주변에 <i class="point">89개의 바위섬으로</i> 구성되어
+            있다.</stong
+          >
+          <p>
+            지명의 유래는 형상에서 기원된 것, 어민들에게 구전된 것, 정밀조사 후
+            붙여진 것 등 다양하다.<br />
+            정부는 인근 11개의 암초에 해양지명을 부여하여 관리하고 있다.
+          </p>
+        </div>
+        <table class="two-table">
+          <tr>
+            <th>구분</th>
+            <th>면적</th>
+            <th>높이</th>
+            <th>둘레</th>
+          </tr>
+          <tr>
+            <td>동도</td>
+            <td>73,297m²</td>
+            <td>98.6m(우산봉)</td>
+            <td>2.8km</td>
+          </tr>
+          <tr>
+            <td>서도</td>
+            <td>88,740m²</td>
+            <td>168.5m(대한봉)</td>
+            <td>2.6km</td>
+          </tr>
+          <tr>
+            <td>기타부속도서(89개)</td>
+            <td>25,517m²</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>합계</td>
+            <td>187,554m²</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+        </table>
+        <div class="text_tac">
+          <stong class="sub-title"
+            >독도에는 <i class="point">26개의 주요 지형에 지명</i>이 붙여져
+            있다.</stong
+          >
+          <p>
+            독도에는 26개의 주요 지형에 지명이 붙여져 있다.<br />
+            지명의 유래는 형상에서 기원된 것, 어민들에게 구전된 것, 정밀조사 후
+            붙여진 것 등 다양하다.
+          </p>
+        </div>
+        <ul class="ul_cards">
+          <li>
+            <div>
+              <b>1. 우산봉</b>
+              <p>'우산'은 조선 시대 독도를 부르던 이름</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <b>2. 대한봉</b>
+              <p>대한민국 영토를 상징하며, '대한민국'을 줄여 붙여진 지명</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <b>3. 큰가제바위</b>
+              <p>
+                현지어로 '강치'를 뜻하는 '가제'가 자주 출몰해서 불리게 된 바위
+              </p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <b>4. 작은가제바위</b>
+              <p>
+                현지어로 '강치'를 뜻하는 '가제'가 자주 출몰해서 불리게 된 바위
+              </p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <b>5. 지네바위</b>
+              <p>
+                '이진해' 어민이 미역을 채취하던 바위. 진해에서 지네로 변하여
+                지네바위로 부름
+              </p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <b>6. 넙덕바위</b>
+              <p>현지 어민의 방언이 구전으로 전해진 명칭</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <b>7. 군함바위</b>
+              <p>군함과 흡사한 형태의 바위</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <b>8. 김바위</b>
+              <p>
+                해태를 닮은 독특한 모양으로 인한 명칭(구전으로 김은 해태를
+                의미함)
+              </p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <b>9. 보찰바위</b>
+              <p>
+                보찰은 거북손으로 따개비와 유사하 서식 해산물을 닮은 모양에 의해
+                붙여진 명칭
+              </p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <b>10. 삼형제굴바위</b>
+              <p>
+                동굴의 입구가 3개, 3개의 동굴을 아우르는 명칭으로 현지 어민들의
+                구전에 의한 명칭
+              </p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <b>11. 닭바위</b>
+              <p>
+                서도의 주민숙소에서 바라볼 때 마치 닭이 알을 품은 형상으로 인해
+                유래
+              </p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <b>12. 츳발바위</b>
+              <p>춧발은 갑, 곶 등이 튀어나온 곳을 의미하는 현지 방언</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <b>13. 촛대바위</b>
+              <p>독특한 모양으로 인한 명칭으로, 권총바위라고도 불렀음</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <b>14. 미역바위</b>
+              <p>어민들이 바위에서 미역채취를 많이 하여 붙여진 명칭</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <b>15. 물오리바위</b>
+              <p>물오리서식지로서 현지 어민들에 의해 불려진 명칭</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <b>16. 숫돌바위</b>
+              <p>
+                독도의용수비대원들이 생활할 당시 칼을 갈았다는 곳으로 바위
+                암질이 숫돌과 비슷하여 붙여지 이름
+              </p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <b>17. 부채바위</b>
+              <p>남서쪽에서 바라보면 마치 부채를 펼친 모양의 바위</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <b>18. 얼굴바위</b>
+              <p>사람의 얼굴과 흡사한 모양의 바위</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <b>19. 독립문바위</b>
+              <p>해식아치로서 그 모양이 독립문을 닮아서 붙여진 이름</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <b>20. 천장굴</b>
+              <p>
+                분화구처럼 생겼으나 지질학계에 의해 움푹 패어 웅덩이가 된 것이라
+                하며 동도정상, 헬기장 부근에서 둥근 통 현태의 낭떠러지가 섬 내로
+                형성되어 있고 이의 바닥에는 바닷물이 드나들고있음
+              </p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <b>21. 한반도바위</b>
+              <p>
+                배를 타고 북쪽으로 바라보면 한반도의 형상으로 식생이 자라고 있어
+                붙여진 이름
+              </p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <b>22. 탕건봉</b>
+              <p>
+                봉우리 모습이 선비들이 쓰던 탕건과 비슷하다고 해서 지어진 이름.
+                서도의 북쪽에서 바라보면 삼형제굴바위와 마주보고 있는 투구를 쓴
+                장수의 얼굴처럼 생김
+              </p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <b>23. 물골</b>
+              <p>
+                서도의 봉우리에서 북서방향으로 해안과 접하는 지점에 1일 400리터
+                정도의 물이 고이는 곳
+              </p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <b>24. 코끼리바위</b>
+              <p>
+                서도 남쪽의 해식동굴로 인하여 바위의 모양이 코끼리가 코를
+                늘어뜨린 모습이어서 붙은 이름
+              </p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <b>25. 해녀바위</b>
+              <p>예전 해녀들이 쉬었던 바위</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <b>26. 전차바위</b>
+              <p>전차 형상의 바위</p>
+            </div>
+          </li>
+        </ul>
+        <div class="site-map"></div>
+        <p>[자료출처 : 독도종합정보시스템]</p>
+      </div>
+      <div class="wrap three-block">
+        <div class="text_tac block3-subTitle">
+          <stong class="sub-title">독도의 <i class="point">생성</i></stong>
+          <p>
+            독도는 동해 바다 2,000m 아래에서 분출된 용암이 굳어져 형성된
+            전형적인 화산섬이다.<br />
+            독도는 460만 년 전부터 250만 년 전 사이에 형성되었는데,<br />
+            이는 울릉도(약 250만 년 전 ~ 1만 년 전) 및 제주도(약 120만 년 전 ~
+            1만 년 전)보다 앞선 시기이다.
+          </p>
+          <p class="not-oneP">
+            독도는 알칼리성 화산암으로 이루어져 있는데 해수면 위는 주로
+            안산암이고 아래는 현무암이다.<br />
+            암석층 위에 얇은 토양이 쌓여 있고 대부분 경사 30도 이상의 가파른
+            평행 사면을 이루면서 퇴적되어 있다.
+          </p>
+          <p class="not-oneP">
+            독도는 높이가 2,000m가 넘고 하부 지름이 30km에 이르는 거대한
+            화산(독도해산)의 일부다.<br />
+            독도해산은 상부가 여의도보다 10배나 넓을 정도로 평평한
+            평정해산이다.<br />
+            독도해산 동쪽에는 심흥택해산, 이사부해산 이라는 평정해산도 위치하고
+            있다.
+          </p>
+        </div>
+        <div class="block3-map">
+          <p>
+            <i></i>
+            독도 주변의 해저지형
+            <i></i>
+          </p>
+          <div class="site-map"></div>
+        </div>
+        <p>[자료출처 : 독도종합정보시스템]</p>
+      </div>
+    </section>
+    <!-- 본문 끝 -->
+    <!-- footer 시작 -->
+    <footer>
+      <div class="container-fluid footer-top">
+        <div class="typing-wrap">
+          <div class="container=sm align-items-center">
+            <img src="../../Images/dokdo_img_01.png" />
+          </div>
+          <p class="typing">"경상북도 울릉읍 독도리 1-96"</p>
+        </div>
+      </div>
+      <!-- footer-top 끝 -->
+      <!-- footer-bottom 시작 -->
+      <div class="container-fluid footer-bottom">
+        <div class="fb-wrap">
+          <div class="fb-l">
+            <p>
+              <a href="../etc/contract.html">이용약관</a>
+              ㆍ
+              <a href="../etc/individual.html">개인정보취급방침</a>
+              ㆍ
+              <a href="../etc/email.html">이메일주소무단수집거부</a>
+            </p>
+            <br />
+            <div>
+              <p>
+                주소. (30126) 세종특별자치시 새롬서로 68 새롬고등학교 1층
+                독도전시관
+              </p>
+              <p>문의전화. 044-999-6393</p>
+            </div>
+            <br />
+            <p class="fb-1-bottom">
+              © 2022 Dokdo Exhibitonon All rights reserved .
+            </p>
+          </div>
+          <div class="fb-r">
+            <div class="icon">
+              <div class="reserved">
+                <a href="../info/groupReservation.html" class="go">
+                  <div>
+                    <img src="../../Images/dokdo_icon_03.png" ght="40" />
+                    <p>단체예약<br />신청</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="come">
+              <a href="../intro/map.html" class="go">
+                <div>
+                  <img
+                    src="../../Images/dokdo_icon_03.png"
+                    width="40"
+                    height="40"
+                  />
+                  <p>독도전시관<br />오시는길</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer-bottom 끝 -->
+    </footer>
+    <!-- footer 끝 -->
+  </body>
+  <script src="../../script/common.js"></script>
+  <script>
+    const change = document.querySelectorAll(".change");
+    const oneBlock = document.querySelector(".one-block");
+    const twoBlock = document.querySelector(".two-block");
+    const threeBlock = document.querySelector(".three-block");
+
+    const Wi = document.querySelector(".which");
+    const Ji = document.querySelector(".jimyoung");
+    const Sa = document.querySelector(".sangsung");
+
+    Wi.addEventListener("click", function () {
+      Wi.classList.add("active");
+      if (Wi.classList.contains("active")) {
+        Ji.classList.remove("active");
+        Sa.classList.remove("active");
+        oneBlock.style.display = "block";
+        twoBlock.style.display = "none";
+        threeBlock.style.display = "none";
+      }
+    });
+    Ji.addEventListener("click", function () {
+      Ji.classList.add("active");
+      if (Ji.classList.contains("active")) {
+        Wi.classList.remove("active");
+        Sa.classList.remove("active");
+        oneBlock.style.display = "none";
+        twoBlock.style.display = "block";
+        threeBlock.style.display = "none";
+      }
+    });
+    Sa.addEventListener("click", function () {
+      Sa.classList.add("active");
+      if (Sa.classList.contains("active")) {
+        Wi.classList.remove("active");
+        Ji.classList.remove("active");
+        oneBlock.style.display = "none";
+        twoBlock.style.display = "none";
+        threeBlock.style.display = "block";
+      }
+    });
+  </script>
+</html>

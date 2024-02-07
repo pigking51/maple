@@ -1,0 +1,576 @@
+.dropdown.on-bar {
+  border-bottom: 3px solid #099784;
+}
+
+.title-img.myPage {
+  background: url(../Images/dokdo_vis_04.jpg) no-repeat;
+  background-size: cover;
+  border-radius: 0 0 100px 0;
+  width: 100%;
+  height: 32rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.join {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.join > h3 {
+  font-size: 32px;
+  font-weight: bold;
+  padding: 0 0 56px 0;
+}
+
+.join input {
+  width: 493px;
+  height: 72px;
+  float: left;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 50px;
+  padding: 16px 16px 16px 16px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.login .btn {
+  width: 493px;
+  height: 72px;
+  text-decoration: none;
+  color: #666666;
+  background-color: transparent;
+  border: 2px solid #666666;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login a {
+  text-decoration: none;
+  color: #666666;
+}
+
+.rg-Search {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0 20px 0;
+}
+
+.rg-Search > a {
+  padding: 0 8px 0 8px;
+}
+/* 로그인 끝 */
+/* 회원가입 시작 */
+.register-wrap {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.register-box {
+  width: 60rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.register-box > h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+.register-box > p {
+  margin: 16px 0 0 0;
+}
+
+.box > label {
+  display: block;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 32px 8px;
+}
+.box > #membershipTerm {
+  width: 100%;
+  padding: 16px;
+  border: 1px solid #dbdbdb;
+  color: #666666;
+  resize: none;
+}
+
+.box > .check {
+  text-align: right;
+  padding: 16px 0 0 0;
+}
+
+.register-box > .proceed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 32px 0;
+  gap: 8px;
+}
+
+.proceed a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  border-radius: 45px;
+  border: none;
+  margin: 2px 0;
+  padding: 0 16px;
+  height: 45px;
+}
+
+.ag {
+  background-color: #000000;
+}
+.ag:hover {
+  background-color: #565555;
+  animation: change 1s;
+}
+
+@keyframes change {
+  from {
+    background-color: #000000;
+  }
+  to {
+    background-color: #565555;
+  }
+}
+.mn {
+  background-color: #76777e;
+  transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+.mn:hover {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #76777e;
+  /* animation: change 1s; */
+}
+/* 회원가입 끝 */
+/* 회원가입 2페이지 시작 */
+.second-regi {
+  width: (100%-30rem);
+}
+
+.register2-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.register2-box h3 {
+  font-size: 32px;
+  font-weight: 600;
+}
+.register2-box > p {
+  letter-spacing: -1.5px;
+}
+
+table {
+  border-top: 2px solid;
+  margin-top: 32px;
+}
+
+table .cap-top {
+  caption-side: top;
+  display: none;
+}
+
+.box {
+  width: 100%;
+  border-bottom: 1px dashed #666666;
+  padding: 0 0 32px 0;
+}
+
+table tr {
+  border-bottom: 1px solid #eaecf1;
+}
+
+table th {
+  background-color: #f5f5f5;
+  padding: 16px 8px;
+  text-align: center;
+}
+
+table td {
+  padding: 16px;
+}
+
+td .btn {
+  display: inline-block;
+  background-color: transparent;
+  border: 1px solid #eaecf1;
+  border-radius: 25px;
+  color: #000000;
+  margin: 0 2px;
+  padding: 0 16px;
+  height: 40px;
+  line-height: 39px;
+  vertical-align: middle;
+}
+
+td input {
+  height: 32px;
+  margin: 2px 0;
+  padding: 7px 8px;
+  border: 1px solid #dddddd;
+  vertical-align: middle;
+}
+
+td select {
+  height: 32px;
+}
+
+td em {
+  font-size: 0.8em;
+}
+
+td p {
+  vertical-align: middle;
+}
+
+.marking {
+  display: inline-block;
+  position: relative;
+  width: 10px;
+  height: 14px;
+  margin-bottom: -2px;
+  vertical-align: middle;
+  text-indent: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marking:after {
+  content: "*";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 17px;
+  font-size: 14px;
+  font-weight: 600;
+  text-indent: 0;
+  color: #c51917;
+}
+
+#zip {
+  text-decoration: none;
+}
+
+.input100 {
+  width: 100px;
+}
+
+.input400 {
+  width: 400px;
+}
+
+.inputFull {
+  display: block;
+  width: 100%;
+}
+
+.btn-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 48px 0 32px;
+  gap: 8px;
+}
+
+.btn-area > .btn {
+  border: none;
+  border-radius: 35px;
+  margin: 2px 0;
+  padding: 0 16px;
+  width: 150px;
+  height: 50px;
+  line-height: 49px;
+}
+
+.btn-area > .rg-exit {
+  background-color: #76777e;
+}
+.btn-area > .rg-exit:hover {
+  background-color: white;
+  animation: change 3s ease-in-out;
+}
+@keyframes change {
+  from {
+    background-color: #76777e;
+    color: #ffffff;
+    width: 0;
+    white-space: -1px;
+    padding: 0;
+  }
+  to {
+    background-color: #ffffff;
+    color: #000000;
+    width: 150px;
+  }
+}
+
+.btn-area > .rg-sign {
+  background-color: #2d2b2b;
+  animation: bright 2s infinite;
+}
+
+@keyframes bright {
+  from {
+    background-color: #000000;
+  }
+  to {
+    background-color: #565555;
+  }
+}
+
+/* 회원가입 2페이지 끝 */
+/* 아이디 찾기 시작 */
+.last-p {
+  font-size: 0.8em;
+  margin: 8px 0 0 0;
+  text-align: center;
+}
+/* 아이디 찾기 끝 */
+/* 본인확인 시작 */
+.mem-txt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mem-txt strong {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.lgrg {
+  display: flex;
+  margin-top: 112px;
+  gap: 64px;
+}
+
+.lgrg > .item {
+  width: 50%;
+  border: 1px solid #ddd;
+  padding: 56px;
+  text-align: center;
+}
+
+.lgrg > .item img {
+  width: 80px;
+  height: 67px;
+  margin-bottom: 32px;
+}
+.lgrg > .item h2 {
+  margin-bottom: 0;
+}
+.lgrg > .item p {
+  padding-bottom: 64px;
+}
+.tx_reference {
+  margin: 8px 0 0 0;
+}
+.item.se-check {
+  padding-bottom: 64px;
+}
+
+.item.se-check > .btn {
+  padding: 24px 48px;
+  border-radius: 45px;
+}
+
+.item.se-check > ul {
+  border-top: 1px dashed #ddd;
+  list-style: none;
+  position: relative;
+  margin-top: 56px;
+  padding-top: 56px;
+  text-align: left;
+}
+
+.item.se-check > li {
+  position: relative;
+}
+
+.item.se-check .se-li {
+  margin-top: 12px;
+}
+
+.item.se-check li::before {
+  content: "";
+  display: block;
+  width: 0.3rem;
+  height: 0.3rem;
+  border-radius: 50%;
+  background-color: #dbdbdb;
+  position: absolute;
+  left: 1rem;
+}
+
+.box-area {
+  position: relative;
+  text-align: left;
+}
+.box-area > .insert-info {
+  position: relative;
+  width: 100%;
+}
+
+.box-area > div input[placeholder] {
+  position: relative;
+  width: 70%;
+  padding-right: 30%;
+  border: none;
+  border-bottom: 1px solid #999999;
+}
+
+.pw-box {
+  margin-top: 40px;
+}
+
+.lg-btn {
+  display: flex;
+}
+.lg-btn .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 0 45px 0;
+  background-color: #07866c;
+  color: white;
+  font-weight: 600;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 8rem;
+  height: 6.5rem;
+  background: linear-gradient(45deg, #05875a, #09847f);
+}
+
+.se-Login .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-top: 1px dashed #ddd;
+  margin-top: 56px;
+  padding: 56px 0 40px;
+}
+
+.social div {
+  position: relative;
+}
+
+.social a {
+  padding: 0 11px 0 12px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.social .social-2a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0.5rem;
+  left: -0.3rem;
+  width: 0.4rem;
+  height: 0.4rem;
+  background-color: #000000;
+  border-radius: 50%;
+}
+
+/* 본인확인 끝 */
+
+@media screen and (max-width: 1560px) {
+  * {
+    font-size: 12px;
+  }
+  .lgrg > .item p {
+    padding-bottom: 32px;
+  }
+  .item.se-check > ul {
+    border-top: 1px dashed #ddd;
+    list-style: none;
+    position: relative;
+    margin-top: 28px;
+    padding-top: 28px;
+    text-align: left;
+  }
+  .item.se-check > .btn {
+    padding: 12px 24px;
+    border-radius: 45px;
+  }
+  .box-area > div input[placeholder] {
+    padding-right: 15%;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .lgrg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .lgrg > .item {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .join input {
+    width: 400px;
+  }
+  .join .btn {
+    width: 400px;
+  }
+
+  .register-box {
+    width: 60%;
+  }
+
+  tr > th {
+    padding: 4px;
+  }
+  tr > td {
+    padding: 4px;
+  }
+  .btn-area > .btn {
+    width: 40%;
+    font-size: 10px;
+    padding: 0 4px;
+  }
+  .box-area > div input[placeholder] {
+    padding-right: 5%;
+  }
+}
