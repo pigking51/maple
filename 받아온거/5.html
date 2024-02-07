@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="5.css" rel="stylesheet" />
     <script
       src="https://code.jquery.com/jquery-3.7.1.js"
       integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="5.css" />
   </head>
   <body>
     <div id="navi">
@@ -18,7 +18,7 @@
           <ul>
             <li>
               <a href="/씹덕img/바케모노가타리.png">
-                <img src="/씹덕img/네가모르는이야기 캡처본.png" alt="" />
+                <img src="../resources/image/4dollars2.jpg" alt="" />
               </a>
             </li>
 
@@ -65,7 +65,7 @@
             </li>
           </ul>
           <p>
-            <img class="daum next" src="/씹덕img/right.png" alt="다음" />
+            <img class="next" src="/씹덕img/right.png" alt="다음" />
           </p>
         </div>
 
@@ -119,9 +119,9 @@
               </a>
             </li>
           </ul>
-          <p class="prev next">
-            <img src="/씹덕img/prev.png" alt="앞으로" />
-            <img src="/씹덕img/right.png" alt="다음" />
+          <p>
+            <img class="prev" src="/씹덕img/prev.png" alt="앞으로" />
+            <img class="next next2" src="/씹덕img/right.png" alt="다음" />
           </p>
         </div>
 
@@ -176,22 +176,22 @@
             </li>
           </ul>
 
-          <p class="prev">
-            <img src="/씹덕img/prev.png" alt="앞으로" />
+          <p>
+            <img class="prev2" src="/씹덕img/prev.png" alt="앞으로" />
           </p>
         </div>
       </div>
     </div>
+    <script src="test5.js"></script>
+    <!-- <script>
+      const next = document.querySelector(".daum");
+      next.addEventListener("click", function () {
+        alert(`skdhk`);
+      });
+      const daum = document.querySelector(".next");
+      daum.addEventListener("click", function () {
+        alert(`skdhk`);
+      });
+    </script> -->
   </body>
-  <!-- <script src="test5.js"></script> -->
-  <script>
-    const next = document.querySelector(".daum");
-    next.addEventListener("click", function () {
-      alert(`skdhk`);
-    });
-    const daum = document.querySelector(".next");
-    daum.addEventListener("click", function () {
-      alert(`skdhk`);
-    });
-  </script>
 </html>

@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dokdo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/dokdonew.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <!-- 네비게이션바 시작 -->
+    <nav
+      class="navbar sticky-top bg-transparent navbar-expand-lg"
+      style="background-color: transparent"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <div class="main-total">
+            <img src="../resources/image/main_logo-removebg-preview.png" />
+            <img src="../resources/image/main_title-removebg-preview.png" />
+          </div>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul
+            class="navbar-nav me-auto mb-2 mb-lg-0 container justify-content-center menu"
+          >
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                전시관 소개
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">인사말</a></li>
+                <li><a class="dropdown-item" href="#">전시관 연혁</a></li>
+                <li><a class="dropdown-item" href="#">오시는길</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                관람 정보
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">관람안내</a></li>
+                <li><a class="dropdown-item" href="#">단체예약</a></li>
+                <li><a class="dropdown-item" href="#">예약확인ㆍ취소</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">전시안내</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                독도 자료실
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">독도현황</a></li>
+                <li><a class="dropdown-item" href="#">독도사진</a></li>
+                <li><a class="dropdown-item" href="#">교육자료실</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                ㅉ
+                aria-expanded="false"
+              >
+                열린광장
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">공지사항</a></li>
+                <li><a class="dropdown-item" href="#">포토앨범</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="right">
+          <a href="#">로그인</a>
+          <p>ㆍ</p>
+          <a href="#">회원가입</a>
+        </div>
+      </div>
+    </nav>
+    <!-- 네비게이션바 끝 -->
+    <!-- 메인캐러셀 시작 -->
+    <div class="container-fluid fake">
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div id="carouselExample" class="carousel slide main-slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="main" id="main1">
+            <div>
+              <img
+                src="../resources/image/화면_캡처_2023-12-14_142155-removebg-preview.png"
+              />
+              <p>
+                독도에 대한 의미를 새기는 특별한 공간<br />
+                독도의 삶과 역사를 잊지 않기 위해 독도전시관이 앞장서겠습니다.
+              </p>
+              <a href="#" class="show"><div>전시안내 보기</div></a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="main" id="main2">
+            <div>
+              <img
+                src="../resources/image/화면_캡처_2023-12-14_142155-removebg-preview.png"
+              />
+              <p>
+                독도에 대한 의미를 새기는 특별한 공간<br />
+                독도의 삶과 역사를 잊지 않기 위해 독도전시관이 앞장서겠습니다.
+              </p>
+              <a href="#" class="show"><div>전시안내 보기</div></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 메인캐러셀 화면전환될때 이미지만 움직이게 변경하기 -->
+      <!-- 메인캐러셀 끝 -->
+      <!-- 예약확인 시작 -->
+      <div class="reserved">
+        <div>
+          <img src="../resources/image/user.png" width="40" height="40" />
+          <p>단체예약<br />신청</p>
+        </div>
+      </div>
+    </div>
+    <!-- 예약확인 끝 -->
+    <!-- 본문 카드1 시작 -->
+    <div class="container-fluid two-cards">
+      <div class="card container-fluid pair first_card">
+        <div class="card-body">
+          <div>
+            <h2 class="card-title">독도 바로알기</h2>
+            <p class="card-text">
+              독도의 역사를 배우고, 자연을 체험하며 독도영토주권<br />
+              수호 의지를 다질 수 있는 소중한 시간이 되기를 바랍니다.
+            </p>
+          </div>
+          <a href="#" class="btn">바로가기</a>
+        </div>
+        <!-- <div class="img-box">
+          <img
+            src="../resources/image/first_card.png"
+            width="150"
+            height="150"
+            alt="..."
+          />
+        </div> -->
+      </div>
+      <div class="card container-fluid pair">
+        <div class="card-body">
+          <h2 class="card-title">관람안내</h2>
+          <div>
+            <div class="one-two">
+              <div>
+                <img src="../resources/image/sound-removebg-preview.png" />
+              </div>
+              <h5>044-999-6393</h5>
+              <a href="#" class="btn question">관람 문의하기</a>
+            </div>
+          </div>
+          <ul class="card-text one-two-text">
+            <li>
+              <strong>관람시간</strong>
+              <p>
+                화요일-토요일 9:00 ~ 17:00 (점심시간 12:00~13:00, 입장마감
+                16:30)<br />
+                <span>※ 관람시간은 학교 사정에 따라 변경될 수 있습니다.</span>
+              </p>
+            </li>
+            <li>
+              <strong>휴관안내</strong>
+              <p>일요일, 월요일 및 공휴일</p>
+            </li>
+            <li>
+              <strong>위&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;치</strong>
+              <p>세종특별자치시 새롬서로 68 새롬고등학교 1층</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- 본문 카드1 끝 -->
+    <!-- 본문 카드2 시작 -->
+    <div class="row container-fluid two-cards2">
+      <div class="row card container-fluid col-3">
+        <div class="card-body">
+          <div>
+            <h5 class="card-title">독도 바로알기</h5>
+            <p class="card-text">
+              독도의 역사를 배우고, 자연을 체험하며 독도영토주권<br />
+              수호 의지를 다질 수 있는 소중한 시간이 되기를 바랍니다.
+            </p>
+          </div>
+        </div>
+        <div
+          class="container-fluid justify-content-space-between card-button-wrap"
+        >
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div
+        id="carouselExampleInterval"
+        class="carousel slide col-7 cardMany"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <div class="lotOfCard">
+              <div class="card" style="width: 80rem; height: 25rem">
+                <a href="#">
+                  <img
+                    src="../resources/image/빡침-분노.gif"
+                    height="120"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <div class="btn">News</div>
+                    <!-- <i class="body-tag">news</i> -->
+                    <h5 class="card-title">
+                      독도전시관 공사 기간 임시 휴관 안내
+                    </h5>
+                    <p class="card-text">
+                      &lt;독도전시관 내부 공사 및 임시 휴관 안내&gt;
+                      공사기간:2023.12.19.(화).....
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="card" style="width: 80rem; height: 25rem">
+                <a href="#">
+                  <img
+                    src="../resources/image/sealion-4339210_1280.jpg"
+                    height="120"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <div class="btn">News</div>
+                    <h5 class="card-title">
+                      2023년 독도의 날 기념 독도 홍보영...
+                    </h5>
+                    <p class="card-text">
+                      2023년 독도의 날 기념 독도 홍보영상<br />
+                      공모전 수상자 명단입니다. 상품은 11월중<br />
+                      수령 안내...
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="card" style="width: 80rem; height: 25rem">
+                <a href="#">
+                  <img
+                    src="../resources/image/4dollars.gif"
+                    height="120"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <div class="btn">News</div>
+                    <h5 class="card-title">
+                      2023년 새롬고와 함께하는 독도특별...
+                    </h5>
+                    <p class="card-text">
+                      2023년 새롬고와 함께하는 독도특별전을<br />
+                      '만나고 싶은 우리 땅 독도'라는 제목으로<br />
+                      .....
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="card" style="width: 80rem; height: 25rem">
+                <a href="#">
+                  <img
+                    src="../resources/image/간식.gif"
+                    height="120"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <div class="btn">News</div>
+                    <h5 class="card-title">
+                      2023년 독도의 날 기념 독도 홍보영...
+                    </h5>
+                    <p class="card-text">
+                      세종특별자치시교육청 독도전시관에서<br />
+                      2023년 독도의 날(10월 25일)을 기념하여<br />
+                      독도 홍보영상 공.....
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="10000">
+            <div class="lotOfCard se-slide">
+              <div class="card" style="width: 80rem; height: 25rem">
+                <a href="#">
+                  <img
+                    src="../resources/image/빡침-분노.gif"
+                    height="120"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <div class="btn">News</div>
+                    <!-- <i class="body-tag">news</i> -->
+                    <h5 class="card-title">
+                      독도전시관 공사 기간 임시 휴관 안내
+                    </h5>
+                    <p class="card-text">
+                      &lt;독도전시관 내부 공사 및 임시 휴관 안내&gt;
+                      공사기간:2023.12.19.(화).....
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="card" style="width: 80rem; height: 25rem">
+                <a href="#">
+                  <img
+                    src="../resources/image/sealion-4339210_1280.jpg"
+                    height="120"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <div class="btn">News</div>
+                    <h5 class="card-title">
+                      2023년 독도의 날 기념 독도 홍보영...
+                    </h5>
+                    <p class="card-text">
+                      2023년 독도의 날 기념 독도 홍보영상<br />
+                      공모전 수상자 명단입니다. 상품은 11월중<br />
+                      수령 안내...
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="card" style="width: 80rem; height: 25rem">
+                <a href="#">
+                  <img
+                    src="../resources/image/4dollars.gif"
+                    height="120"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <div class="btn">News</div>
+                    <h5 class="card-title">
+                      2023년 새롬고와 함께하는 독도특별...
+                    </h5>
+                    <p class="card-text">
+                      2023년 새롬고와 함께하는 독도특별전을<br />
+                      '만나고 싶은 우리 땅 독도'라는 제목으로<br />
+                      .....
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="card" style="width: 80rem; height: 25rem">
+                <a href="#">
+                  <img
+                    src="../resources/image/간식.gif"
+                    height="120"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <div class="btn">News</div>
+                    <h5 class="card-title">
+                      2023년 독도의 날 기념 독도 홍보영...
+                    </h5>
+                    <p class="card-text">
+                      세종특별자치시교육청 독도전시관에서<br />
+                      2023년 독도의 날(10월 25일)을 기념하여<br />
+                      독도 홍보영상 공.....
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="card2-button"> -->
+
+        <!-- </div> -->
+      </div>
+    </div>
+    <!-- 본문 카드2 끝 -->
+    <!-- 본문하단~footer사이 배너 시작 -->
+    <div class="container-fluid banner">
+      <div class="container">
+        <a href="#"
+          ><div class="container banner-1">
+            <div>
+              <h3>체험존 안내</h3>
+              <p>
+                독도체험관은 대한민국 동쪽 끝,<br />
+                우리의 섬 독도를 만나는 체험 공간입니다.
+              </p>
+            </div>
+
+            <div>
+              <img src="../resources/image/dog1.jpg" width="120" height="120" />
+            </div>
+          </div>
+        </a>
+
+        <a href="#"
+          ><div class="banner-2">
+            <div>
+              <h3>영상관 안내</h3>
+              <p>
+                가상현실(VR)과 같은 최신 기법을 활용하여<br />
+                실감형 콘텐츠 등을 적용한 독도 영상관 입니다.
+              </p>
+            </div>
+
+            <div>
+              <img src="../resources/image/cat.jpg" width="120" height="120" />
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <!-- 본문하단~footer사이 배너 끝-->
+    <!-- footer시작 -->
+    <!-- footer-top 시작 -->
+    <footer>
+      <div class="container-fluid footer-top">
+        <div>
+          <div class="container=sm align-items-center">
+            <img
+              src="../resources/image/화면_캡처_2023-12-14_142155-removebg-preview.png"
+            />
+          </div>
+          <p>"경상북도 울릉읍 독도리 1-96"</p>
+        </div>
+      </div>
+      <!-- footer-top 끝 -->
+      <!-- footer-bottom 시작 -->
+      <div class="container-fluid footer-bottom">
+        <div class="fb-wrap">
+          <div class="fb-l">
+            <p>
+              <a href="#">이용약관</a>
+              ㆍ
+              <a href="#">개인정보취급방침</a>
+              ㆍ
+              <a href="#">이메일주소무단수집거부</a>
+            </p>
+            <br />
+            <div>
+              <p>
+                주소. (30126) 세종특별자치시 새롬서로 68 새롬고등학교 1층
+                독도전시관
+              </p>
+              <p>문의전화. 044-999-6393</p>
+            </div>
+            <br /><br />
+            <p class="fb-1-bottom">
+              © 2022 Dokdo Exhibitonon All rights reserved .
+            </p>
+          </div>
+          <div class="fb-r">
+            <div class="icon">
+              <img
+                src="../resources/image/화면_캡처_2023-12-15_164202-removebg-preview.png"
+                width="109"
+                height="77"
+              />
+            </div>
+            <div class="come">
+              <div>
+                <img src="../resources/image/user.png" width="40" height="40" />
+                <p>독도전시관<br />오시는길</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer-bottom 끝 -->
+    </footer>
+    <!-- footer끝 -->
+  </body>
+</html>
